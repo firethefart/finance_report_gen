@@ -1,0 +1,312 @@
+{
+  "case_id": "strategy_sample_020",
+  "query": "What is the investment outlook for 2026 considering central bank policy, trade dynamics, and possible market catalysts?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "2026 outlook",
+    "central bank paths",
+    "trade and tariffs",
+    "fiscal risks",
+    "AI capex",
+    "active management"
+  ],
+  "expected_report_type": {
+    "type": "annual_outlook",
+    "depth": "institutional_style",
+    "output_format": "unspecified",
+    "expected_time_horizon": "2026",
+    "target_reader": "institutional investors and financial advisors"
+  },
+  "institution": {
+    "name": "Goldman Sachs Asset Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://am.gs.com"
+  },
+  "report_title": "Investment Backdrop Heading into 2026 - Staying Active Amid Complexity in 2026",
+  "report_date": "2025-11-18",
+  "publication_period": "November 18, 2025",
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\html\\020-goldman-sachs-asset-management-investment-backdrop-heading-into-2026-goldman-sachs-asset-management-staying-act.html",
+    "file_name": "020-goldman-sachs-asset-management-investment-backdrop-heading-into-2026-goldman-sachs-asset-management-staying-act.html",
+    "format": "html",
+    "sha256": "d197615e94b7b71b89f3f42b976c6757885c0bffe756627f3125366d2c9adea1",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "source_001",
+      "type": "research_report",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Main source article.",
+      "source_id": "source_001",
+      "source_type": "research_report",
+      "author_or_provider": "Goldman Sachs Asset Management",
+      "short_name": "GSAM Investment Outlook 2026",
+      "access_level": "public_web"
+    },
+    {
+      "name": "source_002",
+      "type": "dataset_or_index",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Cited for 18% US effective tariff rate figure.",
+      "source_id": "source_002",
+      "source_type": "dataset_or_index",
+      "author_or_provider": "Budget Lab Yale University",
+      "short_name": "US effective tariff rate data",
+      "access_level": "restricted_or_cited"
+    },
+    {
+      "name": "source_003",
+      "type": "dataset_or_index",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Cited for total global govt debt exceeding $100 trillion.",
+      "source_id": "source_003",
+      "source_type": "dataset_or_index",
+      "author_or_provider": "OECD, Reuters",
+      "short_name": "Global government debt data",
+      "access_level": "restricted_or_cited"
+    },
+    {
+      "name": "source_004",
+      "type": "research_report",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Underlying research inputs referenced.",
+      "source_id": "source_004",
+      "source_type": "research_report",
+      "author_or_provider": "Goldman Sachs Global Investment Research",
+      "short_name": "GS GIR insights",
+      "access_level": "restricted_or_cited"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Determines the pace and scale of US rate cuts, shaping fixed income and equity valuations.",
+      "verification_hint": "Check FOMC minutes and labor market data (NFP, JOLTS) for consistency with this view.",
+      "content": "Labor market dynamics hold the key to Fed easing into 2026, so long as inflation remains anchored."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Trade policy uncertainty can dampen corporate investment and consumer spending.",
+      "verification_hint": "Monitor US effective tariff rate updates and Q1 2026 GDP prints for growth impact.",
+      "content": "Tariffs settled at lower but not low levels still present downside risk to growth in 2026."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Elevated sovereign debt raises tail risk of repricing in bond markets and risk assets.",
+      "verification_hint": "Track OECD sovereign debt databases and sovereign CDS spreads for signs of stress.",
+      "content": "Global government debt has surged past $100 trillion, and fiscal backdrop is a key concern that could trigger market volatility."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Sustained AI investment supports earnings for semiconductor and infrastructure providers.",
+      "verification_hint": "Review quarterly capex guidance from hyperscalers and major AI hardware firms.",
+      "content": "US mega-cap AI capex continues to exceed expectations and is expected to remain durable."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Higher M&A volumes can unlock value and support alternative asset returns.",
+      "verification_hint": "Check Bain or PwC global M&A reports for deal volume trends into 2026.",
+      "content": "A recovery in global dealmaking is expected to extend into 2026, spurring private equity activity and demand for private credit."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Offers a specific implementation strategy versus passive benchmarks in a rich valuation environment.",
+      "verification_hint": "Compare Russell 2000 and securitized credit index performance against S&P 500 over 2026.",
+      "content": "Active management and tilting towards small-cap equities and securitized credit are recommended given elevated asset valuations."
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "BoJ normalization impacts yen FX, JGB yields, and global carry trade dynamics.",
+      "verification_hint": "Monitor BoJ policy statement and Japan CPI to confirm tightening trajectory.",
+      "content": "Japan remains on track towards a higher rate regime, backed by firm inflation and strong GDP growth."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary or key takeaways",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Macroeconomic backdrop and risk factors",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Central bank policy trajectories",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Trade and fiscal landscape assessment",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Market catalysts and thematic opportunities",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Asset class implications and active management prescriptions",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Risk disclaimers or alternative scenarios",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Stating exact timing of fiscal crisis rather than expressing uncertainty",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting tariff mitigation strategies when discussing tariff impact",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Presenting a single base case without recognizing alternative scenarios",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to mention elevated asset valuations when recommending risk-on tilts",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring labor market weakness risks from immigration/AI in Fed analysis",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Using absolute return projections without attribution to underlying assumptions",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "Figures in Focus: 9/10 G10 countries cut rates, 18% effective tariff rate, $100+ trillion global govt debt",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "Event timeline chart for 2025 market drivers",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "key_claims_accuracy": "Verify labor market dependency for Fed, tariff growth downside, AI capex durability, and Japan rate path against subsequent events.",
+    "logical_consistency": "Check that recommended tilts (small-cap, securitized credit) are consistent with stated macro risks and valuation concerns."
+  },
+  "reference_notes": {
+    "benchmark_usage": "Used by institutional clients for strategic asset allocation and risk assessment for the upcoming year.",
+    "limitations": "Outlook expressed as of November 2025, subject to rapid change with geopolitical or data surprises."
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.92,
+    "source_pack": 0.88,
+    "query": 0.95
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

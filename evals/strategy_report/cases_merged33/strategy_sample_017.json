@@ -1,0 +1,258 @@
+{
+  "case_id": "strategy_sample_017",
+  "query": "What are the key demand signals and investment themes for sustainable finance over the next decade?",
+  "query_language": "en",
+  "query_style": "portfolio_committee",
+  "scope_constraints": [
+    "sustainable investing outlook",
+    "decade-ahead themes",
+    "Morgan Stanley Institute for Sustainable Investing"
+  ],
+  "expected_report_type": {
+    "type": "asset_allocation_and_thematic_strategy",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "next 10 years, with focus on milestone year 2030",
+    "target_reader": "institutional investors, asset allocators, and sustainability officers"
+  },
+  "institution": {
+    "name": "Morgan Stanley",
+    "business_type": "investment_bank",
+    "country_or_region": "US",
+    "official_url": "https://www.morganstanley.com"
+  },
+  "report_title": "Navigating the Next Decade: 10 Demand Signals for the Next 10 Years of Sustainable Finance",
+  "report_date": "2023-01-01",
+  "publication_period": "2023",
+  "strategy_subtype": "asset_allocation",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\017-morgan-stanley-navigating-the-next-decade.pdf",
+    "file_name": "017-morgan-stanley-navigating-the-next-decade.pdf",
+    "format": "pdf",
+    "sha256": "03c29fe6cf7ab9faa6668b8c22dfdd44d216659fa439367babb08e90676875de",
+    "page_count": 18,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "Morgan Stanley Institute for Sustainable Investing report",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "note": "Primary source: the PDF 'Navigating the Next Decade'"
+    },
+    {
+      "name": "Morgan Stanley Research ESG Monthly Market Trends",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "note": "Cited for AUM data on sustainable funds"
+    },
+    {
+      "name": "Principles for Responsible Investment (PRI) data",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "note": "Referenced for signatory growth statistics"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "AUM in sustainable funds doubled between December 2017 and December 2020 to approximately $1.6 trillion, with record monthly inflows reaching ~30% of starting AUM.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Illustrates the rapid growth and investor demand that sets the stage for the next decade's investment landscape.",
+      "verification_hint": "Cross-reference with Morgan Stanley Research ESG Monthly Market Trends report dated March 2021."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "The voluntary carbon offset market could grow from $2 billion in 2020 to over $250 billion in 2050.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Highlights a massive opportunity for allocators to capture returns and finance climate transition.",
+      "verification_hint": "Check the Demand 6 section of the report for the specific growth projection and underlying assumptions."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "By 2030, significant milestones including the SDGs, Paris Agreement climate commitments, and Global Biodiversity Framework 30x30 goals will come due, creating urgency for capital deployment.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "This timeline anchors the report's investment horizon and risk assessment considerations for asset owners.",
+      "verification_hint": "Confirm the milestone list in the Summary section and compare with UN and international policy documents."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "PRI signatories grew by more than 75% to over 3,000 by the end of 2020.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Signals the institutionalization of responsible investment practices that influence manager selection and mandate flows.",
+      "verification_hint": "Validate growth figures using PRI annual reports for the period 2017–2020."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Demand for new sustainable investment options, specific ESG data, land for decarbonization, and metals/minerals for energy transition are among the top ten demand signals identified.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "These themes represent potential structural alpha sources and risk factors for cross-asset portfolios.",
+      "verification_hint": "Review the list of 10 demand signals in the report's summary and sections."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive Summary / Letter from Sustainability Officer",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Historical Timeline of Sustainable Finance (past decade)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "List and description of 10 demand signals for the next decade",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Metrics and growth projections for sustainable investment universe",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Discussion of regulatory evolution (SFDR, CSRD, TCFD)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Analysis of voluntary carbon markets and nature-positive finance",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Outlook and implications for asset allocators",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Failing to include any of the ten demand signals in the summary or omit key signals like metals/minerals or supply chains",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Overlooking the historical timeline context that sets the stage for projections",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Making unverified claims about AUM or carbon market size without specific figures and citations",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Neglecting the regulatory backdrop (SFDR, CSRD) that shapes investor behavior",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the social themes component (worker rights, DEI) when presenting sustainable finance as purely environmental",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Presenting the outlook as deterministic rather than acknowledging risks and uncertainties (e.g., not on track for 1.5°C)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "Cover page image grid representing ten demand signals",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "Decade timeline infographic from pre-2015 to 2033",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "accuracy_checks": [
+      "Verify AUM doubling and inflow percentages against source market trend report",
+      "Confirm voluntary carbon market growth projections match section claim"
+    ],
+    "coverage_checks": [
+      "Ensure all 10 demand signals are mentioned",
+      "Check that regulatory mentions include EU SFDR and CSRD"
+    ]
+  },
+  "reference_notes": {
+    "data_sources": "Morgan Stanley Research, PRI, TCFD, UN SDGs, Paris Agreement texts",
+    "assumptions_disclaimers": "Report is forward-looking and subject to risks; the path to goals is not certain, and there is risk of greenwashing."
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.92,
+    "source_pack": 0.9,
+    "query": 0.95
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

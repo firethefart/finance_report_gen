@@ -1,0 +1,115 @@
+.subscribeV2{max-width:1280px;max-height:624px;width:100%;text-align:center;margin:0 40px 0 40px}
+.subscribeV2 .CTA-wrapper{position:relative;border:1px solid #8c8c8c;max-width:1280px;background:#fff;align-content:center}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper{display:grid;grid-template-columns:repeat(11,1fr 40px) 1fr}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .title{display:inline-block;font-family:ms_gloriola_ii_stdregular,sans-serif;font-size:40px;line-height:48px;padding:0 0 30px 0;margin:0;color:#000;grid-column:5 / span 15;grid-row:1 / span 1;font-weight:600}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-first-name{grid-column:5 / span 7;grid-row:2 / span 1;position:relative;margin:0}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-last-name{grid-column:12 / span 8;grid-row:2 / span 1;position:relative;margin:0 0 20px 15px}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-wrapper{grid-column:5 / span 15;grid-row:3 / span 1;position:relative}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-submit{grid-column:5 / span 15;grid-row:5 / span 1}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-submit .btn-subscribe-CTA{font-family:"karlabold",sans-serif;font-size:14px;color:#fff;letter-spacing:1.1px;text-align:center;line-height:14px;background:#187aba;cursor:pointer;border:2px solid #187aba;text-decoration:none;display:inline-block;padding:22px 24px;height:fit-content;text-transform:uppercase;transition:background-color .3s}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-submit .btn-subscribe-CTA:hover{background:#fff;color:#187aba;border:2px solid #187aba}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-submit .btn-subscribe-CTA:focus{background:#fff;color:#187aba;border:1px solid #187aba}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper input[type="text"]{border-radius:10px;border:2px solid #d6d6d6;font-size:18px;padding:30.5px 16px 12.5px 16px;transition:.3s;height:64px;width:100%}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper{position:relative;font-family:karlaregular,sans-serif;font-size:16px;grid-column:5 / span 15;grid-row:4 / span 1;margin:15px 0 30px 0;text-align:left;color:#4c4c4c}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper p{margin:0}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper input [type="checkbox"]{width:20px;height:20px}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .opt-in-error-message{visibility:hidden;line-height:22.7px}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .boxtext{margin-left:28px}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .opt-in-for-newsletter{position:absolute;width:16px;aspect-ratio:1}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .opt-in-for-newsletter,.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .boxtext{line-height:19px;color:#4c4c4c;font-size:18px;vertical-align:middle;font-weight:400;display:inline-block}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .opt-in-for-newsletter:focus,.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .boxtext:focus{line-height:19px;color:#4c4c4c;font-size:18px;display:inline-block;position:absolute}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .opt-in-error-highlight{visibility:visible;padding:4px 0 0 28px;font-family:karlaregular,sans-serif;font-size:16px;color:#d7222d;letter-spacing:0;line-height:18.7px;text-align:left;font-weight:400}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .emailplaceholder{width:auto}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .email-subscribe-error-message{visibility:hidden;line-height:23.7px}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .email-subscribe-error-icon.error-highlight{position:absolute;background-image:url('dc19957d3ceb3fe2c76d.svg');height:30px;width:30px;display:inline-block;top:15px;right:15px}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .email-subscribe-error-message.error-highlight{display:block;visibility:visible;text-align:left;padding:5px 0 0 0;font-family:karlaregular,sans-serif;font-size:16px;color:#d7222d;letter-spacing:0;line-height:18.7px;font-weight:400}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .email-subscribe-CTA.error-highlight{background:#fff;border:3px solid #d7222d;border-radius:10px}
+.subscribeV2 .CTA-wrapper .feedback-questions{width:80%;max-width:760px}
+.subscribeV2 .CTA-wrapper .congrats-wrapper{display:none}
+.subscribeV2 .CTA-wrapper .congrats-wrapper p{font-family:ms_gloriola_ii_stdlight,sans-serif;font-size:24px;line-height:30px;text-align:center;margin:16px 0 0 0;color:#767676;grid-row:3 / span 1;grid-column:5 / span 15}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .email-subscribe--completed--primary{background-image:url('c4a55b9e9a84c92a9446.svg');height:76px;display:block;background-position:center;background-repeat:no-repeat;grid-column:1 / span 23;grid-row:auto}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .thankYouMsg{display:inline-block;font-family:ms_gloriola_ii_stdregular,sans-serif;font-size:40px;line-height:48px;text-align:center;color:#000;grid-column:5 / span 15;grid-row:2 / span 1;font-weight:600;margin-top:16px}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .thankYouSurveyMsg{display:inline-block;font-family:ms_gloriola_ii_stdlight,sans-serif;font-size:24px;line-height:30px;text-align:center;float:left;padding:5px;margin:0;color:#767676}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .line-separator{border-top:1px solid #f2f2f2;margin:22px auto 25px auto}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .improve-title{color:#4c4c4c;margin-bottom:25px;font-family:karlaregular,sans-serif}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questionColumn{text-align:left;color:#4c4c4c;font-family:karlaregular,sans-serif}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questionColumn .questionColumn-heading{font-weight:bold;margin:0 0 10px 0;color:#4c4c4c}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questionColumn .surveyquestions{margin:8px 0 0 0}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questionColumn .surveyquestions span{margin:0 0 0 8px}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .q-right{text-align:left;color:#4c4c4c;font-family:karlaregular,sans-serif}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .q-right .q-right-heading{font-weight:bold;margin:0 0 10px 0;color:#4c4c4c}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .question-heading{font-family:karlaregular,sans-serif;font-weight:bold;margin:0 0 10px 0;color:#4c4c4c;font-size:16px;font-weight:400;line-height:18.7px}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questions-section{max-height:190px;overflow:auto;display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));justify-items:center;justify-content:center;margin:24px 0 10px 0;font-size:14px;grid-row:4 / span 1;grid-column:3 / span 19}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questions-section span{color:#767676;font-family:ms_gloriola_ii_stdregular,sans-serif}
+.subscribeV2 .CTA-wrapper .congrats-wrapper input[type=checkbox]{-webkit-appearance:checkbox !important;box-sizing:border-box !important;color:#4c4c4c}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .btn-capsule{height:fit-content;width:fit-content;font-family:"karlabold",sans-serif;font-size:18px;color:#187aba;letter-spacing:0;text-align:center;line-height:18px;background:transparent;cursor:pointer;border:2px solid #187aba;text-decoration:none;display:inline-block;padding:22px 24px 22px 24px;grid-column:3 / span 19;margin:16px auto 0 auto;grid-row:5 / span 1;text-transform:uppercase}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .btn-capsule:hover{background:#187aba;color:#fff;border:2px solid #187aba}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .btn-capsule:focus{background:#187aba;color:#fff;border:2px solid #187aba}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .survey-msg-wrapper{width:70%;margin:0 auto;max-width:750px}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .icon-survey{float:left;height:75px;padding:50px 0 0 0;margin:0;color:#0f8ec7;font-size:4em;line-height:1.2;background-image:url('b1a069467a9fcb0aa229.svg');background-size:contain;background-repeat:no-repeat;grid-column:6 / span 2;grid-row:1 / span 1}
+.subscribeV2 .CTA-wrapper .thankyou-wrapper{width:100%;height:624px;align-content:center}
+.subscribeV2 .CTA-wrapper .thankyou-wrapper .email-subscribe--completed--secondary{background-image:url('b1a069467a9fcb0aa229.svg');height:85px;display:block;background-position:center;background-repeat:no-repeat}
+.subscribeV2 .CTA-wrapper .thankyou-wrapper .thankYou-completedTxt{font-family:ms_gloriola_ii_stdlight,sans-serif;font-size:24px;line-height:30px;color:#767676;padding:16px 24px;text-align:center;margin:auto}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper.hidden{display:none}
+.subscribeV2 .CTA-wrapper .congrats-wrapper.visible{display:grid;padding:60px 0 60px 0;grid-template-columns:repeat(11,1fr 40px) 1fr;grid-template-rows:auto auto auto auto}
+.subscribeV2 .subscribe-content-wrapper{padding:80px 0 80px 0}
+.subscribeV2 .subscribe-content-wrapper .input-wrapper{text-align:center}
+.subscribeV2 .subscribe-content-wrapper .input-wrapper .email-subscribe-CTA{border-radius:10px;border:2px solid #d6d6d6;font-size:18px;padding:0 20px;transition:.3s;height:64px;width:100%}
+.subscribeV2 .subscribe-content-wrapper .input-control-wrapper{flex-grow:1;position:relative}
+.subscribeV2 input{font-family:karlaregular,sans-serif;text-decoration:none}
+.subscribeV2.-gray,.CTA-wrapper.-gray,.subscribeV2.-gray .congrats-wrapper.visible,.subscribeV2.-gray .congrats-wrapper.visible.secondary,.subscribeV2.-gray .congrats-wrapper.secondary{background:#f7f7f7}
+.subscribeV2.-gray .CTA-wrapper{border:0}
+.subscribeV2.-white{background:#fff}
+@media all and (max-width:1024px){.subscribeV2 .CTA-wrapper .subscribe-content-wrapper{display:grid;grid-template-columns:repeat(11,1fr 20px) 1fr}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .title{font-size:32px;grid-column:5 / span 15;grid-row:1 / span 1}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-first-name{grid-column:5 / span 7;grid-row:2 / span 1}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-last-name{grid-column:12 / span 8;grid-row:2 / span 1}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-wrapper{grid-column:5 / span 15;grid-row:3 / span 1}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-submit{grid-column:5 / span 15;grid-row:5 / span 1}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper{grid-column:5 / span 15;grid-row:4 / span 1}
+.subscribeV2 .CTA-wrapper .congrats-wrapper{grid-template-columns:20px repeat(11,1fr 20px) 1fr 20px;grid-template-rows:auto}
+.subscribeV2 .CTA-wrapper .congrats-wrapper p{font-size:20px;line-height:25px;padding:0 20px;margin:16px auto 24px auto}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .thankYouMsg,.subscribeV2 .CTA-wrapper .congrats-wrapper .thankYouSurveyMsg{font-size:32px;padding:16px 0 0;margin:auto}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .icon-survey{grid-column:3 / span 4;grid-row:1 / span 1}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questionColumn{margin-left:20px}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .q-right{margin-left:20px}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .btn-capsule{grid-column:12 / span 4}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questions-section{display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));justify-items:center;justify-content:center;margin:0 0 10px 0;font-size:14px}
+}
+@media all and (max-width:767px){.subscribeV2{max-height:max-content;margin:0 20px 0 20px}
+.subscribeV2 .CTA-wrapper{height:auto}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper{grid-template-columns:repeat(11,1fr 10px) 1fr;padding:40px 0 50px 0;display:grid}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .title{font-size:26px;line-height:31px;grid-column:2 / span 21;grid-row:1 / span 1;padding:0;padding-bottom:30px;font-weight:600;margin:0}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-first-name{grid-column:3 / span 19;grid-row:2 / span 1;position:relative;margin:0}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-last-name{grid-column:3 / span 19;grid-row:3 / span 1;margin:15px 0}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-wrapper{grid-column:3 / span 19;grid-row:4 / span 1;margin-bottom:0}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-submit{grid-column:3 / span 19;grid-row:6 / span 1;margin-top:30px}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .subscribe-email-submit .btn-subscribe-CTA{padding:0 25px 0 25px;width:100%;height:58px}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper{grid-column:3 / span 19;grid-row:5 / span 1;margin:30px 0 0 0}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .opt-in-error-message.opt-in-error-highlight{margin:8px 0 0 28px;padding:0;display:block}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .opt-in-wrapper .checkBoxError{display:none}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .emailplaceholder{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;padding-right:60px;text-align:left}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .email-subscribe-CTA{width:100%}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .btn-subscribe-CTA{top:20px;right:20px}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .email-subscribe-error-message{visibility:hidden;padding:0;margin:4px 0 0 0;display:none}
+.subscribeV2 .CTA-wrapper .subscribe-content-wrapper .input-wrapper .email-subscribe-error-message.error-highlight{visibility:visible;padding:0}
+.subscribeV2 .CTA-wrapper .congrats-wrapper{grid-template-columns:repeat(11,1fr 10px) 1fr;grid-template-rows:auto}
+.subscribeV2 .CTA-wrapper .congrats-wrapper p{font-family:ms_gloriola_ii_stdregular,sans-serif;font-size:16px;line-height:19px;font-weight:600;margin-bottom:0;padding:0;color:#767676;grid-column:3 / span 19;width:100%}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .thankYouMsg,.subscribeV2 .CTA-wrapper .congrats-wrapper .thankYouSurveyMsg{font-size:26px;line-height:31px;padding:0;margin:15px auto 0 auto;grid-column:3 / span 19;overflow-wrap:break-word;grid-row:auto;width:100%}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .thankYou-completedTxt{font-family:ms_gloriola_ii_stdlight,sans-serif;font-size:16px;line-height:24px;color:#767676;padding:4px 30px;text-align:center;width:100%;margin:7px auto -5px auto}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .icon-survey{font-size:3em;grid-column:2 / span 4;grid-row:1 / span 1}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questionColumn,.subscribeV2 .CTA-wrapper .congrats-wrapper .q-right{width:100%;margin-left:0;grid-column:3 / span 19;margin:34px 0 0 0}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .questions-section{display:grid;gap:0;grid-template-columns:repeat(11,1fr 10px) 1fr;font-size:14px;justify-items:normal;justify-content:normal;margin:0;overflow:unset;max-height:max-content;grid-column:1 / span 23}
+.subscribeV2 .CTA-wrapper .congrats-wrapper .btn-capsule{grid-column:3 / span 19;margin-top:37px;height:auto}
+.subscribeV2 .CTA-wrapper .congrats-wrapper.visible{padding:60px 0 50px 0;grid-template-columns:repeat(11,1fr 10px) 1fr;display:grid}
+.subscribeV2 .CTA-wrapper .congrats-wrapper.visible .email-subscribe--completed--primary{grid-column:3 / span 19}
+}
+.input-wrapper label{font-family:"karlaregular",sans-serif;position:absolute;color:#767676;font-size:18px;font-weight:500;transition:all .1s linear;left:16px;top:0;line-height:64px}
+.input-wrapper input{background:#fff;border:2px solid #8c8c8c;border-radius:10px;width:250px;height:65px;font-family:"karlaregular",sans-serif;font-size:16px;padding-left:10px;padding-top:12px}
+input:focus+label,input+label.show{font-family:"karlaregular",sans-serif;color:#767676;font-size:14px;left:17px;top:10.5px;line-height:24px}
+.input-wrapper{position:relative}
+input:focus{border:2px solid #187aba}
+.subscribe{margin:0 auto;display:flex;justify-content:center;align-items:center}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{width:10px;top:10px;background:#fff}
+::-webkit-scrollbar-thumb{background:#d8d8d8;border-radius:40px;height:min-content;width:6px}

@@ -1,0 +1,505 @@
+{
+  "notes": "Generated from source discovery reports. Feed this file to download_reports.py.",
+  "sources": [
+    {
+      "institution": "BlackRock Investment Institute",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://www.blackrock.com/corporate/literature/whitepaper/bii-global-outlook-2026-middle-east.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "BlackRock Investment Institute",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://www.blackrock.com/corporate/literature/whitepaper/bii-global-outlook-in-charts.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "BlackRock Investment Institute",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://www.blackrock.com/corporate/literature/whitepaper/bii-investment-perspectives-us-policy-march-2025.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "BlackRock Investment Institute",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://www.blackrock.com/us/individual/literature/whitepaper/bii-global-outlook-in-charts.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Goldman Sachs Asset Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/2025/Investment-Outlook-2026.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Goldman Sachs Asset Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/2025/am-perspectives_1Q25_active-etfs-portfolio.pdf?view=true",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Goldman Sachs Asset Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/2026/fixed-income-outlook_2q26.pdf?view=true",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Goldman Sachs Asset Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://am.gs.com/cms-assets/gsam-app/video/transcripts/en/investment-outlook-2026_video-transcript.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/2026-mid-year-outlook/2026-mid-year-outlook.pdf",
+      "subtype_hint": "midyear_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/2026-mid-year-outlook/2026-mid-year-outlook.pdf?page=26",
+      "subtype_hint": "midyear_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/2026-mid-year-outlook/2026-mid-year-outlook.pdf?page=39",
+      "subtype_hint": "midyear_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/2026-mid-year-outlook/2026-mid-year-outlook.pdf?page=8",
+      "subtype_hint": "midyear_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/2026-mid-year-outlook/2026_MYO-takaways-one_pager.pdf",
+      "subtype_hint": "midyear_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/heliocentrism.pdf",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/sick-as-a-dog.pdf",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/smothering-heights.pdf",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/smothering-heights.pdf?page=22",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/smothering-heights.pdf?page=29",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/smothering-heights.pdf?page=3",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/smothering-heights.pdf?page=35",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/smothering-heights.pdf?page=40",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/smothering-heights.pdf?page=9",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/eotm/the-deep-end.pdf",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/outlook2026/2026PBOutlookSummary.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/outlook2026/JPMorganOutlook2026PromiseandPressure.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/outlook2026/JPMorganOutlook2026PromiseandPressure.pdf?page=27",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/outlook2026/JPMorganOutlook2026PromiseandPressure.pdf?page=45",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://assets.jpmprivatebank.com/content/dam/jpm-pb-aem/global/en/documents/outlook2026/JPMorganOutlook2026PromiseandPressure.pdf?page=9",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Morgan Stanley",
+      "business_type": "investment_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/IB_MA-2026-Outlook.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Morgan Stanley",
+      "business_type": "investment_bank",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/Navigating_the_Next_Decade-10_Demand_Signals_for_the_Next_10_Years_of_Sustainable_Finance.pdf",
+      "subtype_hint": "asset_allocation",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://advisors.vanguard.com/content/dam/fas/pdfs/ISGVEMO.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/advocate/investment-stewardship/pdf/investor-choice/investor_participation_preferences.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/articles/pdf/afi_perspectives_q22026_income_in_focus.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/benefits_of_a_fund_of_funds_strategy_in_private_equity.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/indexing_benefits.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/megatrends_ai_demographics_and_the_us_economy.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/power_in_persistence_staying_the_course_with_private_equity_commitments.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/vanguard_2025_midyear_private_equity_review_and_outlook.pdf",
+      "subtype_hint": "midyear_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/vanguard_2025_private_equity_market_outlook.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/vanguard_diversification_benefits_of_private_equity.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://workplace.vanguard.com/content/dam/inst/iig-transformation/insights/pdf/2025/corporate/VG_economic_market_outlook_2025.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Fidelity International / Fidelity UK",
+      "business_type": "asset_manager",
+      "country_or_region": "UK",
+      "kind": "direct_pdf",
+      "url": "https://www.fidelity.co.uk/media/pi/pdfs/investment-outlook/investment-outlook-q2-2026.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "Fidelity International / Fidelity UK",
+      "business_type": "asset_manager",
+      "country_or_region": "UK",
+      "kind": "direct_pdf",
+      "url": "https://www.fidelityinternational.com/static/master/media/pdf/outlook/Fidelity-International-Outlook-2026.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "State Street Global Advisors / State Street Investment Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://www.ssga.com/library-content/assets/pdf/global/global-market-outlook/2026/global-market-outlook-2026.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "State Street Global Advisors / State Street Investment Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "kind": "direct_pdf",
+      "url": "https://www.ssga.com/library-content/assets/pdf/global/global-market-outlook/2026/gmo-implementation-guide-2026.pdf",
+      "subtype_hint": "annual_or_periodic_outlook",
+      "source_bucket": "global_official",
+      "source_url": null
+    },
+    {
+      "institution": "中信证券研究 / CITIC Securities Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "kind": "direct_pdf",
+      "url": "https://pdf.dfcfw.com/pdf/H3_AP202504221660527858_1.pdf?1745342200000.pdf=",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "china_third_party",
+      "source_url": null
+    },
+    {
+      "institution": "华泰证券研究 / Huatai Securities Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "kind": "direct_pdf",
+      "url": "https://yb.1qh.cn/reports/2024-11-13/be15f4dcb12629593621c9e5ea82825e4ba0fba0.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "china_third_party",
+      "source_url": null
+    },
+    {
+      "institution": "国泰海通证券研究 / Guotai Haitong Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "kind": "direct_pdf",
+      "url": "https://pdf.dfcfw.com/pdf/H3_AP202506291699633466_1.pdf",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "china_third_party",
+      "source_url": null
+    },
+    {
+      "institution": "国泰海通证券研究 / Guotai Haitong Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "kind": "direct_pdf",
+      "url": "https://pdf.dfcfw.com/pdf/H3_AP202512291810673339_1.pdf?1767081159000.pdf=",
+      "subtype_hint": "strategy_research",
+      "source_bucket": "china_third_party",
+      "source_url": null
+    }
+  ]
+}

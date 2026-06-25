@@ -1,0 +1,54 @@
+{
+  "name": "html_runtime_adapter_v2_smoke_set",
+  "purpose": "Regression set for HTML Runtime Adapter V2 before integrating candidate-only Verifier V2.",
+  "created_for": "strategy_report_verifier_v2_html_input",
+  "notes": [
+    "Generated/local HTML reports are the primary target for Verifier V2.",
+    "Crawled HTML pages are included as stress cases for external-resource and publisher-shell handling.",
+    "The adapter captures DOM visual objects directly instead of slicing fixed-height pages."
+  ],
+  "samples": [
+    {
+      "id": "generated_strategy_report_optimized",
+      "group": "generated_report",
+      "path": "generation_test/1/index.html",
+      "expected": "Complete local HTML report with text, tables, and visual sections."
+    },
+    {
+      "id": "fixture_static_report",
+      "group": "synthetic_fixture",
+      "path": "evals/strategy_report/html_fixtures/runtime_v2_static_report.html",
+      "expected": "Static HTML visuals and table-like financial blocks."
+    },
+    {
+      "id": "fixture_long_visual",
+      "group": "synthetic_fixture",
+      "path": "evals/strategy_report/html_fixtures/runtime_v2_long_visual.html",
+      "expected": "One oversized visual; target crop should not be split by page height."
+    },
+    {
+      "id": "fixture_canvas_dynamic",
+      "group": "synthetic_fixture",
+      "path": "evals/strategy_report/html_fixtures/runtime_v2_canvas_dynamic.html",
+      "expected": "JavaScript-rendered canvas chart should be visible after runtime rendering."
+    },
+    {
+      "id": "real_goldman_external_images",
+      "group": "crawled_html_stress",
+      "path": "dataset_build/curated_strategy_samples_final/annual_outlook/html/012-goldman-sachs-asset-management-shifting-paradigms-for-portfolio-construction-in-2026-goldman-sachs-asset-manage.html",
+      "expected": "Text should extract; missing image resources should be recorded as skipped visuals."
+    },
+    {
+      "id": "real_state_street_shell",
+      "group": "crawled_html_stress",
+      "path": "dataset_build/curated_strategy_samples_final/annual_outlook/html/014-state-street-global-advisors-state-street-investment-management-macroeconomic-outlook-2026-state-street-macroeconomic-outlook-2026-growth-amid-u.html",
+      "expected": "Cookie/share/modal shell should be cleaned while retaining main article text."
+    },
+    {
+      "id": "real_blackrock_missing_assets",
+      "group": "crawled_html_stress",
+      "path": "dataset_build/curated_strategy_samples_final/thematic_strategy/html/036-blackrock-investment-institute-sizing-up-a-major-macro-policy-pivot-bii-sizing-up-a-major-macro-policy-pivot-a.html",
+      "expected": "Main text should remain; missing resources may produce html_no_visual_objects warning."
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "case_id": "strategy_sample_011",
+  "query": "What are the key shifts in portfolio construction for 2026 according to Goldman Sachs Asset Management?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "2026 outlook",
+    "portfolio construction",
+    "Goldman Sachs Asset Management"
+  ],
+  "expected_report_type": {
+    "type": "annual_outlook",
+    "depth": "institutional_style",
+    "output_format": "webpage",
+    "expected_time_horizon": "2026",
+    "target_reader": "institutional investors and financial advisors"
+  },
+  "institution": {
+    "name": "Goldman Sachs Asset Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://am.gs.com"
+  },
+  "report_title": "Shifting Paradigms for Portfolio Construction in 2026 - Goldman Sachs Asset Management",
+  "report_date": "2025-11-18",
+  "publication_period": null,
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\html\\011-goldman-sachs-asset-management-shifting-paradigms-for-portfolio-construction-in-2026-goldman-sachs-asset-manage.html",
+    "file_name": "011-goldman-sachs-asset-management-shifting-paradigms-for-portfolio-construction-in-2026-goldman-sachs-asset-manage.html",
+    "format": "html",
+    "sha256": "03def215eb73e9620f353e4074223e96b8e31b30e40452370a7a89b484ecef79",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "source_candidate",
+      "type": "data_provider",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_description": "Bloomberg, Goldman Sachs Global FICC & Equities data on US-listed active ETF AUM and flows",
+      "reference_marker": "1,2"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Global assets under management in active ETFs have grown by 46% annually since the start of 2020.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check introductory section under Active ETFs for the statistic and footnote 1.",
+      "fact": "Global assets under management in active ETFs have grown by 46% annually since the start of 2020."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Active fixed income ETFs now account for 41% of total inflows to US-listed fixed income ETFs.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Look for second footnote under Fixed income opportunities section.",
+      "fact": "Active fixed income ETFs now account for 41% of total inflows to US-listed fixed income ETFs."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Derivative-income ETFs use options contracts to generate income from an equity portfolio, attracting investors seeking predictability in uncertain markets.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See Derivative-income ETFs section, last paragraph.",
+      "fact": "Derivative-income ETFs use options contracts to generate income from an equity portfolio, attracting investors seeking predictability in uncertain markets."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "A portion of private-equity outperformance can be captured in a public equity portfolio using sufficient data and understanding of PE investor selection methods, including sector tilts and leverage.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Refer to Private assets, public access section, third sentence.",
+      "fact": "A portion of private-equity outperformance can be captured in a public equity portfolio using sufficient data and understanding of PE investor selection methods, including sector tilts and leverage."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Expected central bank rate cuts in the US and elsewhere over the next year should benefit fixed income, including investment-grade credit and front-end US Treasuries.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.85,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check second paragraph of Fixed income opportunities.",
+      "fact": "Expected central bank rate cuts in the US and elsewhere over the next year should benefit fixed income, including investment-grade credit and front-end US Treasuries."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "Active ETFs are viewed as an effective vehicle for markets with structural inefficiencies, combining active management with ETF structure benefits.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "First paragraph of Active ETFs section.",
+      "fact": "Active ETFs are viewed as an effective vehicle for markets with structural inefficiencies, combining active management with ETF structure benefits."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive Summary / Key Takeaways",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Macro Context and 2026 Investment Landscape",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Active ETFs: Opportunities Across Fixed Income and Equities",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Enhancing Passive Allocations (Alpha Enhanced Strategies)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Tail-Risk Hedging in a Volatile Macro Environment",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Broadening Access to Alternatives (Private Assets, Derivative Income)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Implications for Portfolio Construction",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Conclusion",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Claiming the report is silent on specific asset classes when fixed income, alternatives, and ETFs are discussed",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Misstating the publication date as 2026 instead of November 2025",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Referring to Goldman Sachs as a bank without clarifying Asset Management division",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting mention of derivative-income ETFs or private asset access innovations",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Including specific investment recommendations or fund names that are not present",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Confusing active ETFs with passive index-tracking ETFs",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "chart_description": "US-listed active ETF AUM share and annual fund flows chart showing growth phases (2010-17, 2018-24, 2025 highlight)",
+      "location_hint": "Active ETFs section, near the data attribution line",
+      "title_or_description": "chart_or_table",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {},
+  "reference_notes": {
+    "source_language": "English",
+    "authorship_not_listed": true,
+    "footnotes_contain_data_sources": true
+  },
+  "extraction_confidence": {
+    "overall": 0.92,
+    "classification": 0.95,
+    "key_facts": 0.9,
+    "source_pack": 0.85,
+    "query": 0.9
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

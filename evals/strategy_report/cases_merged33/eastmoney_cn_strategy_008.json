@@ -1,0 +1,281 @@
+{
+  "case_id": "eastmoney_cn_strategy_008",
+  "query": "梳理一下2026年北交所上市新股的特点,特别是专精特新的占比和行业分布情况,并分析当前北交所的估值水平和结构性机会。",
+  "query_language": "zh",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "2026年",
+    "北交所新股",
+    "专精特新企业",
+    "估值对比"
+  ],
+  "expected_report_type": {
+    "type": "strategy_research_report",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026年至今及后市展望",
+    "target_reader": "策略研究员和机构投资者"
+  },
+  "institution": {
+    "name": "开源证券",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": null
+  },
+  "report_title": "2026年北交所新股解码:专精特新占比90%,先进制造主导聚焦未来\"产业链\"",
+  "report_date": "2026-05-31",
+  "publication_period": null,
+  "strategy_subtype": "bse_strategy_thematic",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260601-AP202605311823108369-e379da31c1.pdf",
+    "file_name": "20260601-AP202605311823108369-e379da31c1.pdf",
+    "format": "pdf",
+    "sha256": "99da99b5ce8e30b90c2089271467ee3167f63cbb1a035ba70158831e3493d38e",
+    "page_count": 32,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "东方财富Choice终端",
+      "type": "data_terminal",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "提供新股发行、市场交易、估值及财务数据。",
+      "source_type": "data_terminal",
+      "description": "提供新股发行、市场交易、估值及财务数据。",
+      "extraction_method": "API or manual query",
+      "reliability": "A"
+    },
+    {
+      "name": "Wind金融终端",
+      "type": "data_terminal",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "提供市场行情、指数及企业财务数据。",
+      "source_type": "data_terminal",
+      "description": "提供市场行情、指数及企业财务数据。",
+      "extraction_method": "API or manual query",
+      "reliability": "A"
+    },
+    {
+      "name": "开源证券研究所内部报告",
+      "type": "internal_research",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "分析师团队的策略观点、行业分类标准和股票池构建。",
+      "source_type": "internal_research",
+      "description": "分析师团队的策略观点、行业分类标准和股票池构建。",
+      "extraction_method": "None",
+      "reliability": "A"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "2026年截至5月29日,北交所新上市企业达30家,其中国家级专精特新\"小巨人\"企业27家,占比高达90%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "凸显北交所服务创新型中小企业的核心定位和'专精特新'属性的持续强化。",
+      "verification_hint": "对比北交所官网新股公告与工信部专精特新企业名单进行验证。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "2026年北交所上市新股以先进制造为主导,工业企业15家,占比50%,主要分布于汽车零部件、机械设备和半导体制造。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "明确了北交所'中游制造/产业链枝干配套'的行业定位,与科创板'硬科技'等形成互补。",
+      "verification_hint": "核对Wind、东方财富对新股所属行业分类的统计结果。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "北证50指数5月下跌,北证A股整体市盈率跌至40.38倍,与科创板、创业板的估值折价进一步拉大。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "估值回落提供了新的性价比机遇,是报告推荐关注北交所的结构性基础。",
+      "verification_hint": "从行情软件调取截至2026年5月最后一周的北证A股、科创板和创业板整体PE-TTM数据。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "报告披露了开源证券北交所策略股票池,分属信息技术、化工新材料、高端装备、医药生物、消费服务五大产业链。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "直接提供了可验证的机构策略输出和具体的标的参考,便于跟踪超额收益。",
+      "verification_hint": "在报告第1页和第24页核对'股票池'列表和附注声明,并跟踪其后续市场表现。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "2026年北交所上市和已过会未发行企业的平均营收、净利润及研发费用规模均较为可观,显示整体资产质量较好。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "数据支撑了北交所新股并非纯粹的小微盘,而是具备一定体量和研发能力的优质企业。",
+      "verification_hint": "计算北交所2026年新上市及已过会未发行企业的Wind或年报数据均值,与报告中的7.98/9.84亿元营收、1.29/1.39亿元净利润进行校验。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "北交所新股专精特新属性及行业分布统计",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "北交所与双创、港交所上市企业数据多维度对比",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "北交所市场整体表现与行情复盘",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "北证A股与跨板块估值对比分析",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "开源证券行业分类框架下的市盈率分拆",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "核心投资策略观点与股票池列表",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "风险提示汇总",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "混淆专精特新占比口径,例如将90%的新股占比误报为全体北证A股占比",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "误将工业企业占比50%写为先进制造业占100%",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "估值数据张冠李戴,例如用科创板估值数据代替北交所估值数据",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "在行情复盘部分遗漏周度、月度涨跌幅数据的连续性",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "股票池中个股名称与代码录入错误,或遗漏行业分类归属",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "专精特新企业占比及数量对比的条形图或百分比图",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "各板块市值、营收、净利润均值对比表格",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "北证A股整体市盈率与双创板块的折溢价走势图",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "开源证券对北交所五大行业的市盈率柱状图",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "开源证券策略股票池的行业分类及个股表现列表",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "key_numbers_to_check": [
+      "90.00%的新股专精特新占比",
+      "50%的工业企业占比",
+      "北证A股整体PE 40.38倍"
+    ],
+    "logic_to_verify": "报告的投资观点(关注高景气细分龙头、业绩增长确定标的)是否与其之前数页的数据拆解结论(估值性价比凸显、产业链配套定位)形成闭环支撑。"
+  },
+  "reference_notes": {
+    "key_ratio_base_discipline": "报告中涉及占比的分母多为'该板块2026年新上市企业数量',统计时需严格限定样本范围。",
+    "data_as_of_date": "文中多数市场数据的截止日期为2026年5月29日,未作特殊说明的数据均应默认此标准。"
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.97,
+    "source_pack": 0.92,
+    "query": 0.96
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

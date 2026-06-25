@@ -1,0 +1,218 @@
+{
+  "case_id": "strategy_sample_013",
+  "query": "What is State Street's macroeconomic and market outlook for 2026?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "State Street Global Advisors",
+    "2026",
+    "global macroeconomic outlook"
+  ],
+  "expected_report_type": {
+    "type": "macroeconomic_outlook",
+    "depth": "institutional_style",
+    "output_format": "webpage",
+    "expected_time_horizon": "12 months",
+    "target_reader": "institutional investors"
+  },
+  "institution": {
+    "name": "State Street Global Advisors",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://www.ssga.com/us/en/institutional/insights/gmo-macroeconomic-outlook"
+  },
+  "report_title": "Macroeconomic Outlook 2026: Growth amid uncertainty",
+  "report_date": "2025-12-03",
+  "publication_period": "2026",
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\html\\013-state-street-global-advisors-state-street-investment-management-macroeconomic-outlook-2026-state-street-macroeconomic-outlook-2026-growth-amid-u.html",
+    "file_name": "013-state-street-global-advisors-state-street-investment-management-macroeconomic-outlook-2026-state-street-macroeconomic-outlook-2026-growth-amid-u.html",
+    "format": "html",
+    "sha256": "ae900172b481eefa7c46dbb98326342806464d879b36feff6ad1aea111f4c378",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Global economy poised for cautious growth in 2026, supported by policy stimulus and AI investment.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check introductory section near 'cautious growth'.",
+      "fact": "Global economy poised for cautious growth in 2026, supported by policy stimulus and AI investment."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Federal Reserve expected to cut rates up to three times in 2026, while ECB pauses and BoJ hikes cautiously.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Look for central bank rate expectations in the policy outlook section.",
+      "fact": "Federal Reserve expected to cut rates up to three times in 2026, while ECB pauses and BoJ hikes cautiously."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "US fiscal stimulus from OBBBA, tax refunds, and deregulation to boost growth; Germany's €500bn defense-infrastructure package to lift macro indicators.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Find 'Fiscal impulse to support growth' section.",
+      "fact": "US fiscal stimulus from OBBBA, tax refunds, and deregulation to boost growth; Germany's €500bn defense-infrastructure package to lift macro indicators."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Equities: constructive with slight US preference but valuations rich and concentration a concern; government bonds preferred over credit.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'More on global market outlook' section.",
+      "fact": "Equities: constructive with slight US preference but valuations rich and concentration a concern; government bonds preferred over credit."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "USD weakness risk for non-US investors warrants selective hedging.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Near discussion of currency translation risk.",
+      "fact": "USD weakness risk for non-US investors warrants selective hedging."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "Alternatives like gold, commodities, real assets, and private markets offer diversification and return sources.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Section on alternative investments.",
+      "fact": "Alternatives like gold, commodities, real assets, and private markets offer diversification and return sources."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive Summary or Opening Letter",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Global Macroeconomic Growth Forecasts",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Central Bank Monetary Policy Outlook (Fed, ECB, BoJ, BoE)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Fiscal Stimulus and Policy Analysis",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Geopolitical Risks and Trade Developments",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Asset Class Views (Equities, Fixed Income, Alternatives)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Currency and Hedging Considerations",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Omitting geopolitical risk analysis given current trade tensions.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to address valuation concerns in US equities.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring cross-asset implications of fiscal packages.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Not considering currency hedging for international investors.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Overlooking divergence between central bank policies.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Neglecting the role of AI in economic and market outlook.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {},
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.95,
+    "source_pack": 1.0,
+    "query": 0.9
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

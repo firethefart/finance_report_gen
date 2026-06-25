@@ -1,0 +1,39 @@
+{
+  "sample_id": "html_gsam_outlook_backdrop_2026",
+  "url": "https://am.gs.com/en-us/advisors/insights/article/investment-outlook/investment-backdrop-2026",
+  "institution": "Goldman Sachs Asset Management",
+  "language": "en",
+  "subtype": "annual_outlook",
+  "archetype": "standard_strategy",
+  "localized_path": "dataset_build\\v2_localized_html\\html_gsam_outlook_backdrop_2026\\index.html",
+  "localized_at": "2026-06-18T04:08:59Z",
+  "elapsed_seconds": 18.71,
+  "snapshot": {
+    "title": "Investment Backdrop Heading into 2026 - Goldman Sachs Asset Management",
+    "final_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_outlook_backdrop_2026/_hydrated_source.html",
+    "chosen_selector": "main",
+    "text_length": 50319,
+    "heading_count": 24,
+    "image_count": 12,
+    "svg_count": 0,
+    "canvas_count": 0,
+    "removed_visual_shell_count": 0
+  },
+  "archive_source_path": "dataset_build\\raw_html\\annual_or_periodic_outlook\\goldman-sachs-asset-management\\https-am-gs-com-en-us-advisors-insights-article-investment-outlook-investment-backdrop-2026.html",
+  "hydration_audit": {
+    "downloaded_asset_count": 63,
+    "failed_assets": []
+  },
+  "asset_audit": {
+    "downloaded_asset_count": 12,
+    "failed_assets": []
+  },
+  "resource_manifest_path": "dataset_build\\v2_localized_html\\html_gsam_outlook_backdrop_2026\\resource_manifest.json",
+  "resource_summary": {
+    "resource_count": 75,
+    "downloaded_count": 75,
+    "failed_count": 0,
+    "total_bytes": 13441185
+  },
+  "status": "localized"
+}

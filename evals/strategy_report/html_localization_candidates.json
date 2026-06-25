@@ -1,0 +1,225 @@
+{
+  "name": "v2_high_quality_html_localization_candidates",
+  "version": "2026-06-18",
+  "samples": [
+    {
+      "sample_id": "html_gsam_outlook_backdrop_2026",
+      "url": "https://am.gs.com/en-us/advisors/insights/article/investment-outlook/investment-backdrop-2026",
+      "institution": "Goldman Sachs Asset Management",
+      "language": "en",
+      "subtype": "annual_outlook",
+      "archetype": "standard_strategy"
+    },
+    {
+      "sample_id": "html_gsam_public_markets_2026",
+      "url": "https://am.gs.com/en-us/advisors/insights/article/investment-outlook/public-markets-2026",
+      "institution": "Goldman Sachs Asset Management",
+      "language": "en",
+      "subtype": "public_markets_outlook",
+      "archetype": "standard_strategy"
+    },
+    {
+      "sample_id": "html_gsam_private_markets_2026",
+      "url": "https://am.gs.com/en-us/advisors/insights/article/investment-outlook/private-markets-alternatives-2026",
+      "institution": "Goldman Sachs Asset Management",
+      "language": "en",
+      "subtype": "private_markets_outlook",
+      "archetype": "standard_strategy"
+    },
+    {
+      "sample_id": "html_gsam_portfolio_construction_2026",
+      "url": "https://am.gs.com/en-us/advisors/insights/article/investment-outlook/portfolio-construction-2026",
+      "institution": "Goldman Sachs Asset Management",
+      "language": "en",
+      "subtype": "portfolio_implementation",
+      "archetype": "implementation_guide"
+    },
+    {
+      "sample_id": "html_gsam_megatrends_2026",
+      "url": "https://am.gs.com/en-us/advisors/insights/article/investment-outlook/megatrends-thematic-investing-2026",
+      "institution": "Goldman Sachs Asset Management",
+      "language": "en",
+      "subtype": "thematic_strategy",
+      "archetype": "standard_strategy"
+    },
+    {
+      "sample_id": "html_gsam_fed_easing",
+      "url": "https://am.gs.com/en-us/institutions/insights/article/2025/market-brief-cutting-through-noise-navigating-fed-easing",
+      "institution": "Goldman Sachs Asset Management",
+      "language": "en",
+      "subtype": "macro_strategy",
+      "archetype": "brief_commentary"
+    },
+    {
+      "sample_id": "html_ssga_macro_outlook_2026",
+      "url": "https://www.ssga.com/insights/gmo-macroeconomic-outlook",
+      "institution": "State Street Global Advisors",
+      "language": "en",
+      "subtype": "macro_outlook",
+      "archetype": "standard_strategy",
+      "snapshot_options": {
+        "flow_layout": true,
+        "remove_text_prefixes": [
+          "More on global market outlook",
+          "More From Our Global Market Outlook"
+        ]
+      }
+    },
+    {
+      "sample_id": "html_ssga_equity_outlook_2026",
+      "url": "https://www.ssga.com/insights/gmo-equity-outlook",
+      "institution": "State Street Global Advisors",
+      "language": "en",
+      "subtype": "equity_strategy",
+      "archetype": "standard_strategy",
+      "snapshot_options": {
+        "flow_layout": true,
+        "remove_text_prefixes": ["More on global market outlook", "More From Our Global Market Outlook"]
+      }
+    },
+    {
+      "sample_id": "html_ssga_fixed_income_outlook_2026",
+      "url": "https://www.ssga.com/insights/gmo-fixed-income-outlook",
+      "institution": "State Street Global Advisors",
+      "language": "en",
+      "subtype": "fixed_income_strategy",
+      "archetype": "standard_strategy",
+      "snapshot_options": {
+        "flow_layout": true,
+        "remove_text_prefixes": ["More on global market outlook", "More From Our Global Market Outlook"]
+      }
+    },
+    {
+      "sample_id": "html_ssga_alternatives_outlook_2026",
+      "url": "https://www.ssga.com/insights/gmo-alternatives-outlook",
+      "institution": "State Street Global Advisors",
+      "language": "en",
+      "subtype": "alternative_investments",
+      "archetype": "standard_strategy",
+      "snapshot_options": {
+        "flow_layout": true,
+        "remove_text_prefixes": ["More on global market outlook", "More From Our Global Market Outlook"]
+      }
+    },
+    {
+      "sample_id": "html_ssga_implementation_guide_2026",
+      "url": "https://www.ssga.com/is/en_gb/institutional/insights/gmo-implementation-guide",
+      "institution": "State Street Global Advisors",
+      "language": "en",
+      "subtype": "portfolio_implementation",
+      "archetype": "implementation_guide",
+      "enabled": false,
+      "content_review_status": "rejected_marketing_download_shell",
+      "snapshot_options": {
+        "flow_layout": true,
+        "remove_text_prefixes": ["More on global market outlook", "More From Our Global Market Outlook"]
+      }
+    },
+    {
+      "sample_id": "html_blackrock_policy_pivot",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/investment-perspective",
+      "institution": "BlackRock Investment Institute",
+      "language": "en",
+      "subtype": "macro_strategy",
+      "archetype": "standard_strategy",
+      "capture_mode": "live",
+      "enabled": false,
+      "content_review_status": "rejected_pdf_download_shell"
+    },
+    {
+      "sample_id": "html_morgan_stanley_equity_rally_2026",
+      "url": "https://www.morganstanley.com/insights/articles/equity-rebound-2026-sp-500-highs-risks-drivers",
+      "institution": "Morgan Stanley",
+      "language": "en",
+      "subtype": "equity_strategy",
+      "archetype": "brief_commentary"
+    },
+    {
+      "sample_id": "html_morgan_stanley_midyear_macro_2026",
+      "url": "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market/mid-year-global-economic-outlook-seth-carpenter",
+      "institution": "Morgan Stanley",
+      "language": "en",
+      "subtype": "midyear_outlook",
+      "archetype": "brief_commentary"
+    },
+    {
+      "sample_id": "html_jpm_promise_pressure_outlook",
+      "url": "https://privatebank.jpmorgan.com/apac/en/insights/latest-and-featured/outlook",
+      "institution": "J.P. Morgan Private Bank",
+      "language": "en",
+      "subtype": "annual_outlook",
+      "archetype": "standard_strategy",
+      "snapshot_options": {
+        "root_selector": "main",
+        "flow_layout": true
+      }
+    },
+    {
+      "sample_id": "html_jpm_global_investment_strategy_view",
+      "url": "https://privatebank.jpmorgan.com/apac/en/insights/markets-and-investing/global-investment-strategy-view",
+      "institution": "J.P. Morgan Private Bank",
+      "language": "en",
+      "subtype": "cross_asset_strategy",
+      "archetype": "standard_strategy",
+      "enabled": false,
+      "content_review_status": "rejected_broken_dynamic_layout"
+    },
+    {
+      "sample_id": "html_jpm_asia_strategy_focus",
+      "url": "https://privatebank.jpmorgan.com/apac/en/insights/markets-and-investing/asf",
+      "institution": "J.P. Morgan Private Bank",
+      "language": "en",
+      "subtype": "regional_strategy",
+      "archetype": "brief_commentary"
+    },
+    {
+      "sample_id": "html_blackrock_europe_investment_renaissance",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/europe-investment-opportunity",
+      "institution": "BlackRock Investment Institute",
+      "language": "en",
+      "subtype": "regional_strategy",
+      "archetype": "standard_strategy",
+      "capture_mode": "live",
+      "enabled": false,
+      "content_review_status": "rejected_pdf_report_shell"
+    },
+    {
+      "sample_id": "html_blackrock_mega_forces",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/mega-forces",
+      "institution": "BlackRock Investment Institute",
+      "language": "en",
+      "subtype": "thematic_strategy",
+      "archetype": "standard_strategy"
+    },
+    {
+      "sample_id": "html_blackrock_total_portfolio_approach",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/our-take-on-total-portfolio-approach",
+      "institution": "BlackRock Investment Institute",
+      "language": "en",
+      "subtype": "portfolio_implementation",
+      "archetype": "implementation_guide"
+    },
+    {
+      "sample_id": "html_morgan_stanley_ipo_market_2026",
+      "url": "https://www.morganstanley.com/insights/articles/ipo-market-scale-breadth-2026",
+      "institution": "Morgan Stanley",
+      "language": "en",
+      "subtype": "capital_markets_strategy",
+      "archetype": "brief_commentary",
+      "enabled": false,
+      "content_review_status": "rejected_incomplete_visual_capture"
+    },
+    {
+      "sample_id": "html_morgan_stanley_digital_assets_banking",
+      "url": "https://www.morganstanley.com/insights/articles/digital-asset-investment-wholesale-banking-outlook",
+      "institution": "Morgan Stanley",
+      "language": "en",
+      "subtype": "industry_strategy",
+      "archetype": "brief_commentary",
+      "snapshot_options": {
+        "root_selector": "body",
+        "flow_layout": true
+      }
+    }
+  ]
+}

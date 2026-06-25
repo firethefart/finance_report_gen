@@ -1,0 +1,295 @@
+{
+  "case_id": "eastmoney_cn_strategy_006",
+  "query": "最近高油价对全球经济和大类资产有什么影响?科技和算力这块还能继续配置吗?",
+  "query_language": "zh",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "覆盖近期全球大类资产表现",
+    "分析高油价对通胀和货币政策的影响",
+    "给出A股及科技主线的配置建议",
+    "包含利率、汇率、商品关键指标"
+  ],
+  "expected_report_type": {
+    "type": "asset_allocation_strategy",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "一周至月度",
+    "target_reader": "策略研究员、基金经理、资产配置者"
+  },
+  "institution": {
+    "name": "东海证券股份有限公司",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": "HTTP://WWW.LONGONE.COM.CN"
+  },
+  "report_title": "高油价影响需求和通胀,仍围绕科技和算力主线——资产配置周报(2026/5/18-2026/5/22)",
+  "report_date": "2026-05-24",
+  "publication_period": "2026/5/18-2026/5/22",
+  "strategy_subtype": "asset_allocation_strategy",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260525-AP202605251822846492-7ca14cdf08.pdf",
+    "file_name": "20260525-AP202605251822846492-7ca14cdf08.pdf",
+    "format": "pdf",
+    "sha256": "4cd4059f86e7085dd23f9884198bf11ed8d610207dfd3003b2490a183bd0f586",
+    "page_count": 24,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "source_candidate",
+      "type": "research_report",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_name": "东海证券研究所",
+      "source_type": "research_report",
+      "source_notes": "原始PDF由东海证券研究所发布,经东方财富网分发"
+    },
+    {
+      "name": "source_candidate",
+      "type": "data_tool",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_name": "CME FedWatch",
+      "source_type": "data_tool",
+      "source_notes": "用于美联储政策利率概率预测"
+    },
+    {
+      "name": "source_candidate",
+      "type": "market_data",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_name": "Wind, Bloomberg, 南华期货等",
+      "source_type": "market_data",
+      "source_notes": "报告中提及的全球资产价格、利率、商品等数据终端"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "中东冲突进入第13周,油价高企,通胀压力持续存在,加大了年底前美国收紧货币政策的可能性。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "高油价通过成本传导推升通胀,可能迫使美联储加息或延迟降息,直接改变全球资产定价的核心利率假设。",
+      "verification_hint": "可查阅EIA原油库存报告和美国CPI分项中能源贡献,并与CME FedWatch加息概率对比验证。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "美国服务业已明显放缓,但制造业因库存原因5月盈利仍有改善,服务业放缓将影响消费需求。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "经济结构分化表明周期动能正在减弱,衰退预期升温将影响风险资产偏好和盈利预测。",
+      "verification_hint": "对比美国ISM制造业与服务业PMI读数,关注服务业就业和消费支出数据是否同步走弱。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "国内4月社零、工业增加值、固投增速均有放缓,但全社会用电量同比增6.0%超出预期,形成数据背离。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "用电量反弹或暗示能耗密集行业和高技术制造业保持韧性,可能缓解对中国经济失速的过度担忧,支持权益资产的结构性配置。",
+      "verification_hint": "查阅国家能源局及统计局公布的4月用电量分项数据,并与工业用电、第三产业用电及居民用电做交叉验证。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "10年期国债收益率重回1.75%附近,主要受到4月经济数据整体偏弱推动,债市偏强震荡延续。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "长端利率下移反映了对经济进一步走弱的定价,若后续基本面验证则可能打开新的利率下行交易窗口,影响债券久期配置。",
+      "verification_hint": "可跟踪中债10年期国债估值收益率与EPMI、信贷脉冲等领先指标是否同向变动。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "黄金长期上涨逻辑坚挺,但短期受美元指数和美债实际利率高位压制,金价承压。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "黄金作为美国实际利率的\"镜子\",在当前通胀和政策不确定性下存在多空分歧,其表现可作为对冲组合设计的信号。",
+      "verification_hint": "回溯美国10年期TIPS收益率与伦敦金现滚动相关性的变化,观察短期背离是否已在历史上预示拐点。"
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "报告明确风险提示:周度基金仓位为预估存在偏差,关税政策、特朗普政策均存在不确定性。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "主动揭示模型假设和外部政策黑箱风险,表明机构对自身预测局限有清晰认知,投资者可据此收紧安全边际。",
+      "verification_hint": "监测美国贸易代表办公室、白宫官网的政策声明,结合基金仓位预估误差历史概率分布进行评估。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "核心观点与主线判断",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "全球大类资产回顾(权益、债券、外汇、商品)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "国内权益市场及行业表现",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "利率与汇率跟踪(资金面、利率债、美债、汇率)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "重要商品跟踪(原油、黄金、铜)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "行业高频数据与估值水平",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "重要市场资讯与财经日历",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "风险提示",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "忽略尾部风险提示或未明确列出风险因素",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "仅基于价格趋势给出配置建议,缺乏宏观经济逻辑支撑",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "遗漏对美元和美债收益率曲线的联动分析",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "忽视国内经济数据结构分化(如用电量与工业增加值背离)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "未明确区分短期战术调仓与中长期战略配置的差异",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "全球主要大类资产周度表现",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "申万一级行业周度涨跌幅",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "原油价格与炼厂开工率",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "美元指数与伦敦金现走势",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "CME FedWatch降息概率",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "consistency_check": "国内经济判断需与工业用电量、PMI等数据交叉一致",
+    "data_freshness": "报告日期与数据截止日期间隔不应超过3天",
+    "risk_dimensions": "必须至少覆盖政策、地缘、增长、通胀四个风险维度"
+  },
+  "reference_notes": {
+    "disclaimer": "请务必仔细阅读正文后的所有说明和声明",
+    "frequency": "周度",
+    "sector_coverage": "申万一级行业全板块,重点电子、建材、机械设备、农林牧渔、石油石化"
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.92,
+    "source_pack": 0.9,
+    "query": 0.93
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="20px" viewBox="0 0 10 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>ms-icon-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-system_Icons" transform="translate(-1397.000000, -246.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M1403.24,266 L1399.5,266 L1399.5,256.84 L1397,256.84 L1397,253.5 L1399.5,253.5 L1399.5,250.58 C1399.5,249.28 1399.92,248.2 1400.76,247.32 C1401.6,246.44 1402.84,246 1404.5,246 C1405.32,246 1406.28,246.08 1406.68,246.14 L1407,246.18 L1406.86,249.34 L1404.7,249.34 C1403.52,249.34 1403.24,249.88 1403.24,251 L1403.24,253.5 L1407,253.5 L1406.74,256.84 L1403.24,256.84 L1403.24,266 Z" id="ms-icon-facebook"></path>
+        </g>
+    </g>
+</svg>

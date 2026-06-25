@@ -1,0 +1,248 @@
+{
+  "case_id": "strategy_sample_034",
+  "query": "What are the investment implications of a major macro policy pivot, including supply-driven transformations and global trade shake-ups?",
+  "query_language": "en",
+  "query_style": "portfolio_committee",
+  "scope_constraints": [
+    "thematic analysis preferred",
+    "forward-looking macro policy",
+    "supply-side and trade focus"
+  ],
+  "expected_report_type": {
+    "type": "thematic_strategy",
+    "depth": "standard_report",
+    "output_format": "webpage",
+    "expected_time_horizon": "6-12 months",
+    "target_reader": "institutional investors and portfolio managers"
+  },
+  "institution": {
+    "name": "BlackRock Investment Institute",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute"
+  },
+  "report_title": "Sizing up a major macro policy pivot",
+  "report_date": null,
+  "publication_period": null,
+  "strategy_subtype": "thematic_strategy",
+  "quality_tier": "B",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\thematic_strategy\\html\\034-blackrock-investment-institute-sizing-up-a-major-macro-policy-pivot-bii-sizing-up-a-major-macro-policy-pivot-a.html",
+    "file_name": "034-blackrock-investment-institute-sizing-up-a-major-macro-policy-pivot-bii-sizing-up-a-major-macro-policy-pivot-a.html",
+    "format": "html",
+    "sha256": "3cb47a26870875dbefee7779d890831725bbeb50d70b392c427afe157569281c",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "BII Macro Policy Pivot Series",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Recent BII publications on macro policy shifts"
+    },
+    {
+      "name": "Global Trade Policy Updates",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Data on trade tensions and tariff changes"
+    },
+    {
+      "name": "Supply-Chain Transformation Studies",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Research on reshoring and industrial policy"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "The report centers on sizing up a major macro policy pivot occurring globally.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Policy pivots can fundamentally alter asset allocation frameworks, requiring investors to reassess risk exposures.",
+      "verification_hint": "Check the report's introduction for explicit language on a 'major macro policy pivot' and its definition."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "A supply-driven transformation is reshaping economies, moving away from demand-side stimulus.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Supply-side policies impact productivity, inflation dynamics, and sectoral winners, shifting long-term investment themes.",
+      "verification_hint": "Look for sections detailing industrial policy, infrastructure spending, and labor market changes under 'A supply-driven transformation'."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "A global trade shake-up is underway, likely involving tariff adjustments and realignments.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Trade disruptions can affect corporate earnings, currency markets, and supply chains, necessitating hedging strategies.",
+      "verification_hint": "Review the 'A global trade shake-up' section for specific trade policy changes and affected regions."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "The report assesses the wider policy mix, including fiscal, monetary, and regulatory coordination.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Coordinated policy shifts influence interest rates, growth forecasts, and market volatility, driving asset class performance.",
+      "verification_hint": "Examine the 'Assessing the wider policy mix' section for commentary on central bank actions and fiscal expansion."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "BlackRock Investment Institute maintains a pro-risk stance amid these changes.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "A pro-risk recommendation signals overweight equities or credit, guiding tactical asset allocation decisions.",
+      "verification_hint": "Find the 'Staying pro-risk' section and identify the specific asset classes or regions favored."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "The report is authored by senior BII strategists Jean Boivin, Wei Li, and Nicholas Fawcett.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Senior authorship implies high-level institutional conviction and may influence market expectations.",
+      "verification_hint": "Confirm author names in the 'Authors' section of the report."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary on the macro policy pivot",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Analysis of supply-side transformation drivers",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Assessment of global trade policy changes",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Evaluation of fiscal and monetary policy mix",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Pro-risk investment implications and positioning",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Disclosures and forward-looking statement caveats",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Author credentials and institutional affiliation",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Omitting the pro-risk stance or misrepresenting it as cautious",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to mention supply-side transformation as a core theme",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the global trade shake-up and its investment impact",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Attributing the report to a different institution or authors",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Including specific price targets or tactical trades not in the report",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Mislabeling the report as a short-term tactical note instead of thematic",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {
+    "must_include_pro_risk": true,
+    "must_mention_supply_transformation": true,
+    "must_mention_trade_shake_up": true
+  },
+  "reference_notes": {
+    "format": "HTML webpage with disclaimer gate",
+    "audience": "Professional/institutional investors subject to jurisdiction-based restrictions",
+    "key_theme": "Macro policy pivot with structural shifts"
+  },
+  "extraction_confidence": {
+    "overall": 0.85,
+    "classification": 0.9,
+    "key_facts": 0.85,
+    "source_pack": 0.7,
+    "query": 0.9
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

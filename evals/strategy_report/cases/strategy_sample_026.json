@@ -1,0 +1,232 @@
+{
+  "case_id": "strategy_sample_026",
+  "query": "What are the key risks to the 2026 stock market rally according to Morgan Stanley?",
+  "query_language": "en",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "Morgan Stanley Wealth Management",
+    "2026 midyear outlook"
+  ],
+  "expected_report_type": {
+    "type": "strategy_briefing",
+    "depth": "quick_brief",
+    "output_format": "webpage",
+    "expected_time_horizon": "2026 H1 - H2",
+    "target_reader": "wealth management client"
+  },
+  "institution": {
+    "name": "Morgan Stanley",
+    "business_type": "investment_bank",
+    "country_or_region": "US",
+    "official_url": "https://www.morganstanley.com"
+  },
+  "report_title": "The Rally Is Back, But Risks Are Rising",
+  "report_date": "2026-05-XX",
+  "publication_period": "Midyear 2026",
+  "strategy_subtype": "equity_strategy",
+  "quality_tier": "B",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\equity_strategy\\html\\026-morgan-stanley-stock-market-rally-2026-risks-for-investors-morgan-stanley-the-rally-is-back-but.html",
+    "file_name": "026-morgan-stanley-stock-market-rally-2026-risks-for-investors-morgan-stanley-the-rally-is-back-but.html",
+    "format": "html",
+    "sha256": "9f54686f2ccd85586c70f84a1c3c26474baabc2f385dbf3d05108d5bb44ad67f",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "Morgan Stanley Wealth Management",
+      "type": "internal_division",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Authoring division providing insights to clients.",
+      "source_type": "internal_division",
+      "role": "author"
+    },
+    {
+      "name": "Morgan Stanley 2026 Midyear Outlooks",
+      "type": "report_series",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Broader publication series this briefing belongs to.",
+      "source_type": "report_series",
+      "role": "parent_publication"
+    },
+    {
+      "name": "Standard Wealth Management Disclosures",
+      "type": "compliance_text",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Boilerplate disclosures clarifying the material's purpose and limitations.",
+      "source_type": "compliance_text",
+      "role": "regulatory_notice"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Equity markets are experiencing a rally according to the report's headline.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Sets the near-term optimistic tone for investors, anchoring the market view.",
+      "verification_hint": "Check 'The Rally Is Back, But Risks Are Rising' heading."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Risks are rising alongside the rally, suggesting a more cautious forward view.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Indicates that the positive momentum may be fragile and subject to reversal.",
+      "verification_hint": "Check 'The Rally Is Back, But Risks Are Rising' heading."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "The material is published by Morgan Stanley Wealth Management for informational purposes, not as a solicitation.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Clarifies the document's status as educational guidance rather than actionable investment advice.",
+      "verification_hint": "Review the standard disclosures section."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "The report is part of the 2026 Midyear Outlooks series.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Provides temporal context and links this commentary to a scheduled institutional publication cycle.",
+      "verification_hint": "Look for '2026 Midyear Outlooks' in the contextual links."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Past performance is explicitly stated as not a guarantee of future results.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Reinforces the standard risk warning, tempering any extrapolation of the current rally.",
+      "verification_hint": "Find 'Past performance is not necessarily a guide to future performance' in disclosures."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Report Title and Subheading",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Key Takeaways Summary",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Current Market Sentiment Narrative",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Identification of Primary Risks",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Time Horizon Context (Midyear 2026)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Standard Legal Disclaimers and Risk Warnings",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Institutional Authorship and Contact Context",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Presenting the material as a personalized investment recommendation or solicitation.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Claiming a specific S&P 500 target price or valuation metric that is not stated in the original document.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the standard 'past performance is not indicative' disclaimer.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Assigning a single author when the content is attributed to a team or division.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Fabricating specific asset allocation percentages or sector weightings.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {
+    "disclaimer_completeness": "Check if the generated report includes a past-performance and informational-only disclaimer.",
+    "risk_rising_claim": "Verify that the output echoes the title's dual message of a rally and rising risks without overstating certainty."
+  },
+  "reference_notes": {
+    "crc_code": "5521142 (05/2026)"
+  },
+  "extraction_confidence": {
+    "overall": 0.85,
+    "classification": 0.95,
+    "key_facts": 0.9,
+    "source_pack": 0.95,
+    "query": 0.9
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

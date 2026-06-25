@@ -1,0 +1,373 @@
+{
+  "case_id": "strategy_sample_003",
+  "query": "What is the J.P. Morgan view on the speed of the energy transition, and what are the key findings from their 2025 annual energy paper?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "J.P. Morgan 2025 energy paper only",
+    "Focus on transition speed, costs, policy, and technology outlook"
+  ],
+  "expected_report_type": {
+    "type": "thematic_research_energy_transition",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "Decades (energy transition) with near-term focus on 2025 policies and deployments",
+    "target_reader": "High-net-worth private bank clients, institutional investors, portfolio managers"
+  },
+  "institution": {
+    "name": "J.P. Morgan Private Bank / Wealth Management",
+    "business_type": "private_bank",
+    "country_or_region": "US",
+    "official_url": "https://privatebank.jpmorgan.com"
+  },
+  "report_title": "Eye on the Market: Heliocentrism — 15th Annual Energy Paper",
+  "report_date": "2025-03-04",
+  "publication_period": "March 2025",
+  "strategy_subtype": "thematic_research_energy_transition",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\003-j-p-morgan-private-bank-wealth-management-eye-on-the-market.pdf",
+    "file_name": "003-j-p-morgan-private-bank-wealth-management-eye-on-the-market.pdf",
+    "format": "pdf",
+    "sha256": "abf8676706d50c7fff9e5a08fab9028c7d000894537ccfcad07cccc4afaed8dd",
+    "page_count": 55,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "EI Statistical Review of World Energy, JPMAM 2024",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Goldman Sachs Carbonomics, October 2024",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Lauri Holappa, Aalto University, March 2019; Boston Metal, May 2022",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "NASA, NOAA, EPA, University of Hawaii SOEST data on climate metrics",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "WWF/Zoological Society of London Vertebrate Biodiversity Index",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "J.P. Morgan Asset & Wealth Management grid optimization model",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "The renewable share of final energy consumption is advancing at a linear pace of 0.3%–0.6% per year globally, and 0.6% per year even in Europe, the world's transition leader.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.98,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Refer to the chart titled 'Decarbonization is a linear industrial transition' in the executive summary (page 1).",
+      "fact": "The renewable share of final energy consumption is advancing at a linear pace of 0.3%–0.6% per year globally, and 0.6% per year even in Europe, the world's transition leader."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Global spending of US$9 trillion since 2010 on wind, solar, EVs, storage, electrified heat, and power grids has only achieved this linear pace.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.98,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Stated in the first paragraph of the Executive Summary.",
+      "fact": "Global spending of US$9 trillion since 2010 on wind, solar, EVs, storage, electrified heat, and power grids has only achieved this linear pace."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Goldman Sachs, previously aggressive in renewable transition forecasts, struck a more cautious tone in October 2024, now assuming a longer life for hydrocarbon assets and growing natural gas demand until 2050.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.97,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check footnote 1 on page 1 of the report, titled 'Reality Bites'.",
+      "fact": "Goldman Sachs, previously aggressive in renewable transition forecasts, struck a more cautious tone in October 2024, now assuming a longer life for hydrocarbon assets and growing natural gas demand until 2050."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "The report describes the 'wilting prospects for the hydrogen economy' and multiple green hydrogen project cancellations.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.97,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See section titled 'Frydrogen' in the Table of Contents and page 43.",
+      "fact": "The report describes the 'wilting prospects for the hydrogen economy' and multiple green hydrogen project cancellations."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Michael Cembalest is the Chairman of Market and Investment Strategy for J.P. Morgan Asset & Wealth Management and sole author of this 15th annual energy paper.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Author credit on title page and header of each page.",
+      "fact": "Michael Cembalest is the Chairman of Market and Investment Strategy for J.P. Morgan Asset & Wealth Management and sole author of this 15th annual energy paper."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "The report includes a proprietary grid optimization model analyzing the cost and configuration of deeply decarbonized US grids.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.96,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Section listed in Table of Contents: 'Our grid optimization model' (page 36).",
+      "fact": "The report includes a proprietary grid optimization model analyzing the cost and configuration of deeply decarbonized US grids."
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "The paper covers satellite-based methane tracking from US gas basins, questioning the accuracy of bottom-up inventories.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.96,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Section 'Space Mountain' in Table of Contents and page 43.",
+      "fact": "The paper covers satellite-based methane tracking from US gas basins, questioning the accuracy of bottom-up inventories."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive Summary on linear transition pace and 2025 key messages",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Data-driven chart set on changing planet and energy transition metrics",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Discussion of Trump 2.0 energy policy impacts",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Analysis of high costs and tradeoffs in European decarbonization",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Assessment of nuclear renaissance prospects in OECD",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Modeling results for deeply decarbonized US grids (cost, configuration)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Evaluation of renewable aviation fuel costs and thermodynamic constraints",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Satellite methane tracking findings and comparison with inventory methods",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Stating that the energy transition is accelerating without noting the linear trend argued by the report",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Referring to Goldman Sachs' October 2024 view as unchanged from earlier aggressive transition forecasts",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Claiming that hydrogen economy prospects are robust without mentioning the documented project cancellations",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Attributing the Los Angeles fires solely to climate change without noting the report's multi-factor analysis",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the $9 trillion cumulative spending figure when discussing the transition's speed",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Describing the European decarbonization experience as low-cost or without tradeoffs",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the author's skeptical stance on a near-term OECD nuclear renaissance",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "chart_name": "Renewable share of final energy consumption over time for EU, China, US, Asia ex-Japan/China",
+      "title_or_description": "Renewable share of final energy consumption over time for EU, China, US, Asia ex-Japan/China",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "chart_name": "Global steel production shift from open hearth to basic oxygen and electric arc furnaces",
+      "title_or_description": "Global steel production shift from open hearth to basic oxygen and electric arc furnaces",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "chart_name": "Global energy spending breakdown since 2010",
+      "title_or_description": "Global energy spending breakdown since 2010",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "chart_name": "Electrification rates and grid demand projections",
+      "title_or_description": "Electrification rates and grid demand projections",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "chart_name": "European industrial electricity prices vs. other regions",
+      "title_or_description": "European industrial electricity prices vs. other regions",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "chart_name": "Nuclear power plant construction timelines and cancellations",
+      "title_or_description": "Nuclear power plant construction timelines and cancellations",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "chart_name": "Grid optimization model outputs for varying decarbonization scenarios",
+      "title_or_description": "Grid optimization model outputs for varying decarbonization scenarios",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "chart_name": "Satellite-derived methane concentration maps for US basins",
+      "title_or_description": "Satellite-derived methane concentration maps for US basins",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "factual_accuracy": "Verify key data claims from original sources (EI Statistical Review, Goldman Sachs). Check that the linear transition argument is not misrepresented as an acceleration.",
+    "source_fidelity": "Ensure the report's skeptical tone and nuanced findings (e.g., LA fires multifaceted, nuclear renaissance yet to materialize) are preserved.",
+    "completeness": "Confirm that all major sections from the table of contents are covered, especially executive summary, grid model, hydrogen, methane, and aviation fuels."
+  },
+  "reference_notes": {
+    "report_series": "Eye on the Market",
+    "recurring_paper": "15th annual energy paper",
+    "author_role": "Chairman of Market and Investment Strategy for J.P. Morgan Asset & Wealth Management",
+    "unique_disclaimer": "Objects may be further away than they appear",
+    "tone_summary": "Authoritative, data-heavy, skeptical of hype, acknowledging complexity and non-linear risks"
+  },
+  "extraction_confidence": {
+    "overall": 0.98,
+    "classification": 0.97,
+    "key_facts": 0.97,
+    "source_pack": 0.95,
+    "query": 0.96
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

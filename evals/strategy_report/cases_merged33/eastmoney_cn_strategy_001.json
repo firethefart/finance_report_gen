@@ -1,0 +1,274 @@
+{
+  "case_id": "eastmoney_cn_strategy_001",
+  "query": "2026年北交所打新的收益怎么样,中签率和资金门槛最近有什么变化,后面有哪些板块和标的值得关注",
+  "query_language": "zh",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "2026年数据",
+    "北交所打新策略",
+    "首日涨幅与中签率",
+    "后市配置方向"
+  ],
+  "expected_report_type": {
+    "type": "策略专题报告",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026年Q2及全年展望",
+    "target_reader": "关注北交所打新和二级市场的散户与私募机构"
+  },
+  "institution": {
+    "name": "开源证券股份有限公司",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": null
+  },
+  "report_title": "北交所打新黄金配置期持续,2026年前五月首日涨幅均值201%+中签率企稳",
+  "report_date": "2026-05-24",
+  "publication_period": null,
+  "strategy_subtype": "bse_strategy_thematic",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260524-AP202605241822840443-b50b86e2db.pdf",
+    "file_name": "20260524-AP202605241822840443-b50b86e2db.pdf",
+    "format": "pdf",
+    "sha256": "4c2b0e5d35c9c8d454bbe95020eb480e4c72091fd8c1d112c992631c1b593778",
+    "page_count": 33,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "开源证券-北交所打新黄金配置期持续-20260524.pdf",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "开源北交所新股申购报告模板",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "北交所官方发行与审核数据",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Wind金融终端北交所板块估值与行情数据",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "截至2026年5月22日,2026年北交所新股首日涨幅均值达到201.53%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "首日涨幅均值是衡量打新赚钱效应的核心指标,直接影响投资者参与意愿和策略制定。",
+      "verification_hint": "核对报告第1页或图19/20附近关于首日涨跌幅均值的表述。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "2026年预计1500万现金(单只申购上限为5%)新股申购收益率或位于3.30%-4.13%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "给出大资金打新的年化收益率预测区间,供机构和个人投资者进行资本配置决策。",
+      "verification_hint": "报告第1页核心摘要中有该收益率的直接预测。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "2026年至今100股资金申购门槛均值为563.45万元。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "申购门槛体现了中签所需最低资金量,是中小投资者评估参与可行性的关键参数。",
+      "verification_hint": "查阅图6附近关于100股资金申购门槛的统计描述。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "2026年北交所上市企业中签率整体处于0.03%左右,2025年三季度后中签率未进一步下滑。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "中签率企稳表明市场供需趋于平衡,对于测算预期收益和调整申购策略有直接帮助。",
+      "verification_hint": "第5页附近及图5标题有明确的中签率数据。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "报告建议关注三大方向:6月指数成分调入公司、高景气硬科技赛道细分龙头、估值合理的未涨次新股。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "提供了具体的二级市场配置思路和选股逻辑,是报告的核心策略价值所在。",
+      "verification_hint": "核心摘要观点部分列出了三大方向和具体股票池。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "北交所打新累计收益率测算与全年展望",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "申购冻结资金与有效申购户数趋势分析",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "中签率与100股申购资金门槛变化",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "新股首日涨幅回顾与分季度比较",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "北交所二级市场PE估值及分行业估值对比",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "后市配置策略与重点推荐股票池",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "北交所IPO审核进度与新股日历",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "将北交所打新规则直接等同于沪深市场规则",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "忽略基金或机构配售比率而仅计算网上打新收益率",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "使用未剔除负值或异常值处理不当的历史估值数据",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "将冻结资金总额误用作实际申购资金上限进行收益测算",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "推荐股票池未区分打新标的与二级市场持续购入标的",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "申购户数与冻结资金趋势图 (图3, 图4)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "中签率及100股申购门槛变化图 (图5, 图6)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "北证50与专精特新指数估值走势图 (图14, 图15)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "分行业PE-TTM估值对比图 (图16)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "fact_check_claims": [
+      "首日涨幅均值201%是否与图表数据一致",
+      "全年打新收益率区间3.30%-4.13%的计算假设是否披露"
+    ],
+    "style_check_requirements": [
+      "是否包含法律声明与分析师资质",
+      "图表编号是否与正文对应"
+    ]
+  },
+  "reference_notes": {
+    "disclaimer": "请务必参阅正文后面的信息披露和法律声明",
+    "analyst_cert": "S0790522080007",
+    "data_vendor": "Wind、开源证券研究所"
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.95,
+    "source_pack": 0.9,
+    "query": 0.92
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

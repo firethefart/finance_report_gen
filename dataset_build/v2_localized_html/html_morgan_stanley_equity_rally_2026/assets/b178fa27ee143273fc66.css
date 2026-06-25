@@ -1,0 +1,29 @@
+.takeaway{max-width:1280px;margin:0 auto;float:none !important;display:grid;padding:0}
+.takeaway.take-away-alignment{margin-top:86px !important}
+.takeaway.take-away-alignment .cmp-text{margin:0 !important}
+.takeaway .cmp-taeaway_grid{display:grid;grid-template-columns:40px repeat(11,1fr 40px) 1fr 40px;grid-template-rows:85px 40px 55px auto auto}
+.takeaway .cmp-takeaway_title{grid-column:8 / span 11;grid-row:1 / span 4}
+.takeaway .cmp-takeaway_title h2{font-family:"ms_gloriola_ii_std_semibold",sans-serif;letter-spacing:-1.0875px;line-height:33px;font-size:30px;color:#fff;display:block;padding-left:20px;font-weight:700}
+.takeaway.colorBar_msBlue .cmp-takeaway_title{background-color:#187aba}
+.takeaway.colorBar_forest .cmp-takeaway_title{background-color:#2d8650}
+.takeaway.colorBar_lilac .cmp-takeaway_title{background-color:#675882}
+.takeaway.colorBar_ocean .cmp-takeaway_title{background-color:#0a6f7a}
+.takeaway.colorBar_darkGray .cmp-takeaway_title{background-color:#333}
+.takeaway.colorBar_msMediumBlue .cmp-takeaway_title{background-color:#005aa4}
+.takeaway.colorBar_msDarkBlue .cmp-takeaway_title{background-color:#002b51}
+.takeaway .cmp-takeaway_description{grid-column:9 / span 11;grid-row:2 / span 5;background-color:#FFF;padding-right:10px}
+.takeaway .cmp-takeaway_description ul li{font-family:"karlaregular",sans-serif;font-weight:400;font-size:16px;line-height:24px;letter-spacing:-0.666667px;color:#4c4c4c;list-style:disc;margin:20px;margin-left:40px}
+.takeaway .cmp-takeaway_description p{font-family:"karlaregular",sans-serif}
+.takeaway .cmp-takeaway_description a{font-family:"karlaregular",sans-serif;font-size:16px;color:#187aba;letter-spacing:-1.09px;line-height:28px;word-break:break-word}
+.takeaway .cmp-takeaway_description a:hover{text-decoration:underline}
+@media all and (max-width:1024px){.takeaway .cmp-taeaway_grid{display:grid;grid-template-columns:20px repeat(11,1fr 20px) 1fr 20px;grid-template-rows:75px 60px 65px auto auto}
+.takeaway .cmp-takeaway_title{grid-column:4 / span 15;grid-row:1 / span 4}
+.takeaway .cmp-takeaway_title h2{font-size:24px;line-height:26px;letter-spacing:-0.87px}
+.takeaway .cmp-takeaway_description{grid-column:6 / span 18;grid-row:2 / span 5;background-color:#FFF;padding-right:10px}
+}
+@media all and (max-width:767px){.takeaway .cmp-taeaway_grid{display:grid;grid-template-columns:20px repeat(11,1fr 10px) 1fr 10px;grid-template-rows:70px 70px 70px auto auto}
+.takeaway .cmp-takeaway_title{grid-column:1 / span 22;grid-row:1 / span 4}
+.takeaway h2{letter-spacing:-0.45px;line-height:22px;font-size:20px}
+.takeaway .cmp-takeaway_description{grid-column:4 / span 22;grid-row:2 / span 5;background-color:#FFF;padding-right:0}
+.takeaway .cmp-takeaway_description ul li{margin-left:30px;margin-right:10px}
+}

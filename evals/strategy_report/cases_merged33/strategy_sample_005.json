@@ -1,0 +1,118 @@
+{
+  "case_id": "strategy_sample_005",
+  "query": "I'm looking for J.P. Morgan's latest biennial review of alternative investments, covering private equity, venture capital, hedge funds, private credit, and real estate, with performance data and risk analysis.",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "alternative investments",
+    "2025",
+    "J.P. Morgan",
+    "performance",
+    "risk"
+  ],
+  "expected_report_type": {
+    "type": "alternative_investments_review",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "2025",
+    "target_reader": "institutional investors and high-net-worth individuals"
+  },
+  "institution": {
+    "name": "J.P. Morgan Private Bank / Wealth Management",
+    "business_type": "private_bank",
+    "country_or_region": "US",
+    "official_url": "https://privatebank.jpmorgan.com"
+  },
+  "report_title": "Eye on the Market: The Deep End: 2025 Alternative Investments Review",
+  "report_date": "2025-12-02",
+  "publication_period": "Biennial",
+  "strategy_subtype": "alternative_investments",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\005-j-p-morgan-private-bank-wealth-management-eye-on-the-market.pdf",
+    "file_name": "005-j-p-morgan-private-bank-wealth-management-eye-on-the-market.pdf",
+    "format": "pdf",
+    "sha256": "a3ebf08c5febe3e7751051c3d1a40051d624bf1032f1b256284a15eea78447e3",
+    "page_count": 56,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "buyout_performance_data",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "venture_capital_returns",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "hedge_fund_risk_metrics",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "private_credit_underwriting_standards",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Top quartile buyout and venture funds continue to outperform public markets while median funds tread water.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check performance charts in the private equity and venture capital sections.",
+      "fact": "Top quartile buyout and venture funds continue to outperform public markets while median funds tread water."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Diversified hedge fund portfolios still outperform risk-adjusted benchmarks.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Refer to the hedge fund risk and return analysis exhibits.",
+      "fact": "Diversified hedge fund portfolios still outperform risk-adjusted benchmarks."
+    }
+  ],
+  "must_have_sections": [],
+  "prohibited_mistakes": [],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {},
+  "extraction_confidence": {
+    "overall": 0.5,
+    "classification": 0.5,
+    "key_facts": 0.5,
+    "source_pack": 0.5,
+    "query": 0.5
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

@@ -1,0 +1,254 @@
+{
+  "case_id": "strategy_sample_022",
+  "query": "What are the benefits and recent growth trends of active ETFs for portfolio construction?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "active ETFs",
+    "portfolio construction",
+    "derivative-income and buffer ETFs",
+    "2024 market data",
+    "regulatory catalyst"
+  ],
+  "expected_report_type": {
+    "type": "strategy_research",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "medium-term",
+    "target_reader": "institutional investor"
+  },
+  "institution": {
+    "name": "Goldman Sachs Asset Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://am.gs.com"
+  },
+  "report_title": "How Active ETFs Can Help Investors Fine-Tune Portfolio Construction",
+  "report_date": "2025-03-06",
+  "publication_period": "1Q 2025",
+  "strategy_subtype": "asset_allocation",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\022-goldman-sachs-asset-management-how-active-etfs-can-help-investors-fine-tune-portfolio-construction.pdf",
+    "file_name": "022-goldman-sachs-asset-management-how-active-etfs-can-help-investors-fine-tune-portfolio-construction.pdf",
+    "format": "pdf",
+    "sha256": "5025d1ef1a95360894ad7b745451236cbff05f526f8c4d54a5b05987600821c3",
+    "page_count": 12,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "source_candidate",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Used for active ETF growth figures, inflows, and organic growth rates through end-2024.",
+      "source_name": "Morningstar ETF Flows and AUM Data"
+    },
+    {
+      "name": "source_candidate",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Regulatory catalyst that streamlined ETF launches and allowed custom baskets, facilitating active ETF development.",
+      "source_name": "SEC ETF Rule (2019)"
+    },
+    {
+      "name": "source_candidate",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Proprietary insights on market outlook and product development trends.",
+      "source_name": "Goldman Sachs Asset Management Internal Data"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Active ETFs combine active management's goal of outperformance with ETF benefits like intraday trading and potential lower costs.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "This fusion makes active ETFs a versatile tool for both return-seeking and cost-conscious portfolio construction.",
+      "verification_hint": "Check the 'Key Takeaways' section of the report for the explicit listing of these combined benefits."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Global active ETF net inflows surged to $339 billion in 2024, with the market surpassing $1 trillion in AUM.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Demonstrates rapid investor adoption and a shift from passive to active structures within the ETF wrapper.",
+      "verification_hint": "Refer to the chart titled 'Actively Managed ETFs Are on the Rise' and footnote 3 for the cited inflow and AUM data."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Active ETFs grew nearly five times faster than passive ETFs in 2024, despite representing only 7.8% of total ETF assets.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Highlights the disproportionate growth momentum of active ETFs and signals a structural trend change.",
+      "verification_hint": "Locate the statement in the 'Rise of Active ETFs' section that cites the 5x growth and 7.8% asset share from Morningstar data."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "The 2019 SEC 'ETF Rule' streamlined launches and permitted custom baskets, which was crucial for active ETF development.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Shows how regulatory change directly enabled the wave of new active ETF products and portfolio flexibility.",
+      "verification_hint": "See the second paragraph of 'The Rise of Active ETFs' section, which references the SEC Rule and its impact."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Options-based active ETFs, including derivative-income and buffer funds, attracted over $39 billion combined net inflows in the US in 2024.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Indicates investor demand for income generation and downside protection tools within the active ETF structure.",
+      "verification_hint": "Check the final paragraph of the 'Rise of Active ETFs' section for the breakdown of $28 billion into derivative-income and $11 billion into buffer ETFs."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary or key takeaways (at least 3 points)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Market evolution and growth statistics of active ETFs (AUM, inflows, organic growth rate)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Comparison of active vs. passive ETF growth",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Explanation of the 2019 SEC ETF Rule and its impact",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Overview of options-based active ETFs (derivative-income, buffer funds)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Portfolio construction benefits and use cases",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Future outlook on active ETF market expansion",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Claiming that active ETFs have already overtaken passive ETFs in overall assets.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the role of the SEC ETF Rule as a catalyst for growth.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Stating derivative-income and buffer ETF inflows without differentiation or citation.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Presenting active ETFs as a single homogeneous category without distinguishing investment goals.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to mention that the active ETF market is primarily concentrated in the US.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Overstating the guaranteed return or protection features of options-based ETFs.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "Estimated Net Flow and Organic Growth Rate chart (passive vs active ETFs 2015-2024)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "Number of ETF Launches chart (active vs passive over time)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "data_sourcing": "Verify that growth figures exactly match Morningstar-sourced data (e.g., $339bn inflows, 7.8% share, 5x growth).",
+    "completeness": "Ensure both derivative-income and buffer ETFs are covered with separate inflow figures when discussing options-based products."
+  },
+  "reference_notes": {
+    "regulatory_framework": "SEC ETF Rule (2019) is the pivotal regulatory change enabling custom baskets and faster launches.",
+    "data_cutoff": "All data as of December 31, 2024."
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.95,
+    "key_facts": 0.95,
+    "source_pack": 0.95,
+    "query": 0.95
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

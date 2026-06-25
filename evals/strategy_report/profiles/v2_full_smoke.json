@@ -1,0 +1,95 @@
+{
+  "profile_name": "v2_full_smoke",
+  "verifier_version": "v2_candidate_only",
+  "execution": {
+    "cache": true,
+    "input_adapter": "html_runtime_adapter_v2",
+    "render_pages": 3,
+    "extract_charts": true
+  },
+  "models": {
+    "chart_vl": "qwen/qwen3-vl-235b-a22b-instruct",
+    "claim_extract": "deepseek/deepseek-v4-flash",
+    "claim_judge": "deepseek/deepseek-v4-pro",
+    "compliance_judge": "deepseek/deepseek-v4-pro",
+    "strategy_extract": "deepseek/deepseek-v4-flash",
+    "strategy_judge": "deepseek/deepseek-v4-pro"
+  },
+  "modules": {
+    "enable_chart_vl_judge": true,
+    "enable_claim_numeric_llm": true,
+    "enable_strategy_reasoning_llm": true,
+    "enable_compliance_llm": true
+  },
+  "html_adapter": {
+    "max_visuals": 80,
+    "viewport_width": 1440,
+    "viewport_height": 1100,
+    "context_height": 1200
+  },
+  "chart": {
+    "max_pages": 12,
+    "max_charts": 8,
+    "vl_max_charts": 2,
+    "vl_selection_strategy": "risk_diverse",
+    "vl_gate_all": true,
+    "vl_gate_max_charts": 8,
+    "vl_gate_max_tokens": 900,
+    "vl_max_tokens": 4200,
+    "vl_repair_max_tokens": 2600,
+    "aggregation_dimension_weight": 0.65,
+    "aggregation_mean_weight": 0.7,
+    "aggregation_worst_k": 2,
+    "max_uncertainty_penalty": 0.08,
+    "full_coverage_warning_threshold": 0.25,
+    "blocker_score_cap": 0.55
+  },
+  "claim_numeric": {
+    "max_claims": 8,
+    "max_claims_for_judge": 8,
+    "candidate_text_chars": 9000,
+    "judge_max_tokens": 8500
+  },
+  "strategy_reasoning": {
+    "max_chains": 6,
+    "candidate_text_chars": 10000,
+    "judge_max_tokens": 9000,
+    "universal_rubric": [
+      "The report should state a clear strategy thesis rather than only listing facts.",
+      "Reasoning should connect facts or events to mechanisms, industry/market impact, and investment implication.",
+      "Important conclusions should acknowledge risk boundaries, uncertainty, scenarios, or counterarguments.",
+      "For Chinese strategy research, native expressions such as 核心观点, 传导机制, 投资建议, 风险提示, 情景推演 are acceptable."
+    ],
+    "zh_rubric": [
+      "中文策略报告可以使用政策逻辑、产业链传导、资金行为、估值重塑、风险偏好等本土表达。",
+      "不要因为缺少英文 section label 而扣分，但要检查观点、证据、机制、结论是否连贯。"
+    ]
+  },
+  "compliance": {
+    "max_candidates": 8,
+    "judge_max_tokens": 3600
+  },
+  "v2_scoring": {
+    "fusion_weights": {
+      "claim_numeric_rule": 0.35,
+      "strategy_reasoning_rule": 0.25
+    },
+    "dimension_weights": {
+      "delivery": 10,
+      "structure": 14,
+      "source_traceability": 14,
+      "claim_numeric_discipline": 16,
+      "strategy_reasoning": 18,
+      "scenario_risk": 10,
+      "visual_qa": 13,
+      "compliance": 5
+    },
+    "gate_thresholds": {
+      "overall_min": 75,
+      "text_length_min": 2500,
+      "compliance_min": 0.9,
+      "visual_min": 0.45,
+      "strategy_reasoning_min": 0.45
+    }
+  }
+}

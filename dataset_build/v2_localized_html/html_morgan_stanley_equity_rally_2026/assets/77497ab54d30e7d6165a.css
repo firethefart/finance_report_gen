@@ -1,0 +1,100 @@
+.listicle.colorBar_msBlue .cmp-listicle__card_itemNumber,.listicle.colorBar_msBlue .cmp-listicle__card_itemLetter,.listicle.colorBar_msBlue .cmp-listicle__card_itemDate{color:#187aba}
+.listicle.colorBar_forest .cmp-listicle__card_itemNumber,.listicle.colorBar_forest .cmp-listicle__card_itemLetter,.listicle.colorBar_forest .cmp-listicle__card_itemDate{color:#2d8650}
+.listicle.colorBar_lilac .cmp-listicle__card_itemNumber,.listicle.colorBar_lilac .cmp-listicle__card_itemLetter,.listicle.colorBar_lilac .cmp-listicle__card_itemDate{color:#675882}
+.listicle.colorBar_ocean .cmp-listicle__card_itemNumber,.listicle.colorBar_ocean .cmp-listicle__card_itemLetter,.listicle.colorBar_ocean .cmp-listicle__card_itemDate{color:#0a6f7a}
+.listicle.colorBar_darkGray .cmp-listicle__card_itemNumber{color:#333}
+.listicle.colorBar_msMediumBlue .cmp-listicle__card_itemNumber,.listicle.colorBar_msMediumBlue .cmp-listicle__card_itemLetter,.listicle.colorBar_msMediumBlue .cmp-listicle__card_itemDate{color:#005aa4}
+.listicle.colorBar_msDarkBlue .cmp-listicle__card_itemNumber,.listicle.colorBar_msDarkBlue .cmp-listicle__card_itemLetter,.listicle.colorBar_msDarkBlue .cmp-listicle__card_itemDate{color:#002b51}
+[lang="zh-Hant"] .cmp-listicle__card_itemText_partialWidth p,[lang="zh-Hans"] .cmp-listicle__card_itemText_partialWidth p,[lang="zh-Hant"] .cmp-listicle__card_itemText_fullWidth p,[lang="zh-Hans"] .cmp-listicle__card_itemText_fullWidth p{line-height:1.85}
+[lang="zh-Hant"] .cmp-listicle__landingDescription,[lang="zh-Hans"] .cmp-listicle__landingDescription{letter-spacing:0}
+.listicle.aem-GridColumn{padding:0}
+.cmp-listicle{margin-bottom:80px}
+.cmp-listicle__container{max-width:1280px;margin:0 auto}
+.cmp-listicle__grid{display:grid;grid-template-columns:40px repeat(11,1fr 40px) 1fr 40px;grid-template-rows:auto}
+.cmp-listicle__header{grid-column:2 / span 18;padding-bottom:40px}
+.cmp-listicle__inlineTitle,.cmp-listicle__grid ol{grid-column:6 / span 17}
+.cmp-listicle__grid ol{margin:0;padding:0}
+.cmp-listicle__grid ol li:last-child .cmp-listicle__card{padding-bottom:0}
+.cmp-listicle__landingTitle h2{margin:0;padding:0;display:block;color:#333330;letter-spacing:-1.33px}
+.cmp-listicle__inlineTitle h2{padding:0;margin:0 0 20px;display:block;color:#333330;letter-spacing:-1.09px}
+.cmp-listicle__landingDescription{color:#4c4c4c;letter-spacing:-0.67px}
+.cmp-listicle__landingDescription p{margin:10px 0 0}
+.cmp-listicle__landingDescription a{text-decoration:none}
+.cmp-listicle__landingDescription a:hover{text-decoration:underline}
+.cmp-listicle__card_itemText_partialWidth a,.cmp-listicle__card_itemText_fullWidth a,.cmp-listicle__landingDescription a{color:#187aba}
+.cmp-listicle__card_itemNumber,.cmp-listicle__card_itemDate,.cmp-listicle__card_itemLetter,.cmp-listicle__card_itemIcon{color:#6769b5;letter-spacing:-1px}
+.item-style-text{font-size:64px;line-height:1.1}
+.cmp-listicle__card{display:grid;grid-template-columns:0 repeat(9,1fr 40px) 1fr 0;border-top:1px solid #3333304d;padding-top:40px;padding-bottom:40px}
+.cmp-listicle__card_itemNumber,.cmp-listicle__card_itemDate,.cmp-listicle__card_itemLetter,.cmp-listicle__card_itemIcon{grid-column:1 / span 3;grid-row:1 / span 3}
+.cmp-listicle__card_itemLetter{color:#3bc3a3;letter-spacing:-1px}
+.cmp-listicle__card_itemDate{font-family:"ms_gloriola_ii_stdregular",sans-serif;color:#6c5693;letter-spacing:-1px;font-size:18px;line-height:24px}
+.cmp-listicle__card_itemDate .yearOnly{font-size:26px;line-height:40px;letter-spacing:-1px}
+.cmp-listicle__card_itemNumber,.cmp-listicle__card_itemDate,.cmp-listicle__card_itemLetter,.cmp-listicle__card_itemIcon{margin:-3px 0 0}
+.cmp-listicle__card_itemDate{margin-top:-3px}
+.cmp-listicle__card_itemDate .yearOnly{margin-top:-5px}
+.cmp-listicle__card_itemDate .fullDate{margin-left:-70px}
+.cmp-listicle__card_itemNumber,.cmp-listicle__card_itemLetter{margin-top:-12px}
+.cmp-listicle__card_itemIcon img{max-width:63px;max-height:63px}
+.cmp-listicle__card_itemSubtitle,.cmp-listicle__card_itemText_partialWidth{grid-column:4 / span 9}
+.cmp-listicle__card_itemText_partialWidth ul,.cmp-listicle__card_itemText_fullWidth ul,.cmp-listicle__card_itemText_partialWidth ol,.cmp-listicle__card_itemText_fullWidth ol{margin-left:30px}
+.cmp-listicle__card_itemText_partialWidth ul li,.cmp-listicle__card_itemText_fullWidth ul li,.cmp-listicle__card_itemText_partialWidth ol li,.cmp-listicle__card_itemText_fullWidth ol li{list-style:disc;margin:5px 0;font-family:"karlaregular",sans-serif;font-size:16px;line-height:24px;letter-spacing:-0.666667px;color:#4c4c4c}
+.cmp-listicle__card_itemText_partialWidth ol li,.cmp-listicle__card_itemText_fullWidth ol li{list-style:decimal}
+.cmp-listicle__card_itemText_fullWidth{grid-column:4 / span 15}
+.cmp-listicle__card_itemSubtitle{margin:0 0 11px;color:#333;letter-spacing:-0.725px}
+.cmp-listicle__card_itemText_partialWidth p,.cmp-listicle__card_itemText_fullWidth p{margin:0;letter-spacing:0;color:#666}
+.cmp-listicle__card_itemText_partialWidth a,.cmp-listicle__card_itemText_fullWidth a{text-decoration:none}
+.cmp-listicle__card_itemText_partialWidth a:hover,.cmp-listicle__card_itemText_fullWidth a:hover{text-decoration:underline}
+.cmp-listicle__card_itemImage{grid-column:14 / span 8;grid-row:1 / span 6}
+.cmp-listicle__card_itemImage img{width:100%;display:block}
+.cmp-listicle .left_bar.tangerine{border-left:10px solid #fa823c}
+.cmp-listicle .left_bar.berry{border-left:10px solid #d3086f}
+.cmp-listicle .left_bar.peach{border-left:10px solid #ff7e81}
+.cmp-listicle .left_bar.ms-light-blue{border-left:10px solid #00a1e2}
+.cmp-listicle .left_bar.ms-jade{border-left:10px solid #3bc3a3}
+.cmp-listicle .left_bar.jade{border-left:10px solid #3eb661}
+.cmp-listicle .left_bar.violet{border-left:10px solid #672cb4}
+.cmp-listicle .left_bar.aqua{border-left:10px solid #4ccacd}
+@media all and (max-width:1024px){.cmp-listicle{margin-bottom:60px}
+.cmp-listicle__grid{grid-template-columns:30px repeat(11,1fr 20px) 1fr 30px}
+.cmp-listicle__header{grid-column:2 / span 23;padding-bottom:20px}
+.cmp-listicle__inlineTitle,.cmp-listicle__grid ol{grid-column:6 / span 18}
+.cmp-listicle__card{grid-template-columns:0 repeat(9,1fr 20px) 1fr 0}
+.cmp-listicle__card_itemNumber,.cmp-listicle__card_itemDate,.cmp-listicle__card_itemLetter,.cmp-listicle__card_itemIcon,.cmp-listicle__card_itemSubtitle,.cmp-listicle__card_itemText_partialWidth{grid-column:1 / span 24;grid-row:auto;margin-top:0}
+.cmp-listicle__card_itemDate{margin-bottom:20px;font-size:18px;line-height:24px}
+.cmp-listicle__card_itemDate .yearOnly{margin-top:-3px;font-size:32px;line-height:24px;letter-spacing:-1px}
+.cmp-listicle__card_itemDate .fullDate{margin-left:0}
+.cmp-listicle__card_itemImage{grid-column:1 / span 12;grid-row:auto;margin-top:20px}
+.cmp-listicle__card_itemIcon{margin-bottom:20px}
+.cmp-listicle__card_itemText_fullWidth{grid-column:1 / span 20}
+.cmp-listicle__inlineTitle h2{margin-bottom:15px;letter-spacing:-0.87px}
+.cmp-listicle__card_itemSubtitle{margin-bottom:20px;letter-spacing:-0.409091px}
+.cmp-listicle__card_itemNumber{margin-bottom:20px;letter-spacing:-1px}
+.cmp-listicle__card_itemLetter{margin-bottom:20px}
+.cmp-listicle .left_bar.tangerine{border-left:8px solid #fa823c}
+.cmp-listicle .left_bar.berry{border-left:8px solid #d3086f}
+.cmp-listicle .left_bar.peach{border-left:8px solid #ff7e81}
+.cmp-listicle .left_bar.ms-light-blue{border-left:8px solid #00a1e2}
+.cmp-listicle .left_bar.ms-jade{border-left:8px solid #3bc3a3}
+.cmp-listicle .left_bar.jade{border-left:8px solid #3eb661}
+.cmp-listicle .left_bar.violet{border-left:8px solid #672cb4}
+.cmp-listicle .left_bar.aqua{border-left:8px solid #4ccacd}
+}
+@media all and (max-width:767px){.cmp-listicle{margin-bottom:50px}
+.cmp-listicle__grid{grid-template-columns:20px repeat(11,1fr 10px) 1fr 20px}
+.cmp-listicle__header{grid-column:2 / span 23;padding-bottom:20px}
+.cmp-listicle__inlineTitle,.cmp-listicle__grid ol{grid-column:2 / span 23}
+.cmp-listicle__card{grid-template-columns:0 repeat(11,1fr 10px) 1fr 0}
+.cmp-listicle__card_itemNumber,.cmp-listicle__card_itemSubtitle,.cmp-listicle__card_itemText_partialWidth,.cmp-listicle__card_itemText_fullWidth,.cmp-listicle__card_itemImage{grid-column:1 / span 24;grid-row:auto}
+.cmp-listicle__card_itemDate{font-size:18px;line-height:24px}
+.cmp-listicle__card_itemDate .yearOnly{margin-top:-3px;font-size:32px;line-height:24px;letter-spacing:-1px}
+.cmp-listicle__inlineTitle{letter-spacing:-0.45px}
+.cmp-listicle__card_itemImage{margin-top:20px}
+.cmp-listicle .left_bar.tangerine{border-left:6px solid #fa823c}
+.cmp-listicle .left_bar.berry{border-left:6px solid #d3086f}
+.cmp-listicle .left_bar.peach{border-left:6px solid #ff7e81}
+.cmp-listicle .left_bar.ms-light-blue{border-left:6px solid #00a1e2}
+.cmp-listicle .left_bar.ms-jade{border-left:6px solid #3bc3a3}
+.cmp-listicle .left_bar.jade{border-left:6px solid #3eb661}
+.cmp-listicle .left_bar.violet{border-left:6px solid #672cb4}
+.cmp-listicle .left_bar.aqua{border-left:6px solid #4ccacd}
+}

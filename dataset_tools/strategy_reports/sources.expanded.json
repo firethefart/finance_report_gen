@@ -1,0 +1,116 @@
+{
+  "notes": "Expanded public strategy-report source candidates. Includes direct PDFs, official report pages, and index pages for discovery estimates.",
+  "sources": [
+    {
+      "institution": "BlackRock Investment Institute",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "urls": [
+        "https://www.blackrock.com/corporate/insights/blackrock-investment-institute",
+        "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/outlook",
+        "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/outlook",
+        "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/investment-perspective",
+        "https://www.blackrock.com/corporate/literature/whitepaper/bii-global-outlook-2026-middle-east.pdf",
+        "https://www.blackrock.com/us/individual/literature/whitepaper/bii-global-outlook-in-charts.pdf"
+      ],
+      "keywords": ["outlook", "commentary", "investment", "market", "macro", "bii", "weekly"]
+    },
+    {
+      "institution": "Goldman Sachs Asset Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "urls": [
+        "https://am.gs.com/en-us/institutions/insights",
+        "https://am.gs.com/en-us/advisors/insights",
+        "https://am.gs.com/en-us/institutions/insights/article/investment-outlook",
+        "https://am.gs.com/en-us/institutions/insights/article/investment-outlook/investment-backdrop-2026",
+        "https://am.gs.com/en-us/institutions/insights/article/investment-outlook/public-markets-2026",
+        "https://am.gs.com/en-us/institutions/insights/article/investment-outlook/private-markets-alternatives-2026",
+        "https://am.gs.com/en-us/institutions/insights/article/investment-outlook/portfolio-construction-2026",
+        "https://am.gs.com/en-us/institutions/insights/article/investment-outlook/megatrends-thematic-investing-2026",
+        "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/2025/Investment-Outlook-2026.pdf",
+        "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/2026/fixed-income-outlook_2q26.pdf?view=true"
+      ],
+      "keywords": ["outlook", "market", "macro", "portfolio", "fixed income", "weekly", "pulse", "monitor"]
+    },
+    {
+      "institution": "J.P. Morgan Private Bank / Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "urls": [
+        "https://privatebank.jpmorgan.com/nam/en/insights",
+        "https://privatebank.jpmorgan.com/nam/en/insights/latest-and-featured/outlook-b",
+        "https://privatebank.jpmorgan.com/nam/en/insights/latest-and-featured/mid-year-outlook",
+        "https://privatebank.jpmorgan.com/nam/en/insights/latest-and-featured/eotm/outlook",
+        "https://privatebank.jpmorgan.com/latam/en/insights/latest-and-featured/eotm/outlook",
+        "https://privatebank.jpmorgan.com/content/dam/jpm-pb-aem/global/en/documents/outlook2026/JPMorganOutlook2026PromiseandPressure.pdf",
+        "https://www.jpmorgan.com/content/dam/jpmorgan/documents/wealth-management/mid-year-outlook-2026.pdf",
+        "https://privatebank.jpmorgan.com/content/dam/jpm-pb-aem/global/en/documents/eotm/smothering-heights.pdf"
+      ],
+      "keywords": ["outlook", "market", "eye on the market", "mid-year", "investment", "strategy"]
+    },
+    {
+      "institution": "Morgan Stanley",
+      "business_type": "investment_bank",
+      "country_or_region": "US",
+      "urls": [
+        "https://www.morganstanley.com/ideas",
+        "https://www.morganstanley.com/insights/articles/stock-market-outlook-2026",
+        "https://www.morganstanley.com/insights/articles/investment-outlook-midyear-2026",
+        "https://www.morganstanley.com/im/en-us/institutional-investor/insights/all-insights.html",
+        "https://www.morganstanley.com/im/en-gb/institutional-investor/insights/outlooks/private-equity-2026-outlook.html",
+        "https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/IB_MA-2026-Outlook.pdf",
+        "https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/Navigating_the_Next_Decade-10_Demand_Signals_for_the_Next_10_Years_of_Sustainable_Finance.pdf"
+      ],
+      "keywords": ["outlook", "market", "strategy", "allocation", "credit", "equity", "m&a", "alternatives"]
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "urls": [
+        "https://corporate.vanguard.com/content/corporatesite/us/en/corp/what-we-think/research-and-commentary.html",
+        "https://advisors.vanguard.com/insights/article/2026-economic-and-market-outlook",
+        "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/2026-outlook-economic-upside-stock-market-downside.html",
+        "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html",
+        "https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/active-fixed-income-perspectives-q2-2026-dispersion-drives-opportunity.html",
+        "https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf",
+        "https://advisors.vanguard.com/content/dam/fas/pdfs/ISGVEMO.pdf",
+        "https://workplace.vanguard.com/content/dam/inst/iig-transformation/insights/pdf/2025/corporate/VG_economic_market_outlook_2025.pdf"
+      ],
+      "keywords": ["outlook", "market", "economic", "return forecasts", "fixed income", "perspectives"]
+    },
+    {
+      "institution": "Fidelity International / Fidelity UK",
+      "business_type": "asset_manager",
+      "country_or_region": "UK",
+      "urls": [
+        "https://www.fidelityinternational.com/editorial/outlook/",
+        "https://www.fidelityinternational.com/editorial/article/fidelity-international-midyear-outlook-a-global-rewiring-651ac8-en5/",
+        "https://www.fidelity.co.uk/markets-insights/markets/global/investment-outlook/",
+        "https://www.fidelity.co.uk/markets-insights/markets/global/the-four-strategies-for-investing-in-2026",
+        "https://www.fidelityinternational.com/static/master/media/pdf/outlook/Fidelity-International-Outlook-2026.pdf",
+        "https://www.fidelity.co.uk/media/pi/pdfs/investment-outlook/investment-outlook-q2-2026.pdf"
+      ],
+      "keywords": ["outlook", "investment outlook", "market", "global", "mid-year", "quarter"]
+    },
+    {
+      "institution": "State Street Global Advisors / State Street Investment Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "urls": [
+        "https://www.ssga.com/insights/global-market-outlook",
+        "https://www.ssga.com/us/en/intermediary/insights/global-market-outlook",
+        "https://www.ssga.com/us/en/institutional/insights/the-markets",
+        "https://www.ssga.com/us/en/intermediary/insights/the-markets",
+        "https://www.ssga.com/us/en/institutional/insights/gmo-macroeconomic-outlook",
+        "https://www.ssga.com/be/en_gb/institutional/insights/gmo-equity-outlook",
+        "https://www.ssga.com/is/en_gb/institutional/insights/gmo-implementation-guide",
+        "https://www.ssga.com/library-content/assets/pdf/global/global-market-outlook/2026/global-market-outlook-2026.pdf",
+        "https://www.ssga.com/library-content/assets/pdf/global/global-market-outlook/2026/gmo-implementation-guide-2026.pdf"
+      ],
+      "keywords": ["outlook", "market", "macro", "equity", "fixed income", "alternatives", "implementation"]
+    }
+  ]
+}
+

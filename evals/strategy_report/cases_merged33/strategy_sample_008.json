@@ -1,0 +1,283 @@
+{
+  "case_id": "strategy_sample_008",
+  "query": "What is Fidelity International's outlook for 2026, including macro themes, asset class convictions, and regional opportunities?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "2026",
+    "Fidelity International",
+    "annual outlook"
+  ],
+  "expected_report_type": {
+    "type": "annual_outlook",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026",
+    "target_reader": "institutional investors and investment professionals"
+  },
+  "institution": {
+    "name": "Fidelity International / Fidelity UK",
+    "business_type": "asset_manager",
+    "country_or_region": "UK",
+    "official_url": "https://www.fidelityinternational.com"
+  },
+  "report_title": "Outlook 2026: The Age of Alpha",
+  "report_date": null,
+  "publication_period": "2026",
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\008-fidelity-international-fidelity-uk-this-is-for-investment-professionals-only-and-should-not-be-relied-upon-by-priva.pdf",
+    "file_name": "008-fidelity-international-fidelity-uk-this-is-for-investment-professionals-only-and-should-not-be-relied-upon-by-priva.pdf",
+    "format": "pdf",
+    "sha256": "d9ec881702d274d6081a523d22ba1ae93bec4c6493ec4d99709772b03ebde37c",
+    "page_count": 28,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "Fidelity International Outlook 2026 report (PDF, 28 pages)",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Fidelity International analyst research inputs and commentaries",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Inflation is re-emerging as a core macro risk at a time when growth is also under pressure.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Foreword, page 3, first bullet point.",
+      "fact": "Inflation is re-emerging as a core macro risk at a time when growth is also under pressure."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "AI will be the defining theme for equity markets in 2026, with real substance to the underlying technology even as questions mount over its application.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.97,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Summary, page 4, Equities section.",
+      "fact": "AI will be the defining theme for equity markets in 2026, with real substance to the underlying technology even as questions mount over its application."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Select emerging market equities look attractive for 2026 due to accommodative policy and dollar depreciation.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.96,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Macro and Multi Asset section, page 5, top convictions bullet.",
+      "fact": "Select emerging market equities look attractive for 2026 due to accommodative policy and dollar depreciation."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "US inflation likely higher than market expects in 2026, presenting opportunities but hindering the Fed's easing path.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.94,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Summary, page 4, Fixed Income section.",
+      "fact": "US inflation likely higher than market expects in 2026, presenting opportunities but hindering the Fed's easing path."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Gold, absolute return strategies, and private assets provide diversified resilience for portfolios.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.93,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Macro and Multi Asset section, page 5, third conviction bullet.",
+      "fact": "Gold, absolute return strategies, and private assets provide diversified resilience for portfolios."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "Asia developed a robust AI eco-system and is primed to benefit from the tech megatrend, with supportive fiscal and monetary policy.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Asia section summary, page 4.",
+      "fact": "Asia developed a robust AI eco-system and is primed to benefit from the tech megatrend, with supportive fiscal and monetary policy."
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "Credit will prove more popular than sovereign bonds as investors weigh high government debt risks.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.92,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Summary, page 4, Fixed Income section.",
+      "fact": "Credit will prove more popular than sovereign bonds as investors weigh high government debt risks."
+    },
+    {
+      "fact_id": "fact_008",
+      "claim": "Key structural shifts to watch include AI capex trends, global fragmentation, US Federal Reserve independence, and equity market concentration.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.96,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Macro and Multi Asset section, page 5, introductory paragraph.",
+      "fact": "Key structural shifts to watch include AI capex trends, global fragmentation, US Federal Reserve independence, and equity market concentration."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Foreword",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Summary",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Macro and Multi Asset",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Equities",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Fixed Income",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Asia",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Fidelity Analysts",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Do not attribute AI equity market outperformance to a specific percentage not stated in the report.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not claim the report predicts a recession in 2026.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not omit the disclaimer that the report is for investment professionals only.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not misrepresent the Asia section as solely about China; it covers Japan, Korea, and Asia high yield.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not state that the report recommends selling US equities entirely.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not confuse structural shifts (AI capex, fragmentation, etc.) as short-term trading signals.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not add external data or charts not present in the report.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not claim specific GDP or inflation forecasts; the report provides directional views.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {
+    "inflation_risk_check": "Verify that the report states inflation is re-emerging as a core macro risk.",
+    "disclaimer_presence": "Ensure the final output includes the professional-only disclaimer.",
+    "asia_coverage": "Check that the Asia section covers technology and corporate reforms, not just China.",
+    "structural_shifts": "Confirm that AI capex, fragmentation, Fed independence, and equity concentration are listed as structural shifts."
+  },
+  "reference_notes": {
+    "title_note": "The report cover displays 'Outlook 2026' with subtitle 'The Age of Alpha'. The official document title is a disclaimer, but should be referenced as 'Outlook 2026: The Age of Alpha'.",
+    "disclaimer": "The report carries the disclaimer 'This is for investment professionals only and should not be relied upon by private investors'."
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.95,
+    "source_pack": 1.0,
+    "query": 0.9
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

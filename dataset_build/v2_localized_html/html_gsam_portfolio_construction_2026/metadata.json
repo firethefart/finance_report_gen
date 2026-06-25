@@ -1,0 +1,41 @@
+{
+  "sample_id": "html_gsam_portfolio_construction_2026",
+  "url": "https://am.gs.com/en-us/advisors/insights/article/investment-outlook/portfolio-construction-2026",
+  "institution": "Goldman Sachs Asset Management",
+  "language": "en",
+  "subtype": "portfolio_implementation",
+  "archetype": "implementation_guide",
+  "localized_path": "dataset_build\\v2_localized_html\\html_gsam_portfolio_construction_2026\\index.html",
+  "localized_at": "2026-06-18T07:11:53Z",
+  "elapsed_seconds": 26.51,
+  "snapshot": {
+    "title": "Shifting Paradigms for Portfolio Construction in 2026 - Goldman Sachs Asset Management",
+    "final_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_portfolio_construction_2026/_hydrated_source.html",
+    "chosen_selector": "main",
+    "text_length": 37715,
+    "heading_count": 10,
+    "image_count": 8,
+    "svg_count": 0,
+    "canvas_count": 0,
+    "removed_visual_shell_count": 0
+  },
+  "capture_mode": "archive",
+  "archive_source_path": "dataset_build\\raw_html\\annual_or_periodic_outlook\\goldman-sachs-asset-management\\https-am-gs-com-en-us-advisors-insights-article-investment-outlook-portfolio-construction-2026.html",
+  "hydration_audit": {
+    "downloaded_asset_count": 59,
+    "failed_assets": []
+  },
+  "asset_audit": {
+    "downloaded_asset_count": 8,
+    "failed_assets": []
+  },
+  "resource_manifest_path": "dataset_build\\v2_localized_html\\html_gsam_portfolio_construction_2026\\resource_manifest.json",
+  "resource_summary": {
+    "resource_count": 67,
+    "downloaded_count": 67,
+    "failed_count": 0,
+    "critical_failed_count": 0,
+    "total_bytes": 13029897
+  },
+  "status": "localized"
+}

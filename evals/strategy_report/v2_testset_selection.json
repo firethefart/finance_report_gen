@@ -1,0 +1,567 @@
+{
+  "testset_name": "strategy_report_v2_core_26_html_balanced",
+  "version": "2026-06-18",
+  "scope": "High-quality strategy research reports for candidate-only Verifier V2 optimization.",
+  "target_count": 26,
+  "hard_requirements": {
+    "minimum_total_count": 20,
+    "maximum_total_count": 30,
+    "minimum_html_count": 10,
+    "minimum_high_quality_html_count": 10,
+    "minimum_real_institution_html_count": 8,
+    "maximum_generated_html_count": 2,
+    "maximum_single_html_institution_count": 4,
+    "minimum_html_subtype_count": 5
+  },
+  "selection_principles": [
+    "Only strategy research reports are eligible.",
+    "At least ten HTML reports must be real, high-quality, fully localized, offline-complete, and visually reviewed.",
+    "Synthetic fixtures remain separate and do not count toward report-level sample totals.",
+    "The two local generated HTML reports are retained only as historical quality controls.",
+    "PDFs are retained for chartbooks, parser robustness, long reports, Chinese broker layouts, and subtype coverage.",
+    "All core samples must pass the same automated audit before a baseline run."
+  ],
+  "samples": [
+    {
+      "sample_id": "v2_html_gsam_backdrop_2026",
+      "candidate_id": "html_gsam_outlook_backdrop_2026",
+      "path": "dataset_build/v2_localized_html/html_gsam_outlook_backdrop_2026/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_gsam_outlook_backdrop_2026/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_batch13/samples/html_gsam_outlook_backdrop_2026/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "Goldman Sachs Asset Management",
+      "title": "Staying Active Amid Complexity in 2026",
+      "subtype": "annual_outlook",
+      "archetype": "standard_strategy",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "annual_outlook",
+        "multi_asset",
+        "kpi_blocks",
+        "chart_qa"
+      ]
+    },
+    {
+      "sample_id": "v2_html_gsam_public_markets_2026",
+      "candidate_id": "html_gsam_public_markets_2026",
+      "path": "dataset_build/v2_localized_html/html_gsam_public_markets_2026/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_gsam_public_markets_2026/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_batch13/samples/html_gsam_public_markets_2026/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "Goldman Sachs Asset Management",
+      "title": "Navigating the Nuances Across Public Markets in 2026",
+      "subtype": "public_markets_outlook",
+      "archetype": "deep_dive",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "public_markets",
+        "long_report",
+        "chart_qa",
+        "strategy_reasoning"
+      ]
+    },
+    {
+      "sample_id": "v2_html_gsam_portfolio_construction_2026",
+      "candidate_id": "html_gsam_portfolio_construction_2026",
+      "path": "dataset_build/v2_localized_html/html_gsam_portfolio_construction_2026/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_gsam_portfolio_construction_2026/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_batch13/samples/html_gsam_portfolio_construction_2026/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "Goldman Sachs Asset Management",
+      "title": "Shifting Paradigms for Portfolio Construction in 2026",
+      "subtype": "portfolio_implementation",
+      "archetype": "implementation_guide",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "portfolio_implementation",
+        "asset_allocation",
+        "chart_qa"
+      ]
+    },
+    {
+      "sample_id": "v2_html_gsam_fed_easing",
+      "candidate_id": "html_gsam_fed_easing",
+      "path": "dataset_build/v2_localized_html/html_gsam_fed_easing/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_gsam_fed_easing/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_batch13/samples/html_gsam_fed_easing/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "Goldman Sachs Asset Management",
+      "title": "Cutting Through the Noise: Navigating Fed Easing",
+      "subtype": "macro_strategy",
+      "archetype": "brief_commentary",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "macro_strategy",
+        "brief",
+        "chart_dense",
+        "oversized_visual"
+      ]
+    },
+    {
+      "sample_id": "v2_html_ssga_macro_outlook_2026",
+      "candidate_id": "html_ssga_macro_outlook_2026",
+      "path": "dataset_build/v2_localized_html/html_ssga_macro_outlook_2026/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_ssga_macro_outlook_2026/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_batch13/samples/html_ssga_macro_outlook_2026/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "State Street Global Advisors",
+      "title": "Macroeconomic Outlook 2026: Growth Amid Uncertainty",
+      "subtype": "macro_outlook",
+      "archetype": "standard_strategy",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "macro_outlook",
+        "flow_layout",
+        "scenario_risk"
+      ]
+    },
+    {
+      "sample_id": "v2_html_ssga_equity_outlook_2026",
+      "candidate_id": "html_ssga_equity_outlook_2026",
+      "path": "dataset_build/v2_localized_html/html_ssga_equity_outlook_2026/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_ssga_equity_outlook_2026/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_batch13/samples/html_ssga_equity_outlook_2026/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "State Street Global Advisors",
+      "title": "Equity Outlook 2026: AI Optimism Trumps Policy Concerns",
+      "subtype": "equity_strategy",
+      "archetype": "standard_strategy",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "equity_strategy",
+        "regional_allocation",
+        "risk_boundary"
+      ]
+    },
+    {
+      "sample_id": "v2_html_ssga_fixed_income_outlook_2026",
+      "candidate_id": "html_ssga_fixed_income_outlook_2026",
+      "path": "dataset_build/v2_localized_html/html_ssga_fixed_income_outlook_2026/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_ssga_fixed_income_outlook_2026/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_batch13/samples/html_ssga_fixed_income_outlook_2026/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "State Street Global Advisors",
+      "title": "Fixed Income Outlook 2026: The Search for Income and Opportunity",
+      "subtype": "fixed_income_strategy",
+      "archetype": "standard_strategy",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "fixed_income",
+        "rates",
+        "credit",
+        "currency_risk"
+      ]
+    },
+    {
+      "sample_id": "v2_html_ssga_alternatives_outlook_2026",
+      "candidate_id": "html_ssga_alternatives_outlook_2026",
+      "path": "dataset_build/v2_localized_html/html_ssga_alternatives_outlook_2026/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_ssga_alternatives_outlook_2026/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_batch13/samples/html_ssga_alternatives_outlook_2026/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "State Street Global Advisors",
+      "title": "Alternatives Outlook 2026: Income, Diversification, and Growth",
+      "subtype": "alternative_investments",
+      "archetype": "standard_strategy",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "alternatives",
+        "diversification",
+        "gold",
+        "private_assets"
+      ]
+    },
+    {
+      "sample_id": "v2_html_morgan_stanley_equity_rally_2026",
+      "candidate_id": "html_morgan_stanley_equity_rally_2026",
+      "path": "dataset_build/v2_localized_html/html_morgan_stanley_equity_rally_2026/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_morgan_stanley_equity_rally_2026/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_batch13/samples/html_morgan_stanley_equity_rally_2026/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "Morgan Stanley",
+      "title": "The Rally Is Back, But Risks Are Rising",
+      "subtype": "equity_strategy",
+      "archetype": "brief_commentary",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "equity_strategy",
+        "brief",
+        "key_takeaways",
+        "numbered_reasoning"
+      ]
+    },
+    {
+      "sample_id": "v2_html_morgan_stanley_digital_assets",
+      "candidate_id": "html_morgan_stanley_digital_assets_banking",
+      "path": "dataset_build/v2_localized_html/html_morgan_stanley_digital_assets_banking/index.html",
+      "resource_manifest": "dataset_build/v2_localized_html/html_morgan_stanley_digital_assets_banking/resource_manifest.json",
+      "runtime_result": "evals/strategy_report/results/html_runtime_v2_retry2/samples/html_morgan_stanley_digital_assets_banking/adapter_manifest.json",
+      "language": "en",
+      "format": "html",
+      "institution": "Morgan Stanley",
+      "title": "Banks Evaluate Opportunity—and Threat—of Digital Assets",
+      "subtype": "industry_strategy",
+      "archetype": "brief_commentary",
+      "source_class": "official_localized",
+      "quality_expectation": "A",
+      "content_review": "passed",
+      "visual_review": "passed",
+      "test_roles": [
+        "html_runtime",
+        "industry_strategy",
+        "digital_assets",
+        "scenario_range",
+        "regulation"
+      ]
+    },
+    {
+      "sample_id": "v2_en_jpm_energy_2025",
+      "path": "dataset_build/curated_strategy_samples_verified/asset_allocation/pdf/003-j-p-morgan-private-bank-wealth-management-eye-on-the-market.pdf",
+      "language": "en",
+      "format": "pdf",
+      "institution": "J.P. Morgan Asset Management",
+      "title": "Heliocentrism: 15th Annual Energy Paper",
+      "subtype": "thematic_energy_strategy",
+      "archetype": "deep_dive",
+      "source_class": "official",
+      "quality_expectation": "A",
+      "test_roles": [
+        "thematic_strategy",
+        "chart_dense",
+        "multi_chart_page",
+        "claim_numeric"
+      ]
+    },
+    {
+      "sample_id": "v2_en_fidelity_outlook_2026",
+      "path": "dataset_build/curated_strategy_samples_verified/annual_outlook/pdf/008-fidelity-international-fidelity-uk-this-is-for-investment-professionals-only-and-should-not-be-relied-upon-by-priva.pdf",
+      "language": "en",
+      "format": "pdf",
+      "institution": "Fidelity International",
+      "title": "Outlook 2026: The Age of Alpha",
+      "subtype": "annual_outlook",
+      "archetype": "standard_strategy",
+      "source_class": "official",
+      "quality_expectation": "A",
+      "test_roles": [
+        "annual_outlook",
+        "cross_asset",
+        "professional_disclosure"
+      ]
+    },
+    {
+      "sample_id": "v2_en_blackrock_chartbook_2026",
+      "path": "dataset_build/curated_strategy_samples_verified/annual_outlook/pdf/007-blackrock-investment-institute-bii-global-outlook-in-charts.pdf",
+      "language": "en",
+      "format": "pdf",
+      "institution": "BlackRock Investment Institute",
+      "title": "BII Global Outlook in Charts",
+      "subtype": "annual_outlook_chartbook",
+      "archetype": "chartbook",
+      "source_class": "official",
+      "quality_expectation": "A",
+      "test_roles": [
+        "landscape_pdf",
+        "chartbook",
+        "visual_qa",
+        "distributed_reasoning"
+      ]
+    },
+    {
+      "sample_id": "v2_en_gsam_active_etf",
+      "path": "dataset_build/curated_strategy_samples_verified/asset_allocation/pdf/022-goldman-sachs-asset-management-how-active-etfs-can-help-investors-fine-tune-portfolio-construction.pdf",
+      "language": "en",
+      "format": "pdf",
+      "institution": "Goldman Sachs Asset Management",
+      "title": "How Active ETFs Can Help Investors Fine-Tune Portfolio Construction",
+      "subtype": "portfolio_implementation",
+      "archetype": "implementation_guide",
+      "source_class": "official",
+      "quality_expectation": "A",
+      "technical_notes": [
+        "PyMuPDF may emit a non-fatal structure-tree warning during chart extraction. Full text extraction, sampled-page rendering, and V2 scoring complete successfully; retain as a parser robustness case."
+      ],
+      "test_roles": [
+        "asset_allocation",
+        "implementation",
+        "short_medium_report"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_guojin_midyear_2026",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260610-AP202606101823410794-d225c11723.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "国金证券",
+      "title": "2026年中期策略展望：直到尽头",
+      "subtype": "midyear_outlook",
+      "archetype": "deep_dive",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "A",
+      "test_roles": [
+        "chinese",
+        "midyear_outlook",
+        "long_report",
+        "strategy_reasoning"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_boc_macro_midyear_2026",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260603-AP202606031823194427-fa55351f81.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "中银国际",
+      "title": "2026年中宏观策略更新：从“过弯加油”到“入轨稳油”",
+      "subtype": "macro_strategy",
+      "archetype": "deep_dive",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "A",
+      "test_roles": [
+        "chinese",
+        "macro_strategy",
+        "mechanism_reasoning",
+        "scenario_risk"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_huabao_allocation_202606",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260610-AP202606101823413235-eb25a53b80.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "华宝证券",
+      "title": "牛市颠簸期，风格会变吗？——2026年6月资产配置报告",
+      "subtype": "asset_allocation",
+      "archetype": "standard_strategy",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "A",
+      "test_roles": [
+        "chinese",
+        "asset_allocation",
+        "style_rotation",
+        "chart_qa"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_dongwu_bse_midyear_2026",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260609-AP202606091823376288-dd92757607.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "东吴证券",
+      "title": "北交所2026年中期投资策略：估值重塑，聚焦稀缺",
+      "subtype": "equity_strategy",
+      "archetype": "standard_strategy",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "A",
+      "test_roles": [
+        "chinese",
+        "equity_strategy",
+        "market_structure",
+        "valuation"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_aijian_q2_allocation_2026",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260521-AP202605211822647981-0704c8d6b6.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "爱建证券",
+      "title": "2026Q2资产配置报告：AI交织通胀，权益主推算力链",
+      "subtype": "asset_allocation",
+      "archetype": "standard_strategy",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "A",
+      "test_roles": [
+        "chinese",
+        "quarterly_allocation",
+        "cross_asset",
+        "investment_implication"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_guoyuan_macro_monthly_202605",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260610-AP202606091823400621-33b93aab92.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "国元证券",
+      "title": "元瞻经纬总量月报（2026年5月）：城市更新与存量提质",
+      "subtype": "macro_monthly",
+      "archetype": "standard_strategy",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "A",
+      "test_roles": [
+        "chinese",
+        "monthly",
+        "macro_policy",
+        "source_traceability"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_wanlian_bayarea_strategy",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260601-AP202606011823129071-c1eaef80ee.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "万联证券",
+      "title": "关注粤港澳大湾区内专精特新“小巨人”企业配置机会",
+      "subtype": "regional_thematic_strategy",
+      "archetype": "standard_strategy",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "A",
+      "test_roles": [
+        "chinese",
+        "regional_strategy",
+        "industry_mapping",
+        "policy_transmission"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_guosen_resident_funds_chartbook",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260527-AP202605271822909247-7398014242.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "国信证券",
+      "title": "6张图看居民资金入市，到哪一步了？",
+      "subtype": "equity_fund_flow_strategy",
+      "archetype": "chartbook",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "B+",
+      "test_roles": [
+        "chinese",
+        "chartbook",
+        "brief",
+        "visual_led_reasoning"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_kaiyuan_smart_mining",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260610-AP202606101823425858-35af2f34e2.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "开源证券",
+      "title": "智能矿山和无人驾驶催生轮胎革命，掘金千亿智能矿卡后市场",
+      "subtype": "industry_thematic_strategy",
+      "archetype": "deep_dive",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "A",
+      "test_roles": [
+        "chinese",
+        "industry_strategy",
+        "industry_chain",
+        "long_report"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_huaxin_weekly_20260525",
+      "path": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports/item/20260526-AP202605261822869659-e857ba234f.pdf",
+      "language": "zh",
+      "format": "pdf",
+      "institution": "华鑫证券",
+      "title": "策略周报：美伊短期战术缓和，A股延续震荡整固格局",
+      "subtype": "weekly_investment_strategy",
+      "archetype": "weekly_review",
+      "source_class": "third_party_mirror_verified_in_document",
+      "quality_expectation": "A",
+      "test_roles": [
+        "chinese",
+        "weekly",
+        "brief_reasoning",
+        "market_rotation"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_generated_baseline",
+      "path": "generation_test/0/index.html",
+      "language": "zh",
+      "format": "html",
+      "institution": "Local generated report",
+      "title": "北交所并购重组活跃对新能源与智能电网行业格局的影响",
+      "subtype": "ma_industry_strategy",
+      "archetype": "standard_strategy",
+      "source_class": "self_contained_local",
+      "quality_expectation": "controlled_baseline",
+      "test_roles": [
+        "generated_report",
+        "html_runtime",
+        "known_quality_pair"
+      ]
+    },
+    {
+      "sample_id": "v2_zh_generated_optimized",
+      "path": "generation_test/1/index.html",
+      "language": "zh",
+      "format": "html",
+      "institution": "Local generated report",
+      "title": "北交所并购重组升温：新能源与智能电网行业格局影响策略研究",
+      "subtype": "ma_industry_strategy",
+      "archetype": "standard_strategy",
+      "source_class": "self_contained_local",
+      "quality_expectation": "controlled_optimized",
+      "test_roles": [
+        "generated_report",
+        "html_runtime",
+        "known_quality_pair"
+      ]
+    }
+  ],
+  "quarantine_candidates": [
+    {
+      "sample_id": "v2_en_gsam_fixed_income_q2_2026",
+      "path": "generation_test/strategy_research_samples/goldman_sachs_am_fixed_income_outlook_2q26.pdf",
+      "reason": "Previous screening reported page_count=0 and parse failure. Must be debugged or reacquired before admission."
+    },
+    {
+      "sample_id": "v2_html_state_street_macro_2026",
+      "path": "dataset_build/curated_strategy_samples_verified/annual_outlook/html/013-state-street-global-advisors-state-street-investment-management-macroeconomic-outlook-2026-state-street-macroeconomic-outlook-2026-growth-amid-u.html",
+      "reason": "High-quality text but referenced visual/static resources are not fully localized."
+    },
+    {
+      "sample_id": "v2_html_gsam_outlook_2026",
+      "path": "dataset_build/curated_strategy_samples_verified/annual_outlook/html/019-goldman-sachs-asset-management-investment-outlook-2026-seeking-catalysts-amid-complexity-goldman-sachs-asset-ma.html",
+      "reason": "High-quality text but many referenced resources are missing or remote."
+    }
+  ]
+}

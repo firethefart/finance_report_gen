@@ -1,0 +1,185 @@
+{
+  "case_id": "strategy_sample_007",
+  "query": "What are the key themes in BlackRock's 2026 global outlook, especially regarding AI investment and supply constraints?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "BlackRock",
+    "2026",
+    "global outlook",
+    "AI capex",
+    "supply constraints"
+  ],
+  "expected_report_type": {
+    "type": "annual_outlook",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026",
+    "target_reader": "institutional investors"
+  },
+  "institution": {
+    "name": "BlackRock Investment Institute",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://www.blackrock.com"
+  },
+  "report_title": "BII Global outlook in charts",
+  "report_date": null,
+  "publication_period": "Q2 2026",
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\007-blackrock-investment-institute-bii-global-outlook-in-charts.pdf",
+    "file_name": "007-blackrock-investment-institute-bii-global-outlook-in-charts.pdf",
+    "format": "pdf",
+    "sha256": "aed64905283b24403d2858ec198454809c2d3efbc31f13e1b5298894df8682e8",
+    "page_count": 28,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "BlackRock Investment Institute publications",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Macrohistory Database (Jordà, Schularick, Taylor)",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Bloomberg consensus data",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "World Bank",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "IEA",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "U.S. Energy Information Administration",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "GIIGNL",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "OPEC",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Jefferies",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Epoch AI",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Mega forces are clashing, rewiring economies and markets; Middle East conflict amplifies a 'world shaped by supply' where supply constraints drive economic outcomes.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Page 2, first paragraph",
+      "fact": "Mega forces are clashing, rewiring economies and markets; Middle East conflict amplifies a 'world shaped by supply' where supply constraints drive economic outcomes."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "AI-driven innovation makes a potential breakout from 2% growth conceivable for the first time (U.S. GDP per capita chart).",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Page 2, chart and text",
+      "fact": "AI-driven innovation makes a potential breakout from 2% growth conceivable for the first time (U.S. GDP per capita chart)."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Estimated capex for tech 'hyperscalers' (Alibaba, Amazon, Google, Meta, Microsoft, Oracle, Tencent) is ramping up significantly from 2025 to 2030, unaffected by the Middle East conflict.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Page 4, chart and text",
+      "fact": "Estimated capex for tech 'hyperscalers' (Alibaba, Amazon, Google, Meta, Microsoft, Oracle, Tencent) is ramping up significantly from 2025 to 2030, unaffected by the Middle East conflict."
+    }
+  ],
+  "must_have_sections": [],
+  "prohibited_mistakes": [],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {},
+  "extraction_confidence": {
+    "overall": 0.5,
+    "classification": 0.5,
+    "key_facts": 0.5,
+    "source_pack": 0.5,
+    "query": 0.5
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

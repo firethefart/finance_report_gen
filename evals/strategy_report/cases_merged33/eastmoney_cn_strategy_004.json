@@ -1,0 +1,316 @@
+{
+  "case_id": "eastmoney_cn_strategy_004",
+  "query": "帮我梳理一下最新的宏观经济形势和重点政策,比如那个十五五城市更新规划主要说了什么,还有最近工业、物价、内需、进出口和金融数据怎么样",
+  "query_language": "zh",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "2026年5月宏观数据",
+    "城市更新十五五规划",
+    "宏观经济形势分析"
+  ],
+  "expected_report_type": {
+    "type": "宏观策略月报",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026年5月及后续数月",
+    "target_reader": "专业投资机构、高净值个人投资者、研究同行"
+  },
+  "institution": {
+    "name": "国元证券股份有限公司",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": null
+  },
+  "report_title": "国元证券-元瞻经纬总量月报(2026年5月):\"十五五\"城市更新,存量提质中实现功能补强-260609.pdf",
+  "report_date": "2026-06-09",
+  "publication_period": "2026年5月",
+  "strategy_subtype": "宏观策略月报",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260610-AP202606091823400621-33b93aab92.pdf",
+    "file_name": "20260610-AP202606091823400621-33b93aab92.pdf",
+    "format": "pdf",
+    "sha256": "3be720eabf19f14c9c7c0ece2e7fdf20a15644d48eacf22583aadde4bdfb86a2",
+    "page_count": 26,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "城市更新十五五规划原文",
+      "type": "政府文件",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "提供规划的核心目标、重点任务与保障措施等原始表述"
+    },
+    {
+      "name": "国家统计局2026年4月宏观数据集",
+      "type": "统计数据",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "包含PPI、CPI、工业增加值、固定资产投资、社零、失业率等核心指标"
+    },
+    {
+      "name": "央行2026年4月金融统计数据及社融报告",
+      "type": "金融数据",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "涵盖M1、M2、新增社融、信贷分项等金融数据"
+    },
+    {
+      "name": "财政部2026年1-4月财政收支情况",
+      "type": "财政数据",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "包含一般公共预算收支、税收分项、政府性基金收支及专项债发行数据"
+    },
+    {
+      "name": "海关总署2026年4月进出口快报",
+      "type": "贸易数据",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "包含进出口金额、重点商品及主要贸易伙伴数据"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "2026年4月PPI当月同比增长2.8%,较前值提升2.3个百分点,1-4月累计同比增速转正为0.2%,结束连续负增长。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "PPI作为工业品出厂价格的核心指标,其加速修复且累计增速转正,表明工业生产端的通缩压力显著缓解,有利于企业盈利改善与投资信心恢复。",
+      "verification_hint": "核对国家统计局公布的2026年4月工业生产者出厂价格指数(PPI)当月同比与累计同比数据。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "PPI修复动力主要来自原油产业链,输入型成本推动特征明显,生产资料与生活资料价格剪刀差持续走阔,表明上游涨价向终端消费传导不畅。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "揭示出价格修复的结构性隐忧:中上游受益于能源涨价,但下游议价能力弱,企业利润分配不均,经济复苏的均衡性面临考验。",
+      "verification_hint": "查阅报告中的PPI生产资料与生活资料分项数据或统计局的相关细分指标。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "2026年4月工业增加值当月同比增速边际回落,固定资产投资由正转负,基建、制造业和房地产投资三大分项同步走弱。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "工业生产与投资动能同步减弱,可能预示着二季度经济增长压力加大,验证了财政资金投放节奏和成本压力对企业资本开支意愿的抑制作用。",
+      "verification_hint": "对照国家统计局2026年4月的工业增加值与固定资产投资数据,确认增速回落幅度及分项变化。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "城市更新\"十五五\"规划标志着政策从增量扩张正式转向存量提质与功能补强,并与\"投资于人\"的政策取向相衔接。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "作为中长期专项部署,该规划将引导未来五年城市建设的投资逻辑与资金配置方向,深刻影响建筑建材、管网改造、公共服务等行业的需求空间。",
+      "verification_hint": "查询国务院或住建部官网公布的《城市更新\"十五五\"规划》全文,核对其核心原则与目标任务。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "4月新增社融同比少增,新增人民币贷款转负,但M2-M1剪刀差走阔,反映流动性整体充裕与实体信用需求偏弱并存。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "金融数据的分化表明,宽松的货币环境并未有效转化为实体经济的活跃借贷,资金淤积于金融体系,对股市和债市流动性形成结构性影响。",
+      "verification_hint": "查阅中国人民银行发布的2026年4月社会融资规模增量与货币供应量数据,核对信贷分项和M2-M1差值。"
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "4月出口增速回升,对东盟、欧盟等非美市场保持正增长,而进口仍处高位,反映外需韧性尚存但内需进口拉动减弱。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "出口结构的变化显示贸易多元化对冲了中美贸易摩擦的风险,但进口高企若主要由价格支撑,则暗示内需数量增长动能不足。",
+      "verification_hint": "通过海关总署的2026年4月贸易数据,确认对主要经济体的出口增速与主要商品的进出口金额变化。"
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "2026年4月一般公共预算收入同比增长6.7%,税收端改善明显,非税收入支撑减弱;支出同比下降3.2%,节奏有所放缓。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "财政收入与价格水平的同步修复确认了名义GDP的改善,但支出端的放缓可能削弱财政对基建投资的实物工作量转化,影响后续经济动能。",
+      "verification_hint": "对比财政部官网公布的2026年4月财政收支数据,验证当月收支增速与结构变化。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "当期核心政策专题解读(如\"十五五\"城市更新规划分析)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "工业与生产篇:PPI和工业增加值数据分析",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "投资篇:固定资产投资分项结构与变化归因",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "内需与就业篇:消费结构、服务业与就业形势研判",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "财政篇:当期财政收支特征与专项债发行节奏",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "进出口篇:分目的地和商品类别的出口韧性评估",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "金融篇:信贷、社融与流动性的结构分析及传导效率评判",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "风险提示",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "将PPI修复等同于全面通胀或错误地认为上游涨价已顺利传导至终端消费品",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "将单月信贷负增长简单解读为信用崩塌,忽略金融脱媒和季节性因素",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "将固定资产投资当月转负直接外推为全年持续下滑,不分析政策资金后续发力的可能性",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "解读城市更新规划时,沿用传统\"棚改\"或\"大拆大建\"的增量逻辑,忽视存量盘活和功能补短板的核心内涵",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "将M2与M1剪刀差简单等同于\"流动性陷阱\",而未能区分资金在金融系统内流转与向实体传导偏慢的差异",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "在分析出口时,未区分外需韧性的结构来源,笼统认为全体出口市场皆好转",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "figure_id": "图6",
+      "title": "各行业价格水平环比变动对PPI修复贡献度前10",
+      "learning_point": "采用贡献度排序视图,清晰展示推动PPI修复的核心行业,突出能源产业链的驱动力",
+      "title_or_description": "各行业价格水平环比变动对PPI修复贡献度前10",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "figure_id": "图17",
+      "title": "服务消费与商品消费形成\"K型分化\"",
+      "learning_point": "用双线图展示服务与商品消费增速的背离,直观刻画消费结构转型",
+      "title_or_description": "服务消费与商品消费形成\"K型分化\"",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "figure_id": "图45",
+      "title": "M1、M2同比走势与M2-M1剪刀差走势",
+      "learning_point": "组合图表展示货币活性与流动性淤积情况,是分析金融数据传导效率的经典框架",
+      "title_or_description": "M1、M2同比走势与M2-M1剪刀差走势",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "clarity_of_policy_logic": "是否将城市更新规划的逻辑解释为从增量转向存量、从住房改造转向功能补强、从财政投入转向多元平衡?",
+    "data_coherence": "报告结论是否与宏观数据相互印证?例如投资走弱与生产放缓是否与财政支出、信贷结构信息相呼应?",
+    "structural_risk_awareness": "是否明确指出了价格传导不畅、信用需求偏弱等结构性风险,而非仅呈现总量数字?"
+  },
+  "reference_notes": {
+    "数据截止月份": "2026年4月",
+    "报告撰写逻辑": "先解构重要政策,再逐一跟踪总量数据,最后用数据反证或深化对政策的理解",
+    "核心概念": "城市更新十五五规划、PPI加速修复、投资同步放缓、信贷结构分化、M2-M1剪刀差"
+  },
+  "extraction_confidence": {
+    "overall": 0.98,
+    "classification": 0.99,
+    "key_facts": 0.98,
+    "source_pack": 0.97,
+    "query": 0.96
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

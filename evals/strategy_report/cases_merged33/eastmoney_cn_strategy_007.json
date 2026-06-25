@@ -1,0 +1,226 @@
+{
+  "case_id": "eastmoney_cn_strategy_007",
+  "query": "最近北交所有哪些并购重组的案例和政策更新?",
+  "query_language": "zh",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "北交所",
+    "并购重组",
+    "最新动态"
+  ],
+  "expected_report_type": {
+    "type": "北交所并购重组策略专题报告",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "中期策略参考",
+    "target_reader": "北交所投资者与产业研究员"
+  },
+  "institution": {
+    "name": "开源证券股份有限公司",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": null
+  },
+  "report_title": "芳纶格局生变—从民士达购买中菱科技\"强链\"到杜邦\"易主\" ——北交所并购重组专题报告第二十五期",
+  "report_date": "2026-05-31",
+  "publication_period": null,
+  "strategy_subtype": "ma_strategy_thematic",
+  "quality_tier": "B",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260601-AP202605311823108367-66e0e76032.pdf",
+    "file_name": "20260601-AP202605311823108367-66e0e76032.pdf",
+    "format": "pdf",
+    "sha256": "5dba87720f2a6eaa41fd11e809f1f3b9b512412dac6a1bf87f48511056c3b16d",
+    "page_count": 19,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "民士达收购公告",
+      "type": "公司公告",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_type": "公司公告",
+      "confidence": "high"
+    },
+    {
+      "name": "Arclin收购杜邦芳纶业务新闻",
+      "type": "公开新闻",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_type": "公开新闻",
+      "confidence": "high"
+    },
+    {
+      "name": "证监会《上市公司重大资产重组管理办法(2025修正)》",
+      "type": "监管文件",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_type": "监管文件",
+      "confidence": "high"
+    },
+    {
+      "name": "Wind金融终端",
+      "type": "金融数据终端",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_type": "金融数据终端",
+      "confidence": "medium"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "民士达拟以8000万元收购中菱科技51%股权,并附有2026-2028年逐年递增的业绩承诺。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "该交易是北交所公司沿产业链向上游整合的典型\"强链\"案例,对评估中小市值公司外延增长路径具有参考意义。",
+      "verification_hint": "核对民士达公告原文及中联资产评估集团出具的评估报告。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Arclin以约18亿美元完成对杜邦旗下Kevlar®和Nomex®芳纶产品业务的收购。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "全球芳纶龙头易主可能重塑产业链格局,为国产替代和市场份额提升带来机会。",
+      "verification_hint": "在Arclin官网及主流财经新闻媒体中搜索相关收购报道。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "截至2026年5月29日,北交所累计已披露55家次重要投资并购重组事件。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "该数据表明北交所并购重组市场活跃度,是判断中小企业资本运作趋势的重要高频指标。",
+      "verification_hint": "通过北交所官网披露或Wind金融终端进行统计核对。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "2026年本双周内,易实精密、凯德石英、惠同新材、华洋赛车等公司均披露了并购重组进展。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "集中涌现的案例为分析北交所公司通用的并购模式与监管审核节奏提供了新鲜样本。",
+      "verification_hint": "查阅各公司同期发布的临时公告进行逐一比对。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "中菱科技2025年为民士达第三大供应商,本次收购将打通芳纶纸基材的内部供应链。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "向重要供应商整合有助于降低采购成本并开发定制化高端解决方案,直接影响标的企业盈利能力。",
+      "verification_hint": "在民士达2025年年报中查找前五大供应商明细。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "核心案例交易方案与交易亮点概述",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "行业背景与竞争格局变化分析",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "并购重组最新政策梳理与解读",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "近期北交所并购事件/合资事件一览表",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "重点公司并购进展更新与点评",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "风险提示(涵盖并购失败、整合不及预期等)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "将未经验证的传闻当作确定并购事件列入统计表",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "混淆标的公司股权比例、交易金额或关键财务数据",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "对政策条文断章取义或进行过时的解读",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "遗漏标的公司基本财务分析,仅对并购定性评论",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {},
+  "extraction_confidence": {
+    "overall": 0.9,
+    "classification": 0.95,
+    "key_facts": 0.9,
+    "source_pack": 0.9,
+    "query": 0.85
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

@@ -1,0 +1,48 @@
+{
+  "sample_id": "html_ssga_alternatives_outlook_2026",
+  "url": "https://www.ssga.com/insights/gmo-alternatives-outlook",
+  "institution": "State Street Global Advisors",
+  "language": "en",
+  "subtype": "alternative_investments",
+  "archetype": "standard_strategy",
+  "snapshot_options": {
+    "flow_layout": true,
+    "remove_text_prefixes": [
+      "More on global market outlook",
+      "More From Our Global Market Outlook"
+    ]
+  },
+  "localized_path": "dataset_build\\v2_localized_html\\html_ssga_alternatives_outlook_2026\\index.html",
+  "localized_at": "2026-06-18T07:12:42Z",
+  "elapsed_seconds": 7.15,
+  "snapshot": {
+    "title": "Alternatives Outlook 2026 | State Street",
+    "final_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_ssga_alternatives_outlook_2026/_hydrated_source.html",
+    "chosen_selector": ".main-wrapper",
+    "text_length": 12295,
+    "heading_count": 10,
+    "image_count": 5,
+    "svg_count": 43,
+    "canvas_count": 0,
+    "removed_visual_shell_count": 0
+  },
+  "capture_mode": "archive",
+  "archive_source_path": "dataset_build\\raw_html\\annual_or_periodic_outlook\\state-street-global-advisors-state-street-investment-management\\https-www-ssga-com-insights-gmo-alternatives-outlook.html",
+  "hydration_audit": {
+    "downloaded_asset_count": 9,
+    "failed_assets": []
+  },
+  "asset_audit": {
+    "downloaded_asset_count": 1,
+    "failed_assets": []
+  },
+  "resource_manifest_path": "dataset_build\\v2_localized_html\\html_ssga_alternatives_outlook_2026\\resource_manifest.json",
+  "resource_summary": {
+    "resource_count": 10,
+    "downloaded_count": 10,
+    "failed_count": 0,
+    "critical_failed_count": 0,
+    "total_bytes": 981344
+  },
+  "status": "localized"
+}

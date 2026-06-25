@@ -1,0 +1,299 @@
+{
+  "case_id": "strategy_sample_001",
+  "query": "What are the key investment themes and catalysts for 2026 according to Goldman Sachs Asset Management's annual outlook?",
+  "query_language": "en",
+  "query_style": "analyst_request",
+  "scope_constraints": [
+    "Goldman Sachs Asset Management",
+    "Outlook 2026",
+    "public and private markets",
+    "macro catalysts"
+  ],
+  "expected_report_type": {
+    "type": "annual_outlook",
+    "depth": "institutional_style",
+    "output_format": "webpage",
+    "expected_time_horizon": "12 months",
+    "target_reader": "institutional investor"
+  },
+  "institution": {
+    "name": "Goldman Sachs Asset Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": null
+  },
+  "report_title": "Investment Outlook 2026: Seeking Catalysts Amid Complexity",
+  "report_date": "2025-12-01",
+  "publication_period": "2026 Outlook",
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\001-goldman-sachs-asset-management-investment-outlook-2026-seeking-catalysts-amid-complexity.pdf",
+    "file_name": "001-goldman-sachs-asset-management-investment-outlook-2026-seeking-catalysts-amid-complexity.pdf",
+    "format": "pdf",
+    "sha256": "aeff6db4a45eb9fdc99a04b603a06244f302f10250687ae358172d23efc0ad56",
+    "page_count": 57,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "source_candidate",
+      "type": "pdf",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_name": "GSAM_Outlook_2026_full",
+      "source_type": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\001-goldman-sachs-asset-management-investment-outlook-2026-seeking-catalysts-amid-complexity.pdf",
+      "source_size_bytes": 9028992,
+      "source_page_count": 57,
+      "source_sha256": "aeff6db4a45eb9fdc99a04b603a06244f302f10250687ae358172d23efc0ad56",
+      "source_parse_method": "pymupdf",
+      "source_description": "Full PDF of the Goldman Sachs Asset Management Investment Outlook 2026 report."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "The wealthiest 20% of US households account for 40% of total consumption, while lower-income groups spend less than 10%.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.97,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check US Bureau of Labor Statistics Consumer Expenditure Survey or equivalent Federal Reserve data.",
+      "fact": "The wealthiest 20% of US households account for 40% of total consumption, while lower-income groups spend less than 10%.",
+      "source_excerpt": "the wealthiest 20% of households account for 40% of total consumption, while lower-income groups spend less than 10%."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "9 out of 10 G10 countries cut rates in 2025.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.96,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Cross-reference with central bank rate announcements from major G10 economies in 2025.",
+      "fact": "9 out of 10 G10 countries cut rates in 2025.",
+      "source_excerpt": "9/10 Countries In the G10 cut rates in 2025"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "The labor market holds the key to the pace and scale of Fed easing into 2026, as long as inflation remains anchored.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check Federal Reserve meeting minutes and public speeches for labor market emphasis in rate cut decisions.",
+      "fact": "The labor market holds the key to the pace and scale of Fed easing into 2026, as long as inflation remains anchored.",
+      "source_excerpt": "We believe the labor market holds the key to the pace and scale of Fed easing into 2026, so long as inflation remains anchored."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Easing cycles, AI, and dealmaking are pinpointed as key catalysts for portfolio returns.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Verify with GSAM research publications and market performance attribution analyses for those themes.",
+      "fact": "Easing cycles, AI, and dealmaking are pinpointed as key catalysts for portfolio returns.",
+      "source_excerpt": "We pinpoint easing cycles, AI, and dealmaking as catalysts, and remain focused on strategically positioning portfolios to seek returns."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "US auto and credit card loan delinquencies have increased, particularly among subprime consumers.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.98,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check Federal Reserve Bank of New York's Quarterly Report on Household Debt and Credit.",
+      "fact": "US auto and credit card loan delinquencies have increased, particularly among subprime consumers.",
+      "source_excerpt": "US auto and credit card loan delinquencies have increased, particularly among subprime consumers"
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "Active ETFs, enhanced passive allocations, and tail-risk hedging are recommended to recalibrate portfolios.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Review GSAM publications or SEC filings for their active ETF product offerings and portfolio construction recommendations.",
+      "fact": "Active ETFs, enhanced passive allocations, and tail-risk hedging are recommended to recalibrate portfolios.",
+      "source_excerpt": "How can active ETFs, enhanced passive allocations, tail-risk hedging and alternatives help investors recalibrate their portfolios?"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary or introductory letter from a senior leader",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Macroeconomic backdrop and key drivers (central banks, tariffs, fiscal dynamics)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Public markets outlook (stocks and bonds)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Private markets outlook (private equity, private credit, real estate, infrastructure)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Portfolio construction themes and recommendations",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Thematic landscapes and megatrends (e.g., energy transition, AI)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Risk factors and uncertainties explicitly discussed",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Firm-specific disclaimers and promotional disclaimer as required for distribution",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Omitting the promotional disclaimer required for financial promotions",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to mention the complexity of tariffs and fiscal risks",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Providing specific security recommendations without clear risk warnings",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Overstating the certainty of the economic forecasts",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the role of active management in navigating complexity",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Leaving out data on consumer spending bifurcation",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Neglecting to mention the geopolitical context and US government shutdown risk",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Assuming all easing cycles are uniformly beneficial without mention of labor market sensitivity",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "Events Shaping the Backdrop timeline for H2 2025",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "Figures in Focus: G10 countries cutting rates",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "Consumption bifurcation chart showing share of total spending by income quintile",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "expected_themes": [
+      "active investing",
+      "Fed easing",
+      "AI investment",
+      "dealmaking",
+      "public vs private markets"
+    ],
+    "critical_exclusion_phrases": [
+      "no risk reminders",
+      "specific security recommendations without disclaimers"
+    ]
+  },
+  "reference_notes": {
+    "key_points": "The report argues that active, disciplined investing is needed in a complex environment shaped by tariffs, Fed policy, AI, and geopolitical risks. Key catalysts are easing cycles, AI, and dealmaking. It covers public and private markets, portfolio construction shifts using active ETFs, and megatrends like the energy transition. It highlights US consumer bifurcation, rising subprime delinquencies, and potential labor market weakness.",
+    "missing_info": "Exact publication date is not stated in the excerpt, but context suggests November 2025. No named individual authors are listed; the institutional author is used instead."
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.97,
+    "source_pack": 1.0,
+    "query": 0.93
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

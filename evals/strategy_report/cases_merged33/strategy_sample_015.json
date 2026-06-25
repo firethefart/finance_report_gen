@@ -1,0 +1,277 @@
+{
+  "case_id": "strategy_sample_015",
+  "query": "What tactical shifts did Fidelity make to their multi-asset outlook in Q2 2026 due to Middle East risks?",
+  "query_language": "en",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "Only include information from the Fidelity Investment Outlook Q2 2026 document",
+    "Focus on asset class rating changes and the rationale provided"
+  ],
+  "expected_report_type": {
+    "type": "investment_outlook",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "Q2 2026 (3 months)",
+    "target_reader": "Fidelity Personal Investing retail clients"
+  },
+  "institution": {
+    "name": "Fidelity International / Fidelity UK",
+    "business_type": "asset_manager",
+    "country_or_region": "UK",
+    "official_url": null
+  },
+  "report_title": "Investment Outlook – Q2 2026",
+  "report_date": "2026-04-01",
+  "publication_period": "Q2 2026",
+  "strategy_subtype": "quarterly_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\015-fidelity-international-fidelity-uk-in-this-issue.pdf",
+    "file_name": "015-fidelity-international-fidelity-uk-in-this-issue.pdf",
+    "format": "pdf",
+    "sha256": "eb7fceb6195c7b319f474b1ae5692b1c282d438017313c227d6459138f7d0796",
+    "page_count": 20,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Shares asset class rating downgraded to Neutral from Positive due to Middle East conflict raising inflation, growth, and credit risks.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'Outlook at a glance' table, Shares row.",
+      "fact": "Shares asset class rating downgraded to Neutral from Positive due to Middle East conflict raising inflation, growth, and credit risks."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "US equity rating maintained at Neutral with positive protection from oil exports and AI exposure but headwind from valuations.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'Outlook at a glance' table, US row.",
+      "fact": "US equity rating maintained at Neutral with positive protection from oil exports and AI exposure but headwind from valuations."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "UK equity rating downgraded to Neutral; FTSE 100 seen as defensive but FTSE 250 exposed to higher inflation and rates.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'Outlook at a glance' table, UK row.",
+      "fact": "UK equity rating downgraded to Neutral; FTSE 100 seen as defensive but FTSE 250 exposed to higher inflation and rates."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Europe equity rating maintained at Neutral, benefiting from rotation out of US but exposed to energy crisis and no longer cheap.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'Outlook at a glance' table, Europe row.",
+      "fact": "Europe equity rating maintained at Neutral, benefiting from rotation out of US but exposed to energy crisis and no longer cheap."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Japan equity rating maintained at Neutral, citing political stability, improving governance, better growth, and reasonable valuations.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'Outlook at a glance' table, Japan row.",
+      "fact": "Japan equity rating maintained at Neutral, citing political stability, improving governance, better growth, and reasonable valuations."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "Alternatives asset class rating upgraded to Positive (from Neutral) as bonds and equities become more correlated, increasing need for diversification.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'Outlook at a glance' table, Alternatives row.",
+      "fact": "Alternatives asset class rating upgraded to Positive (from Neutral) as bonds and equities become more correlated, increasing need for diversification."
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "Bonds rating downgraded to Negative (from Neutral) due to exposure to second-round effects of oil spike: inflation, higher rates, rising credit risks.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'Outlook at a glance' table, Bonds row.",
+      "fact": "Bonds rating downgraded to Negative (from Neutral) due to exposure to second-round effects of oil spike: inflation, higher rates, rising credit risks."
+    },
+    {
+      "fact_id": "fact_008",
+      "claim": "Cash rating maintained at Positive (from Neutral/Positive) as it provides dry powder and increasingly attractive income as rates rise.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'Outlook at a glance' table, Cash row.",
+      "fact": "Cash rating maintained at Positive (from Neutral/Positive) as it provides dry powder and increasingly attractive income as rates rise."
+    },
+    {
+      "fact_id": "fact_009",
+      "claim": "The report is authored by Tom Stevenson, Investment Director, and is the 50th issue of the Investment Outlook.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check 'All change' section author byline and introductory text mentioning Issue 50.",
+      "fact": "The report is authored by Tom Stevenson, Investment Director, and is the 50th issue of the Investment Outlook."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Outlook at a glance (tactical ratings table with asset class views and 3-month changes)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "All change (executive summary/macro overview with author voice)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Shares (aggregate equity view and rationale)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Regional equity subsections (United States, United Kingdom, Europe, Japan, Asia and emerging markets) with individual assessments",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Bonds (assessment and rationale)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Alternatives (assessment and rationale)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Cash (assessment and rationale)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Important information / risk warnings",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Omitting the tactical rating table or its visual indicators (e.g., dots, arrows) and summarizing only text",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Classifying the report as an annual outlook when it is clearly published quarterly (Q2 2026, Issue 50)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to distinguish between UK FTSE 100 (defensive) and FTSE 250 (cyclical) views when summarizing UK equities",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Misattributing the report or quoting advice as personal recommendations rather than general market views",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the explicit risk warnings about past performance, currency movements, and emerging market volatility",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Reporting only the ratings without the underlying macroeconomic rationale (Middle East conflict, oil price, stagflation risk)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the Alternatives upgrade and its rationale (correlation breakdown between bonds and equities)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {
+    "rating_table_completeness": "Does the output include all asset classes (Shares, US, UK, Europe, Japan, Asia/EM, Bonds, Alternatives, Cash) with their correct Q2 2026 ratings and 3-month change indicators?",
+    "downgrade_rationale": "Does the output correctly attribute the Shares and Bonds downgrades to the Middle East conflict and its inflationary/credit impacts?",
+    "alternatives_upgrade": "Is the Alternatives upgrade to Positive captured and linked to the breakdown of correlation between traditional assets?",
+    "geopolitical_driver": "Is the Middle East conflict (Strait of Hormuz closure, oil price spike) identified as the primary exogenous shock driving the updated outlook?",
+    "risk_disclaimer_inclusion": "Does the output include or reference the mandatory risk disclosures appropriate for a retail audience?"
+  },
+  "reference_notes": {
+    "disclaimers": "Investments can go down as well as up; overseas investments affected by currency; emerging markets more volatile; bonds carry issuer risk and interest rate risk; property valuations are subjective; reference to specific shares is not a recommendation; not personal advice."
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.95,
+    "source_pack": 0.0,
+    "query": 0.85
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

@@ -1,0 +1,130 @@
+{
+  "profile_name": "full_best_effort",
+  "description": "Best-effort verifier profile for pre-human-alignment experiments. Enables specialist LLM/VLM modules while keeping deterministic baseline rules.",
+  "execution": {
+    "render_pages": 0,
+    "extract_charts": true,
+    "cache": true
+  },
+  "models": {
+    "consolidated_llm": "deepseek/deepseek-v4-pro",
+    "chart_vl": "qwen/qwen3-vl-235b-a22b-instruct",
+    "claim_extract": "deepseek/deepseek-v4-flash",
+    "claim_judge": "deepseek/deepseek-v4-pro",
+    "strategy_extract": "deepseek/deepseek-v4-flash",
+    "strategy_judge": "deepseek/deepseek-v4-pro"
+  },
+  "modules": {
+    "enable_chart_vl_judge": true,
+    "enable_claim_numeric_llm": true,
+    "enable_strategy_reasoning_llm": true,
+    "enable_consolidated_llm_judge": false
+  },
+  "chart": {
+    "max_pages": 40,
+    "max_charts": 40,
+    "vl_max_charts": 12,
+    "vl_max_tokens": 5200,
+    "vl_repair_max_tokens": 2600
+  },
+  "claim_numeric": {
+    "max_claims": 18,
+    "max_key_facts": 12,
+    "candidate_text_chars": 22000,
+    "extract_max_tokens": 5200,
+    "judge_max_tokens": 7800,
+    "judge_repair_max_tokens": 4200,
+    "chunk_chars": 900,
+    "top_k_evidence": 6,
+    "judge_top_k_evidence": 3,
+    "judge_snippet_chars": 700,
+    "judge_max_candidate_claims": 12,
+    "judge_max_key_facts": 10,
+    "judge_numeric_match_limit": 6,
+    "included_fact_roles": [
+      "core_fact",
+      "numeric_fact",
+      "strategy_fact"
+    ],
+    "neighbor_window": 1,
+    "numeric_match_threshold": 0.82,
+    "subscore_weights": {
+      "claim_coverage": 0.42,
+      "numeric_correctness": 0.40,
+      "claim_discipline": 0.18
+    },
+    "weights": {
+      "token_overlap": 0.46,
+      "number_similarity": 0.34,
+      "hint_overlap": 0.12,
+      "date_similarity": 0.08
+    }
+  },
+  "strategy_reasoning": {
+    "max_chains": 10,
+    "candidate_text_chars": 22000,
+    "extract_max_tokens": 8000,
+    "judge_max_tokens": 8000,
+    "rubric_locale": "auto",
+    "subscore_weights": {
+      "thesis_clarity": 0.15,
+      "mechanism_depth": 0.20,
+      "evidence_to_conclusion": 0.18,
+      "investment_implication": 0.17,
+      "scenario_risk_boundary": 0.13,
+      "overclaim_control": 0.07,
+      "theme_alignment": 0.10
+    },
+    "universal_rubric": [
+      "A strategy report must state a clear strategic thesis rather than only summarize facts.",
+      "The reasoning chain should connect facts, data, policies, or events to mechanisms and then to market, sector, asset-allocation, or portfolio implications.",
+      "Evidence must be sufficient for the conclusion; penalize large inferential leaps and claims that are only loosely related to the cited facts.",
+      "The report should make the investment implication explicit, such as overweight/underweight, allocation preference, sector rotation, watchlist, timing, or risk positioning.",
+      "The report should state risk boundaries, scenarios, counterarguments, or conditions under which the thesis may fail.",
+      "Forecasts and policy/market judgements should be framed with appropriate uncertainty, not as unsupported certainty."
+    ],
+    "zh_rubric": [
+      "中文策略报告常以宏观、政策、产业链、资金面、估值、盈利、催化和风险共同构成逻辑闭环；评分时应看这些环节是否真正形成因果链。",
+      "如果主题涉及行业格局、并购重组、新能源、智能电网、北交所等，应重点检查报告是否解释竞争格局、产业链位置、公司分层、资源整合和估值重塑，而不是只罗列新闻。",
+      "资产配置或行业配置类中文报告，应明确说明配置方向、相对强弱、节奏判断和触发条件；只有宏观描述而没有配置含义时应扣分。",
+      "政策驱动类中文报告，应区分政策目标、传导机制、受益环节、兑现路径和不确定性；不能把政策表述直接等同于投资结论。",
+      "中文报告常见的风险提示模板不能自动得高分；只有与核心 thesis 对应的风险边界、反例或情景假设才算有效。",
+      "对中文表达要宽容，不要求英文式 thesis/mechanism 命名；但必须能从正文中识别出观点、依据、传导机制、投资含义和风险边界。"
+    ],
+    "score_anchors": {
+      "0.9": "Complete, professional, well-evidenced reasoning with explicit investment implications and relevant risk boundaries.",
+      "0.7": "Generally solid reasoning with minor gaps in evidence, mechanism depth, timing, or risk boundary.",
+      "0.5": "Partially useful but contains fact summaries, vague mechanisms, or weak investment implications.",
+      "0.3": "Mostly descriptive or thematic; strategy conclusion is weakly supported.",
+      "0.1": "Missing or incoherent strategy reasoning."
+    }
+  },
+  "scoring": {
+    "dimension_weights": {
+      "structure": 12,
+      "sources": 18,
+      "facts": 18,
+      "strategy_reasoning": 16,
+      "scenario_risk": 10,
+      "charts": 14,
+      "writing_layout": 7,
+      "compliance": 5
+    },
+    "fusion_weights": {
+      "fact_legacy": 0.15,
+      "fact_claim_numeric_llm": 0.85,
+      "strategy_legacy": 0.35,
+      "strategy_reasoning_llm": 0.65
+    },
+    "gate_thresholds": {
+      "overall_min": 80,
+      "sources_min": 0.70,
+      "facts_min": 0.85,
+      "fact_coverage_min": 0.75,
+      "numeric_correctness_min": 0.85,
+      "claim_discipline_min": 0.65,
+      "compliance_min": 0.95,
+      "charts_min": 0.55
+    }
+  }
+}

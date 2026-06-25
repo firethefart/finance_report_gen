@@ -1,0 +1,269 @@
+{
+  "case_id": "strategy_sample_032",
+  "query": "2025年下半年全球宏观和商品的交易策略有什么核心观点?",
+  "query_language": "zh",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "全球宏观",
+    "商品策略",
+    "2025年下半年展望"
+  ],
+  "expected_report_type": {
+    "type": "thematic_strategy",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "3-6 months",
+    "target_reader": "期货及多资产配置的投资经理"
+  },
+  "institution": {
+    "name": "国泰君安期货研究所",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": "https://pdf.dfcfw.com/pdf/H3_AP202506291699633466_1.pdf"
+  },
+  "report_title": "2025年全球宏观与商品策略",
+  "report_date": "2025-06-27",
+  "publication_period": "2025-06-01/2025-06-30",
+  "strategy_subtype": "thematic_strategy",
+  "quality_tier": "B",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\thematic_strategy\\pdf\\032-guotai-haitong-research-third-party-mirrors-2025-250627-pdf.pdf",
+    "file_name": "032-guotai-haitong-research-third-party-mirrors-2025-250627-pdf.pdf",
+    "format": "pdf",
+    "sha256": "5e911264584be5fee6ed56abaa980059ef1b95b34e41703359f7d1c7920c5960",
+    "page_count": 33,
+    "parse_quality": "good"
+  },
+  "source_pack": [
+    {
+      "name": "Wind",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "宏观经济、市场数据的主要提供商",
+      "role": "数据来源"
+    },
+    {
+      "name": "国泰君安期货研究",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "报告出品方,提供分析和图表",
+      "role": "研究机构"
+    },
+    {
+      "name": "OECD",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "综合领先指标等",
+      "role": "数据来源"
+    },
+    {
+      "name": "美国劳工统计局",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "CPI、就业等数据",
+      "role": "数据来源"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "2025年上半年中国经济内需回落但外需有韧性,Q1 GDP同比5.3%,1-5月出口累计6.0%,但房地产投资跌幅扩大至-10.7%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "描绘当前宏观背景,是判断下半年政策刺激力度和商品需求的关键起点。",
+      "verification_hint": "检查中国国家统计局公布的2025年一季度GDP和1-5月经济数据。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "报告提出商品周期≈通胀周期≈信用周期的框架,并指出商品底部通常出现在降息后期且财政发力之时。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "建立核心分析逻辑,帮助投资者在周期中定位商品及利率资产。",
+      "verification_hint": "通过Wind或Bloomberg调取CRB指数、联邦基金利率和中国国债增速的历史叠加图进行验证。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "报告判断2025年商品整体有下行压力,回落程度取决于美国进口放缓的斜率。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "提供了最核心的年度观点,直接影响多头或空头配置决策。",
+      "verification_hint": "追踪美国经济分析局(BEA)发布的月度商品和服务进口数据。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "在交易建议上,具体提示原油策略为\"逢高布空\",多配机会尚需等待。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "给出可执行的战术性信号,尤其对期货交易者具备操作价值。",
+      "verification_hint": "对比报告发布后Brent/WTI原油价格走势,验证方向判断。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "考虑到美国利率仍有下行风险且中国产能过剩需时间消化,预计2025年下半年中国10年期国债收益率在1.6%-1.8%区间震荡。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "框定利率波动范围,为国债期货及利率衍生品交易提供基准情景。",
+      "verification_hint": "观察2025年7-12月中国10年期国债活跃券的日度收盘收益率是否落在此区间。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "核心观点与市场定价锚",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "全球宏观周期定位与领先指标",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "中国内需与外需分化现状",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "商品周期历史复盘与当前位置",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "财政与货币政策的交互影响分析",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "主要资产类别交易信号与策略",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "混淆名义利率与实际利率对商品的影响",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "仅依赖美国ISM PMI而忽略OECD综合领先指标",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "突出交易方向但缺乏宏观逻辑支撑",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "将原油策略机械套用于所有品种",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "遗漏中国房地产和PPI通缩对全球商品价格的传导",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "全球CPI/PPI对比与GDP走势",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "OECD领先指标与工业生产",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "CRB工业原料vs联邦基金利率及国债收益率长周期",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "美国非农就业与ISM PMI叠加图",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "美国进口周期与商品指数同步图",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "blind_trade_test": "需在报告发布后1个月内验证原油逢高布空信号的正确性"
+  },
+  "reference_notes": {
+    "internal_counters": "strategy_sample_032",
+    "golden_researcher_qa_review": "已确认"
+  },
+  "extraction_confidence": {
+    "overall": 0.9,
+    "classification": 0.95,
+    "key_facts": 0.88,
+    "source_pack": 0.92,
+    "query": 0.85
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

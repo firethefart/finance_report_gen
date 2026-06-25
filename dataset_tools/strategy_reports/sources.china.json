@@ -1,0 +1,77 @@
+{
+  "notes": "Chinese brokerage strategy-report source candidates. Official portals are preferred; third-party public research libraries are included only for volume discovery and must be labeled during dataset selection.",
+  "sources": [
+    {
+      "institution": "中金公司研究 / CICC Research",
+      "business_type": "broker_research",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.cicc.com/",
+        "https://www.cicc.com/business/research.html",
+        "https://research.cicc.com/",
+        "https://www.cicc.com/en/business/research.html"
+      ],
+      "keywords": ["中金", "研究", "策略", "研报", "市场", "宏观", "行业", "展望", "配置", "专题"]
+    },
+    {
+      "institution": "中信证券研究 / CITIC Securities Research",
+      "business_type": "broker_research",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.citics.com/",
+        "https://www.citics.com/research/",
+        "https://research.citics.com/",
+        "https://research.citics.com/rpt"
+      ],
+      "keywords": ["中信证券", "研究", "策略", "研报", "市场", "宏观", "行业", "展望", "配置", "专题"]
+    },
+    {
+      "institution": "华泰证券研究 / Huatai Securities Research",
+      "business_type": "broker_research",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.htsc.com.cn/",
+        "https://www.htsc.com.cn/htzq/service/research/",
+        "https://www.htsc.com.cn/htzq/research/",
+        "https://crm.htsc.com.cn/"
+      ],
+      "keywords": ["华泰证券", "华泰研究", "策略", "研报", "市场", "宏观", "行业", "展望", "配置", "专题"]
+    },
+    {
+      "institution": "国泰海通证券研究 / Guotai Haitong Research",
+      "business_type": "broker_research",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.gtht.com/",
+        "https://www.gtht.com/main/research/",
+        "https://www.gtja.com/",
+        "https://www.htsec.com/"
+      ],
+      "keywords": ["国泰海通", "国泰君安", "海通证券", "研究", "策略", "研报", "市场", "宏观", "行业", "展望"]
+    },
+    {
+      "institution": "广发证券研究 / GF Securities Research",
+      "business_type": "broker_research",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.gf.com.cn/",
+        "https://www.gf.com.cn/business/research",
+        "https://www.gf.com.cn/research",
+        "https://www.gf.com.cn/about/research"
+      ],
+      "keywords": ["广发证券", "广发研究", "策略", "研报", "市场", "宏观", "行业", "展望", "配置", "专题"]
+    },
+    {
+      "institution": "招商证券研究 / CMS China Research",
+      "business_type": "broker_research",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.cmschina.com/",
+        "https://www.cmschina.com/research/",
+        "https://www.cmschina.com/yf.html",
+        "https://www.newone.com.cn/"
+      ],
+      "keywords": ["招商证券", "招商研究", "策略", "研报", "市场", "宏观", "行业", "展望", "配置", "专题"]
+    }
+  ]
+}

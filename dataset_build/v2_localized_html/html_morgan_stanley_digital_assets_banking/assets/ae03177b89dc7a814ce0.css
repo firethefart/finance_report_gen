@@ -1,0 +1,88 @@
+.articleHeader{max-width:1280px !important;margin:0 auto;float:none !important;padding:0}
+.articleHeader .cmp_articleHeader_Image{width:100%}
+.articleHeader .cmp-image__image{width:100%}
+.articleHeader .articleheader-share{position:relative;grid-column:1 / span 7;grid-row:6 / span 1}
+.articleHeader .articleheader-share a:hover,.articleHeader .articleheader-share a:focus{color:#136194;text-decoration:underline}
+.articleHeader .articleheader-share:hover::after,.articleHeader .articleheader-share:focus::after{opacity:.8}
+.articleHeader .articleheader-share-social{position:absolute;background-color:#fff;z-index:10;padding:0 12px;display:block;margin-left:40px;border-left:1px solid #a9a6a6;height:15px}
+.articleHeader .articleheader-share-social div{display:inline-block;padding:0 10px}
+.articleHeader .articleheader-share-social span{background-position:center;background-repeat:no-repeat;display:inline-block;height:27px;width:20px;margin-top:-5px}
+.articleHeader .articleheader-share:after{content:"";background-image:url('86c931e9b8693ca1bc96.svg');background-repeat:no-repeat;display:inline-block;height:15px;width:25px;cursor:pointer;padding-left:14px}
+.articleHeader .articleheader_clock{content:"";background-image:url('49bdb652b46a0d59861e.svg');background-repeat:no-repeat;display:inline-block;height:14px;width:18px}
+.articleHeader .cmp_articleheader_podcast{content:"";background-image:url('656390a3c78531249ff2.svg');background-repeat:no-repeat;display:inline-block;height:25px;cursor:pointer;padding-right:40px}
+.articleHeader .cmp_articleheader_playstore{content:"";background-image:url('384045be6e17b6f95862.svg');background-repeat:no-repeat;display:inline-block;height:25px;padding-right:40px;cursor:pointer}
+.articleHeader .cmp_articleheader_spotify{content:"";background-image:url('66e8cda735445c2965e0.svg');background-repeat:no-repeat;display:inline-block;height:25px;padding-right:40px;cursor:pointer}
+.articleHeader .articleheader-share-social a:hover,.articleHeader .articleheader-share-social a:focus{opacity:.8}
+.articleHeader .cmp_articleheader_noLink{text-decoration:none;cursor:default;color:#000}
+.articleHeader .article_header_grid-container{display:grid;grid-template-columns:40px repeat(11,1fr 40px) 1fr 40px;background-color:#fff}
+.articleHeader .cmp_articleHeader_image_fullWidth{grid-column:1 / span 26;padding-top:103px}
+.articleHeader .cmp_articleHeader_image_halfWidth{grid-column:6 / span 17;padding-top:103px}
+.articleHeader .cmp_articleHeader_div_str_fullwidth{grid-column:7 / span 16;padding-left:40px;padding-right:40px;position:relative;bottom:50px}
+.articleHeader .cmp_articleHeader_div_str_halfwidth{grid-column:8 / span 13;padding-left:40px;padding-right:40px;position:relative;bottom:50px}
+.articleHeader .cmp_articleHeader_text_eyebrow{font-family:"karlaregular",sans-serif;font-style:normal;font-size:12px;line-height:12px;letter-spacing:.24px;text-transform:uppercase;background-color:#fff;height:auto;padding-top:25px}
+.articleHeader .cmp_articleHeader_text_eyebrow a:link{color:#187aba;cursor:pointer;text-decoration:none}
+.articleHeader .cmp_articleHeader_text_eyebrow a:link:hover{text-decoration:underline}
+.articleHeader .cmp_articleHeader_top_heading{font-family:"ms_gloriola_ii_std_semibold",sans-serif;font-style:normal;line-height:44px;letter-spacing:-1.45px;color:#333;background-color:#fff;padding-top:15px}
+.articleHeader .cmp_articleheader_mobile_topheading{width:100%;float:left;margin:0;font-size:40px}
+.articleHeader .cmp_articleHeader_grid_column_struture{margin-top:0;background-color:#fff}
+.articleHeader .dateminute_fullwidth{margin-top:1%}
+.articleHeader .dateminute_halfwidth{margin-top:1%}
+.articleHeader .cmp_articleHeader_date{float:left;font-family:"karlaregular",sans-serif;font-style:normal;font-size:14px;line-height:24px;color:#4c4c4c;padding-right:30px;letter-spacing:-0.5075px;margin-top:-5px}
+.articleHeader .cmp_articleHeader_minute{font-family:"karlaregular",sans-serif;font-style:normal;font-size:12px;line-height:12px;display:flex;align-items:center;letter-spacing:.24px;text-transform:uppercase;color:#4c4c4c}
+.articleHeader .cmp_articleHeader_para{font-family:"karlaregular",sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:24px;letter-spacing:-0.666667px;color:#666;margin-top:5px}
+.articleHeader .cmp_articleHeader_text_source{font-family:"karlaregular",sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:24px;letter-spacing:-0.666667px;color:#666;margin-top:10px;margin-bottom:10px}
+.articleHeader .cmp_articleHeader_subscribe{float:left;font-family:"karlaregular",sans-serif;font-style:normal;font-size:12px;line-height:12px;letter-spacing:.24px;text-transform:uppercase;color:#333;padding-top:4px;padding-right:13px}
+.articleHeader .cmp_articleHeader_grid_section_div_author{background-color:#fff;margin-bottom:20px}
+.articleHeader .cmp_articleHeader_grid_section_div_author .cmp_articlHeader_images_grid-container{display:grid;gap:10px;grid-template-columns:auto auto auto;padding:1px}
+.articleHeader .cmp_articleHeader_grid_section_div_contributer{background-color:#fff;margin-bottom:20px}
+.articleHeader .cmp_articleHeader_grid_section_div_contributer .cmp_articlHeader_images_grid-container{display:grid;gap:10px;grid-template-columns:auto auto auto;padding:1px}
+.articleHeader .cmp_articleHeader_grid_section_div_host{background-color:#fff;margin-bottom:20px}
+.articleHeader .cmp_articleHeader_grid_section_div_host .cmp_articlHeader_images_grid-container{display:grid;gap:10px;grid-template-columns:auto auto auto;padding:1px}
+.articleHeader .cmp_articlHeader_images_grid-item{min-width:120px}
+.articleHeader .cmp_articleHeader_section_heading{font-family:"karlaregular",sans-serif;font-style:normal;font-size:14px;line-height:24px;letter-spacing:-0.5075px}
+.articleHeader .cmp_articleHeader_section_image_width{float:left;padding-top:5px}
+.articleHeader .cmp_articleHeader_img_width{border-radius:50%;height:44px;max-width:44px;padding-right:4px}
+.articleHeader .cmp_articleHeader_section_fullname{padding-top:8px;font-family:"karlaregular",sans-serif;font-style:normal;font-size:14px;line-height:16px;letter-spacing:-0.5075px;color:#333;word-break:break-word}
+.articleHeader .cmp_articleHeader_section_fullname a:-webkit-any-link{color:#187aba !important;cursor:pointer;text-decoration:none}
+.articleHeader .cmp_articleHeader_section_fullname a:link:hover{text-decoration:underline}
+@media(max-width:1023px){.articleHeader .article_header_grid-container{grid-template-columns:20px repeat(11,1fr 20px) 1fr 20px}
+.articleHeader .cmp_articleHeader_image_fullWidth{grid-column:1 / span 26;padding-top:58px}
+.articleHeader .cmp_articleHeader_image_halfWidth{grid-column:4 / span 19;padding-top:58px}
+.articleHeader .cmp_articleHeader_div_str_fullwidth{grid-column:6 / span 17}
+.articleHeader .cmp_articleHeader_div_str_halfwidth{grid-column:5 / span 17}
+.articleHeader .dateminute_fullwidth{margin-top:1%}
+.articleHeader .cmp_articleHeader_top_heading{line-height:33px;letter-spacing:-0.681818px}
+.articleHeader .cmp_articleheader_mobile_topheading{font-size:30px}
+.articleHeader .dateminute_halfwidth{margin-top:1%}
+.articleHeader .cmp_articleHeader_section_image_width{height:70px}
+.articleHeader .cmp_articleHeader_img_width{height:42px;max-width:42px}
+.articleHeader .cmp_articlHeader_images_grid-item{min-width:145px}
+.articleHeader .cmp_articleHeader_grid_section_div_author .cmp_articlHeader_images_grid-container{gap:35px}
+.articleHeader .cmp_articleHeader_grid_section_div_contributer .cmp_articlHeader_images_grid-container{gap:35px}
+.articleHeader .cmp_articleHeader_grid_section_div_host .cmp_articlHeader_images_grid-container{gap:35px}
+}
+@media(max-width:767px){.articleHeader .article_header_grid-container{grid-template-columns:20px repeat(11,1fr 20px) 1fr 20px;gap:0 !important;padding:0}
+.articleHeader .cmp_articleHeader_image_fullWidth{grid-column:1 / span 25}
+.articleHeader .cmp_articleHeader_image_halfWidth{grid-column:1 / span 25}
+.articleHeader .cmp_articleHeader_div_str_fullwidth{grid-column:3 / span 23;padding-left:15px;bottom:140px;padding-right:15px;margin-bottom:-2px}
+.articleHeader .cmp_articleHeader_div_str_halfwidth{grid-column:3 / span 23;padding-left:15px;bottom:140px;padding-right:15px;margin-bottom:-2px}
+.articleHeader .cmp_articleHeader_top_heading{padding-bottom:10px;width:100%;line-height:26px;letter-spacing:-0.9425px}
+.articleHeader .cmp_articleheader_mobile_topheading{font-size:26px}
+.articleHeader .cmp_articleHeader_grid_column_struture{margin-top:0;width:100%}
+.articleHeader .cmp_articleHeader_para{margin-top:2%;width:100%}
+.articleHeader .cmp_articleHeader_text_source{padding-top:15px}
+.articleHeader .cmp_articleHeader_img_width{height:36px;max-width:36px}
+.articleHeader .cmp_articleHeader_section_heading{padding-left:8px}
+.articleHeader .cmp_articleHeader_grid_section_div_author{margin-top:15px}
+.articleHeader .cmp_articleHeader_grid_section_div_author .cmp_articlHeader_images_grid-container{gap:20px;grid-template-columns:auto auto;padding:0}
+.articleHeader .cmp_articleHeader_grid_section_div_author .cmp_articlHeader_images_grid-item{padding-top:15px}
+.articleHeader .cmp_articleHeader_grid_section_div_author .cmp_articlHeader_images_grid-item{padding:0}
+.articleHeader .cmp_articleHeader_grid_section_div_contributer{margin-top:15px}
+.articleHeader .cmp_articleHeader_grid_section_div_contributer .cmp_articlHeader_images_grid-container{gap:20px;grid-template-columns:auto auto;padding:0}
+.articleHeader .cmp_articleHeader_grid_section_div_contributer .cmp_articlHeader_images_grid-item{padding-top:15px;width:76%}
+.articleHeader .cmp_articleHeader_grid_section_div_contributer .cmp_articlHeader_images_grid-item{padding:0}
+.articleHeader .cmp_articleHeader_grid_section_div_host{margin-top:15px}
+.articleHeader .cmp_articleHeader_grid_section_div_host .cmp_articlHeader_images_grid-container{gap:20px;grid-template-columns:auto auto;padding:0}
+.articleHeader .cmp_articleHeader_grid_section_div_host .cmp_articlHeader_images_grid-item{padding-top:15px;width:76%}
+.articleHeader .cmp_articleHeader_grid_section_div_host .cmp_articlHeader_images_grid-item{padding:0}
+}

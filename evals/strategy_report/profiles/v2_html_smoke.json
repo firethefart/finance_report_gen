@@ -1,0 +1,50 @@
+{
+  "profile_name": "v2_html_smoke",
+  "verifier_version": "v2_candidate_only",
+  "execution": {
+    "cache": true,
+    "input_adapter": "html_runtime_adapter_v2"
+  },
+  "models": {
+    "chart_vl": "qwen/qwen3-vl-235b-a22b-instruct",
+    "claim_extract": "deepseek/deepseek-v4-flash",
+    "claim_judge": "deepseek/deepseek-v4-pro",
+    "strategy_extract": "deepseek/deepseek-v4-flash",
+    "strategy_judge": "deepseek/deepseek-v4-pro"
+  },
+  "modules": {
+    "enable_chart_vl_judge": false,
+    "enable_claim_numeric_llm": false,
+    "enable_strategy_reasoning_llm": false
+  },
+  "html_adapter": {
+    "max_visuals": 80,
+    "viewport_width": 1440,
+    "viewport_height": 1100,
+    "context_height": 1200
+  },
+  "chart": {
+    "vl_max_charts": 4,
+    "vl_max_tokens": 4200,
+    "vl_repair_max_tokens": 2600
+  },
+  "v2_scoring": {
+    "dimension_weights": {
+      "delivery": 10,
+      "structure": 14,
+      "source_traceability": 14,
+      "claim_numeric_discipline": 16,
+      "strategy_reasoning": 18,
+      "scenario_risk": 10,
+      "visual_qa": 13,
+      "compliance": 5
+    },
+    "gate_thresholds": {
+      "overall_min": 75,
+      "text_length_min": 2500,
+      "compliance_min": 0.9,
+      "visual_min": 0.45,
+      "strategy_reasoning_min": 0.45
+    }
+  }
+}

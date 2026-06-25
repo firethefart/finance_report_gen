@@ -1,0 +1,271 @@
+{
+  "case_id": "strategy_sample_004",
+  "query": "What are the biggest risks to the concentrated AI-driven rally in US equities heading into 2026?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "US equity market",
+    "AI and semiconductor stocks",
+    "concentration risk",
+    "medium-term outlook"
+  ],
+  "expected_report_type": {
+    "type": "annual investment outlook",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "12 months",
+    "target_reader": "private wealth clients and institutional investors"
+  },
+  "institution": {
+    "name": "J.P. Morgan Private Bank / Wealth Management",
+    "business_type": "private_bank",
+    "country_or_region": "US",
+    "official_url": null
+  },
+  "report_title": "Smothering Heights",
+  "report_date": "2026-01-01",
+  "publication_period": "2026 Outlook",
+  "strategy_subtype": "asset_allocation",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\004-j-p-morgan-private-bank-wealth-management-smothering-heights.pdf",
+    "file_name": "004-j-p-morgan-private-bank-wealth-management-smothering-heights.pdf",
+    "format": "pdf",
+    "sha256": "c8a94fde08ba32b68059f20961454a475cbb00e024038728d2402e6e6b86cc0d",
+    "page_count": 53,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "Bloomberg",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Used for S&P 500, MSCI indices, and sector performance data",
+      "role": "Data provider for market returns, earnings, and capital spending"
+    },
+    {
+      "name": "JPMAM Calculations",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Internal computations of AI-stock contribution and concentration metrics",
+      "role": "Proprietary analysis and aggregation"
+    },
+    {
+      "name": "Historical Infrastructure Data",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Sources include BEA, San Francisco Fed, and Hoover archives for GDP comparisons",
+      "role": "Comparative context for tech capex"
+    },
+    {
+      "name": "Nvidia, TSMC, ASML Financials",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Used to illustrate moat foundation and market cap growth",
+      "role": "Underlying data for semiconductor ecosystem valuation"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "42 AI-related companies generated 65-75% of S&P 500 returns, profits, and capital spending since ChatGPT's launch in November 2022.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Highlights unprecedented market concentration risk in a dominant investment theme.",
+      "verification_hint": "Cross-reference with Bloomberg sector data and JPMorgan's published exhibits in the report."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "The market capitalization of four hyperscalers and the semiconductor ecosystem has grown from $3 trillion to $18 trillion in a few years.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Demonstrates the scale of the AI-driven wealth creation and the potential fragility of the moat.",
+      "verification_hint": "Compare market cap data for NVDA, TSMC, ASML, and major hyperscalers from 2018 to 2025."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Tech sector capital spending contributed 40-45% of US GDP growth in recent quarters, up from less than 5% in early 2023.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Shows the economy's dependency on a narrow set of technology investments.",
+      "verification_hint": "Check US Bureau of Economic Analysis data against the report's stated GDP contribution figures."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "The report identifies four medium-term moat risks: US power constraints, China scaling the technology, Taiwan geopolitical risk, and a potential 'metaverse moment' after $1.3 trillion in hyperscaler capex.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Outlines the key threats to the current market paradigm, essential for risk management.",
+      "verification_hint": "Confirm these four risk themes are explicitly stated in the executive summary sections."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "An equal-weighted basket of speculative assets (bitcoin-sensitive stocks, quantum computing, nuclear SMRs, unprofitable tech) was up 120% mid-year before correcting.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Indicates speculative froth alongside fundamental tech progress, a classic late-cycle signal.",
+      "verification_hint": "Locate the footnote in the report that details the performance of this speculative basket."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary with concentration thesis",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Data on AI-stock contribution to S&P 500 returns, earnings, and capex",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Comparative chart of tech capex versus historical infrastructure projects",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Detailed analysis of the four identified moat risks",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Historical or macroeconomic context for tech spending",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Authorial commentary on market cycle positioning",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Concluding outlook on everything else, including populism",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Confusing AI-driven concentration with a diversified market rally",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the specific four moat risks (power, China scaling, Taiwan, metaverse moment)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Misattributing the report to a different part of J.P. Morgan (e.g., investment banking rather than private bank/wealth management)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Providing quantitative predictions without caveats on speculative activity",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the comparative infrastructure spending context when discussing GDP impact",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Overlooking the dual nature of the rally (technological progress plus speculative frenzy)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "AI-related stocks contribution table (returns, earnings, capex growth)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "Tech capital spending vs US infrastructure projects bar chart",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "Hyperscaler and semiscaler market cap growth trend line",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "concentration_framework": "Did the response correctly frame the 42-companies concentration narrative?",
+    "risk_identification": "Were all four moat risks identified and explained?",
+    "data_fidelity": "Did the response use the correct figures (e.g., $18 trillion market cap, 40-45% GDP contribution) in context?"
+  },
+  "reference_notes": {
+    "unique_thesis": "The AI investment theme has 'smothered' the rest of the market, creating the largest moat in history that faces four specific medium-term threats.",
+    "structural_approach": "Combines top-down market concentration data with bottom-up risk assessment, plus a historical analogue for tech spending."
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.92,
+    "source_pack": 0.88,
+    "query": 0.96
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

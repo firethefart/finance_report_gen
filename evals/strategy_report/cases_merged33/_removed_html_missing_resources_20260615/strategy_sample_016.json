@@ -1,0 +1,250 @@
+{
+  "case_id": "strategy_sample_016",
+  "query": "How are hedge funds evolving in the post-QE high dispersion regime and what are the key trends in manager selection, access points, and strategy implementation for institutional portfolios?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "Post-2022 market regime change",
+    "Hedge fund alpha opportunities",
+    "Manager dispersion and selection",
+    "Portable alpha and equity flex strategies",
+    "SMAs and co-investment access"
+  ],
+  "expected_report_type": {
+    "type": "strategy_report",
+    "depth": "institutional_style",
+    "output_format": "webpage",
+    "expected_time_horizon": "Medium-term (1-5 years)",
+    "target_reader": "Institutional allocators, asset managers, family offices, and consultants"
+  },
+  "institution": {
+    "name": "Goldman Sachs Asset Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://am.gs.com/en-us/institutions/insights/article/2025/mapping-the-evolution-hedge-funds-in-a-new-market-regime"
+  },
+  "report_title": "Mapping the Evolution: Hedge Funds in A New Market Regime",
+  "report_date": "2025-03-07",
+  "publication_period": "March 2025",
+  "strategy_subtype": "thematic_strategy",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\thematic_strategy\\html\\016-goldman-sachs-asset-management-mapping-the-evolution-hedge-funds-in-a-new-market-regime-goldman-sachs-asset-man.html",
+    "file_name": "016-goldman-sachs-asset-management-mapping-the-evolution-hedge-funds-in-a-new-market-regime-goldman-sachs-asset-man.html",
+    "format": "html",
+    "sha256": "705a330acd73dee4e52660d9d007f096e961b8c20354580f5a27fd10cd657792",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "Goldman Sachs Prime Brokerage Allocator Survey",
+      "type": "survey",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Used to demonstrate forward-looking hedge fund demand ranking across asset classes.",
+      "coverage": "Near 40 multi-manager firms managing over $300 billion"
+    },
+    {
+      "name": "MSCI World NR USD Index",
+      "type": "index",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Used to show equity returns and correlations in QE vs post-QE periods.",
+      "coverage": "Global equity benchmark"
+    },
+    {
+      "name": "Bloomberg Barclays Global Aggregate Index",
+      "type": "index",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Used to show fixed income returns and equity-fixed income correlations.",
+      "coverage": "Global fixed income benchmark"
+    },
+    {
+      "name": "GS Prime Insights & Analytics",
+      "type": "internal_data",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Supportive data for dispersion analysis and demand trends.",
+      "coverage": "Proprietary hedge fund and allocator behavior data"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Since 2022, a new market regime with higher volatility, interest rates, and inflation has emerged, reversing the suppressed volatility of the QE era.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "This environment is structurally conducive to alpha generation by skill-based hedge fund managers.",
+      "verification_hint": "Check the report section 'Making Sense of the Market' and the 'Then vs Now' table for volatility and correlation data."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Hedge funds have outperformed traditional 60/40 portfolios on a one-, three-, and five-year absolute and risk-adjusted basis.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "It supports the case for increasing hedge fund allocations versus passive balanced portfolios.",
+      "verification_hint": "Look for performance comparison figures between hedge funds and 60/40 portfolios in the report."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Between 2020 and 2024, 60/40 return expectations fell from 6.1% to 5.5% while hedge fund returns rose from 4.8% to 9.3%.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Demonstrates a historical inversion of return advantage in favor of hedge funds.",
+      "verification_hint": "Find the precise return figures in the 'Making Sense of the Market' section."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Multi-manager hedge fund landscape has become more binary, divided between industrialized platform hedge funds and specialized hedge funds.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "This distinction directly impacts manager selection, due diligence, and portfolio construction decisions.",
+      "verification_hint": "Locate the section 'Evolving multi-manager hedge fund dynamics' for this classification."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary or key takeaways",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Post-QE market environment analysis",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Hedge fund performance vs traditional 60/40 portfolios",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Manager dispersion and selection discussion",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Evolution of access points (funds, SMAs, co-investments)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Spotlight on portable alpha and equity flex strategies",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Outlook or implications for institutional portfolios",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Claiming hedge funds guarantee outperformance or are risk-free",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Confusing correlation with causation when discussing macro factors",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the distinction between platform and specialized multi-manager models",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the role of manager selection risk given widening dispersion",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to mention the resurgence of specific implementation strategies like 130/30",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "Then vs Now: A New Regime Supportive for Hedge Funds (correlation comparison chart)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "Hedge Funds are in High Demand Versus Other Asset Classes (allocator demand chart)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "key_claims_validation": "Check whether the generated report explicitly states the 2020-2024 return figures (60/40: 6.1% to 5.5%; HF: 4.8% to 9.3%) and attributes the data to GSAM.",
+    "terminology_check": "Generated report must correctly use and define terms like 'portable alpha,' 'equity flex,' 'platform hedge funds,' and 'specialized hedge funds.'"
+  },
+  "reference_notes": {
+    "summary": "The report is part of Goldman Sachs Asset Management's 'Perspectives' series. Legal disclaimers emphasize that past performance is not indicative of future results and correlations may vary.",
+    "legal_disclaimers": "Past performance is not indicative of future results. Alternative investments are illiquid and speculative. Portfolio risk management does not imply low risk.",
+    "benchmarks_used": [
+      "MSCI World NR USD Index",
+      "Bloomberg Barclays Global Aggregate Index"
+    ]
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 1.0,
+    "key_facts": 0.95,
+    "source_pack": 0.9,
+    "query": 0.9
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

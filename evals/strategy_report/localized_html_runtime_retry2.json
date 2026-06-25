@@ -1,0 +1,27 @@
+{
+  "name": "v2_localized_real_html_candidates",
+  "purpose": "Runtime and visual review set for localized real-institution strategy reports.",
+  "samples": [
+    {
+      "id": "html_jpm_promise_pressure_outlook",
+      "group": "localized_real_institution",
+      "path": "dataset_build\\v2_localized_html\\html_jpm_promise_pressure_outlook\\index.html",
+      "expected": "J.P. Morgan Private Bank annual_outlook HTML; offline-complete text and meaningful visuals.",
+      "institution": "J.P. Morgan Private Bank",
+      "language": "en",
+      "subtype": "annual_outlook",
+      "archetype": "standard_strategy"
+    },
+    {
+      "id": "html_morgan_stanley_digital_assets_banking",
+      "group": "localized_real_institution",
+      "path": "dataset_build\\v2_localized_html\\html_morgan_stanley_digital_assets_banking\\index.html",
+      "expected": "Morgan Stanley industry_strategy HTML; offline-complete text and meaningful visuals.",
+      "institution": "Morgan Stanley",
+      "language": "en",
+      "subtype": "industry_strategy",
+      "archetype": "brief_commentary"
+    }
+  ],
+  "missing_enabled_candidates": []
+}

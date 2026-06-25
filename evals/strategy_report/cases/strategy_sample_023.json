@@ -1,0 +1,252 @@
+{
+  "case_id": "strategy_sample_023",
+  "query": "How can active ETFs help build portfolio resilience during times of market uncertainty?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "Active ETFs",
+    "portfolio resilience",
+    "market uncertainty"
+  ],
+  "expected_report_type": {
+    "type": "strategy_research_report",
+    "depth": "institutional_style",
+    "output_format": "webpage",
+    "expected_time_horizon": "Medium-term (6-12 months)",
+    "target_reader": "Institutional investors and financial advisors"
+  },
+  "institution": {
+    "name": "Goldman Sachs Asset Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://am.gs.com/en-us/institutions"
+  },
+  "report_title": "Active ETFs: Helping Bolster Portfolio Resilience in Uncertain Markets",
+  "report_date": "2025-07-14",
+  "publication_period": null,
+  "strategy_subtype": "asset_allocation",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\html\\023-goldman-sachs-asset-management-active-etfs-helping-bolster-portfolio-resilience-in-uncertain-markets-goldman-sa.html",
+    "file_name": "023-goldman-sachs-asset-management-active-etfs-helping-bolster-portfolio-resilience-in-uncertain-markets-goldman-sa.html",
+    "format": "html",
+    "sha256": "90cb5b3b37322748993cc7357916bf3508454bf80fe4bda57c1bddd25efc8ef9",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "Active ETF industry growth data",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Global AUM milestones ($1.1T) and regional breakdowns",
+      "description": "Global AUM milestones ($1.1T) and regional breakdowns"
+    },
+    {
+      "name": "GSAM Perspectives series framework",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "In-house research and thought leadership on active ETFs",
+      "description": "In-house research and thought leadership on active ETFs"
+    },
+    {
+      "name": "Risk/return tracking error analysis",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Proprietary GSAM analysis on alpha efficiency vs. tracking error levels",
+      "description": "Proprietary GSAM analysis on alpha efficiency vs. tracking error levels"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Active ETFs topped $1.1 trillion in global assets under management with US dominance and rapid European growth to about $60 billion.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Demonstrates the scale and adoption trend of active ETF vehicles as a material component of investor portfolios.",
+      "verification_hint": "Check GSAM source footnotes or independent ETF flow data from providers like ETFGI or Bloomberg."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Enhanced equity strategies target permissible tracking error in the range of 100 to 200 basis points to deliver more consistent alpha compared to higher-tracking-error approaches.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Provides quantitative guardrails for constructing core equity allocations that seek outperformance with controlled risk.",
+      "verification_hint": "Confirm tracking error targets in GSAM's specific enhanced ETF product literature or similar strategy documentation."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Higher tracking error results in decreasing marginal return to alpha, making risk-adjusted outperformance potentially higher at lower tracking error levels.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Challenges the assumption that more active risk leads to proportionally better outcomes, influencing portfolio design.",
+      "verification_hint": "Look for the referenced GSAM analysis chart or similar academic studies on the active share/alpha relationship."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Active ETFs provide agile access to less efficient markets such as small caps, emerging markets, and US municipal bonds where bottom-up security selection is essential.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Identifies asset classes where the active ETF wrapper may offer the greatest advantage versus passive alternatives.",
+      "verification_hint": "Review the holdings and benchmark of GSAM's small cap or muni active ETFs to confirm exposure to these segments."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Active ETFs combine the research and risk management benefits of active management with the intraday trading, transparency, and cost-effectiveness of the ETF structure.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Highlights the structural advantages that make active ETFs a potentially superior vehicle for active strategies compared to mutual funds.",
+      "verification_hint": "Compare daily portfolio disclosure frequency and expense ratios of active ETFs versus equivalent active mutual funds."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive Summary/Market Context on Uncertainty",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Active ETF Growth and Industry Landscape (AUM, trends)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Spectrum of Active Strategies (Enhanced Indexing to Fully Active)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Advantages of ETF Wrapper (Transparency, Trading, Cost)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Core Alpha Stability: Enhanced Strategies and Tracking Error",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Access to Inefficient Markets (Small Caps, EM, Munis)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Conclusion and Portfolio Implications",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Claiming active ETFs eliminate market risk or guarantee outperformance",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Describing enhanced strategies as having no tracking error",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Presenting passive investing as universally efficient without nuance",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the commercial bias of the source material in derivative summaries",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the distinction between enhanced-indexing and fully active strategies",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to cite any numerical data on AUM or tracking error ranges",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "Figure 1: Diminishing Marginal Alpha vs. Tracking Error (conceptual)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "Data table on Active ETF AUM by Region (US vs. Europe)",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "alpha_efficiency_claim": "Verify the non-linear relationship between tracking error and alpha generation using independent academic or white paper sources.",
+    "asset_level_growth": "Cross-reference $1.1T global active ETF AUM figure with latest ETFGI or Morningstar data as of the report date."
+  },
+  "reference_notes": {
+    "disclaimers": "Contains extensive legal disclaimers for multiple jurisdictions; marketing material from asset manager promoting own products.",
+    "biases": "Potential bias towards active management benefits; claims on alpha efficiency based on proprietary analysis."
+  },
+  "extraction_confidence": {
+    "overall": 0.92,
+    "classification": 0.95,
+    "key_facts": 0.9,
+    "source_pack": 0.95,
+    "query": 0.85
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

@@ -1,0 +1,285 @@
+{
+  "case_id": "eastmoney_cn_strategy_010",
+  "query": "聊聊北交所涂料产业链有哪些值得关注的标的,高端涂料国产替代空间大吗?",
+  "query_language": "zh",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "北交所",
+    "涂料产业链",
+    "高端涂料",
+    "国产替代"
+  ],
+  "expected_report_type": {
+    "type": "北交所策略专题报告",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "中短期(数周至数月)",
+    "target_reader": "权益市场投资者、机构客户、行业研究员"
+  },
+  "institution": {
+    "name": "开源证券股份有限公司",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": null
+  },
+  "report_title": "高端涂料外资垄断下的百亿蓝海,北交所高端涂料军团族兴新材、彩客科技、雅图高新亮相",
+  "report_date": "2026-05-31",
+  "publication_period": null,
+  "strategy_subtype": "bse_strategy_thematic",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260601-AP202605311823108372-c2c92754e6.pdf",
+    "file_name": "20260601-AP202605311823108372-c2c92754e6.pdf",
+    "format": "pdf",
+    "sha256": "b640057d9d928a791b4ee8b9da29b98bdb5267aaabecb54f3015636e7cffd6da",
+    "page_count": 21,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "eastmoney_strategy_api_pdf",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "从东方财富API获取并验证的官方PDF原文,解析质量极佳。",
+      "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202605311823108372_1.pdf",
+      "sha256": "b640057d9d928a791b4ee8b9da29b98bdb5267aaabecb54f3015636e7cffd6da"
+    },
+    {
+      "name": "开源证券历史研报",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "报告末尾引用了分析师团队近期的《金戈新材》、《彩客科技》新股申购报告和《北交所信息更新》。",
+      "source_url": null,
+      "sha256": null
+    },
+    {
+      "name": "中国涂料工业协会行业数据",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "报告中引用的2024年涂料总产量及行业集中度数据来源于《中国涂料行业2024年经济运行情况及2025年发展趋势分析》。",
+      "source_url": null,
+      "sha256": null
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "我国涂料行业产量持续增长但集中度低,2024年总产量达3,534.1万吨,前100强市场份额仅38.71%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "为国产替代和行业整合提供了充足的市场空间和机会。",
+      "verification_hint": "查阅中国涂料工业协会发布的《中国涂料行业2024年经济运行情况及2025年发展趋势分析》。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "高性能有机颜料可替代经典有机和无机颜料,应用在汽车面漆、食品包装等要求苛刻的高端领域。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "这是高端涂料产业链中游的关键材料和重要技术升级方向。",
+      "verification_hint": "对比报告中引用的不同颜料性能表格,或查询彩客科技招股书中对高性能颜料技术壁垒的描述。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "工业涂料下游应用中,一般工业漆和工业防腐涂料占比最大,分别为31.8%和21.2%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "这指出了工业涂料市场中最大的两个细分应用领域,有助于判断下游需求弹性。",
+      "verification_hint": "核对报告中的图6\"工业涂料下游应用领域市场比重\"或相关行业咨询机构发布的工业涂料市场报告。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "北交所涂料产业链当前已形成包含族兴新材、彩客科技(已过会)、雅图高新(已过会)在内的标的矩阵。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "构成了该投资主题下可交易的直接标的池,是报告的核心推荐逻辑。",
+      "verification_hint": "通过北交所官网或东方财富数据中心检索相关公司审核状态和信息披露文件。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "2025年5月最后一周(截至5月29日),北证50指数周涨跌幅为-6.27%,同期开源北交所化工新材行业指数下跌4.94%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "反映了报告发布时点的市场情绪和行业相对表现,是持仓和调仓决策的即时参考。",
+      "verification_hint": "从Wind终端或Choice提取2026年5月23日至5月29日的北证50及北交所化工新材行业板块K线数据。"
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "民士达(833394.BJ)为深化产业链垂直整合,计划以现金收购中菱科技51.00%股权。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "这是北交所新材料公司外延扩张的典型案例,可能对行业格局产生长期影响。",
+      "verification_hint": "查阅民士达于2026年5月下旬通过北交所信息披露平台发布的关于收购资产的公告。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "分析师证书编号与责任声明",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "报告核心摘要或投资要点",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "市场空间测算及产业链分析",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "相关北交所上市公司标的梳理",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "当期北交所及细分行业市场表现复盘",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "相关行业新闻与公司公告解读",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "风险提示(宏观经济、市场竞争、数据统计)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "混淆北交所与沪深交易所的交易规则或涨跌幅限制",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "将涂料行业通用数据套用于某个特定公司而不做区分",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "遗漏或错误引用分析师执业资格及相应合规免责条款",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "对过会和问询状态的标的进行已上市交易的相关描述",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "在复盘周度涨跌时,忽略统计区间或使用未经除权处理的收盘价",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "图2:2019-2024年中国涂料总产量",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "图5:2020-2025E中国工业涂料市场规模",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "图6:工业涂料下游应用领域市场比重",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "图7-8:本周北证50/化工新材行业涨跌幅",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "图10-19:各类化工品价格走势",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "critical_thought_trigger": "请评估报告推荐的高端涂料产业链标的各自的商业化阶段和国产替代技术卡点,并分析在当前宏观经济背景下可能面临的需求波动风险。",
+    "anti_hallucination_guard": "报告中提到的过会未上市公司在正式上市前不得虚构二级市场交易价格;周度涨跌幅数据必须与指定时间段严格对齐。",
+    "local_style_marker": "使用中文撰写,关键数据后注明来源,报告末尾附完整风险提示。"
+  },
+  "reference_notes": {
+    "机构署名习惯": "报告包含《证券研究报告》标识、分析师姓名、邮箱、证书编号、研究所地址等完整信息。",
+    "合规语句格式": "首页和正文内页均有'请务必参阅正文后面的信息披露和法律声明'固定格式。",
+    "图表排版规则": "图表编号统一,如\"图1:……\"、\"图2:……\",按正文引用顺序连续排布。"
+  },
+  "extraction_confidence": {
+    "overall": 0.96,
+    "classification": 0.98,
+    "key_facts": 0.95,
+    "source_pack": 0.97,
+    "query": 0.97
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

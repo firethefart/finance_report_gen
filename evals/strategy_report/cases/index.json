@@ -1,0 +1,33 @@
+{
+  "source": "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\dataset_build\\meta_extraction_screened27\\final_cases_dedup.jsonl",
+  "count": 27,
+  "cases": [
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_001.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_002.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_003.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_004.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_005.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_006.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_007.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_008.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_009.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_011.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_012.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_013.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_014.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_015.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_016.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_017.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_018.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_019.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_020.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_021.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_022.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_023.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_024.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_026.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_032.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_033.json",
+    "E:\\FireTheFart\\python_repos\\Skill Iteration For Financial report generation\\Skill Iteration For Financial report generation\\evals\\strategy_report\\cases\\strategy_sample_034.json"
+  ]
+}

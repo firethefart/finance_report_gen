@@ -1,0 +1,239 @@
+{
+  "case_id": "strategy_sample_018",
+  "query": "What is the outlook for global equity markets in 2026, especially the role of AI, regional divergence, and US sector preferences?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "annual outlook",
+    "global equities",
+    "AI thematic",
+    "regional allocation",
+    "US sector strategy"
+  ],
+  "expected_report_type": {
+    "type": "annual outlook",
+    "depth": "standard_report",
+    "output_format": "webpage",
+    "expected_time_horizon": "12 months (2026)",
+    "target_reader": "institutional investor and financial advisor"
+  },
+  "institution": {
+    "name": "State Street Global Advisors / State Street Investment Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://www.ssga.com"
+  },
+  "report_title": "Equity Market Outlook 2026 | State Street Equity Outlook 2026 AI optimism trumps policy concerns",
+  "report_date": "2025-12-03",
+  "publication_period": "2026 annual outlook",
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\html\\018-state-street-global-advisors-state-street-investment-management-equity-market-outlook-2026-state-street-equity-outlook-2026-ai-optimism-trumps-p.html",
+    "file_name": "018-state-street-global-advisors-state-street-investment-management-equity-market-outlook-2026-state-street-equity-outlook-2026-ai-optimism-trumps-p.html",
+    "format": "html",
+    "sha256": "081192cd4c9ab7e984c80eb6a5951abb096ebb7a3a0eada52cfecb15a237ed92",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "source_candidate",
+      "type": "related_publication",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_name": "SSGA Global Market Outlook Q1 2026",
+      "source_type": "related_publication",
+      "note": "Broader multi-asset outlook including fixed income and alternatives"
+    },
+    {
+      "name": "source_candidate",
+      "type": "product_literature",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_name": "SPDR Sector & Smart Beta ETF research",
+      "source_type": "product_literature",
+      "note": "Underlying ETF strategies referenced for sector positioning"
+    },
+    {
+      "name": "source_candidate",
+      "type": "official_data",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_name": "Federal Reserve economic projections",
+      "source_type": "official_data",
+      "note": "Background for rate cut assumptions and small cap performance"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Global equities delivered strong returns through 2025, supported by resilient economy and AI-related earnings.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Sets the constructive baseline for the forward outlook and justifies why investors should remain engaged.",
+      "verification_hint": "Check global equity indices (MSCI ACWI, S&P 500) total return for full year 2025."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Magnificent 7 capital spending is expected to grow to about $520 billion in 2026, over 30% year-on-year.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "AI-driven capex is a key pillar of US equity growth and GDP support, not just tech sector earnings.",
+      "verification_hint": "Compare company guidance and consensus capex estimates for AAPL, MSFT, AMZN, NVDA, GOOGL, META, TSLA."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "S&P 500 next-twelve-months forward PE multiple is 23.1x, and Shiller CAPE ratio has only been higher once before (dot-com peak).",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Valuation is a key risk; elevated multiples make the market vulnerable to earnings disappointment.",
+      "verification_hint": "Verify S&P 500 NTM PE from FactSet or Bloomberg; check Shiller CAPE historical data on Robert Shiller's website."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "The report recommends overweight Communication Services and Utilities sectors in the US for 2026, citing below-median valuations and AI/data center demand.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Actionable sector call that reflects a barbell strategy between secular growth (AI) and defensives with a growth kicker.",
+      "verification_hint": "Review sector performance and relative valuation in S&P 500 GICS sectors for Communication Services (XLC) and Utilities (XLU)."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Small cap turnaround expected with pro-business policies (OBBBA) and Fed rate cuts, while small caps trade closer to fair value.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Identifies a specific re-rating opportunity in US small caps driven by domestic policy and monetary easing.",
+      "verification_hint": "Monitor Russell 2000 vs. S&P 500 relative performance, small cap P/E discount, and effective Fed funds rate path."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary and overall equity market view",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Macroeconomic backdrop and policy assumptions (fiscal, monetary, geopolitical)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "AI thematic deep-dive: capex, productivity, and market concentration risks",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "US equity outlook with sector-specific recommendations and valuation discussion",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Regional divergence: Europe, Japan, and Emerging Markets/China outlook",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Key risks and caveats (AI spending slowdown, valuation, volatility)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Portfolio implications and asset allocation suggestions",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Do not recommend shorting US equities or calling for a bear market; the report is constructive.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not ignore the valuation risk – any summary must mention elevated multiples as a cautionary note.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not treat AI as purely a US large cap tech story without noting capital spending and productivity impacts beyond tech.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not omit regional strategies (Europe, Japan, EM) – they are part of the global outlook.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Do not attribute this report to a team; the author is clearly one individual (Dane Smith, Head of North American Investment Strategy & Research).",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {
+    "check_narrative_consistency": "The report is cautiously optimistic; a summary should not be overly bearish or dismissive of AI theme.",
+    "risk_awareness": "Any generated output should explicitly mention that valuations are stretched and AI spending slowdown is a top risk."
+  },
+  "reference_notes": {
+    "data_citations": "Report footnotes 1-9 reference internal estimates, index data, and sector earnings projections.",
+    "conflict_of_interest": "SSGA likely manages products aligned with recommendations (e.g., sector ETFs); no explicit disclaimer in excerpt but standard for asset managers."
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.9,
+    "source_pack": 0.85,
+    "query": 0.95
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

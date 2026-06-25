@@ -1,0 +1,31 @@
+{
+  "notes": "东方财富研报分类 API。该源不是通用 landing-page/PDF 配置，需使用 dataset_tools/strategy_reports/crawl_eastmoney_strategy_reports.py。只抓取 report/dg?qType=2 且 columnType=策略报告 的报告。",
+  "source": {
+    "institution": "东方财富研报 API / Eastmoney reportapi",
+    "business_type": "broker_research_third_party",
+    "country_or_region": "CN",
+    "source_bucket": "china_eastmoney_strategy_api",
+    "list_api": "https://reportapi.eastmoney.com/report/dg",
+    "pdf_url_template": "https://pdf.dfcfw.com/pdf/H3_{infoCode}_1.pdf",
+    "required_filters": {
+      "qType": 2,
+      "columnType": "策略报告",
+      "reportType": 4
+    },
+    "default_date_range_used": {
+      "beginTime": "2025-01-01",
+      "endTime": "2026-06-10"
+    },
+    "latest_successful_run": {
+      "date": "2026-06-10",
+      "requested_limit": 150,
+      "downloaded_pdfs": 150,
+      "failed_or_non_pdf": 0,
+      "manifest": "dataset_build/manifests/eastmoney_strategy_download_manifest.jsonl",
+      "screening_manifest": "dataset_build/manifests/eastmoney_strategy_screening_manifest.jsonl",
+      "summary": "dataset_build/manifests/eastmoney_strategy_summary.json",
+      "output_root": "dataset_build/raw_pdfs/strategy_research/eastmoney-strategy-reports"
+    },
+    "copyright_note": "Third-party public Eastmoney mirror; preserve original broker attribution and mark needs_human_source_verification=true."
+  }
+}

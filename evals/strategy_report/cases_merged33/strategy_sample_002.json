@@ -1,0 +1,235 @@
+{
+  "case_id": "strategy_sample_002",
+  "query": "What is J.P. Morgan Private Bank's mid-year 2026 outlook on global fragmentation, inflation, and AI, and what are the investment implications?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "time_horizon=midyear_2026",
+    "asset_class=multi_asset",
+    "region=global"
+  ],
+  "expected_report_type": {
+    "type": "midyear_outlook",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "H2 2026",
+    "target_reader": "private_bank_clients"
+  },
+  "institution": {
+    "name": "J.P. Morgan Private Bank",
+    "business_type": "private_bank",
+    "country_or_region": "US",
+    "official_url": "https://privatebank.jpmorgan.com"
+  },
+  "report_title": "Promise and Pressure",
+  "report_date": null,
+  "publication_period": "2026 Mid-Year",
+  "strategy_subtype": "midyear_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\midyear_outlook\\pdf\\002-j-p-morgan-private-bank-wealth-management-promise-and-pressure.pdf",
+    "file_name": "002-j-p-morgan-private-bank-wealth-management-promise-and-pressure.pdf",
+    "format": "pdf",
+    "sha256": "6ea95b316ecd403066419de2a88a5b67a1336099a592a12ecba22014aad2911d",
+    "page_count": 70,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "jpm_private_bank_midyear_outlook_2026",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "JPMorgan_wealth_management_strategy",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "US_private_bank_research",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Global fragmentation and the end of the peace dividend have raised the cost of stability, reshaping opportunities in select emerging markets, gold, defense, and companies strengthening domestic resilience.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Part 1: Fragmentation – opening statement",
+      "fact": "Global fragmentation and the end of the peace dividend have raised the cost of stability, reshaping opportunities in select emerging markets, gold, defense, and companies strengthening domestic resilience."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Energy shocks are adding to stickier inflation; real assets and select hedge fund strategies should be considered for diversification beyond traditional stocks and bonds.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Part 2: Inflation – sections on energy shock and portfolio implications",
+      "fact": "Energy shocks are adding to stickier inflation; real assets and select hedge fund strategies should be considered for diversification beyond traditional stocks and bonds."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "The AI supercycle continues with record adoption driving productivity gains; investors should consider data center beneficiaries, explore private markets, and avoid vulnerable legacy software.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Part 3: Artificial Intelligence – upside scenario",
+      "fact": "The AI supercycle continues with record adoption driving productivity gains; investors should consider data center beneficiaries, explore private markets, and avoid vulnerable legacy software."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "A blockade of Taiwan could result in a -5% shock to global GDP growth; U.S. GDP could fall 6.7%, comparable to the global financial crisis.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Part 1: Fragmentation – downside scenario 'Energy and semiconductor bottlenecks close'",
+      "fact": "A blockade of Taiwan could result in a -5% shock to global GDP growth; U.S. GDP could fall 6.7%, comparable to the global financial crisis."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Traditional 60% stock/40% bond allocation is under pressure due to persistent inflation and the narrowing gap between cash yields and price inflation.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Key takeaways and Introduction; reference to 'pressure' on traditional portfolios",
+      "fact": "Traditional 60% stock/40% bond allocation is under pressure due to persistent inflation and the narrowing gap between cash yields and price inflation."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "Labor market slack could counter rising prices, and tariffs/energy shocks may prove temporary, with housing disinflation being durable.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.85,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Part 2: Inflation – 'What could go right?' section",
+      "fact": "Labor market slack could counter rising prices, and tariffs/energy shocks may prove temporary, with housing disinflation being durable."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Cover page",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Foreword",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Key takeaways",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Part 1: Fragmentation",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Part 2: Inflation",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Part 3: Artificial Intelligence",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Conclusion",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Disclaimers and important information",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Mixing up upside and downside scenarios without clear labeling",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting disclaimers that this is not financial advice or a research report",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Attributing the report to J.P. Morgan Investment Bank instead of Private Bank",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {},
+  "extraction_confidence": {
+    "overall": 0.5,
+    "classification": 0.5,
+    "key_facts": 0.5,
+    "source_pack": 0.5,
+    "query": 0.5
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

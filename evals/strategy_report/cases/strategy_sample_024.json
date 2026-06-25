@@ -1,0 +1,288 @@
+{
+  "case_id": "strategy_sample_024",
+  "query": "How should I position my investments if the Fed keeps cutting rates and we get a soft landing?",
+  "query_language": "en",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "non-recessionary easing cycle",
+    "US-centric asset views",
+    "small-caps vs large-caps",
+    "income strategies in low-rate environment"
+  ],
+  "expected_report_type": {
+    "type": "market_brief",
+    "depth": "institutional_style",
+    "output_format": "webpage",
+    "expected_time_horizon": "12-18 months (through 2026)",
+    "target_reader": "institutional and individual investors seeking tactical macro guidance"
+  },
+  "institution": {
+    "name": "Goldman Sachs Asset Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://am.gs.com/en-us/institutions/insights/article/2025/market-brief-cutting-through-noise-navigating-fed-easing"
+  },
+  "report_title": "Market Brief Cutting Through the Noise: Navigating Fed Easing",
+  "report_date": "2025-09-18",
+  "publication_period": null,
+  "strategy_subtype": "thematic_strategy",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\thematic_strategy\\html\\024-goldman-sachs-asset-management-market-brief-cutting-through-the-noise-navigating-fed-easing-goldman-sachs-asset.html",
+    "file_name": "024-goldman-sachs-asset-management-market-brief-cutting-through-the-noise-navigating-fed-easing-goldman-sachs-asset.html",
+    "format": "html",
+    "sha256": "f5afab562f4c57c83d6c64ab86acc381ca043ac62b3f892c8d6120251750de3a",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "Goldman Sachs Global Investment Research (as of Aug 31, 2025)",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Goldman Sachs Global Investment Research, Bloomberg (as of Jan 16, 2025)",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "Macrobond",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    },
+    {
+      "name": "US Department of the Treasury",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Source candidate inferred from report content."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "The Fed cut the federal funds rate by 0.25% to 4.00%-4.25% on September 17, 2025, the fourth cut in the current easing cycle.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check the introductory paragraph of the report.",
+      "fact": "The Fed cut the federal funds rate by 0.25% to 4.00%-4.25% on September 17, 2025, the fourth cut in the current easing cycle."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Goldman Sachs Asset Management expects the rate-cutting cycle to continue into 2026, fostering sustained economic expansion.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Review Key Takeaway #1.",
+      "fact": "Goldman Sachs Asset Management expects the rate-cutting cycle to continue into 2026, fostering sustained economic expansion."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "The base-case scenario assumes a soft landing, supported by reduced tariff impacts, emerging fiscal support, and ongoing easy financial conditions.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check the 'Historical and Theoretical Market Responses' section.",
+      "fact": "The base-case scenario assumes a soft landing, supported by reduced tariff impacts, emerging fiscal support, and ongoing easy financial conditions."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Small-cap stocks are expected to benefit disproportionately due to high domestic revenue exposure and a higher proportion of floating-rate debt.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See bullet points under 'Assets that may benefit in a soft landing'.",
+      "fact": "Small-cap stocks are expected to benefit disproportionately due to high domestic revenue exposure and a higher proportion of floating-rate debt."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "The US dollar historically tends to rally or move sideways in non-recessionary Fed easing cycles due to equity inflows supporting the currency.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See the 'Assets with inconsistent patterns' section, footnote 1 context.",
+      "fact": "The US dollar historically tends to rally or move sideways in non-recessionary Fed easing cycles due to equity inflows supporting the currency."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "Gold historically underperforms in non-recessionary rate-cutting cycles compared to recessionary ones.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check the final bullet under 'Assets with inconsistent patterns or potential weakening'.",
+      "fact": "Gold historically underperforms in non-recessionary rate-cutting cycles compared to recessionary ones."
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "The report identifies the 'rise and fall of tariff uncertainty' from the April 2025 'Liberation Day' announcements as a key dynamic, with markets shifting from fear to active management of tariffs.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Read the first bullet under 'Unique Dynamics of the Current Cycle'.",
+      "fact": "The report identifies the 'rise and fall of tariff uncertainty' from the April 2025 'Liberation Day' announcements as a key dynamic, with markets shifting from fear to active management of tariffs."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive Summary / Key Takeaways",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Macroeconomic Context and Fed Policy Rationale",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Soft-Landing Scenario Assumptions and Rationale",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Asset Class Performance Analysis (Equities, Fixed Income, Real Assets, Alternatives)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "US Dollar and Currency Market Dynamics",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Unique Current Cycle Dynamics (Tariffs, AI, Geopolitics)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Implications for Active Management and Dynamic Asset Allocation",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Risk Factors and Disclaimers",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Replacing 'soft landing' baseline with a recessionary or hard-landing narrative.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Including specific trade recommendations, price targets, or portfolio weights not present in the source.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the distinction between recessionary and non-recessionary impact on gold and the US dollar.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to mention the role of floating-rate debt in small-cap and private equity analysis.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Claiming the report recommends abandoning cash or money market funds entirely.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Neglecting to address the tariff uncertainty and AI capex dynamic.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Inferring a specific end-date for the easing cycle (e.g., 'ending in Q2 2026') when the report only says 'into 2026'.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {
+    "gold_underperformance_test": "Does the generated report distinguish gold's performance in non-recessionary vs. recessionary easing cycles?",
+    "small_cap_rationale": "Does the report explicitly link small-cap benefits to domestic revenue and floating-rate debt exposure?"
+  },
+  "reference_notes": {
+    "soft_landing_drivers": "reduced tariff impacts, emerging fiscal support, ongoing easy financial conditions",
+    "unique_cycle_elements": "eight-month Fed pause, April 2025 Liberation Day tariffs, AI capex boom, fiscal and geopolitical risks"
+  },
+  "extraction_confidence": {
+    "overall": 0.98,
+    "classification": 1.0,
+    "key_facts": 1.0,
+    "source_pack": 0.95,
+    "query": 0.9
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

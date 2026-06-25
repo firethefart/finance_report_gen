@@ -1,0 +1,248 @@
+{
+  "case_id": "strategy_sample_006",
+  "query": "What are the key arguments for the extreme undervaluation of the US healthcare sector in mid-2025, and what catalysts could trigger a rebound?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "US healthcare stocks",
+    "large cap pharma",
+    "biotech",
+    "managed care",
+    "drug pricing policy",
+    "tariffs",
+    "2025 outlook"
+  ],
+  "expected_report_type": {
+    "type": "thematic strategy note",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "6-12 months",
+    "target_reader": "high-net-worth individual, family office, or institutional investor interested in sector allocation"
+  },
+  "institution": {
+    "name": "J.P. Morgan Private Bank / Wealth Management",
+    "business_type": "private_bank",
+    "country_or_region": "US",
+    "official_url": "https://privatebank.jpmorgan.com"
+  },
+  "report_title": "Sick as a Dog",
+  "report_date": "2025-08-12",
+  "publication_period": "Special Edition",
+  "strategy_subtype": "asset_allocation",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\006-j-p-morgan-private-bank-wealth-management-sick-as-a-dog.pdf",
+    "file_name": "006-j-p-morgan-private-bank-wealth-management-sick-as-a-dog.pdf",
+    "format": "pdf",
+    "sha256": "6d91c48e439f55763d84e8bfaa26d8162bedf8272354d6a5799c9e850156ff13",
+    "page_count": 31,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "US healthcare total returns tracked technology closely from 1989 to 2019, with lower volatility (15% vs 24%), but have significantly lagged since 2020.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.98,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check the first section comparing S&P 500 Healthcare vs Technology total return indices.",
+      "fact": "US healthcare total returns tracked technology closely from 1989 to 2019, with lower volatility (15% vs 24%), but have significantly lagged since 2020."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Large cap pharma forward P/E is 14x, but Eli Lilly trades at 24x while Merck, Pfizer, and Bristol Myers trade at 8-9x forward P/E.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.97,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Review the opening paragraphs under 'Sick as a Dog: the cheapness of US healthcare stocks'.",
+      "fact": "Large cap pharma forward P/E is 14x, but Eli Lilly trades at 24x while Merck, Pfizer, and Bristol Myers trade at 8-9x forward P/E."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "80% of biotech IPOs since 2018 have 'imploded,' and biotech trades at one of the largest valuation discounts in the market.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.96,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Locate the section on biotech IPOs or the introductory summary.",
+      "fact": "80% of biotech IPOs since 2018 have 'imploded,' and biotech trades at one of the largest valuation discounts in the market."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "The report details pending US Section 232 tariffs on pharmaceutical imports and associated supply chain risks.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.99,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See the table of contents and the dedicated section 'Pending US tariffs on pharmaceutical imports and supply chain risks'.",
+      "fact": "The report details pending US Section 232 tariffs on pharmaceutical imports and associated supply chain risks."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Bipartisan proposals to lower US drug prices include Most Favored Nation approaches, aiming to close the gap with OECD countries.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.98,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check the section on 'Proposals to lower prescription drug prices in the US'.",
+      "fact": "Bipartisan proposals to lower US drug prices include Most Favored Nation approaches, aiming to close the gap with OECD countries."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "The 'Big Beautiful Bill' is expected to create headwinds for the Managed Care sector.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.97,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See the section covering managed care headwinds and the 'Big Beautiful Bill'.",
+      "fact": "The 'Big Beautiful Bill' is expected to create headwinds for the Managed Care sector."
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "The report includes an appendix on political battles over publicly funded US scientific research (NIH, NSF, CDC cuts) and a separate appendix on longevity drug studies in mice.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.99,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Look for Appendices I and II in the table of contents.",
+      "fact": "The report includes an appendix on political battles over publicly funded US scientific research (NIH, NSF, CDC cuts) and a separate appendix on longevity drug studies in mice."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary or introductory narrative on healthcare vs technology performance divergence",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Valuation analysis of large cap pharma and biotech (P/E comparisons)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Assessment of political and legislative drug pricing pressures (e.g., MFN, Big Beautiful Bill)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Analysis of supply chain risks from Section 232 pharmaceutical tariffs",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Review of managed care industry headwinds (legislation, claim denial rulings)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Evaluation of biotech IPO performance and innovation pipeline",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Discussion of GLP-1 adoption trends and barriers",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Appendix covering publicly funded scientific research cuts",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Claiming healthcare has outperformed technology since 2020",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the impact of potential tariffs on the sector analysis",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the large cap pharma patent cliff as a valuation risk",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Stating that all healthcare sub-sectors are cheap without differentiating pharma, biotech, and managed care",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Focusing only on US policy and ignoring China-based drug development competition",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to mention the role of GLP-1 drugs and their market expansion challenges",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Asserting 80% of biotech IPOs have succeeded or that the IPO market is healthy",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {},
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.97,
+    "source_pack": 0.0,
+    "query": 0.97
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

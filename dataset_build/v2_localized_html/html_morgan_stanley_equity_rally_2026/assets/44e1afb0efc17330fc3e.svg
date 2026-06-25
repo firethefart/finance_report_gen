@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>ms-icon-youtube-gr</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-system_Icons---Gray" transform="translate(-1367.000000, -288.000000)" fill="#767676" fill-rule="nonzero">
+            <path d="M1386.99906,296 C1386.99906,289.000377 1386.99906,288.920836 1377.33611,288.919922 L1376.99906,288.919922 C1367.45361,288.919922 1367.01972,288.919922 1367,295.077755 L1367,296.922245 C1367.01949,303.006771 1367.44333,303.079205 1376.66201,303.080078 L1376.99906,303.080078 C1386.99906,303.080078 1386.99906,303.080078 1386.99906,296 Z M1374.49906,299.75 L1374.49906,292.25 L1380.74906,296 L1374.49906,299.75 Z" id="ms-icon-youtube"></path>
+        </g>
+    </g>
+</svg>

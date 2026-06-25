@@ -1,0 +1,41 @@
+{
+  "sample_id": "html_gsam_fed_easing",
+  "url": "https://am.gs.com/en-us/institutions/insights/article/2025/market-brief-cutting-through-noise-navigating-fed-easing",
+  "institution": "Goldman Sachs Asset Management",
+  "language": "en",
+  "subtype": "macro_strategy",
+  "archetype": "brief_commentary",
+  "localized_path": "dataset_build\\v2_localized_html\\html_gsam_fed_easing\\index.html",
+  "localized_at": "2026-06-18T07:30:33Z",
+  "elapsed_seconds": 26.05,
+  "snapshot": {
+    "title": "Market Brief Cutting Through the Noise: Navigating Fed Easing - Goldman Sachs Asset Management",
+    "final_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_fed_easing/_hydrated_source.html",
+    "chosen_selector": "main",
+    "text_length": 32393,
+    "heading_count": 5,
+    "image_count": 13,
+    "svg_count": 0,
+    "canvas_count": 0,
+    "removed_visual_shell_count": 0
+  },
+  "capture_mode": "archive",
+  "archive_source_path": "dataset_build\\raw_html\\strategy_research\\goldman-sachs-asset-management\\https-am-gs-com-en-us-institutions-insights-article-2025-market-brief-cutting-through-noise-navigating-fed-easing.html",
+  "hydration_audit": {
+    "downloaded_asset_count": 62,
+    "failed_assets": []
+  },
+  "asset_audit": {
+    "downloaded_asset_count": 11,
+    "failed_assets": []
+  },
+  "resource_manifest_path": "dataset_build\\v2_localized_html\\html_gsam_fed_easing\\resource_manifest.json",
+  "resource_summary": {
+    "resource_count": 73,
+    "downloaded_count": 73,
+    "failed_count": 0,
+    "critical_failed_count": 0,
+    "total_bytes": 12896557
+  },
+  "status": "localized"
+}

@@ -1,0 +1,51 @@
+/*! Spacer styles starts */.desktop__padding_0{min-height:0}
+.desktop__padding_10px{min-height:10px}
+.desktop__padding_20px{min-height:20px}
+.desktop__padding_40px{min-height:40px}
+.desktop__padding_60px{min-height:60px}
+.desktop__padding_80px{min-height:80px}
+.tablet__padding_10px{min-height:0}
+.tablet__padding_20px{min-height:0}
+.tablet__padding_40px{min-height:0}
+.tablet__padding_60px{min-height:0}
+.tablet__padding_80px{min-height:0}
+.mobile__padding_10px{min-height:0}
+.mobile__padding_20px{min-height:0}
+.mobile__padding_40px{min-height:0}
+.mobile__padding_60px{min-height:0}
+.mobile__padding_80px{min-height:0}
+@media all and (max-width:1024px){.tablet__padding_0{min-height:0}
+.tablet__padding_10px{min-height:10px}
+.tablet__padding_20px{min-height:20px}
+.tablet__padding_40px{min-height:40px}
+.tablet__padding_60px{min-height:60px}
+.tablet__padding_80px{min-height:80px}
+.desktop__padding_10px{min-height:0}
+.desktop__padding_20px{min-height:0}
+.desktop__padding_40px{min-height:0}
+.desktop__padding_60px{min-height:0}
+.desktop__padding_80px{min-height:0}
+.mobile__padding_10px{min-height:0}
+.mobile__padding_20px{min-height:0}
+.mobile__padding_40px{min-height:0}
+.mobile__padding_60px{min-height:0}
+.mobile__padding_80px{min-height:0}
+}
+@media all and (max-width:767px){.mobile__padding_0{min-height:0}
+.mobile__padding_10px{min-height:10px}
+.mobile__padding_20px{min-height:20px}
+.mobile__padding_40px{min-height:40px}
+.mobile__padding_60px{min-height:60px}
+.mobile__padding_80px{min-height:80px}
+.tablet__padding_10px{min-height:0}
+.tablet__padding_20px{min-height:0}
+.tablet__padding_40px{min-height:0}
+.tablet__padding_60px{min-height:0}
+.tablet__padding_80px{min-height:0}
+.desktop__padding_10px{min-height:0}
+.desktop__padding_20px{min-height:0}
+.desktop__padding_40px{min-height:0}
+.desktop__padding_60px{min-height:0}
+.desktop__padding_80px{min-height:0}
+}
+/*! Spacer styles Ends */

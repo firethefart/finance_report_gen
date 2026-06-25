@@ -1,0 +1,27 @@
+﻿{
+    "source":  "dataset_build\\golden_samples_merged_cn10_no_landscape\\final_cases.jsonl",
+    "count":  21,
+    "cases":  [
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_001.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_002.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_003.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_004.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_005.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_006.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_008.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_009.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_015.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_017.json",
+                  "evals\\strategy_report\\cases_merged33\\strategy_sample_022.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_001.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_002.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_003.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_004.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_005.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_006.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_007.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_008.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_009.json",
+                  "evals\\strategy_report\\cases_merged33\\eastmoney_cn_strategy_010.json"
+              ]
+}

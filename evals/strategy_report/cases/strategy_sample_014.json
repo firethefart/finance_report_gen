@@ -1,0 +1,279 @@
+{
+  "case_id": "strategy_sample_014",
+  "query": "What are the key investment themes and regional opportunities outlined in the BlackRock Investment Institute's 2026 Global Outlook, and how are mega forces like AI buildout and capital markets deepening affecting the Gulf region?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "2026 Global Outlook",
+    "BlackRock Investment Institute",
+    "Gulf region",
+    "AI infrastructure",
+    "capital expenditure",
+    "diversification"
+  ],
+  "expected_report_type": {
+    "type": "annual_outlook",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026",
+    "target_reader": "Institutional, professional, and qualified investors"
+  },
+  "institution": {
+    "name": "BlackRock Investment Institute",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://www.blackrock.com/corporate/literature/whitepaper/bii-global-outlook-2026-middle-east.pdf"
+  },
+  "report_title": "BII Global outlook",
+  "report_date": "2025-12-31",
+  "publication_period": "2026 Global Outlook",
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\014-blackrock-investment-institute-bii-global-outlook.pdf",
+    "file_name": "014-blackrock-investment-institute-bii-global-outlook.pdf",
+    "format": "pdf",
+    "sha256": "d1e9ca90d7f42d3af84eb458b7703ec99beab436373176362cd3b1c2039fa73b",
+    "page_count": 20,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "source_candidate",
+      "type": "research_provider",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "source_name": "BlackRock Investment Institute",
+      "source_type": "research_provider",
+      "confidence": 0.99
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "The 2026 Global Outlook is built around three themes: 'Micro is Macro', 'leveraging up', and 'Diversification Mirage'.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.99,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Check the introductory section of the report for explicit enumeration of themes.",
+      "fact": "The 2026 Global Outlook is built around three themes: 'Micro is Macro', 'leveraging up', and 'Diversification Mirage'."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Saudi Arabia's AI champion Humain plans 6.6 GW of data center capacity by 2034, with 1.9 GW by 2030.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Look for the paragraph discussing Saudi AI infrastructure, referencing Humain and GW figures.",
+      "fact": "Saudi Arabia's AI champion Humain plans 6.6 GW of data center capacity by 2034, with 1.9 GW by 2030."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "The UAE's Stargate project is set to be one of the world's largest AI data center clusters with planned capacity of 5 GW.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Search for 'Stargate' and '5 GW' in the Gulf section.",
+      "fact": "The UAE's Stargate project is set to be one of the world's largest AI data center clusters with planned capacity of 5 GW."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Gulf renewable capacity is expected to rise from ~20 GW to ~165 GW by 2030, with solar electricity costs at $20–30/MWh, among the lowest globally.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Find the sentence citing BloombergNEF, IEA, and IRENA for renewable capacity and cost figures.",
+      "fact": "Gulf renewable capacity is expected to rise from ~20 GW to ~165 GW by 2030, with solar electricity costs at $20–30/MWh, among the lowest globally."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "The Gulf region is entering a decade of capital expenditure exceeding $3 trillion across data centers, energy and transport infrastructure, according to MEED estimates.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.93,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Locate the mention of $3 trillion and MEED estimates.",
+      "fact": "The Gulf region is entering a decade of capital expenditure exceeding $3 trillion across data centers, energy and transport infrastructure, according to MEED estimates."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "Kuwait's return to global bond markets in 2025, enabled by the Financing and Liquidity Law, reflects a shift toward greater use of debt as part of reform.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.93,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Search for 'Kuwait' and 'Financing and Liquidity Law' in the capital markets section.",
+      "fact": "Kuwait's return to global bond markets in 2025, enabled by the Financing and Liquidity Law, reflects a shift toward greater use of debt as part of reform."
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "In Saudi Arabia, efforts to securitize residential mortgages (23% of total loans in 2024 per S&P Global) and easing foreign real-estate ownership rules are broadening funding channels.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.93,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Look for the sentence containing 'securitize residential mortgages' and 'S&P Global'.",
+      "fact": "In Saudi Arabia, efforts to securitize residential mortgages (23% of total loans in 2024 per S&P Global) and easing foreign real-estate ownership rules are broadening funding channels."
+    },
+    {
+      "fact_id": "fact_008",
+      "claim": "The report states a preference for hard-currency emerging market debt, underpinned by steeper external yield curves and hydrocarbon volatility.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Search for 'hard-currency emerging market debt' in the investment implications section.",
+      "fact": "The report states a preference for hard-currency emerging market debt, underpinned by steeper external yield curves and hydrocarbon volatility."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary or thematic overview of the three key themes",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Explanation of 'Micro is Macro' with Gulf AI buildout examples",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Explanation of 'leveraging up' with Gulf financial reforms and capex trends",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Explanation of 'Diversification Mirage' and the need for idiosyncratic returns",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Regional deep-dive: Gulf Cooperation Council (GCC) transformation and capital markets",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Investment implications, including preference for hard-currency EM debt",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Risks section covering execution, geopolitical, and rate volatility",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Important disclaimers and distribution permissions",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Omitting any of the three named themes (Micro is Macro, leveraging up, Diversification Mirage)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Falsely attributing data center capacity plans to wrong countries (e.g., mixing Saudi Humain and UAE Stargate figures)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Reporting outdated renewable capacity baseline (pre-2025) instead of 'from around 20 GW today'",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Misrepresenting the $3 trillion capex figure as a confirmed spend rather than a MEED estimate",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Stating Kuwait returned to bond markets before 2025 (actual: March 2025 law enabled return)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Confusing 'hard-currency emerging market debt' preference with local-currency debt",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Leaving out the institutional disclaimer that the report is for institutional/professional investors only",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Presenting the report as a single-country outlook instead of a global outlook with Gulf focus",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {},
+  "extraction_confidence": {
+    "overall": 0.97,
+    "classification": 0.99,
+    "key_facts": 0.95,
+    "source_pack": 0.99,
+    "query": 0.98
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

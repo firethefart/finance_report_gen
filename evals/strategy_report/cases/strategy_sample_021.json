@@ -1,0 +1,257 @@
+{
+  "case_id": "strategy_sample_021",
+  "query": "How can I implement the 2026 Global Market Outlook themes from State Street into an actual portfolio?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "thematic implementation",
+    "equities",
+    "fixed income",
+    "alternatives",
+    "State Street"
+  ],
+  "expected_report_type": {
+    "type": "implementation_guide",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026",
+    "target_reader": "institutional_professional_investors"
+  },
+  "institution": {
+    "name": "State Street Global Advisors / State Street Investment Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://www.ssga.com"
+  },
+  "report_title": "Global Market Outlook 2026 Forward with focus: Implementation Guide",
+  "report_date": null,
+  "publication_period": "2026 Outlook",
+  "strategy_subtype": "thematic_strategy",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\thematic_strategy\\html\\021-state-street-global-advisors-state-street-investment-management-forward-with-focus-implementation-guide-state-street-global-market-outlook-2026.html",
+    "file_name": "021-state-street-global-advisors-state-street-investment-management-forward-with-focus-implementation-guide-state-street-global-market-outlook-2026.html",
+    "format": "html",
+    "sha256": "920b4eb32b91782f74e15a9fe54125e5a0a5d45caec97d438cc091418a06f201",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "html_landing_page",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "SSGA institutional insights webpage summarizing the Global Market Outlook 2026 implementation guide and linking to the full PDF."
+    },
+    {
+      "name": "pdf_implementation_guide",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Full implementation guide PDF download available from the webpage. Contains detailed strategies and solutions for the 2026 outlook."
+    },
+    {
+      "name": "global_market_outlook_2026_main_report",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Presumed underlying thematic report providing the full investment themes and macroeconomic context referenced in the implementation guide."
+    },
+    {
+      "name": "ssga_capabilities_and_strategies",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Capability overview pages for equities, fixed income, and alternatives linked from the implementation guide."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "This implementation guide translates State Street's 2026 Global Market Outlook investment themes into actionable portfolio strategies.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Investors need to connect high-level thematic outlooks to concrete investment decisions and manager capabilities.",
+      "verification_hint": "Check the document title and introductory paragraph stating it turns 'insights into action' and provides investment solutions."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "The guide covers solutions across equities, fixed income, and alternatives to address short-term uncertainties and structural shifts like transformative technologies.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "A multi-asset approach is presented as essential for navigating the current macroeconomic and technological landscape.",
+      "verification_hint": "Refer to the 'Explore our capabilities' section and the descriptions under each asset class card."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Equity strategies span the full spectrum of asset classes, investment styles, and market capitalizations.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Indicates a broad, flexible equity toolkit available for implementing thematic views, from sectors to smart beta.",
+      "verification_hint": "Locate the 'Equities' card text describing a 'wide range of strategies... across the equity spectrum spanning asset classes, investment styles, and market capitalizations.'"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Fixed income solutions are designed to meet varied client objectives across geographic, duration, and credit-risk dimensions.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Fixed income implementation is presented as customizable, managing risk across multiple vector lines important for the 2026 rate and credit environment.",
+      "verification_hint": "Read the 'Fixed Income' card text mentioning 'full gamut... across geographic, duration, and credit-risk dimensions.'"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "Alternative investments are positioned as key to return potential and downside protection because traditionally balanced portfolios may lack resilience.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "The guide signals a strategic allocation shift toward alternatives to improve portfolio robustness in an uncertain and evolving macro backdrop.",
+      "verification_hint": "See the 'Alternatives' card text explaining the rationale around resilience, return potential, and downside protection."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "State Street Investment Management highlights over 40 years of expertise in building index and active strategies across asset classes.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Establishes long-term institutional credibility and experience for delivering the implementation solutions.",
+      "verification_hint": "Find the sentence beginning 'Over the past 40 years our experts have built...' near the bottom of the capabilities section."
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "The document is a marketing communication for institutional/professional investors only and does not constitute investment advice.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Critical compliance constraint: the guide is promotional, not fiduciary advice, and is restricted to professional use.",
+      "verification_hint": "Review the 'Disclosure' section and the 'Marketing Communication' label at the bottom of the page."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary of 2026 investment themes",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Equity implementation strategies and capabilities",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Fixed income implementation strategies and capabilities",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Alternatives implementation strategies and rationale",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "How to access the full implementation guide or related solutions",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Risk disclosures and marketing communication notice",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Institutional credentials and investment expertise overview",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Presenting the implementation guide as independent investment research or regulated advice",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the institutional/professional investor use restriction",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Failing to mention that past performance is not indicative of future results",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Stating the guide provides specific security recommendations or portfolio models",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Claiming alternative investments alone guarantee downside protection without risk context",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {},
+  "extraction_confidence": {
+    "overall": 0.9,
+    "classification": 0.95,
+    "key_facts": 0.9,
+    "source_pack": 0.85,
+    "query": 0.9
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

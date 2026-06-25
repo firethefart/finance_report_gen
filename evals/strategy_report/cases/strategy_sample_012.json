@@ -1,0 +1,278 @@
+{
+  "case_id": "strategy_sample_012",
+  "query": "What is State Street's outlook for global markets in 2026?",
+  "query_language": "en",
+  "query_style": "analyst_request",
+  "scope_constraints": [
+    "2026",
+    "global markets",
+    "asset allocation",
+    "macroeconomic trends"
+  ],
+  "expected_report_type": {
+    "type": "annual_market_outlook",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026",
+    "target_reader": "Institutional investors and portfolio managers"
+  },
+  "institution": {
+    "name": "State Street Global Advisors / State Street Investment Management",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://www.ssga.com"
+  },
+  "report_title": "GLOBAL MARKET OUTLOOK 2026: Forward with focus",
+  "report_date": null,
+  "publication_period": "2026",
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\\\curated_strategy_samples_verified\\\\annual_outlook\\\\pdf\\\\012-state-street-global-advisors-state-street-investment-management-global-market-outlook-2026.pdf",
+    "file_name": "012-state-street-global-advisors-state-street-investment-management-global-market-outlook-2026.pdf",
+    "format": "pdf",
+    "sha256": "953a1e655252d9d91eb42d37b5918b1a9671e43d8ca2ea4b4483fc9975cd9c80",
+    "page_count": 21,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "State Street Global Market Outlook 2026",
+      "type": "report",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "title": "State Street Global Market Outlook 2026",
+      "source_type": "report",
+      "relevance": "primary"
+    },
+    {
+      "name": "Previous State Street Global Market Outlook reports",
+      "type": "report_series",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "title": "Previous State Street Global Market Outlook reports",
+      "source_type": "report_series",
+      "relevance": "catalog"
+    },
+    {
+      "name": "Comparable annual outlook reports from major asset managers (e.g., BlackRock, Vanguard)",
+      "type": "comparable_reports",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "",
+      "title": "Comparable annual outlook reports from major asset managers (e.g., BlackRock, Vanguard)",
+      "source_type": "comparable_reports",
+      "relevance": "benchmark"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "Global economic growth continues in 2026 despite lingering trade and geopolitical risks.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See 'Macroeconomic outlook' section, first paragraph."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "AI optimism underpins global equities in 2026, but valuations are rich and policy risks call for selectivity.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See 'Equity outlook' section, summary bullet."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "Fixed income strategy prefers sovereign government bonds over credit due to tight spreads and policy backdrop.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See 'Fixed Income outlook' section introduction."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Alternative investments like gold, commodities, and private markets offer diversification and income in 2026.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See 'Alternatives outlook' section."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "The Federal Reserve is expected to deliver up to three rate cuts in 2026.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.9,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See 'Macroeconomic outlook' bullet list on central bank expectations."
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "Germany's €500 billion fiscal package is expected to lift macroeconomic indicators in early 2026.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.95,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "See 'Macroeconomic outlook' paragraph on Europe."
+    },
+    {
+      "fact_id": "fact_007",
+      "claim": "China is pivoting towards domestic consumption and AI leadership, offering diversification in Chinese equities.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Not directly in this excerpt but likely in full report; see equity outlook section for China."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Executive summary or forward by CIO",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Macroeconomic outlook with central bank expectations",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Equity outlook with sector and regional analysis",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Fixed income outlook with sovereign vs. credit preferences",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Alternatives outlook covering commodities, private markets, etc.",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Key themes (e.g., AI, fiscal stimulus, geopolitical risks)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Risks and uncertainty assessment",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Claiming unequivocal bullishness on equities without mentioning rich valuations and market concentration risks.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the currency hedging advice for non-US investors holding US equities.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Omitting the fixed income preference for sovereigns over credit.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Overlooking the specific central bank rate expectations (Fed cuts, ECB pause, BoJ hikes).",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Missing the significance of AI optimism as a key theme underpinning equities.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Not acknowledging the risks from lingering trade and geopolitical uncertainties.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Including specific investment recommendations not present in the report.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Mischaracterizing the report's tone as overly pessimistic or highly speculative.",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {
+    "intended_use": "This benchmark entry represents a high-quality annual global market outlook from a major asset manager. It should guide the generation of similar summaries or analysis for comparable institutional reports.",
+    "coverage": "Multi-asset class: macro, equity, fixed income, alternatives.",
+    "style": "Institutional, data-driven, cautious optimism, forward-looking with specific policy assumptions."
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.95,
+    "key_facts": 0.9,
+    "source_pack": 0.9,
+    "query": 0.95
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

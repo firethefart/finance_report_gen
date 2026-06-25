@@ -1,0 +1,229 @@
+{
+  "case_id": "strategy_sample_033",
+  "query": "Explain the total portfolio approach in institutional investing including its definition, key characteristics, required governance changes, and how it differs from strategic asset allocation.",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "focus on framework and definition",
+    "contrast with strategic asset allocation",
+    "governance implications"
+  ],
+  "expected_report_type": {
+    "type": "investment framework FAQ",
+    "depth": "standard_report",
+    "output_format": "webpage",
+    "expected_time_horizon": null,
+    "target_reader": "institutional investors"
+  },
+  "institution": {
+    "name": "BlackRock Investment Institute",
+    "business_type": "asset_manager",
+    "country_or_region": "US",
+    "official_url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute"
+  },
+  "report_title": "Our take on total portfolio approach",
+  "report_date": null,
+  "publication_period": null,
+  "strategy_subtype": "asset_allocation",
+  "quality_tier": "B",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\html\\033-blackrock-investment-institute-defining-total-portfolio-approach-blackrock-our-take-on-total-portfolio-approach.html",
+    "file_name": "033-blackrock-investment-institute-defining-total-portfolio-approach-blackrock-our-take-on-total-portfolio-approach.html",
+    "format": "html",
+    "sha256": "25ce55e575f39c1a9f15c872e7ebbe6502b9ae8b1636bb3c5459f2930d15e613",
+    "page_count": 1,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "BlackRock Investment Institute TPA overview",
+      "type": "research_brief",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Primary source web page defining total portfolio approach."
+    },
+    {
+      "name": "Institutional portfolio construction frameworks",
+      "type": "methodology",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Industry context comparing strategic asset allocation to total portfolio approach."
+    },
+    {
+      "name": "Investment governance best practices",
+      "type": "reference",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "Discussion of governance changes required for total portfolio approach."
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "The total portfolio approach (TPA) is a holistic investment method moving beyond traditional strategic asset allocation.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "It represents a paradigm shift in how institutional portfolios are constructed.",
+      "verification_hint": "Check the FAQ 'Will total portfolio approach spur a move beyond strategic asset allocation?'."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "Adopting TPA requires significant changes in investment governance structures.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Governance constraints are a major barrier to implementing new portfolio construction methods.",
+      "verification_hint": "Refer to sections on 'What does it mean for investment governance?' and 'What must change in governance to make total portfolio approach work?'."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "TPA does not exclude specific asset classes or building blocks; it uses them differently.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Clarifies that TPA is not about eliminating asset classes but rethinking their role.",
+      "verification_hint": "See FAQ 'What building blocks does total portfolio approach rule out?' and related answer."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "Investors are advised to continue using asset classes but not to rely solely on static asset class allocations.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Provides practical near-term guidance for portfolio managers.",
+      "verification_hint": "Examine the answer to 'Should investors stop using asset classes today?'."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "The report provides a specific definition of TPA and actionable steps for investors.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "Establishes a clear benchmark terminology and implementation roadmap.",
+      "verification_hint": "Locate and review FAQ sections 'What is the definition of TPA?' and 'What should investors do now?'."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Definition of total portfolio approach (TPA)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Key characteristics of TPA",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Comparison with strategic asset allocation",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Investment governance implications",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Required governance changes",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Role of asset classes and building blocks in TPA",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Near-term action steps for investors",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Dismissing strategic asset allocation as obsolete or no longer useful",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Describing TPA as solely a tactical trading overlay",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Claiming TPA eliminates the need for any asset class distinctions",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the governance and organizational change requirements",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Overstating short-term performance predictability from TPA",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {
+    "governance_check": "Verify if the output discusses changes needed in investment committee structures or decision-making processes for TPA.",
+    "asset_class_retention": "Confirm that the output does not claim asset classes should be abandoned."
+  },
+  "reference_notes": {
+    "source_format": "HTML",
+    "extraction_style": "FAQ",
+    "missing_data": "No quantitative data or figures; full body text omitted in extract"
+  },
+  "extraction_confidence": {
+    "overall": 0.65,
+    "classification": 0.9,
+    "key_facts": 0.7,
+    "source_pack": 0.8,
+    "query": 0.85
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

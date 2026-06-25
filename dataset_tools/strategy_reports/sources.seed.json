@@ -1,0 +1,182 @@
+{
+  "notes": "Initial public strategy-report seeds. Add more official landing pages or direct PDF URLs over time.",
+  "sources": [
+    {
+      "institution": "Goldman Sachs Asset Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/2025/Investment-Outlook-2026.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "annual_outlook"
+    },
+    {
+      "institution": "Goldman Sachs Asset Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://am.gs.com/cms-assets/gsam-app/documents/insights/en/2026/fixed-income-outlook_2q26.pdf?view=true",
+      "kind": "direct_pdf",
+      "subtype_hint": "quarterly_outlook"
+    },
+    {
+      "institution": "J.P. Morgan Private Bank",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "url": "https://privatebank.jpmorgan.com/content/dam/jpm-pb-aem/global/en/documents/outlook2026/JPMorganOutlook2026PromiseandPressure.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "annual_outlook"
+    },
+    {
+      "institution": "J.P. Morgan Wealth Management",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "url": "https://www.jpmorgan.com/content/dam/jpmorgan/documents/wealth-management/mid-year-outlook-2026.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "midyear_outlook"
+    },
+    {
+      "institution": "J.P. Morgan Private Bank",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "url": "https://privatebank.jpmorgan.com/content/dam/jpm-pb-aem/global/en/documents/eotm/smothering-heights.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "thematic_strategy"
+    },
+    {
+      "institution": "Morgan Stanley",
+      "business_type": "investment_bank",
+      "country_or_region": "US",
+      "url": "https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/IB_MA-2026-Outlook.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "ma_capital_markets_strategy"
+    },
+    {
+      "institution": "Morgan Stanley",
+      "business_type": "investment_bank",
+      "country_or_region": "US",
+      "url": "https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/Navigating_the_Next_Decade-10_Demand_Signals_for_the_Next_10_Years_of_Sustainable_Finance.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "sustainable_investing_strategy"
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "annual_outlook"
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://advisors.vanguard.com/content/dam/fas/pdfs/ISGVEMO.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "annual_outlook"
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://workplace.vanguard.com/content/dam/inst/iig-transformation/insights/pdf/2025/corporate/VG_economic_market_outlook_2025.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "annual_outlook"
+    },
+    {
+      "institution": "Fidelity International",
+      "business_type": "asset_manager",
+      "country_or_region": "UK",
+      "url": "https://www.fidelityinternational.com/static/master/media/pdf/outlook/Fidelity-International-Outlook-2026.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "annual_outlook"
+    },
+    {
+      "institution": "Fidelity UK",
+      "business_type": "asset_manager",
+      "country_or_region": "UK",
+      "url": "https://www.fidelity.co.uk/media/pi/pdfs/investment-outlook/investment-outlook-q2-2026.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "quarterly_outlook"
+    },
+    {
+      "institution": "State Street Global Advisors",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://www.ssga.com/library-content/assets/pdf/global/global-market-outlook/2026/global-market-outlook-2026.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "annual_outlook"
+    },
+    {
+      "institution": "State Street Global Advisors",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://www.ssga.com/library-content/assets/pdf/global/global-market-outlook/2026/gmo-implementation-guide-2026.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "implementation_guide"
+    },
+    {
+      "institution": "BlackRock Investment Institute",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://www.blackrock.com/be/intermediaries/nl/literature/market-commentary/weekly-investment-commentary-en-us-20260601-midyear-forum-speed-meets-scarcity.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "weekly_commentary"
+    },
+    {
+      "institution": "BlackRock Investment Institute",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://www.blackrock.com/us/individual/literature/market-commentary/weekly-investment-commentary-en-us-20251208-micro-is-macro-in-mega-ai-buildout.pdf",
+      "kind": "direct_pdf",
+      "subtype_hint": "weekly_commentary"
+    },
+    {
+      "institution": "BlackRock Investment Institute",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute",
+      "kind": "landing_page",
+      "subtype_hint": "mixed"
+    },
+    {
+      "institution": "Goldman Sachs Asset Management",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://am.gs.com/en-us/institutions/insights",
+      "kind": "landing_page",
+      "subtype_hint": "mixed"
+    },
+    {
+      "institution": "J.P. Morgan Private Bank",
+      "business_type": "private_bank",
+      "country_or_region": "US",
+      "url": "https://privatebank.jpmorgan.com/nam/en/insights",
+      "kind": "landing_page",
+      "subtype_hint": "mixed"
+    },
+    {
+      "institution": "Vanguard",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/what-we-think/research-and-commentary.html",
+      "kind": "landing_page",
+      "subtype_hint": "mixed"
+    },
+    {
+      "institution": "Fidelity International",
+      "business_type": "asset_manager",
+      "country_or_region": "UK",
+      "url": "https://www.fidelityinternational.com/editorial/outlook/",
+      "kind": "landing_page",
+      "subtype_hint": "mixed"
+    },
+    {
+      "institution": "State Street Global Advisors",
+      "business_type": "asset_manager",
+      "country_or_region": "US",
+      "url": "https://www.ssga.com/us/en/intermediary/insights",
+      "kind": "landing_page",
+      "subtype_hint": "mixed"
+    }
+  ]
+}
+

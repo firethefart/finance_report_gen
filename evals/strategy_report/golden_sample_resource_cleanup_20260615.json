@@ -1,0 +1,243 @@
+{
+  "cleanup_date": "2026-06-15",
+  "active_case_count": 21,
+  "active_format_distribution": {
+    "pdf": 21
+  },
+  "active_subtype_distribution": {
+    "annual_outlook": 2,
+    "midyear_outlook": 1,
+    "thematic_research_energy_transition": 1,
+    "annual investment outlook": 1,
+    "alternative_investments_review": 1,
+    "thematic strategy note": 1,
+    "Annual Outlook Report": 1,
+    "investment_outlook": 1,
+    "asset_allocation_and_thematic_strategy": 1,
+    "strategy_research": 1,
+    "策略专题报告": 2,
+    "行业主题报告": 1,
+    "宏观策略月报": 1,
+    "季度资产配置策略报告": 1,
+    "asset_allocation_strategy": 1,
+    "北交所并购重组策略专题报告": 1,
+    "strategy_research_report": 1,
+    "投资策略周报": 1,
+    "北交所策略专题报告": 1
+  },
+  "removed_case_count": 12,
+  "removed_cases": [
+    {
+      "case_id": "strategy_sample_018",
+      "reason": "cookie_or_unstable_html_with_zero_charts",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\html\\018-state-street-global-advisors-state-street-investment-management-equity-market-outlook-2026-state-street-equity-outlook-2026-ai-optimism-trumps-p.html"
+    },
+    {
+      "case_id": "strategy_sample_021",
+      "reason": "cookie_or_unstable_html_with_zero_charts",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\thematic_strategy\\html\\021-state-street-global-advisors-state-street-investment-management-forward-with-focus-implementation-guide-state-street-global-market-outlook-2026.html"
+    },
+    {
+      "case_id": "strategy_sample_033",
+      "reason": "cookie_or_unstable_html_with_zero_charts",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\html\\033-blackrock-investment-institute-defining-total-portfolio-approach-blackrock-our-take-on-total-portfolio-approach.html"
+    },
+    {
+      "case_id": "strategy_sample_011",
+      "reason": "html_missing_local_resources",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\html\\011-goldman-sachs-asset-management-shifting-paradigms-for-portfolio-construction-in-2026-goldman-sachs-asset-manage.html"
+    },
+    {
+      "case_id": "strategy_sample_013",
+      "reason": "html_missing_local_resources",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\html\\013-state-street-global-advisors-state-street-investment-management-macroeconomic-outlook-2026-state-street-macroeconomic-outlook-2026-growth-amid-u.html"
+    },
+    {
+      "case_id": "strategy_sample_016",
+      "reason": "html_missing_local_resources",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\thematic_strategy\\html\\016-goldman-sachs-asset-management-mapping-the-evolution-hedge-funds-in-a-new-market-regime-goldman-sachs-asset-man.html"
+    },
+    {
+      "case_id": "strategy_sample_019",
+      "reason": "html_missing_local_resources",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\html\\019-goldman-sachs-asset-management-investment-outlook-2026-seeking-catalysts-amid-complexity-goldman-sachs-asset-ma.html"
+    },
+    {
+      "case_id": "strategy_sample_020",
+      "reason": "html_missing_local_resources",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\html\\020-goldman-sachs-asset-management-investment-backdrop-heading-into-2026-goldman-sachs-asset-management-staying-act.html"
+    },
+    {
+      "case_id": "strategy_sample_023",
+      "reason": "html_missing_local_resources",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\html\\023-goldman-sachs-asset-management-active-etfs-helping-bolster-portfolio-resilience-in-uncertain-markets-goldman-sa.html"
+    },
+    {
+      "case_id": "strategy_sample_024",
+      "reason": "html_missing_local_resources",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\thematic_strategy\\html\\024-goldman-sachs-asset-management-market-brief-cutting-through-the-noise-navigating-fed-easing-goldman-sachs-asset.html"
+    },
+    {
+      "case_id": "strategy_sample_026",
+      "reason": "html_missing_local_resources",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\equity_strategy\\html\\026-morgan-stanley-stock-market-rally-2026-risks-for-investors-morgan-stanley-the-rally-is-back-but.html"
+    },
+    {
+      "case_id": "strategy_sample_034",
+      "reason": "html_missing_local_resources",
+      "format": "html",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\thematic_strategy\\html\\034-blackrock-investment-institute-sizing-up-a-major-macro-policy-pivot-bii-sizing-up-a-major-macro-policy-pivot-a.html"
+    }
+  ],
+  "filtered_previous_eval_dir": "evals/strategy_report/results/full_eval_p2clean_20260615_chart4_pdf21",
+  "source_previous_eval_dir": "evals/strategy_report/results/full_eval_p2clean_20260615_chart4",
+  "score_distribution": {
+    "min": 67.13,
+    "mean": 81.68,
+    "median": 82.04,
+    "max": 93.32
+  },
+  "grade_counts": {
+    "Bronze": 4,
+    "Silver": 14,
+    "Reject": 2,
+    "Gold": 1
+  },
+  "gate_counts": {
+    "passed": 9,
+    "failed": 12
+  },
+  "gate_failure_counts": {
+    "overall_score_below_80": 5,
+    "fact_dimension_below_threshold": 7,
+    "redline_issue_present": 1,
+    "compliance_not_full_or_near_full": 5,
+    "fact_coverage_below_threshold": 3,
+    "numeric_correctness_below_threshold": 3,
+    "claim_discipline_below_threshold": 3,
+    "source_quality_below_70pct": 1
+  },
+  "module_success": {
+    "claim_judge": 21,
+    "strategy_extraction": 21,
+    "strategy_judge": 21
+  },
+  "active_cases": [
+    {
+      "case_id": "strategy_sample_001",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\001-goldman-sachs-asset-management-investment-outlook-2026-seeking-catalysts-amid-complexity.pdf"
+    },
+    {
+      "case_id": "strategy_sample_002",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\midyear_outlook\\pdf\\002-j-p-morgan-private-bank-wealth-management-promise-and-pressure.pdf"
+    },
+    {
+      "case_id": "strategy_sample_003",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\003-j-p-morgan-private-bank-wealth-management-eye-on-the-market.pdf"
+    },
+    {
+      "case_id": "strategy_sample_004",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\004-j-p-morgan-private-bank-wealth-management-smothering-heights.pdf"
+    },
+    {
+      "case_id": "strategy_sample_005",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\005-j-p-morgan-private-bank-wealth-management-eye-on-the-market.pdf"
+    },
+    {
+      "case_id": "strategy_sample_006",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\006-j-p-morgan-private-bank-wealth-management-sick-as-a-dog.pdf"
+    },
+    {
+      "case_id": "strategy_sample_008",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\008-fidelity-international-fidelity-uk-this-is-for-investment-professionals-only-and-should-not-be-relied-upon-by-priva.pdf"
+    },
+    {
+      "case_id": "strategy_sample_009",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\009-j-p-morgan-private-bank-wealth-management-j-p-morgan-outlook-2026.pdf"
+    },
+    {
+      "case_id": "strategy_sample_015",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\015-fidelity-international-fidelity-uk-in-this-issue.pdf"
+    },
+    {
+      "case_id": "strategy_sample_017",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\017-morgan-stanley-navigating-the-next-decade.pdf"
+    },
+    {
+      "case_id": "strategy_sample_022",
+      "format": "pdf",
+      "source_path": "dataset_build\\curated_strategy_samples_verified\\asset_allocation\\pdf\\022-goldman-sachs-asset-management-how-active-etfs-can-help-investors-fine-tune-portfolio-construction.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_001",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260524-AP202605241822840443-b50b86e2db.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_002",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260608-AP202606081823348893-d210f7e5ad.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_003",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260610-AP202606101823425858-35af2f34e2.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_004",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260610-AP202606091823400621-33b93aab92.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_005",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260521-AP202605211822647981-0704c8d6b6.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_006",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260525-AP202605251822846492-7ca14cdf08.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_007",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260601-AP202605311823108367-66e0e76032.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_008",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260601-AP202605311823108369-e379da31c1.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_009",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260607-AP202606071823341591-60bd8f31ce.pdf"
+    },
+    {
+      "case_id": "eastmoney_cn_strategy_010",
+      "format": "pdf",
+      "source_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260601-AP202605311823108372-c2c92754e6.pdf"
+    }
+  ]
+}

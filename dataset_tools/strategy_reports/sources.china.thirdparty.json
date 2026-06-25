@@ -1,0 +1,73 @@
+{
+  "notes": "Third-party public Chinese research-report pages discovered via web search. Use for availability estimation only; final dataset must preserve source platform and copyright/access notes.",
+  "sources": [
+    {
+      "institution": "中金公司研究 / CICC Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "urls": [
+        "https://bigquant.com/square/paper/40febfb0-32e4-421b-835a-823ae4e6641e",
+        "https://bigquant.com/square/paper/b278120a-5d04-401b-93cb-8206dad8e605",
+        "https://bigquant.com/square/paper/35a6daf6-3ce1-435e-8fdc-b7d6f5d8194a",
+        "https://bigquant.com/square/paper/1cbb3d68-6b74-412c-96d0-83d5cb8b44b3",
+        "https://mf.bigquant.com/square/paper/17f0c407-ef6b-48bd-9a62-54f068d4b30b"
+      ],
+      "keywords": ["中金", "策略", "研究", "投资策略", "市场", "宏观", "配置", "展望", "策略会"]
+    },
+    {
+      "institution": "中信证券研究 / CITIC Securities Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.fhyanbao.com/rpview/1664388",
+        "https://pdf.dfcfw.com/pdf/H3_AP202504221660527858_1.pdf?1745342200000.pdf="
+      ],
+      "keywords": ["中信证券", "策略", "研究", "投资策略", "市场", "宏观", "配置", "展望"]
+    },
+    {
+      "institution": "华泰证券研究 / Huatai Securities Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.sdyanbao.com/detail/893924",
+        "https://www.fhyanbao.com/rpview/1642640",
+        "https://yb.1qh.cn/reports/2024-11-13/be15f4dcb12629593621c9e5ea82825e4ba0fba0.pdf"
+      ],
+      "keywords": ["华泰", "华泰证券", "策略", "研究", "A股", "市场", "宏观", "资产配置", "展望"]
+    },
+    {
+      "institution": "国泰海通证券研究 / Guotai Haitong Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.nxny.com/report/view_5829513.html",
+        "https://bigquant.com/square/paper/fcd70f9d-4ea4-44d3-acd1-6bb40b13d16e",
+        "https://bigquant.com/square/paper/02d14627-5713-4b62-8b69-1dda03916cc6",
+        "https://pdf.dfcfw.com/pdf/H3_AP202506291699633466_1.pdf",
+        "https://pdf.dfcfw.com/pdf/H3_AP202512291810673339_1.pdf?1767081159000.pdf="
+      ],
+      "keywords": ["国泰海通", "国泰君安", "海通", "策略", "研究", "投资策略", "宏观", "配置", "展望"]
+    },
+    {
+      "institution": "广发证券研究 / GF Securities Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.sdyanbao.com/detail/840821",
+        "https://www.nxny.com/report/view_5986030.html",
+        "https://max.book118.com/html/2025/0219/7135033063010036.shtm"
+      ],
+      "keywords": ["广发", "广发证券", "策略", "研究", "投资策略", "量化策略", "宏观", "配置", "展望"]
+    },
+    {
+      "institution": "招商证券研究 / CMS China Research - third party mirrors",
+      "business_type": "broker_research_third_party",
+      "country_or_region": "CN",
+      "urls": [
+        "https://www.dcbbs.com/p-227592.html",
+        "https://www.nxny.com/report/view_5858858.html"
+      ],
+      "keywords": ["招商", "招商证券", "策略", "研究", "投资策略", "年度策略", "宏观", "配置", "展望"]
+    }
+  ]
+}

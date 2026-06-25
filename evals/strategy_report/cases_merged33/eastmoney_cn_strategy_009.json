@@ -1,0 +1,260 @@
+{
+  "case_id": "eastmoney_cn_strategy_009",
+  "query": "请分析AI硬件利益格局调整对A股投资策略的影响,特别是英伟达Rubin架构内存配比变化后,科技板块内部的投资机会切换逻辑和风险。",
+  "query_language": "zh",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "A股市场",
+    "AI硬件产业链",
+    "英伟达Rubin架构",
+    "微观结构拥挤度",
+    "DDM框架"
+  ],
+  "expected_report_type": {
+    "type": "投资策略周报",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "短期至中期",
+    "target_reader": "机构投资者"
+  },
+  "institution": {
+    "name": "开源证券股份有限公司",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": null
+  },
+  "report_title": "AI硬件利益格局调整,孕育科技内部切换机会",
+  "report_date": "2026-06-07",
+  "publication_period": null,
+  "strategy_subtype": "weekly_investment_strategy",
+  "quality_tier": "B",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260607-AP202606071823341591-60bd8f31ce.pdf",
+    "file_name": "20260607-AP202606071823341591-60bd8f31ce.pdf",
+    "format": "pdf",
+    "sha256": "8ccd2c26cf14bf912ff586aa830f2d90b1e82c36bc48151be2e9ee1385439137",
+    "page_count": 13,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "开源证券研究所策略周报原始PDF",
+      "type": "券商研究报告",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "2026年6月7日发布的开源证券投资策略周报,分析AI硬件利益格局调整及A股微观结构。",
+      "source_type": "券商研究报告",
+      "sha256": "8ccd2c26cf14bf912ff586aa830f2d90b1e82c36bc48151be2e9ee1385439137"
+    },
+    {
+      "name": "Wind金融终端数据",
+      "type": "金融数据平台",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "报告引用的全球股指、行业涨跌幅、成交额占比等数据来源。",
+      "source_type": "金融数据平台",
+      "sha256": null
+    },
+    {
+      "name": "开源证券前期策略报告",
+      "type": "内部相关研报",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "报告中提及的《不是科技退潮,而是拥挤需要消化》和《开源金股,6月推荐》等前期报告。",
+      "source_type": "内部相关研报",
+      "sha256": null
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "英伟达调整Rubin架构内存配比引发存储环节高利润转移担忧,形成AI硬件利益格局变化。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "直接冲击前期预期最高的存储及上游环节,导致资金集中板块波动加剧,并触发科技内部切换机会。",
+      "verification_hint": "查阅英伟达官方Rubin架构发布文档,或6月1-5日半导体设备/存储A股板块资金流及涨跌幅。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "A股微观结构拥挤,前5%成交额个股成交额占比达48.9%,半导体交易短期过热。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "指标突破45%阈值,历史上类似情形伴随指数调整8%左右,是当前短期波动的重要内因。",
+      "verification_hint": "取A股日频成交数据,计算市值前5%个股成交额占比,与开源证券报告图表6交叉核对。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "美国非农大超预期引发加息担忧,但高油价回落削弱加息必要性,人民币汇率韧性强。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "该组合判断缓解了美债利率上行对A股资金面的压力,表明外部冲击影响偏短期。",
+      "verification_hint": "查看美国5月非农就业数据与4月对比,追踪同期WTI油价及美元/离岸人民币走势。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "DDM三要素未出现系统性恶化,分子端一季报景气扩散,流动性维持宽松。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "从DDM框架为牛市基础未变提供核心支撑,说明调整是交易层面而非基本面逆转。",
+      "verification_hint": "分析A股Q1整体盈利增速、社融数据和信用利差,检验盈利、流动性和风险偏好三要素。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "投资者应沿'二次点火'方向进行结构升级,重点关注国产算力、AI电力资本开支链和应用入口资产。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "在核心主线不变的前提下,给出了具体可操作的内部切换方向,区别于简单追高。",
+      "verification_hint": "筛选对应板块中业绩加速、订单斜率改善的个股,监测国产算力招标和AI电力项目落地情况。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "1. 短期产业事件冲击解析(如英伟达架构调整)及其对AI硬件利益格局的影响",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "2. 微观结构拥挤度指标(前5%成交额占比)及历史可比案例复盘",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "3. 外部宏观扰动分析(如美国非农、美债利率、人民币汇率)及影响路径",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "4. DDM三要素现状评估(盈利、流动性、风险偏好)及市场系统性风险判断",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "5. 投资策略:先消化格局变化和拥挤,后回归DDM和产业景气的节奏判断",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "6. 科技成长内部结构性机会(国产算力、电力资本开支链、应用入口资产等)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "7. 风险提示(宏观政策超预期、地缘风险、历史局限性)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "将AI硬件利益格局调整断章取义为AI主线结束或产业趋势逆转",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "直接把前5%成交额占比与历史调整幅度机械对应,忽略分母端盈利、流动性改善的背景差异",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "孤立强调加息预期而忽略油价回落和人民币汇率脱敏的边际变化",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "仅推荐算力板块整体,未区分国产算力与海外链,忽视订单斜率改善的验证",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "遗漏风险提示章节或未提及历史规律不代表未来表现的免责声明",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "A股前5%成交额个股成交额占比历史序列与指数走势对比",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "过去五次微观结构恶化期间及前后的风格切换和行业涨跌幅排名",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "美国非农、美债利率、人民币汇率与A股资金面的关联性示意图",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "ddm_consistency": "检查回答对DDM三要素的阐述是否与报告第三章的论证一致",
+    "crowding_analysis": "是否引用48.9%的占比数据和历史22、15个交易日的调整时长",
+    "switching_logic": "是否准确区分'AI主线不变'与'内部利益格局调整带来的切换机会'"
+  },
+  "reference_notes": {
+    "DDM Framework": "分子端(盈利)、分母端(无风险利率+股权风险溢价)三要素评估方法在本报告中用于论证牛市基础。",
+    "微观结构恶化案例": "报告列举2007.11、2008.10、2015.1、2018.2、2021.2五次前5%成交额占比持续>45%后的市场调整幅度作为参考。",
+    "图表索引": "报告包含17张图表,主要展示全球股指回调、行业涨跌及成交额占比等元数据。"
+  },
+  "extraction_confidence": {
+    "overall": 0.93,
+    "classification": 0.95,
+    "key_facts": 0.93,
+    "source_pack": 0.97,
+    "query": 0.98
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

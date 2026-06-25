@@ -1,0 +1,41 @@
+{
+  "sample_id": "html_gsam_public_markets_2026",
+  "url": "https://am.gs.com/en-us/advisors/insights/article/investment-outlook/public-markets-2026",
+  "institution": "Goldman Sachs Asset Management",
+  "language": "en",
+  "subtype": "public_markets_outlook",
+  "archetype": "standard_strategy",
+  "localized_path": "dataset_build\\v2_localized_html\\html_gsam_public_markets_2026\\index.html",
+  "localized_at": "2026-06-18T07:11:26Z",
+  "elapsed_seconds": 81.15,
+  "snapshot": {
+    "title": "Investment Outlook for Public Markets in 2026 - Goldman Sachs Asset Management",
+    "final_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/_hydrated_source.html",
+    "chosen_selector": "main",
+    "text_length": 54614,
+    "heading_count": 22,
+    "image_count": 19,
+    "svg_count": 0,
+    "canvas_count": 0,
+    "removed_visual_shell_count": 0
+  },
+  "capture_mode": "archive",
+  "archive_source_path": "dataset_build\\raw_html\\annual_or_periodic_outlook\\goldman-sachs-asset-management\\https-am-gs-com-en-us-advisors-insights-article-investment-outlook-public-markets-2026.html",
+  "hydration_audit": {
+    "downloaded_asset_count": 70,
+    "failed_assets": []
+  },
+  "asset_audit": {
+    "downloaded_asset_count": 19,
+    "failed_assets": []
+  },
+  "resource_manifest_path": "dataset_build\\v2_localized_html\\html_gsam_public_markets_2026\\resource_manifest.json",
+  "resource_summary": {
+    "resource_count": 89,
+    "downloaded_count": 89,
+    "failed_count": 0,
+    "critical_failed_count": 0,
+    "total_bytes": 10084219
+  },
+  "status": "localized"
+}

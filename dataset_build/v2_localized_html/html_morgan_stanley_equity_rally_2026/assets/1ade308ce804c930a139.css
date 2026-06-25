@@ -1,0 +1,10 @@
+.cmp-text{font-family:"Asar",Georgia,"Times New Roman",Times,serif}
+.cmp-text p{text-align:left;font-size:20px;line-height:2.42857143}
+.link--learnmore{font-family:"karlaregular",sans-serif;font-size:14px;color:#187aba;font-weight:700;text-decoration:none}
+.link--learnmore:hover{text-decoration:underline;color:#136194}
+.button--viewmore-insights{border:3px solid #187aba;display:inline-block;line-height:3;padding:.70em 1.5em;width:auto;cursor:pointer;text-decoration:none;font-family:"ms_gloriola_ii_stdregular",sans-serif;font-size:12px;color:#187aba;background-color:#fff;letter-spacing:1.1px;text-align:center;text-transform:uppercase;margin-top:50px}
+.button--viewmore-insights:hover,.button--viewmore-insights:focus{background-color:#187aba;color:#fff}
+.cmp-text--quote{background-color:#ebebeb;padding:1em 3em;margin:1em 0}
+.cmp-text--quote blockquote{margin:0;font-size:36px;border:0;padding:14px 0}
+.cmp-text--quote u{text-decoration:none;font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif}
+.cmp-text--quote u:before{border-top:2px solid #ffe72b;content:'';display:block;width:80px}

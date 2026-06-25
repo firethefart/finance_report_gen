@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>ms-icon-email</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-system_Icons" transform="translate(-1457.000000, -249.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M1477,250.26 L1467,257.76 L1457,250.26 C1457,249.56 1457.58,249 1458.24,249 L1475.74,249 C1476.44,249 1477,249.56 1477,250.26 Z M1457,262.76 L1457,252.5 L1467,260 L1477,252.5 L1477,262.76 C1477,263.42 1476.44,264 1475.74,264 L1458.24,264 C1457.58,264 1457,263.42 1457,262.76 Z" id="ms-icon-email"></path>
+        </g>
+    </g>
+</svg>

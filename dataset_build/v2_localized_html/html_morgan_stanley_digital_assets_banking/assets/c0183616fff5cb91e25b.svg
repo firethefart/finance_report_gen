@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Youtube</title>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-system_Icons" transform="translate(-1457.000000, -249.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M1476.99906,257 C1476.99906,250.000377 1476.99906,249.920836 1467.33611,249.919922 L1466.99906,249.919922 C1457.45361,249.919922 1457.01972,249.919922 1457,256.077755 L1457,257.922245 C1457.01949,264.006771 1457.44333,264.079205 1466.66201,264.080078 L1466.99906,264.080078 C1476.99906,264.080078 1476.99906,264.080078 1476.99906,257 Z M1464.49906,260.75 L1464.49906,253.25 L1470.74906,257 L1464.49906,260.75 Z" id="Youtube"></path>
+        </g>
+    </g>
+</svg>

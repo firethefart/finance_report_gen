@@ -1,0 +1,253 @@
+{
+  "case_id": "eastmoney_cn_strategy_005",
+  "query": "2026年二季度资产怎么配置?AI算力还能追吗?原油涨价会怎么影响投资?",
+  "query_language": "zh",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "2026年二季度",
+    "资产配置建议",
+    "AI算力投资",
+    "通胀与油价"
+  ],
+  "expected_report_type": {
+    "type": "季度资产配置策略报告",
+    "depth": "institutional_style",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026Q2",
+    "target_reader": "机构投资者与高净值个人"
+  },
+  "institution": {
+    "name": "爱建证券有限责任公司",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": null
+  },
+  "report_title": "AI交织通胀,权益主推算力链 ——2026Q2 资产配置报告",
+  "report_date": "2026-05-21",
+  "publication_period": "2026Q2",
+  "strategy_subtype": "asset_allocation_strategy",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260521-AP202605211822647981-0704c8d6b6.pdf",
+    "file_name": "20260521-AP202605211822647981-0704c8d6b6.pdf",
+    "format": "pdf",
+    "sha256": "dfecbe07d29a42fca8f3e7b92555fe7c551bb03d208ed2aa8b5bafe004984768",
+    "page_count": 22,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "IMF《全球经济前瞻》",
+      "type": "数据来源",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "提供2026年全球及主要经济体经济增速预测对比。"
+    },
+    {
+      "name": "CME FedWatch",
+      "type": "数据来源",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "用于分析市场对美联储利率路径的预期。"
+    },
+    {
+      "name": "Wind资讯",
+      "type": "数据平台",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "宏观数据、产业数据及量化模型回测的通用数据源。"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "2026Q2全球通胀因油价高企和美以伊冲突显著回升,10年期美债利率突破4.6%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "这决定了利率中枢上移,固收资产承压,影响全球资产定价。",
+      "verification_hint": "检查报告第5-8页关于油价、全球CPI/PPI及美债利率的图表与分析。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "AI大模型突破与应用爆发导致算力供需紧张,算力产业链(芯片、服务器、光通信等)高景气将持续。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "这是本季度权益投资的核心主线,决定了行业配置方向。",
+      "verification_hint": "查阅报告第10-13页关于AI产业革新和算力产业链三阶段演进的部分。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "中国市场的AI投资重点在于\"国产替代\"与\"出海红利\"双轮驱动,业绩确定性最强的是光模块、PCB、液冷散热等出海方向。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "为国内市场投资者指出了具体的细分赛道和选股逻辑。",
+      "verification_hint": "核对报告第13页关于中美算力产业链投资聚焦领域与代表公司的图表及论述。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "本季度大类资产配置基调为股强债弱,权益为主、商品为辅,固收低配。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "这是整个报告的资产配置核心结论,直接指导投资组合构建。",
+      "verification_hint": "查看报告第13、14页\"资产选择\"部分和图表22。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "通过量化模型构建不同风险偏好组合,发现国内平衡型组合集中配置于中证算力、沪金、沪铜和短期高等级信用债。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "提供了可操作的具体组合方案和权重参考。",
+      "verification_hint": "核查报告第19-20页\"组合配置\"章节中对量化模型结果和持仓的描述。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "宏观经济与通胀形势分析(全球与中国)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "AI产业趋势与算力产业链分析",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "大类资产(权益、固收、商品、汇率)观点与配置建议",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "核心投资主题与行业选择逻辑",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "基于量化模型的风险预算与最优组合构建",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "具体的国内与全球配置组合方案及权重",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "风险提示与关键假设",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "错误判断通胀趋势为短期现象,从而推荐长久期利率债。",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "忽视AI算力链的业绩确定性,将其视为主题炒作而遗漏。",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "在大类资产配置中平均分配权重,未体现\"股强债弱\"的核心观点。",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "组合构建空谈逻辑,缺乏基于数据的量化回测或优化过程。",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "混淆中国出海红利(如光模块)与国产替代(如芯片设计)的投资逻辑和弹性。",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "图表7:市场押注美联储维持基准利率不变直至27Q2",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "图表21:中美算力产业链投资聚焦领域与代表公司",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "图表22:2026Q2大类资产配置权重与范围",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "relevance_to_query": "回答是否聚焦在2026Q2通胀、AI与资产配置的三角关系上。",
+    "investment_rationale": "是否清晰解释了'权益主推算力链'的宏观和中观逻辑。",
+    "portfolio_construction": "是否提供了基于模型优化且有具体权重的组合方案,并区分了风险偏好。",
+    "risk_awareness": "是否明确指出了AI算力投资放缓、全球需求弱化等核心风险。"
+  },
+  "reference_notes": {
+    "分析师": "薛威,证书编号S0820526030001",
+    "免责声明": "报告尾部包含重要法律声明,分析师及机构不承担因使用报告产生的投资风险。"
+  },
+  "extraction_confidence": {
+    "overall": 0.97,
+    "classification": 0.99,
+    "key_facts": 0.96,
+    "source_pack": 0.98,
+    "query": 0.95
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>北交所并购重组升温：新能源与智能电网行业格局影响策略研究</title>
+  <style>
+    :root {
+      --ink: #132027;
+      --muted: #60717a;
+      --line: #d8e1df;
+      --paper: #f5f8f7;
+      --panel: #ffffff;
+      --deep: #112e35;
+      --green: #18805a;
+      --blue: #2863a6;
+      --amber: #b7781f;
+      --red: #a94757;
+      --teal-soft: #e4f2ed;
+      --blue-soft: #e7eff8;
+      --amber-soft: #fbefd8;
+      --red-soft: #f7e7ea;
+      --gray-soft: #eef3f2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.62;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .hero {
+      min-height: 78vh;
+      display: grid;
+      align-items: end;
+      padding: 48px 28px 34px;
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(8, 31, 38, .18), rgba(8, 31, 38, .92)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1800' height='1000' viewBox='0 0 1800 1000'%3E%3Crect width='1800' height='1000' fill='%2312232b'/%3E%3Cg opacity='.46' stroke='%238ed6bf' stroke-width='4' fill='none'%3E%3Cpath d='M-40 740 C220 610 390 770 600 650 S1010 540 1230 690 1510 800 1840 620'/%3E%3Cpath d='M-40 825 C250 720 420 850 680 740 S1060 650 1300 775 1540 860 1840 744' stroke='%237db2e8'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-opacity='.32' fill='none'%3E%3Cpath d='M150 150 H420 L560 280 H810 L950 190 H1210 L1370 340 H1610' stroke-width='7'/%3E%3Cpath d='M190 430 H435 L555 345 H775 L900 455 H1115 L1240 400 H1530' stroke-width='5'/%3E%3Cpath d='M215 570 H390 L505 500 H705 L820 565 H1040 L1180 508 H1480' stroke-width='4'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='150' cy='150' r='13'/%3E%3Ccircle cx='560' cy='280' r='12'/%3E%3Ccircle cx='950' cy='190' r='13'/%3E%3Ccircle cx='1370' cy='340' r='12'/%3E%3Ccircle cx='555' cy='345' r='10'/%3E%3Ccircle cx='900' cy='455' r='10'/%3E%3Ccircle cx='1240' cy='400' r='10'/%3E%3Ccircle cx='820' cy='565' r='9'/%3E%3Ccircle cx='1180' cy='508' r='9'/%3E%3C/g%3E%3Cg opacity='.88'%3E%3Crect x='155' y='700' width='82' height='88' rx='7' fill='%23f3c75a'/%3E%3Crect x='252' y='660' width='82' height='128' rx='7' fill='%23eaf4ff'/%3E%3Crect x='350' y='612' width='82' height='176' rx='7' fill='%23f3c75a'/%3E%3Cpath d='M1290 680 l120 -72 120 72 v130 h-240z' fill='%23eaf4ff'/%3E%3Cpath d='M1326 678 h168 M1348 728 h124' stroke='%2312232b' stroke-width='10'/%3E%3C/g%3E%3C/svg%3E") center/cover;
+    }
+
+    .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    .hero .wrap { width: min(1180px, 100%); }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #cfeee4;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 1040px;
+      margin: 0;
+      font-size: clamp(34px, 6.5vw, 72px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      max-width: 900px;
+      margin: 18px 0 0;
+      color: #e7f2ef;
+      font-size: clamp(16px, 2vw, 21px);
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .hero-tags span {
+      border: 1px solid rgba(255,255,255,.36);
+      border-radius: 999px;
+      padding: 7px 11px;
+      color: #f1faf7;
+      background: rgba(255,255,255,.1);
+      font-size: 13px;
+    }
+
+    main { padding: 34px 0 70px; }
+    section { margin-top: 42px; }
+
+    h2 {
+      margin: 0 0 15px;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.22;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    p { margin: 0 0 12px; }
+    .lead { color: #314148; font-size: 18px; }
+    .note { color: var(--muted); font-size: 12.5px; }
+
+    .grid { display: grid; gap: 16px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 10px 26px rgba(28, 50, 58, .05);
+    }
+
+    .dark {
+      color: #eef8f5;
+      background: var(--deep);
+      border: 0;
+    }
+
+    .dark p, .dark .note { color: #d7e8e3; }
+    .dark h2, .dark h3 { color: #fff; }
+
+    .tag {
+      display: inline-flex;
+      margin-bottom: 10px;
+      border-radius: 999px;
+      padding: 3px 9px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.green { color: #11583f; background: var(--teal-soft); }
+    .tag.blue { color: #1f558f; background: var(--blue-soft); }
+    .tag.amber { color: #76501a; background: var(--amber-soft); }
+    .tag.red { color: #823141; background: var(--red-soft); }
+    .tag.gray { color: #425159; background: var(--gray-soft); }
+
+    .thesis {
+      display: grid;
+      grid-template-columns: 1.4fr .6fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .kpi {
+      display: grid;
+      gap: 12px;
+    }
+
+    .kpi .card {
+      min-height: 132px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .value {
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 850;
+      color: var(--green);
+    }
+
+    .matrix, .source-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .matrix th, .matrix td,
+    .source-table th, .source-table td {
+      padding: 12px 13px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .matrix th, .source-table th {
+      background: #edf4f2;
+      color: #26363d;
+      font-size: 13px;
+    }
+
+    .matrix tr:last-child td, .source-table tr:last-child td { border-bottom: 0; }
+
+    .bars { display: grid; gap: 13px; }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 136px 1fr 76px;
+      gap: 12px;
+      align-items: center;
+      font-size: 14px;
+    }
+    .track {
+      height: 12px;
+      border-radius: 999px;
+      background: #e2ebe8;
+      overflow: hidden;
+    }
+    .fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--green), var(--blue));
+    }
+
+    .scenario {
+      display: grid;
+      grid-template-columns: 86px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .prob {
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #edf4f2;
+      color: var(--deep);
+      font-weight: 850;
+      font-size: 18px;
+    }
+
+    .case-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .case {
+      display: grid;
+      grid-template-columns: 168px 1fr;
+      gap: 14px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .case strong { display: block; margin-bottom: 4px; }
+
+    .checklist {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .checklist li { margin: 7px 0; }
+
+    .sources {
+      columns: 2;
+      column-gap: 28px;
+      padding-left: 20px;
+      font-size: 14px;
+    }
+    .sources li {
+      break-inside: avoid;
+      margin: 0 0 9px;
+    }
+
+    footer {
+      margin-top: 42px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
+    @media (max-width: 900px) {
+      .thesis, .grid-2, .grid-3, .grid-4, .case { grid-template-columns: 1fr; }
+      .hero { min-height: 82vh; padding: 42px 18px 28px; }
+      .wrap { width: min(100% - 24px, 1180px); }
+      .bar-row { grid-template-columns: 112px 1fr 60px; }
+      .scenario { grid-template-columns: 1fr; }
+      .sources { columns: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Strategy Research · 北交所并购重组 · 新能源与智能电网</p>
+      <h1>从交易活跃到格局重估：北交所并购如何改变新能源与智能电网竞争边界</h1>
+      <p class="subtitle">截至 2026-06-08 的公开信息显示，政策效率提升、专精特新资产供给和能源数字化需求正在共振。本文以策略研究框架分析并购重组对行业集中度、技术边界、供应链控制和资本市场定价的影响。</p>
+      <div class="hero-tags">
+        <span>报告类型：主题策略 / 行业格局研究</span>
+        <span>时间窗：2024-09 至 2026-06</span>
+        <span>结论属性：公开资料研究判断</span>
+        <span>合规边界：非个性化投资建议</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="thesis">
+      <article class="card dark">
+        <span class="tag green">Investment Thesis</span>
+        <h2>核心判断</h2>
+        <p class="lead">北交所并购重组升温的行业含义，不在于短期交易题材，而在于细分制造、工控软件、传感通信、充换电与能源运维资产之间的边界被重新划分。新能源和智能电网的竞争正从单点产品报价，转向“场景入口 + 数据能力 + 交付体系”的综合竞争。</p>
+        <p>基准情景下，未来 12-24 个月北交所相关并购将以小额精准收购、控股新三板优质标的、同业横向整合和技术补链为主。行业格局的主要变化是细分龙头平台化、区域解决方案商抬头、上游关键模块战略价值提升。</p>
+        <p class="note">反证条件：若政策审核效率提升未转化为交易落地，或新能源、电网数字化项目回款恶化、商誉减值上升，则并购对格局的改善会弱化，并可能退化为估值波动。</p>
+      </article>
+      <div class="kpi">
+        <article class="card">
+          <span class="tag blue">政策变量</span>
+          <div class="value">5 日</div>
+          <p>北交所重组简易审核程序下，证监会注册决定时间口径为 5 个工作日。</p>
+        </article>
+        <article class="card">
+          <span class="tag green">需求变量</span>
+          <div class="value">5 亿千瓦</div>
+          <p>国家能源局提出到 2025 年配电网具备约 5 亿千瓦分布式新能源接入能力。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>执行摘要</h2>
+      <div class="grid grid-4">
+        <article class="card">
+          <span class="tag green">1. 制度催化</span>
+          <h3>交易摩擦下降</h3>
+          <p>“并购六条”、重大资产重组办法修改、北交所审核规则修订共同提高并购可操作性，尤其利于产业逻辑清晰的小额快速交易。</p>
+        </article>
+        <article class="card">
+          <span class="tag blue">2. 产业映射</span>
+          <h3>能源数字化资产被重估</h3>
+          <p>新能源消纳、分布式接入、充换电和配网智能化提升了工控、视觉、通信、传感和运维软件资产的战略价值。</p>
+        </article>
+        <article class="card">
+          <span class="tag amber">3. 格局变化</span>
+          <h3>细分龙头更像平台</h3>
+          <p>并购使北交所公司从单一产品商向“硬件 + 软件 + 场景”方案商迁移，竞争维度从价格走向客户粘性和交付闭环。</p>
+        </article>
+        <article class="card">
+          <span class="tag red">4. 风险约束</span>
+          <h3>整合能力决定兑现</h3>
+          <p>并购公告并不等于盈利改善，仍需验证订单协同、现金回款、费用控制、商誉减值和标的治理。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>证据池：事实、来源与分析含义</h2>
+      <table class="source-table">
+        <thead>
+          <tr>
+            <th>证据类型</th>
+            <th>公开事实</th>
+            <th>策略研究含义</th>
+            <th>来源</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>监管政策</td>
+            <td>证监会 2024 年发布深化上市公司并购重组市场改革意见，市场称“并购六条”。</td>
+            <td>重组支付工具、估值包容度和审核效率改善，提升中小市值上市平台做产业整合的动力。</td>
+            <td><a href="https://www.csrc.gov.cn/csrc/c100028/c7508366/content.shtml" target="_blank" rel="noreferrer">证监会</a></td>
+          </tr>
+          <tr>
+            <td>交易所规则</td>
+            <td>北交所 2025 年修订重大资产重组审核规则，设置简易审核程序并优化小额快速机制。</td>
+            <td>利好交易目的清晰、金额适中、产业协同强的专精特新并购。</td>
+            <td><a href="https://www.bse.cn/fxrz_list/200025916.html" target="_blank" rel="noreferrer">北交所</a></td>
+          </tr>
+          <tr>
+            <td>产业需求</td>
+            <td>国家能源局提出配电网到 2025 年具备约 5 亿千瓦分布式新能源接入能力。</td>
+            <td>新能源装机增长的瓶颈从装机本身转向接入、调度、监测、运维和电网侧数字化。</td>
+            <td><a href="https://news.cctv.com/2024/06/20/ARTIm70On1U4hZa4YmUmQ5GQ240620.shtml" target="_blank" rel="noreferrer">央视网 / 国家能源局</a></td>
+          </tr>
+          <tr>
+            <td>交易样本</td>
+            <td>五新隧装重大资产重组案例推动北交所审核类重组示范效应。</td>
+            <td>北交所上市公司使用股份支付、现金支付和产业资产注入的路径更清晰。</td>
+            <td><a href="https://cs.com.cn/ssgs/gsxw/202505/t20250501_6489396.html" target="_blank" rel="noreferrer">中证网</a></td>
+          </tr>
+          <tr>
+            <td>交易样本</td>
+            <td>科达自控收购海图科技，补强 AI 视觉与工业场景感知能力。</td>
+            <td>智能矿山、能源运维、充换电等场景的技术能力可以横向复用，形成能源数字化并购逻辑。</td>
+            <td><a href="https://www.stcn.com/article/detail/3573305.html" target="_blank" rel="noreferrer">证券时报</a></td>
+          </tr>
+          <tr>
+            <td>市场观察</td>
+            <td>公开报道显示北证市场并购重组持续升温，案例涉及晶赛科技、创远信科、阿为特等。</td>
+            <td>电子元器件、测试测量、通信导航、工业自动化等底层资产可能成为智能电网和新能源数字化的补链标的。</td>
+            <td><a href="https://finance.eastmoney.com/a/202601063609261290.html" target="_blank" rel="noreferrer">东方财富 / 证券时报</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>影响强度：并购对产业格局的四条传导链</h2>
+      <div class="card">
+        <div class="bars">
+          <div class="bar-row">
+            <strong>供应链控制</strong>
+            <div class="track"><div class="fill" style="width: 88%"></div></div>
+            <span>高</span>
+          </div>
+          <div class="bar-row">
+            <strong>技术边界扩张</strong>
+            <div class="track"><div class="fill" style="width: 84%"></div></div>
+            <span>高</span>
+          </div>
+          <div class="bar-row">
+            <strong>区域客户绑定</strong>
+            <div class="track"><div class="fill" style="width: 76%"></div></div>
+            <span>中高</span>
+          </div>
+          <div class="bar-row">
+            <strong>价格竞争缓和</strong>
+            <div class="track"><div class="fill" style="width: 46%"></div></div>
+            <span>中</span>
+          </div>
+        </div>
+        <p class="note">图表口径：强度为研究判断，用于表达相对影响，不代表收益预测。判断依据为政策可行性、产业协同性、并购整合难度和对客户粘性的影响。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>行业格局矩阵：从单点竞争到平台竞争</h2>
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th>格局变化</th>
+            <th>新能源与智能电网的表现</th>
+            <th>北交所公司可能动作</th>
+            <th>需要验证的数据</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>细分集中度提升</strong></td>
+            <td>充换电、配网自动化、能源运维、传感通信等环节由分散项目商向区域方案商集中。</td>
+            <td>收购有客户入口、资质、区域项目经验的标的，提高订单覆盖和交付完整度。</td>
+            <td>新增订单、客户复购率、前五大客户依赖度、项目验收周期。</td>
+          </tr>
+          <tr>
+            <td><strong>技术资产重估</strong></td>
+            <td>AI 视觉、工控软件、测试测量、通信导航、边缘计算能力从工业场景外溢到能源场景。</td>
+            <td>收购底层算法、软件平台或模块供应商，减少对单一硬件价格的依赖。</td>
+            <td>研发费用率、软件收入占比、毛利率、技术人员留存。</td>
+          </tr>
+          <tr>
+            <td><strong>产业链补链</strong></td>
+            <td>新能源并网需要设备、监测、调度、运维和交易数据协同，单项设备能力不足。</td>
+            <td>围绕“硬件 + 数据 + 运维”补齐产品线，提升单项目价值量。</td>
+            <td>合同金额、综合毛利率、应收账款周转、质保与运维收入。</td>
+          </tr>
+          <tr>
+            <td><strong>估值叙事切换</strong></td>
+            <td>市场关注点从制造属性转向能源数字化、专精特新平台和新质生产力资产。</td>
+            <td>通过并购改善成长曲线，但需避免只讲故事不兑现业绩。</td>
+            <td>业绩承诺完成率、商誉规模、经营现金流、并表后费用协同。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>代表性交易样本：可学习的并购逻辑</h2>
+      <div class="case-list">
+        <div class="case">
+          <div><span class="tag green">示范路径</span><strong>五新隧装</strong></div>
+          <p>虽然案例不直接落在新能源或智能电网，但其价值在于验证北交所审核类重组和股份支付路径。对新能源、电网数字化公司而言，这类案例降低了未来“上市平台 + 产业资产”组合的制度不确定性。</p>
+        </div>
+        <div class="case">
+          <div><span class="tag blue">技术外溢</span><strong>科达自控</strong></div>
+          <p>科达自控的智慧矿山、智慧市政、新能源充换电业务与海图科技 AI 视觉能力存在横向复用空间。此类并购说明，能源数字化并购不只买同业收入，也买底层感知、算法和交付能力。</p>
+        </div>
+        <div class="case">
+          <div><span class="tag amber">新能源延伸</span><strong>旭杰科技等</strong></div>
+          <p>公开报道中的新能源相关股权收购显示，部分北交所公司正在通过并购进入光伏、充换电或能源工程链条。其格局影响主要体现在区域项目资源和业务曲线重塑。</p>
+        </div>
+        <div class="case">
+          <div><span class="tag red">底层模块</span><strong>晶赛科技 / 创远信科</strong></div>
+          <p>电子元器件、测试测量和通信导航类资产在智能电网中承担计量、同步、通信和可靠性保障功能。相关并购会提高上游关键模块的战略地位。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>情景分析：未来 12-24 个月</h2>
+      <div class="grid grid-3">
+        <article class="card scenario">
+          <div class="prob">55%</div>
+          <div>
+            <span class="tag green">基准情景</span>
+            <h3>精准补链，格局温和集中</h3>
+            <p>政策效率改善继续释放，小额快速、现金收购和控股优质标的成为主流。行业集中度逐步提升，但更多体现在细分环节和区域市场。</p>
+          </div>
+        </article>
+        <article class="card scenario">
+          <div class="prob">25%</div>
+          <div>
+            <span class="tag blue">上行情景</span>
+            <h3>平台型资产出现</h3>
+            <p>新能源消纳、电网智能化和 AI+能源投资加速，北交所公司通过连续并购形成平台型方案商，估值体系从制造切换到能源数字化。</p>
+          </div>
+        </article>
+        <article class="card scenario">
+          <div class="prob">20%</div>
+          <div>
+            <span class="tag red">下行情景</span>
+            <h3>整合拖累与商誉压力</h3>
+            <p>标的高估值、回款变慢、项目验收延迟或技术人员流失导致协同低于预期，市场从并购题材重新回到现金流和盈利质量。</p>
+          </div>
+        </article>
+      </div>
+      <p class="note">概率为主观研究情景权重，用于组织分析，不代表统计预测。</p>
+    </section>
+
+    <section>
+      <h2>跟踪指标：判断并购是否真的改变格局</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <span class="tag green">订单验证</span>
+          <h3>从公告到订单</h3>
+          <ul class="checklist">
+            <li>并购后新能源、电网数字化、充换电订单占比是否提升。</li>
+            <li>是否出现联合投标、交叉销售或大客户复购。</li>
+            <li>项目验收周期是否缩短。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag blue">利润验证</span>
+          <h3>从收入到质量</h3>
+          <ul class="checklist">
+            <li>综合毛利率是否改善，软件和运维收入占比是否提升。</li>
+            <li>销售、管理、研发费用率是否被协同吸收。</li>
+            <li>并表标的是否兑现业绩承诺。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag amber">现金流验证</span>
+          <h3>从利润到回款</h3>
+          <ul class="checklist">
+            <li>经营现金流是否跟随利润改善。</li>
+            <li>应收账款周转是否恶化。</li>
+            <li>商誉和无形资产减值风险是否可控。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>研究结论</h2>
+      <div class="card">
+        <p><strong>对行业格局：</strong>北交所并购重组会推动新能源与智能电网的竞争从单点设备供应，转向平台化、区域化和场景化解决方案竞争。最受益的不是规模最大的成熟主设备环节，而是处在能源数字化中间层的工控、传感、通信、软件、测试和运维资产。</p>
+        <p><strong>对上市公司：</strong>拥有清晰产业主线、可复制客户场景和现金流纪律的公司，更可能通过并购形成细分龙头；缺乏整合能力的公司则容易陷入估值波动、费用上升和商誉风险。</p>
+        <p><strong>对研究跟踪：</strong>不要只看“是否公告并购”，应跟踪订单协同、利润质量、回款表现和标的技术留存。并购对格局的真正影响，最终会反映在客户粘性、单项目价值量和现金转化能力上。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>主要来源</h2>
+      <ol class="sources">
+        <li><a href="https://www.csrc.gov.cn/csrc/c100028/c7508366/content.shtml" target="_blank" rel="noreferrer">证监会：《关于深化上市公司并购重组市场改革的意见》</a>，2024-09-24。</li>
+        <li><a href="https://www.csrc.gov.cn/csrc/c100028/c7558588/content.shtml" target="_blank" rel="noreferrer">证监会：修改《上市公司重大资产重组管理办法》</a>，2025 年。</li>
+        <li><a href="https://www.bse.cn/fxrz_list/200025916.html" target="_blank" rel="noreferrer">北交所：《上市公司重大资产重组审核规则》修订公告</a>，2025-05-16。</li>
+        <li><a href="https://cs.com.cn/ssgs/gsxw/202505/t20250501_6489396.html" target="_blank" rel="noreferrer">中证网：五新隧装发布重大资产重组草案</a>，2025-05-01。</li>
+        <li><a href="https://www.ce.cn/macro/more/202512/t20251220_2654205.shtml" target="_blank" rel="noreferrer">中国经济网：五新隧装发股购买资产项目进展报道</a>，2025-12-20。</li>
+        <li><a href="https://finance.eastmoney.com/a/202601063609261290.html" target="_blank" rel="noreferrer">东方财富转引证券时报：北证市场并购重组持续升温</a>，2026-01-06。</li>
+        <li><a href="https://www.stcn.com/article/detail/3573305.html" target="_blank" rel="noreferrer">证券时报：科达自控收购海图科技相关报道</a>，2026 年公开报道。</li>
+        <li><a href="https://news.cctv.com/2024/06/20/ARTIm70On1U4hZa4YmUmQ5GQ240620.shtml" target="_blank" rel="noreferrer">央视网转国家能源局：配电网分布式新能源接入能力目标</a>，2024-06-20。</li>
+        <li><a href="https://www.ndrc.gov.cn/xxgk/jd/jd/202511/t20251110_1401474.html" target="_blank" rel="noreferrer">国家发展改革委：促进新能源消纳和调控政策解读</a>，2025-11-10。</li>
+        <li><a href="https://www.nda.gov.cn/sjj/zwgk/zcfb/0908/20250908201317566927066_pc.html" target="_blank" rel="noreferrer">国家数据局：推进“人工智能+”能源高质量发展的实施意见</a>，2025 年。</li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>免责声明：本文基于公开资料整理，包含研究判断和情景假设，不构成任何证券买卖建议或个性化投资建议。市场、政策、项目进度、交易审核和公司经营均存在不确定性。引用数据与案例以公开来源为准，若后续公告更新，应以最新正式披露为准。</p>
+    </footer>
+  </main>
+</body>
+</html>

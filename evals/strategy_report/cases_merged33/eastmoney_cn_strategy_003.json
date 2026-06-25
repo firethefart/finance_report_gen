@@ -1,0 +1,288 @@
+{
+  "case_id": "eastmoney_cn_strategy_003",
+  "query": "无人矿卡渗透率提升对矿用轮胎智能化有什么影响?有哪些北交所相关标的可以关注?",
+  "query_language": "zh",
+  "query_style": "retail_user",
+  "scope_constraints": [
+    "北交所上市公司",
+    "智能矿山轮胎后市场"
+  ],
+  "expected_report_type": {
+    "type": "行业主题报告",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "2025-2032",
+    "target_reader": "关注北交所及智能矿山产业链的投资者"
+  },
+  "institution": {
+    "name": "开源证券股份有限公司",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": null
+  },
+  "report_title": "智能矿山和无人驾驶催生轮胎革命,掘金千亿智能矿卡后市场",
+  "report_date": "2026-06-10",
+  "publication_period": null,
+  "strategy_subtype": "北交所行业主题报告",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260610-AP202606101823425858-35af2f34e2.pdf",
+    "file_name": "20260610-AP202606101823425858-35af2f34e2.pdf",
+    "format": "pdf",
+    "sha256": "15584135432a808147725ae88d04f82ca9e6c6018a73a448b26ec67a8dce56c1",
+    "page_count": 30,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "《World Mining Data 2025》",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "提供全球矿产产量历史数据,支撑矿产产量增长趋势"
+    },
+    {
+      "name": "QYResearch 矿用卡车市场报告",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "提供全球矿用卡车销售额及预测数据"
+    },
+    {
+      "name": "Mordor Intelligence 智能采矿与智能轮胎报告",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "提供智能采矿及智能轮胎市场规模与预测数据"
+    },
+    {
+      "name": "中国煤炭工业协会 无人矿卡数据",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "提供中国无人矿卡渗透率现状及预测"
+    },
+    {
+      "name": "开源证券研究所 相关公司研究报告",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "包含泰凯英、同力股份、科达自控、博雷顿等标的分析"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "全球矿产总产量由1984年的933,292.98万吨增长至2023年的1,919,058.12万吨,复合增长率2%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "矿产产量增长是矿用卡车及轮胎需求增长的根本驱动力。",
+      "verification_hint": "核对《World Mining Data 2025》数据集,确认1984年与2023年产量数据。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "2025年全球矿用卡车市场销售额达387亿元,预计2032年将达473.8亿元,CAGR为3.0%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "该数据量化了矿用卡车市场的绝对规模和预期增速,是测算轮胎后市场容量的基础。",
+      "verification_hint": "查阅QYResearch报告,核对2025年销售额与2032年预测值。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "智能采矿市场规模预计在2026年达187.7亿美元,2031年增至318.6亿美元,CAGR为11.16%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "高增速表明智能采矿正成为行业主要趋势,将拉动无人矿卡及智能轮胎需求。",
+      "verification_hint": "核对Mordor Intelligence智能采矿报告中的预测数据。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "智能轮胎市场规模预计2025年达1061.4亿美元,2030年增至1564.6亿美元,CAGR为8.07%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "智能轮胎是智能矿山的重要一环,其高增长验证了轮胎智能化革命的潜力。",
+      "verification_hint": "核对Mordor Intelligence智能轮胎报告中的预测数据。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "2030年中国无人矿卡预计渗透率达55.4%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "高渗透率将直接推动矿用轮胎向智能化、高端化迭代,改变后市场格局。",
+      "verification_hint": "核对报告中表3或中国煤炭工业协会数据来源,确认渗透率测算依据。"
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "报告选取泰凯英(920020.BJ)、同力股份(920599.BJ)、科达自控(920932.BJ)、博雷顿(1333.HK)作为相关标的。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "这批企业是北交所及港股市场中直接受益智能矿山轮胎浪潮的代表性公司。",
+      "verification_hint": "在交易软件中核对四家公司代码及主营业务是否符合报告描述。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "行业驱动因素分析(矿产产量、政策、技术)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "市场容量与预测(矿卡、轮胎、智能采矿)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "产业链细分环节梳理(轮胎品类、智能技术)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "竞争格局与商业模式(后市场、进入壁垒)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "相关标的介绍与估值逻辑",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "风险提示",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "图表目录与引用来源列表",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "混淆矿用轮胎与普通公路轮胎的性能与使用场景",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "遗漏无人矿卡渗透率与轮胎智能化之间的传导逻辑",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "缺乏对北交所或相关标的的针对性分析",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "引用未注明来源的市场规模数据",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "忽略轮胎原材料成本波动对行业盈利的影响",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "未区分矿用轮胎前装与替换(售后)市场的差异",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "description": "图1 世界矿产总产量趋势",
+      "learning_strength": "展示历史产量增长趋势,强化基础假设。",
+      "title_or_description": "图1 世界矿产总产量趋势",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "description": "表3 无人驾驶技术应用分类",
+      "learning_strength": "清晰定义无人驾驶等级,构建逻辑链。",
+      "title_or_description": "表3 无人驾驶技术应用分类",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "expected_takeaways": [
+      "\"无人矿卡渗透率提升→轮胎智能化需求释放\"是核心传导路径。",
+      "矿用轮胎智能化和后市场替换需求是两大增长极。"
+    ],
+    "risk_levers": [
+      "宏观经济波动风险",
+      "市场竞争风险",
+      "轮胎原材料价格波动风险"
+    ]
+  },
+  "reference_notes": {
+    "style_notes": "采用典型中资券商报告格式,分析师署名加证书编号,开头列明相关研究报告,正文分章节并配图表,末尾有法律声明。"
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.95,
+    "source_pack": 0.9,
+    "query": 0.92
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

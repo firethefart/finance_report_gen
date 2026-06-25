@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Runtime V2 Static Strategy Report Fixture</title>
+  <style>
+    body { margin:0; font-family: Arial, "Microsoft YaHei", sans-serif; color:#172033; background:#f4f7fb; }
+    header { background:#11324a; color:#fff; padding:56px 72px; }
+    main { max-width:1120px; margin:0 auto; padding:32px 24px 80px; }
+    section { background:#fff; border:1px solid #d8dee8; border-radius:8px; margin:18px 0; padding:22px; }
+    h1 { font-size:42px; margin:0 0 12px; }
+    h2 { margin:0 0 14px; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    th, td { border:1px solid #cbd5e1; padding:10px; text-align:left; vertical-align:top; }
+    th { background:#e8f1ff; }
+    .bars { display:flex; align-items:end; gap:18px; height:260px; border-left:2px solid #94a3b8; border-bottom:2px solid #94a3b8; padding:20px 24px 0; }
+    .bar { width:72px; background:#2f6fed; color:#fff; display:flex; align-items:start; justify-content:center; padding-top:8px; }
+    .source { color:#667085; font-size:12px; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <p>STRATEGY RESEARCH / HTML RUNTIME FIXTURE</p>
+    <h1>新能源电网投资策略：从设备扩张到平台化运营</h1>
+    <p>本文测试静态 HTML 报告中的表格、柱形图和 KPI 卡片能否被 Runtime Adapter V2 正确定位。</p>
+  </header>
+  <main>
+    <section>
+      <h2>核心观点</h2>
+      <p>我们认为，2026 年新能源并网、充换电、配电自动化和智能调度需求将共同推动电网投资结构变化。</p>
+      <p>策略含义是关注具备设备、软件和运维平台协同能力的公司，同时关注政策节奏和电网投资兑现风险。</p>
+    </section>
+    <section>
+      <h2>图 1：分环节投资景气度评分</h2>
+      <figure class="chart" data-chart="bar">
+        <div class="bars">
+          <div class="bar" style="height:210px">92</div>
+          <div class="bar" style="height:170px;background:#18805a">78</div>
+          <div class="bar" style="height:136px;background:#b7781f">64</div>
+          <div class="bar" style="height:188px;background:#a94757">84</div>
+        </div>
+        <figcaption>设备、软件、传感器、运维平台四个环节的景气度评分。资料来源：公司公告、行业协会、作者测算。</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>表 1：策略证据链</h2>
+      <table>
+        <thead><tr><th>证据</th><th>数字</th><th>策略含义</th><th>来源</th></tr></thead>
+        <tbody>
+          <tr><td>新能源装机增长</td><td>2026E +18%</td><td>并网和调度系统需求提升</td><td>公开行业数据</td></tr>
+          <tr><td>配网自动化改造</td><td>投资强度 +12%</td><td>软件和传感器价值量提升</td><td>公司公告</td></tr>
+          <tr><td>充换电基础设施</td><td>利用率 46%</td><td>平台化运维成为利润弹性来源</td><td>行业协会</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>风险边界</h2>
+      <p>若电网投资审批延后、设备招标价格下行超过 10%，或利用小时低于预期，以上策略判断可能失效。</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,193 @@
+{
+  "case_id": "strategy_sample_009",
+  "query": "What are J.P. Morgan Private Bank's key investment themes and strategic recommendations for 2026, particularly regarding artificial intelligence, global fragmentation, and inflation?",
+  "query_language": "en",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "J.P. Morgan Private Bank",
+    "year 2026",
+    "annual outlook",
+    "investment themes"
+  ],
+  "expected_report_type": {
+    "type": "Annual Outlook Report",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "2026",
+    "target_reader": "Private bank clients and financial representatives"
+  },
+  "institution": {
+    "name": "J.P. Morgan Private Bank / Wealth Management",
+    "business_type": "private_bank",
+    "country_or_region": "US",
+    "official_url": "https://www.jpmorgan.com/"
+  },
+  "report_title": "J.P. Morgan Outlook 2026",
+  "report_date": null,
+  "publication_period": "Annual Outlook",
+  "strategy_subtype": "annual_outlook",
+  "quality_tier": "B",
+  "source_document": {
+    "file_path": "dataset_build\\curated_strategy_samples_verified\\annual_outlook\\pdf\\009-j-p-morgan-private-bank-wealth-management-j-p-morgan-outlook-2026.pdf",
+    "file_name": "009-j-p-morgan-private-bank-wealth-management-j-p-morgan-outlook-2026.pdf",
+    "format": "pdf",
+    "sha256": "d18bac5195a212682943a16ad8b8a62524a4832646727e747a275c0e8a4e1fae",
+    "page_count": 70,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "The report identifies three powerful forces for 2026: the domination of artificial intelligence, global fragmentation, and the unknowns of inflation.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Excerpt: 'Looking ahead, we are focused on three powerful forces that will shape 2026: the domination of artificial intelligence, global fragmentation and the unknowns of inflation.'",
+      "fact": "The report identifies three powerful forces for 2026: the domination of artificial intelligence, global fragmentation, and the unknowns of inflation."
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "The foreword is signed by Adam Tejpaul (CEO, International Private Bank), David Frame (CEO, Global Private Bank), and Martin Marron (CEO, Wealth Management Solutions).",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Excerpt: 'Adam Tejpaul CEO, International Private Bank David Frame CEO, Global Private Bank Martin Marron CEO, Wealth Management Solutions'",
+      "fact": "The foreword is signed by Adam Tejpaul (CEO, International Private Bank), David Frame (CEO, Global Private Bank), and Martin Marron (CEO, Wealth Management Solutions)."
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "The report includes key takeaways: Position for the AI revolution, Think fragmentation not globalization, Prepare for inflation's structural shift, Uncover the potential of private markets.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Excerpt: 'Key takeaways Position for the AI revolution... Think fragmentation, not globalization... Prepare for inflation's structural shift... Uncover the potential of private markets.'",
+      "fact": "The report includes key takeaways: Position for the AI revolution, Think fragmentation not globalization, Prepare for inflation's structural shift, Uncover the potential of private markets."
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "The report asserts that inflation is undergoing a structural shift, becoming more volatile and susceptible to upward shocks.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Excerpt: 'In our view, inflation will be more volatile than it was before the pandemic, and more susceptible to upward shocks.'",
+      "fact": "The report asserts that inflation is undergoing a structural shift, becoming more volatile and susceptible to upward shocks."
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "The outlook mentions a constructive backdrop for investing, with a U.S. rate-cutting cycle supporting a rebound in global growth and solid returns for multi-asset portfolios.",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 1.0,
+      "why_it_matters": "Important benchmark fact from the source report.",
+      "verification_hint": "Excerpt: 'A U.S. rate-cutting cycle should support a rebound in global growth and continued strength in asset markets broadly. We expect solid returns for multi-asset portfolios in the coming year'",
+      "fact": "The outlook mentions a constructive backdrop for investing, with a U.S. rate-cutting cycle supporting a rebound in global growth and solid returns for multi-asset portfolios."
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "Foreword or Executive Letter",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Executive Summary or Key Takeaways",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Macro Thematic Chapters (AI, Fragmentation, Inflation)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Investment Strategy Implications (Asset Allocation views)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Private Markets Section",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "Risk Factors and Disclaimers",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "Treating the document as a formal J.P. Morgan Research Report (contrary to disclaimer)",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Providing specific model portfolio weights not present in the text",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Quantifying expected returns without explicit source page reference",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Mislabeling the document as an institutional strategy note rather than a private bank outlook",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "Ignoring the cautionary disclaimer that outlooks are not reliable indicators of future results",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [],
+  "evaluation_hooks": {},
+  "reference_notes": {},
+  "extraction_confidence": {
+    "overall": 1.0,
+    "classification": 1.0,
+    "key_facts": 1.0,
+    "source_pack": 1.0,
+    "query": 0.95
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

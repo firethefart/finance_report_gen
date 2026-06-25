@@ -1,0 +1,277 @@
+{
+  "case_id": "eastmoney_cn_strategy_002",
+  "query": "2026年6月北交所还有哪些低估值国家级单项冠军可以关注?",
+  "query_language": "zh",
+  "query_style": "institutional_client",
+  "scope_constraints": [
+    "北交所",
+    "国家级制造业单项冠军",
+    "估值",
+    "2026年6月"
+  ],
+  "expected_report_type": {
+    "type": "策略专题报告",
+    "depth": "standard_report",
+    "output_format": "pdf",
+    "expected_time_horizon": "短期至中期",
+    "target_reader": "机构投资者、北交所市场参与者"
+  },
+  "institution": {
+    "name": "开源证券股份有限公司",
+    "business_type": "brokerage",
+    "country_or_region": "CN",
+    "official_url": null
+  },
+  "report_title": "北交所策略专题报告:北交所的核心硬资产,14家国家级单项冠军深度折价,迎来价值重估机遇",
+  "report_date": "2026-06-07",
+  "publication_period": null,
+  "strategy_subtype": "bse_strategy_thematic",
+  "quality_tier": "A",
+  "source_document": {
+    "file_path": "dataset_build\\raw_pdfs\\strategy_research\\eastmoney-strategy-reports\\item\\20260608-AP202606081823348893-d210f7e5ad.pdf",
+    "file_name": "20260608-AP202606081823348893-d210f7e5ad.pdf",
+    "format": "pdf",
+    "sha256": "1d487db381b9ad84b0566451725522f8075b9b391b90040ea289d923dfa720d3",
+    "page_count": 32,
+    "parse_quality": "excellent"
+  },
+  "source_pack": [
+    {
+      "name": "开源证券北交所研究团队",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "分析师诸海滨,证书编号S0790522080007,提供核心策略观点与股票池",
+      "role": "报告产出方"
+    },
+    {
+      "name": "Wind数据",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "提供估值、涨跌幅、财务等底层数据",
+      "role": "市场数据源"
+    },
+    {
+      "name": "各公司公告",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "单项冠军企业名单及基本面细节",
+      "role": "企业信息源"
+    },
+    {
+      "name": "北京市人民政府官网",
+      "type": "other",
+      "url_or_path": null,
+      "date": null,
+      "required": true,
+      "observed_in_pdf": true,
+      "notes": "引用专精特新及单项冠军认定政策",
+      "role": "政策标准源"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact_id": "fact_001",
+      "claim": "北交所共有14家国家级制造业单项冠军企业,占比4.42%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "验证北交所高质量硬资产的供给能力与板块定位。",
+      "verification_hint": "核对报告正文及图表中14家企业的完整名单与数量统计。"
+    },
+    {
+      "fact_id": "fact_002",
+      "claim": "单项冠军PE(TTM)最低为9.26倍,多数企业估值在40倍以下。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "显示相对于北证A股整体及沪深可比公司存在显著估值折价。",
+      "verification_hint": "确认Wind或报告中各单项冠军的PE_TTM数据是否在9.26~40倍区间。"
+    },
+    {
+      "fact_id": "fact_003",
+      "claim": "北交所与科创板估值差为-7.09倍,与创业板估值差为-47.51倍。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "量化估值洼地,佐证北交所估值性价比和修复空间。",
+      "verification_hint": "比对同日北证50、科创50、创业板指的PETTM数据并计算差值。"
+    },
+    {
+      "fact_id": "fact_004",
+      "claim": "北证50本周五上涨5.59%,日均成交额232.98亿元,日均换手率4.52%。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "反映市场情绪回暖,为策略推荐提供量价背景。",
+      "verification_hint": "查找当周北交所官方行情数据或Wind终端核对涨跌幅与成交换手。"
+    },
+    {
+      "fact_id": "fact_005",
+      "claim": "建议围绕盈利和景气加速度筛选,关注业绩确定性强、低估值的单项冠军及高景气赛道特有龙头。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "给出可操作的投资框架,明确了选股逻辑。",
+      "verification_hint": "检查报告\"观点\"部分与股票池推荐是否一致。"
+    },
+    {
+      "fact_id": "fact_006",
+      "claim": "高端装备、信息技术、化工新材、消费服务、医药生物行业PE(TTM)分别为35.25X、67.41X、44.38X、36.68X、27.98X。",
+      "fact_type": "other",
+      "value": null,
+      "unit": null,
+      "time_window": null,
+      "source_ref": "source_report_excerpt",
+      "confidence": 0.6,
+      "why_it_matters": "分行业估值对比有助于识别景气与折价共存的领域。",
+      "verification_hint": "对照报告图表13的开源北交所五大行业板块市盈率数据。"
+    }
+  ],
+  "must_have_sections": [
+    {
+      "section_name": "北交所国家级单项冠军企业清单、认定标准及与专精特新'小巨人'对比",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "北证50及北证A股整体估值、换手率、成交额回顾",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "分行业估值对比及估值差分析(科创板、创业板)",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "基于业绩确定性与低估值的选股逻辑阐述",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "股票池推荐列表及调入调出理由",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "新股上市表现及审核动态更新",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    },
+    {
+      "section_name": "风险提示",
+      "required": true,
+      "purpose": "Required section for this strategy report subtype.",
+      "required_points": [],
+      "evaluation_focus": "Check coverage, specificity, and source grounding."
+    }
+  ],
+  "prohibited_mistakes": [
+    {
+      "mistake": "混淆'专精特新小巨人'与'制造业单项冠军'的准入门槛和档次",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "遗漏估值差计算基准或使用不同日期数据进行比较",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "推荐逻辑与股票池列表存在明显脱节或自相矛盾",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "忽视报告中明确的'政策落地不达预期'、'数据误差'等风险",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "将报告日前的历史数据当作最新市场表现引用",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    },
+    {
+      "mistake": "未注明数据截止日期并随意延伸时间区间",
+      "severity": "medium",
+      "why_it_matters": "This would materially reduce benchmark answer quality.",
+      "related_eval_dimension": "facts"
+    }
+  ],
+  "charts_and_tables_to_learn_from": [
+    {
+      "title_or_description": "图14: 本轮北证A股估值结构对比",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    },
+    {
+      "title_or_description": "图13: 开源北交所五大行业板块市盈率TTM",
+      "type": "other",
+      "why_exemplary": "",
+      "data_or_source_note": null,
+      "expected_eval_use": "chart_logic"
+    }
+  ],
+  "evaluation_hooks": {
+    "stockpool_consistency_key": "民士达",
+    "sharpe_insight": "PE折价修复逻辑的连贯性"
+  },
+  "reference_notes": {
+    "policy_sources": [
+      "北京市人民政府官网关于单项冠军认定标准"
+    ],
+    "analyst_cert": "诸海滨 S0790522080007"
+  },
+  "extraction_confidence": {
+    "overall": 0.95,
+    "classification": 0.98,
+    "key_facts": 0.95,
+    "source_pack": 0.92,
+    "query": 0.9
+  },
+  "calibration_role": "source_document_as_candidate_until_generation_pipeline_exists"
+}

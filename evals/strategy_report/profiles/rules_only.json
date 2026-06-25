@@ -1,0 +1,28 @@
+{
+  "profile_name": "rules_only",
+  "description": "Low-cost deterministic baseline profile. No LLM/VLM specialist judges.",
+  "execution": {
+    "render_pages": 0,
+    "extract_charts": true,
+    "cache": true
+  },
+  "modules": {
+    "enable_chart_vl_judge": false,
+    "enable_claim_numeric_llm": false,
+    "enable_strategy_reasoning_llm": false,
+    "enable_consolidated_llm_judge": false
+  },
+  "chart": {
+    "max_pages": 40,
+    "max_charts": 40,
+    "vl_max_charts": 0
+  },
+  "scoring": {
+    "fusion_weights": {
+      "fact_legacy": 1.0,
+      "fact_claim_numeric_llm": 0.0,
+      "strategy_legacy": 1.0,
+      "strategy_reasoning_llm": 0.0
+    }
+  }
+}

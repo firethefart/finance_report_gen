@@ -1,0 +1,102 @@
+{
+  "sample_id": "html_morgan_stanley_equity_rally_2026",
+  "url": "https://www.morganstanley.com/insights/articles/equity-rebound-2026-sp-500-highs-risks-drivers",
+  "institution": "Morgan Stanley",
+  "language": "en",
+  "subtype": "equity_strategy",
+  "archetype": "brief_commentary",
+  "localized_path": "dataset_build\\v2_localized_html\\html_morgan_stanley_equity_rally_2026\\index.html",
+  "localized_at": "2026-06-18T13:03:04Z",
+  "elapsed_seconds": 118.47,
+  "snapshot": {
+    "title": "Stock Market Rally 2026: Risks for Investors | Morgan Stanley",
+    "final_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_morgan_stanley_equity_rally_2026/_hydrated_source.html",
+    "chosen_selector": "body",
+    "text_length": 18028,
+    "heading_count": 4,
+    "image_count": 18,
+    "svg_count": 0,
+    "canvas_count": 0,
+    "removed_visual_shell_count": 0
+  },
+  "capture_mode": "archive",
+  "archive_source_path": "dataset_build\\raw_html\\equity_strategy\\morgan-stanley\\https-www-morganstanley-com-insights-articles-equity-rebound-2026-sp-500-highs-risks-drivers.html",
+  "hydration_audit": {
+    "downloaded_asset_count": 128,
+    "failed_assets": [
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-regular-webfont.eot",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-regular-webfont.eot')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-regular-webfont.eot#iefix",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-regular-webfont.eot#iefix')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-regular-webfont.svg#pfdintextcondpro-regular",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-regular-webfont.svg#pfdintextcondpro-regular')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-xblack-webfont.eot",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-xblack-webfont.eot')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-xblack-webfont.eot#iefix",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-xblack-webfont.eot#iefix')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-xblack-webfont.svg#pdfintextcondpro-xblack",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-xblack-webfont.svg#pdfintextcondpro-xblack')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-bold-webfont.eot",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-bold-webfont.eot')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-bold-webfont.eot#iefix",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-bold-webfont.eot#iefix')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-bold-webfont.svg#pdfintextcondpro-bold",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/webfonts/resources/pfdintextcondpro-bold-webfont.svg#pdfintextcondpro-bold')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.eot",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.eot')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.eot#iefix",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.eot#iefix')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.woff2",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.woff2')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.woff",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.woff')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.ttf",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.ttf')"
+      },
+      {
+        "url": "https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.svg#msdotcomr4-icon-font",
+        "error": "HTTPError('404 Client Error: Not Found for url: https://www.morganstanley.com/etc.clientlibs/msdotcomr4/clientlibs/components/site/resourcesmsdotcomr4-icon-font.svg#msdotcomr4-icon-font')"
+      }
+    ]
+  },
+  "asset_audit": {
+    "downloaded_asset_count": 5,
+    "failed_assets": []
+  },
+  "resource_manifest_path": "dataset_build\\v2_localized_html\\html_morgan_stanley_equity_rally_2026\\resource_manifest.json",
+  "resource_summary": {
+    "resource_count": 148,
+    "downloaded_count": 133,
+    "failed_count": 15,
+    "critical_failed_count": 0,
+    "total_bytes": 24443954
+  },
+  "status": "localized_with_noncritical_failures"
+}

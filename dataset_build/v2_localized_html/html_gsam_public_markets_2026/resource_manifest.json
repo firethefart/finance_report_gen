@@ -1,0 +1,899 @@
+{
+  "resource_count": 89,
+  "downloaded_count": 89,
+  "failed_count": 0,
+  "critical_failed_count": 0,
+  "total_bytes": 10084219,
+  "resources": [
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/2300252cf887fe94caa1.png",
+      "local_path": "assets/2300252cf887fe94caa1.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "2300252cf887fe94caa1620f7bfa2658a1f7617a65528c82de3e04cc6c228d4e",
+      "bytes": 5531,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/253731ee9bf4ae1e48df.jpg",
+      "local_path": "assets/253731ee9bf4ae1e48df.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "253731ee9bf4ae1e48df992585973bd687041ac0c81b9f4ff5aeccc3484f5c7f",
+      "bytes": 103238,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/2c228b2adbaa525428c3.png",
+      "local_path": "assets/2c228b2adbaa525428c3.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "2c228b2adbaa525428c37476b90eab648743f7f9bc9954895df9e9da4c50f1fa",
+      "bytes": 23943,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/3a5d59997ac25d982645.png",
+      "local_path": "assets/3a5d59997ac25d982645.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "3a5d59997ac25d982645941ae37bc71e9bdbcf5a6f23e30870567579b3ad6c5b",
+      "bytes": 43118,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/4f89239474959972264f.jpg",
+      "local_path": "assets/4f89239474959972264f.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "4f89239474959972264f3e908a0ab48d6f828f79f78afd038e66ec3fba8ad7e6",
+      "bytes": 135904,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/5580ee6f75d1d79e76aa.png",
+      "local_path": "assets/5580ee6f75d1d79e76aa.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "5580ee6f75d1d79e76aa74280dd824d3ddce3134a52701e8ece4d16b4c3097e7",
+      "bytes": 7733,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/5a7594bde8fd88c6bb10.png",
+      "local_path": "assets/5a7594bde8fd88c6bb10.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "5a7594bde8fd88c6bb10e373776b38882884213bc4d6e945799148eca7f35109",
+      "bytes": 77935,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/7b93f9baf5504cc192ca.png",
+      "local_path": "assets/7b93f9baf5504cc192ca.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "7b93f9baf5504cc192caa4db42935d7f1912fed9c7ae027ef67a0ee8da5d02a3",
+      "bytes": 22278,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/7e0d16ae4501fe844996.png",
+      "local_path": "assets/7e0d16ae4501fe844996.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "7e0d16ae4501fe84499615caa1737195d11586ec454fac852c125159de4a7f02",
+      "bytes": 1977,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/9673fbc0529346fef0ed.png",
+      "local_path": "assets/9673fbc0529346fef0ed.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "9673fbc0529346fef0edd63c53bded5af3ba839c011c256e08b344c65b7d1aaf",
+      "bytes": 1629,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/b3bd145c52b39001c73d.jpg",
+      "local_path": "assets/b3bd145c52b39001c73d.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "b3bd145c52b39001c73d2afafbf15c4354082f27ad2d135c0166f36cf089249f",
+      "bytes": 172567,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/c0e17a6ce769e35fe400.jpg",
+      "local_path": "assets/c0e17a6ce769e35fe400.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "c0e17a6ce769e35fe400c91fc7a89d4d79162be8aacbe29387acb662099c0ba1",
+      "bytes": 92246,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/c3d87922756fbb785851.png",
+      "local_path": "assets/c3d87922756fbb785851.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "c3d87922756fbb785851b5d69fb9a9eca7036a354f52abd967751b6a677b42d6",
+      "bytes": 2341,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/c79ab8420e0e1d65b809.png",
+      "local_path": "assets/c79ab8420e0e1d65b809.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "c79ab8420e0e1d65b80951ed12cbe19d02ba13efd4fadca2083aac2fed2fb4ad",
+      "bytes": 19285,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/caf82c1e77bba387ef6b.png",
+      "local_path": "assets/caf82c1e77bba387ef6b.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "caf82c1e77bba387ef6bccd43f6cb082c2f6f19c15e9d3dc38208d94047d0a84",
+      "bytes": 1522803,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/ec8168196940d42ddca3.png",
+      "local_path": "assets/ec8168196940d42ddca3.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "ec8168196940d42ddca308689b44cdfe0214def79f769a5e055c75ec87056975",
+      "bytes": 25638,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/f49e4ffe8caae53aa0e2.png",
+      "local_path": "assets/f49e4ffe8caae53aa0e2.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "f49e4ffe8caae53aa0e2bad593554875d07ebc4d239aba9def606497e0427018",
+      "bytes": 16460,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/f4f7554b03cfecc5ddba.png",
+      "local_path": "assets/f4f7554b03cfecc5ddba.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "f4f7554b03cfecc5ddba3a8ee02232d49313794a7b96fd1a86ce73712d3eeefb",
+      "bytes": 3019,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "file:///E:/FireTheFart/python_repos/Skill%20Iteration%20For%20Financial%20report%20generation/Skill%20Iteration%20For%20Financial%20report%20generation/dataset_build/v2_localized_html/html_gsam_public_markets_2026/assets/f5295d6764105288ced5.png",
+      "local_path": "assets/f5295d6764105288ced5.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "f5295d6764105288ced5056a7c5c211ed797d76b9ebb3b13231ba2c72d7546d9",
+      "bytes": 4791,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/_next/static/css/2ccbe9c2d3f1d6e4.css",
+      "local_path": "assets/ee090f64cd65f8bb768f.css",
+      "status": "downloaded",
+      "mime": "text/css",
+      "sha256": "ee090f64cd65f8bb768febfc7dc7678d664a9706646aa877b4d09c1c62ac814d",
+      "bytes": 4239,
+      "role": "stylesheet",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/_next/static/css/e44593d68eb31bbd.css",
+      "local_path": "assets/4626d0eaf6204af6b3be.css",
+      "status": "downloaded",
+      "mime": "text/css",
+      "sha256": "4626d0eaf6204af6b3be5f51afcfa3e74b89aad80ebd10a946827b480b346a16",
+      "bytes": 465,
+      "role": "stylesheet",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/contact/contact-us.png",
+      "local_path": "assets/caf82c1e77bba387ef6b.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "caf82c1e77bba387ef6bccd43f6cb082c2f6f19c15e9d3dc38208d94047d0a84",
+      "bytes": 1522803,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/europe-shift-defence-energy-globalization.png",
+      "local_path": "assets/f49e4ffe8caae53aa0e2.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "f49e4ffe8caae53aa0e2bad593554875d07ebc4d239aba9def606497e0427018",
+      "bytes": 16460,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/global-economic-concentration-comparison.png",
+      "local_path": "assets/2c228b2adbaa525428c3.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "2c228b2adbaa525428c37476b90eab648743f7f9bc9954895df9e9da4c50f1fa",
+      "bytes": 23943,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/interest-rates-current-projected-g10-countries.png",
+      "local_path": "assets/c79ab8420e0e1d65b809.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "c79ab8420e0e1d65b80951ed12cbe19d02ba13efd4fadca2083aac2fed2fb4ad",
+      "bytes": 19285,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/keys-large-cap-outperformance-potential.png",
+      "local_path": "assets/ec8168196940d42ddca3.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "ec8168196940d42ddca308689b44cdfe0214def79f769a5e055c75ec87056975",
+      "bytes": 25638,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/potential-pathways-US-monetary-policy.png",
+      "local_path": "assets/5a7594bde8fd88c6bb10.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "5a7594bde8fd88c6bb10e373776b38882884213bc4d6e945799148eca7f35109",
+      "bytes": 77935,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/tmt-ai-issuance-corporate-bond-market.png",
+      "local_path": "assets/7b93f9baf5504cc192ca.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "7b93f9baf5504cc192caa4db42935d7f1912fed9c7ae027ef67a0ee8da5d02a3",
+      "bytes": 22278,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/us-credit-sector-yields-oct2025.png",
+      "local_path": "assets/3a5d59997ac25d982645.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "3a5d59997ac25d982645941ae37bc71e9bdbcf5a6f23e30870567579b3ad6c5b",
+      "bytes": 43118,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026-navigating-the-nuances_16-9_1360x765.jpg",
+      "local_path": "assets/253731ee9bf4ae1e48df.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "253731ee9bf4ae1e48df992585973bd687041ac0c81b9f4ff5aeccc3484f5c7f",
+      "bytes": 103238,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026-navigating-the-nuances_21-9_1840x788.jpg",
+      "local_path": "assets/4f89239474959972264f.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "4f89239474959972264f3e908a0ab48d6f828f79f78afd038e66ec3fba8ad7e6",
+      "bytes": 135904,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026-navigating-the-nuances_3-1_2480x827.jpg",
+      "local_path": "assets/b3bd145c52b39001c73d.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "b3bd145c52b39001c73d2afafbf15c4354082f27ad2d135c0166f36cf089249f",
+      "bytes": 172567,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026_1-1_680x680.jpg",
+      "local_path": "assets/c0e17a6ce769e35fe400.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "c0e17a6ce769e35fe400c91fc7a89d4d79162be8aacbe29387acb662099c0ba1",
+      "bytes": 92246,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/icon/Alignment_300px.png",
+      "local_path": "assets/9673fbc0529346fef0ed.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "9673fbc0529346fef0edd63c53bded5af3ba839c011c256e08b344c65b7d1aaf",
+      "bytes": 1629,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/icon/Current-Bid-Ask_300px.png",
+      "local_path": "assets/7e0d16ae4501fe844996.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "7e0d16ae4501fe84499615caa1737195d11586ec454fac852c125159de4a7f02",
+      "bytes": 1977,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/icon/Cycle_300px.png",
+      "local_path": "assets/2300252cf887fe94caa1.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "2300252cf887fe94caa1620f7bfa2658a1f7617a65528c82de3e04cc6c228d4e",
+      "bytes": 5531,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/icon/Flag_300px.png",
+      "local_path": "assets/c3d87922756fbb785851.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "c3d87922756fbb785851b5d69fb9a9eca7036a354f52abd967751b6a677b42d6",
+      "bytes": 2341,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/icon/Implication_300px.png",
+      "local_path": "assets/f5295d6764105288ced5.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "f5295d6764105288ced5056a7c5c211ed797d76b9ebb3b13231ba2c72d7546d9",
+      "bytes": 4791,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/icon/Make-In-India_300px.png",
+      "local_path": "assets/5580ee6f75d1d79e76aa.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "5580ee6f75d1d79e76aa74280dd824d3ddce3134a52701e8ece4d16b4c3097e7",
+      "bytes": 7733,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/icon/Technology_300px.png",
+      "local_path": "assets/f4f7554b03cfecc5ddba.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "f4f7554b03cfecc5ddba3a8ee02232d49313794a7b96fd1a86ce73712d3eeefb",
+      "bytes": 3019,
+      "role": "img_src",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-bold-italic.woff",
+      "local_path": "assets/dc5e12ab8beafcaf145c.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "dc5e12ab8beafcaf145cb28759ad55186b9e67ea91e015134edc0a5dd2d3b258",
+      "bytes": 64976,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-bold-italic.woff2",
+      "local_path": "assets/751f1ada9f3a9f7464d5.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "751f1ada9f3a9f7464d5caabf9297620aa8a2ee4c5c3809718e794cd62db68d3",
+      "bytes": 48696,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-bold.woff",
+      "local_path": "assets/3bf904a4d485142244c2.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "3bf904a4d485142244c215fd8b9ab4112f49ef4c8d759a98f0047d0d7744510c",
+      "bytes": 65092,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-bold.woff2",
+      "local_path": "assets/e2e64b2db60de9db17b3.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "e2e64b2db60de9db17b3b1db36999b68ad420606e667226718db27a6f127dd6b",
+      "bytes": 49112,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-italic.woff",
+      "local_path": "assets/4faea297a8cf2463117f.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "4faea297a8cf2463117f21c378c31c7f62303015f45316e724bb7442dbfe39c2",
+      "bytes": 66144,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-italic.woff2",
+      "local_path": "assets/f0eb44fe15e02213b508.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "f0eb44fe15e02213b508fe569463fb69e5db54b85616d4ead58abd6dcb6e2309",
+      "bytes": 49644,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-light-italic.woff",
+      "local_path": "assets/4b30a324cd62e6c2c845.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "4b30a324cd62e6c2c8450d1f949313635a2c1fe3a47bec3c7b56656409c7bbf4",
+      "bytes": 64312,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-light-italic.woff2",
+      "local_path": "assets/b538cfb60eeea2b692db.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "b538cfb60eeea2b692dbff04e6f8aa4f066514735697b1f0cca6fd0cc466cd53",
+      "bytes": 48240,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-light.woff",
+      "local_path": "assets/c3a4b097be001c3d8103.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "c3a4b097be001c3d810393adc9c64f0d14b1502a09050601a437fab81ce2198d",
+      "bytes": 64356,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-light.woff2",
+      "local_path": "assets/5c36f6e4fd10a1571ce5.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "5c36f6e4fd10a1571ce57edf0332d00d13b91f7243c4e7597feaac142367e247",
+      "bytes": 48660,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-medium-italic.woff",
+      "local_path": "assets/06feb48bf702f5e37606.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "06feb48bf702f5e376060bd73be6804bad3ccaecf18999a0c75f1f4fcdbf6534",
+      "bytes": 66184,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-medium-italic.woff2",
+      "local_path": "assets/405ecd534a4e17903ce3.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "405ecd534a4e17903ce34e3a63ebfc92e255ebf5882ebdf3a8fefb53cfb155e4",
+      "bytes": 49540,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-medium.woff",
+      "local_path": "assets/514d9eda3bc5898f986b.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "514d9eda3bc5898f986b0a0395bb9588d8228fdf314e4502d846d57b72d22344",
+      "bytes": 66096,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-medium.woff2",
+      "local_path": "assets/4b401de8bf7c63f595cb.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "4b401de8bf7c63f595cb897f21a022638245e4ac668c12dd0f98c09163ee96d6",
+      "bytes": 50012,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-mono-medium.woff",
+      "local_path": "assets/d444624e672d4f5ee20a.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "d444624e672d4f5ee20a981c645022e6e03dc31503bead67f03b82be406a6ec3",
+      "bytes": 49036,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-mono-medium.woff2",
+      "local_path": "assets/3c6309ce3d990be37a34.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "3c6309ce3d990be37a349453572befeb9fc2a0cec5bebace063e9d4d16397524",
+      "bytes": 37404,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-mono-regular.woff",
+      "local_path": "assets/286a860c73a1de506ce7.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "286a860c73a1de506ce7c3490b9b80fb1fb7f63f3c95f9b5c6fe8894c05b00d0",
+      "bytes": 49588,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-mono-regular.woff2",
+      "local_path": "assets/3c14d6f062013fc527ef.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "3c14d6f062013fc527ef1306205d62fd52bf320659707e823cc1ae6cd18c8f87",
+      "bytes": 37740,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-off-white-italic.woff",
+      "local_path": "assets/1f8678d96b271fd259db.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "1f8678d96b271fd259db36c5e222bc4ff827cb74b4e704f1c239287aaffa8d75",
+      "bytes": 65832,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-off-white-italic.woff2",
+      "local_path": "assets/3f09dcd7a7c54f5a42bc.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "3f09dcd7a7c54f5a42bc926fa5245cd35313153e9d2b34258368ebe5f8890a6e",
+      "bytes": 49456,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-off-white.woff",
+      "local_path": "assets/b442e4d61bd0e1f09a72.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "b442e4d61bd0e1f09a727460e5c82470819bcd3eb3c9c46391ff84902a4f5c6b",
+      "bytes": 66080,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-off-white.woff2",
+      "local_path": "assets/28c2ca6cc2cb94dcae73.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "28c2ca6cc2cb94dcae73a93dfcf4ae899e8ba37ed3954e87fb632b3bd940871e",
+      "bytes": 49860,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-regular.woff",
+      "local_path": "assets/29abdcd9cc5747972c68.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "29abdcd9cc5747972c68cfae292dadbae7ea936ed1a14ea7e627cdd6f77b0206",
+      "bytes": 66332,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/basis/v1/basis-regular.woff2",
+      "local_path": "assets/84f05a3c1c4a200ffe22.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "84f05a3c1c4a200ffe226be6ef96bf7f95928b2b803130618ead7733677a5f2b",
+      "bytes": 50128,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/gs-sans/v3/gs-sans-condensed-variable-italic.woff2",
+      "local_path": "assets/912c889e41c0bbb1a4d6.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "912c889e41c0bbb1a4d6553df59ae175acfc830620b5e6aaf7c9c3d9253db730",
+      "bytes": 109404,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/gs-sans/v3/gs-sans-condensed-variable.woff2",
+      "local_path": "assets/7fdc7af97ce96e119e86.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "7fdc7af97ce96e119e86d93e85c8be04194a542c79b02004c137e8b40da4c514",
+      "bytes": 97836,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/gs-sans/v3/gs-sans-variable-italic.woff2",
+      "local_path": "assets/112c2eab1b8b43680163.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "112c2eab1b8b43680163d54a42b0c66aa85e1acc743130913900e999f6e24337",
+      "bytes": 86188,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/gs-sans/v3/gs-sans-variable.woff2",
+      "local_path": "assets/625c50aaf402eb3ec5be.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "625c50aaf402eb3ec5be99906f4bff89d34494ea5310ca50b3e7e479554b2644",
+      "bytes": 85932,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/gs-serif/v3/gs-serif-variable-italic.woff2",
+      "local_path": "assets/c575599c0147755f8fae.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "c575599c0147755f8fae8a09fc2be04ca2a1dcc7b25b4176d961a46d64e9b7ca",
+      "bytes": 93464,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/gs-serif/v3/gs-serif-variable.woff2",
+      "local_path": "assets/28684145ab2aa977334a.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "28684145ab2aa977334a2565c7e307df05d6919d5c027e7bfcd4894eb6dc0358",
+      "bytes": 87576,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/gs-ux-uitoolkit-icons/v10/custom-icons/custom-icons.woff",
+      "local_path": "assets/a8958d18f78bdedb57c1.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "a8958d18f78bdedb57c137f964dd16bc171a27fdfd9287fe95aab8d2d44492d4",
+      "bytes": 36432,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/gs-ux-uitoolkit-icons/v10/custom-icons/custom-icons.woff2",
+      "local_path": "assets/0fd1c86be170afc88913.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "0fd1c86be170afc88913b8f4bc84b92c9d6f4175c6b7cc5525a3fbac3a290a2a",
+      "bytes": 31100,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/gs-ux-uitoolkit-icons/v10/material-symbols-outlined/material-symbols-outlined.woff2",
+      "local_path": "assets/8e5eb21a78ae39a2d04d.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "8e5eb21a78ae39a2d04d7777ea3844efefdd1fce9dc203cda47812bc1890c713",
+      "bytes": 3208232,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/roboto-mono/v1/roboto-mono-medium-italic.woff",
+      "local_path": "assets/fd7832bf38b5da4ec675.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "fd7832bf38b5da4ec6756cbb03a102701eb145cda70d9ebadfddd0b847ddf9ae",
+      "bytes": 16996,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/roboto-mono/v1/roboto-mono-medium-italic.woff2",
+      "local_path": "assets/c8ab2daa2d0ffa07e3a3.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "c8ab2daa2d0ffa07e3a3cb3cabc98ce5e4738f2567d06874d6778b62e2517225",
+      "bytes": 13776,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/roboto-mono/v1/roboto-mono-medium.woff",
+      "local_path": "assets/eaf1ad256aabd1077823.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "eaf1ad256aabd10778230d8915bfcbf7a41e168c542d508a0ae47553fb5f08fb",
+      "bytes": 15364,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/roboto-mono/v1/roboto-mono-medium.woff2",
+      "local_path": "assets/34e45e19c86321affecb.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "34e45e19c86321affecb63210e78cc2b706041dc27ba7074050767805433b5ff",
+      "bytes": 12488,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/roboto-mono/v1/roboto-mono-regular-italic.woff",
+      "local_path": "assets/6b7eccaf20b191c69b76.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "6b7eccaf20b191c69b769802bd09d73de2d8133168c94ef482f6b0015946601a",
+      "bytes": 16816,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/roboto-mono/v1/roboto-mono-regular-italic.woff2",
+      "local_path": "assets/68b1c71dd7f4a26ee9e3.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "68b1c71dd7f4a26ee9e3184b593d688aa47750912b5e2ecb7379da7485b8800d",
+      "bytes": 13496,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/roboto-mono/v1/roboto-mono-regular.woff",
+      "local_path": "assets/2dfc0e868cf7ae3a57fc.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "2dfc0e868cf7ae3a57fc6c7b5c87b0d5685ebf64548430ab41de99904b01d9b6",
+      "bytes": 15160,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/roboto-mono/v1/roboto-mono-regular.woff2",
+      "local_path": "assets/e432bb825ca3e0267d62.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "e432bb825ca3e0267d628fadb6a8ca63b0cca3fc7345f15c7f080f7a8b82165e",
+      "bytes": 16028,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/sabon/v1/sabon-bold-italic.woff",
+      "local_path": "assets/ed15fab6efb0a6a0fd82.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "ed15fab6efb0a6a0fd82f0e59135582ff991d475f2aef11b42f911a0b53c75c1",
+      "bytes": 38107,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/sabon/v1/sabon-bold-italic.woff2",
+      "local_path": "assets/9643dbdd1ec029edd814.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "9643dbdd1ec029edd8142393e8e16624905e4cd52d1975195c13c74bcc39b889",
+      "bytes": 36460,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/sabon/v1/sabon-bold.woff",
+      "local_path": "assets/087cc60c39a8dd836f62.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "087cc60c39a8dd836f621357ebd8fc29ae3717dbfacf9289e449618ce511d986",
+      "bytes": 29280,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/sabon/v1/sabon-bold.woff2",
+      "local_path": "assets/b9c61961bf9b7f3bb938.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "b9c61961bf9b7f3bb93811901eac42c3f8a268ff8d38587417cbd33075c7a4de",
+      "bytes": 23240,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/sabon/v1/sabon-italic.woff",
+      "local_path": "assets/c0d57e2bbfbaf39625bf.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "c0d57e2bbfbaf39625bf313728255caa8f4ebf4695afb39777873b19c79c0520",
+      "bytes": 31584,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/sabon/v1/sabon-italic.woff2",
+      "local_path": "assets/9c67353a8436e76a2a62.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "9c67353a8436e76a2a623b5416e8b29dd409f402b9069782886a51e5150c3271",
+      "bytes": 25340,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/sabon/v1/sabon.woff",
+      "local_path": "assets/7aab7f4f564240197837.woff",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "7aab7f4f564240197837a9652bbec64a029d37c4105ef58d2a6fe52ec986bd52",
+      "bytes": 28920,
+      "role": "css_dependency",
+      "error": null
+    },
+    {
+      "original_url": "https://cdn.gs.com/fonts/sabon/v1/sabon.woff2",
+      "local_path": "assets/e47c5b06f3b3a1f4ba9e.woff2",
+      "status": "downloaded",
+      "mime": "binary/octet-stream",
+      "sha256": "e47c5b06f3b3a1f4ba9ec0de584e4694e5664e601917028ed3343cd87e6f29e7",
+      "bytes": 22904,
+      "role": "css_dependency",
+      "error": null
+    }
+  ]
+}
