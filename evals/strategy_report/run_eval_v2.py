@@ -5,6 +5,8 @@ import re
 from pathlib import Path
 from typing import Any
 
+from bs4 import BeautifulSoup
+
 from chart_judges import DEFAULT_VL_MODEL, run_chart_vl_judges
 from chart_extractor import extract_chart_candidates
 from eval_utils import ROOT, extract_dates, extract_numbers, repo_path, write_json, write_text
@@ -172,6 +174,8 @@ def run_one_v2(
         result["verifier_profile"] = profile
     write_json(out_dir / f"{report_id}.v2.eval.json", result)
     write_text(out_dir / f"{report_id}.v2.eval.md", render_v2_markdown(result))
+    if bool(profile_get(profile, "feedback.write_skill_feedback", False)):
+        write_text(out_dir / f"{report_id}.skill_feedback.md", render_skill_feedback_markdown(result))
     return result
 
 
@@ -237,7 +241,7 @@ def parsed_from_html_adapter(
     text_payload = adapter_result["report_text"]
     visual_objects = adapter_result["visual_objects"]
     full_text = text_payload.get("text") or ""
-    analysis_text, boundary = extract_html_analysis_text(full_text)
+    analysis_text, boundary = extract_html_analysis_text(full_text, source_path=source_path)
     headings = [item.get("text") if isinstance(item, dict) else str(item) for item in text_payload.get("headings") or []]
     headings = [h for h in headings if h]
     headings = [heading for heading in headings if normalize_heading(heading) in normalize_heading(analysis_text)]
@@ -291,8 +295,25 @@ HTML_BOUNDARY_MARKERS = [
 ]
 
 
-def extract_html_analysis_text(full_text: str) -> tuple[str, dict[str, Any]]:
+def extract_html_analysis_text(full_text: str, source_path: Path | None = None) -> tuple[str, dict[str, Any]]:
     text = re.sub(r"\s+", " ", full_text or "").strip()
+    article_text, article_meta = extract_article_like_text(source_path) if source_path else ("", {})
+    if is_article_text_usable(article_text, text):
+        bounded, marker_boundary = trim_html_boilerplate(article_text)
+        return bounded, {
+            "mode": "article_container" if not marker_boundary.get("marker") else "article_container_trimmed",
+            "full_text_length": len(text),
+            "analysis_text_length": len(bounded),
+            "trimmed_char_count": max(0, len(text) - len(bounded)),
+            "marker": marker_boundary.get("marker", ""),
+            "article_extraction": article_meta,
+        }
+    bounded, boundary = trim_html_boilerplate(text)
+    return bounded, boundary
+
+
+def trim_html_boilerplate(text: str) -> tuple[str, dict[str, Any]]:
+    text = re.sub(r"\s+", " ", text or "").strip()
     candidates: list[tuple[int, str]] = []
     minimum = max(1800, int(len(text) * 0.20))
     for marker in HTML_BOUNDARY_MARKERS:
@@ -319,6 +340,74 @@ def extract_html_analysis_text(full_text: str) -> tuple[str, dict[str, Any]]:
         "trimmed_char_count": len(text) - len(analysis_text),
         "marker": marker,
     }
+
+
+def extract_article_like_text(source_path: Path | None) -> tuple[str, dict[str, Any]]:
+    if not source_path or not source_path.exists():
+        return "", {"used": False, "reason": "source_missing"}
+    try:
+        html = source_path.read_text(encoding="utf-8", errors="ignore")
+    except Exception as exc:  # noqa: BLE001
+        return "", {"used": False, "reason": f"read_failed: {exc!r}"}
+    soup = BeautifulSoup(html, "html.parser")
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    selectors = [
+        "article",
+        "main",
+        "[role='main']",
+        ".article",
+        ".article-body",
+        ".content",
+        ".content-body",
+        ".report",
+        ".report-body",
+        ".research",
+        ".insight",
+        ".story",
+    ]
+    candidates: list[dict[str, Any]] = []
+    for selector in selectors:
+        for node in soup.select(selector):
+            text = re.sub(r"\s+", " ", node.get_text(" ", strip=True)).strip()
+            if len(text) < 600:
+                continue
+            link_text = sum(len(a.get_text(" ", strip=True)) for a in node.find_all("a"))
+            node_count = max(1, len(node.find_all(True)))
+            density = len(text) / node_count
+            candidates.append(
+                {
+                    "selector": selector,
+                    "text": text,
+                    "text_length": len(text),
+                    "link_text_ratio": round(link_text / max(1, len(text)), 3),
+                    "density": round(density, 2),
+                    "score": len(text) * max(0.25, 1.0 - min(0.75, link_text / max(1, len(text)))) + min(2500, density * 20),
+                }
+            )
+    if not candidates:
+        return "", {"used": False, "reason": "no_article_like_container"}
+    best = max(candidates, key=lambda item: item["score"])
+    return best["text"], {
+        "used": True,
+        "selector": best["selector"],
+        "text_length": best["text_length"],
+        "link_text_ratio": best["link_text_ratio"],
+        "density": best["density"],
+        "candidate_count": len(candidates),
+    }
+
+
+def is_article_text_usable(article_text: str, full_text: str) -> bool:
+    if len(article_text) < 1800:
+        return False
+    if not full_text:
+        return True
+    if len(article_text) < max(1800, int(len(full_text) * 0.18)):
+        return False
+    if len(article_text) > int(len(full_text) * 1.25):
+        return False
+    return True
 
 
 def extract_numbered_section_headings(text: str) -> list[str]:
@@ -356,8 +445,21 @@ def chart_inventory_from_html_adapter(report_id: str, adapter_result: dict[str, 
     text_payload = adapter_result["report_text"]
     report_text = text_payload.get("text") or ""
     charts = []
+    skipped_visuals = list(visual_payload.get("skipped_visuals") or [])
     for index, visual in enumerate(visual_payload.get("visual_objects") or [], start=1):
         nearby = visual.get("nearby_text") or ""
+        visual_role = infer_visual_role(visual, nearby)
+        if should_skip_html_visual(visual, nearby, visual_role):
+            skipped_visuals.append(
+                {
+                    "reason": "decorative_or_navigation_visual",
+                    "visual_id": visual.get("visual_id"),
+                    "tag": visual.get("tag"),
+                    "visual_role": visual_role,
+                    "nearby_text": nearby[:300],
+                }
+            )
+            continue
         chart_id = f"{report_id}_html_visual_{index:03d}"
         charts.append(
             {
@@ -374,6 +476,7 @@ def chart_inventory_from_html_adapter(report_id: str, adapter_result: dict[str, 
                 "object_index": visual.get("object_index") or index,
                 "object_count_on_page": visual.get("object_count") or len(visual_payload.get("visual_objects") or []),
                 "object_role": visual.get("tag"),
+                "visual_role": visual_role,
                 "image_path": visual.get("target_image_path"),
                 "page_image_path": visual.get("context_image_path") or visual.get("full_page_image_path"),
                 "full_page_image_path": visual.get("full_page_image_path"),
@@ -394,10 +497,11 @@ def chart_inventory_from_html_adapter(report_id: str, adapter_result: dict[str, 
         "source_path": visual_payload.get("source_path"),
         "source_format": "html_runtime",
         "charts": charts,
-        "skipped_visuals": visual_payload.get("skipped_visuals") or [],
+        "skipped_visuals": skipped_visuals,
         "audit": {
             "visual_count": len(charts),
-            "skipped_visual_count": visual_payload.get("skipped_visual_count") or 0,
+            "raw_visual_count": len(visual_payload.get("visual_objects") or []),
+            "skipped_visual_count": len(skipped_visuals),
         },
     }
 
@@ -445,6 +549,121 @@ def infer_visual_kind(visual: dict[str, Any]) -> str:
     if any(term in class_name for term in ["kpi", "metric", "card"]):
         return "metric_panel"
     return "html_visual"
+
+
+def infer_visual_role(visual: dict[str, Any], nearby: str) -> str:
+    tag = str(visual.get("tag") or "").lower()
+    class_name = str(visual.get("class_name") or "").lower()
+    text = (nearby or "").lower()
+    role = str(visual.get("role") or "").lower()
+    combined = " ".join([class_name, text[:500], role])
+    if tag == "table":
+        return "table"
+    if any(term in combined for term in ["logo", "avatar", "author", "profile", "share", "social", "footer", "header", "nav", "breadcrumb"]):
+        return "decorative"
+    if any(term in combined for term in ["hero", "banner", "cover"]):
+        return "hero"
+    if any(term in combined for term in ["chart", "figure", "exhibit", "plot", "graph", "data", "source", "unit", "legend", "axis", "kpi", "metric"]):
+        return "analytical_visual"
+    if tag in {"canvas", "svg"} and (extract_numbers(nearby) or len(nearby) > 160):
+        return "analytical_visual"
+    if tag == "img" and (infer_source_note(nearby) or len(extract_numbers(nearby)) >= 2):
+        return "analytical_visual"
+    if tag == "img":
+        return "image_unknown"
+    return "unknown"
+
+
+def should_skip_html_visual(visual: dict[str, Any], nearby: str, visual_role: str) -> bool:
+    tag = str(visual.get("tag") or "").lower()
+    bbox = visual.get("bbox") or {}
+    width = float(bbox.get("width") or 0)
+    height = float(bbox.get("height") or 0)
+    if visual_role == "decorative":
+        return True
+    if visual_role == "hero" and not infer_source_note(nearby) and len(extract_numbers(nearby)) < 2:
+        return True
+    if tag in {"img", "svg"} and visual_role in {"image_unknown", "unknown"} and not infer_source_note(nearby) and len(extract_numbers(nearby)) < 2:
+        return True
+    if width and height and width < 120 and height < 80 and tag != "table":
+        return True
+    return False
+
+
+def render_skill_feedback_markdown(result: dict[str, Any]) -> str:
+    normalized = result.get("dimension_score_normalized") or {}
+    issues = result.get("issues") or []
+    gate = result.get("gate") or {}
+    priority_modules = {
+        "structure": "内容结构",
+        "strategy_reasoning": "策略推理",
+        "scenario_risk": "情景/风险",
+        "visual_qa": "图表/版式",
+        "delivery": "交付完整性",
+        "compliance": "合规表达",
+    }
+    low_priority_modules = {"source_traceability", "claim_numeric_discipline", "claim_numeric_llm"}
+    lines = [
+        f"# Skill Iteration Feedback: {result.get('report_id')}",
+        "",
+        f"- Overall: **{result.get('overall_score')} / 100**",
+        f"- Grade: **{result.get('grade')}**",
+        f"- Quality gate: **{'PASS' if gate.get('passed') else 'FAIL'}**",
+        f"- Candidate: `{result.get('candidate_report')}`",
+        "",
+        "## Dimension snapshot",
+        "",
+    ]
+    for key, label in priority_modules.items():
+        if key in normalized:
+            lines.append(f"- {label} (`{key}`): {normalized[key]:.3f}")
+    lines.extend(["", "## Highest-impact feedback", ""])
+    primary = [item for item in issues if item.get("module") not in low_priority_modules]
+    if not primary:
+        lines.append("- No high-priority content/layout issues were detected.")
+    else:
+        for item in primary[:8]:
+            lines.append(
+                f"- [{item.get('severity')}] {item.get('module')} / {item.get('issue_type')}: "
+                f"{item.get('description')} (`{item.get('location')}`)"
+            )
+    lines.extend(["", "## Suggested skill patch themes", ""])
+    themes = infer_skill_patch_themes(primary, normalized)
+    if themes:
+        lines.extend([f"- {theme}" for theme in themes])
+    else:
+        lines.append("- Keep current report-generation behavior; no obvious patch theme from this run.")
+    low_priority = [item for item in issues if item.get("module") in low_priority_modules]
+    lines.extend(["", "## Low-priority source/fact notes", ""])
+    if low_priority:
+        for item in low_priority[:8]:
+            lines.append(f"- [{item.get('severity')}] {item.get('module')}: {item.get('description')}")
+    else:
+        lines.append("- None.")
+    lines.extend(["", "## Gate failures", ""])
+    if gate.get("failures"):
+        lines.extend([f"- {failure}" for failure in gate.get("failures")])
+    else:
+        lines.append("- None.")
+    return "\n".join(lines) + "\n"
+
+
+def infer_skill_patch_themes(primary_issues: list[dict[str, Any]], normalized: dict[str, float]) -> list[str]:
+    themes: list[str] = []
+    if normalized.get("structure", 1.0) < 0.65:
+        themes.append("Strengthen report skeleton: explicit summary, market context, strategy conclusion, and risk/scenario sections.")
+    if normalized.get("strategy_reasoning", 1.0) < 0.65:
+        themes.append("Make thesis → mechanism → investment implication chains explicit instead of only describing facts.")
+    if normalized.get("scenario_risk", 1.0) < 0.65:
+        themes.append("Add scenario boundaries, downside risks, and conditions under which the thesis may fail.")
+    if normalized.get("visual_qa", 1.0) < 0.60:
+        themes.append("Improve chart/table binding: titles, units, source notes, and nearby explanatory text.")
+    issue_types = {item.get("issue_type") for item in primary_issues}
+    if "missing_investment_implication" in issue_types:
+        themes.append("End key sections with actionable allocation, positioning, watchlist, or decision-usefulness implications.")
+    if "missing_section_signal" in issue_types:
+        themes.append("Use clearer section headings so readers and verifier can identify the analytical flow.")
+    return themes[:8]
 
 
 def infer_source_note(text: str) -> str:

@@ -22,7 +22,21 @@ python -m venv .venv
 cp .env.example .env
 ```
 
-For HTML runtime visual extraction, Chrome/Chromium must be available. The adapter searches common Windows/Linux Chrome locations and can run through the Chrome DevTools Protocol without Playwright.
+For HTML runtime visual extraction, Chrome/Chromium must be available. The adapter searches common Windows/Linux Chrome locations and `PATH` names such as `google-chrome`, `google-chrome-stable`, `chromium`, and `chromium-browser`. It runs through the Chrome DevTools Protocol without Playwright.
+
+HTML runtime preflight:
+
+```powershell
+.\.venv\Scripts\python.exe evals/strategy_report/check_html_runtime.py --json
+```
+
+Linux equivalent:
+
+```bash
+./.venv/bin/python evals/strategy_report/check_html_runtime.py --json
+```
+
+If Chrome is installed in a non-standard location, add `--chrome /path/to/chrome`.
 
 ## 2. Secrets and model config
 
@@ -84,6 +98,30 @@ Core test set:
 ```powershell
 .\.venv\Scripts\python.exe evals/strategy_report/run_v2_testset.py --selection evals/strategy_report/v2_testset_selection.json --out-dir evals/strategy_report/results/local_candidate_only_core --verifier-profile v2_html_smoke
 ```
+
+Local HTML skill-iteration profile:
+
+```powershell
+.\.venv\Scripts\python.exe evals/strategy_report/run_eval_v2.py --candidate-report dataset_build/v2_localized_html/html_gsam_outlook_backdrop_2026/index.html --report-id html_skill_smoke --out-dir migration_smoke_outputs/html_skill_smoke --verifier-profile html_skill_iteration
+```
+
+Batch local HTML from a manifest:
+
+```powershell
+.\.venv\Scripts\python.exe evals/strategy_report/run_html_batch.py --manifest evals/strategy_report/golden_manifest.csv --out-dir migration_smoke_outputs/html_batch_smoke --verifier-profile html_skill_iteration --sample-id v2_html_gsam_backdrop_2026
+```
+
+For production HTML batches, provide a manifest with `sample_id`/`id` and one of
+`path`, `candidate_path`, `html_path`, or `file_path`. By default, the runner only
+executes rows that look like `.html`/`.htm` or have HTML format metadata; add
+`--include-non-html` only for an intentional mixed-format run. Use `--resume` to avoid
+rerunning samples whose `<sample_id>.v2.eval.json` already exists. The runner writes
+`summary.json` and `summary.csv` and continues after per-sample failures.
+
+When the `html_skill_iteration` profile is active, each sample writes
+`<report_id>.skill_feedback.md`. This file is intended as the first artifact to feed
+back into skill refinement; it suppresses source/fact traceability as a hard gate but
+still records low-priority notes.
 
 Summarize a candidate-only run:
 

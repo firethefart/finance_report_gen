@@ -79,6 +79,11 @@ Do not commit real keys. `api_key.txt`, `.env`, and `.env.*` are ignored.
 
 ## High-priority open items after migration
 
+Update 2026-06-26: see `SESSION_HANDOFF_20260626_HTML_PROD_R1.md` for the
+first local-HTML production refinement pass. For local/offline HTML
+skill-iteration runs, use the `html_skill_iteration` profile rather than
+treating source/fact traceability as a hard gate.
+
 1. Candidate-only J.P. Morgan Energy sample: audit whether the sample is a strategy-quality report or a thematic/parser robustness case; current parser compaction may omit useful middle pages.
 2. Candidate-only Morgan Stanley HTML: continue body-boundary and related-card trimming improvements.
 3. State Street HTML: decide whether “no external traceable source links” should remain a hard honesty gate for official outlook pages.

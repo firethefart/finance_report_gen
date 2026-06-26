@@ -7,6 +7,12 @@ Two verifier modes are maintained:
 - `run_eval.py`: reference-based verifier, historically called v1. This is the production-priority path.
 - `run_eval_v2.py` / `run_v2_testset.py`: candidate-only/no-reference verifier. “V2” here means a verifier variant, not a semantic version number.
 
+For local HTML production use, prefer the candidate-only/no-reference verifier with the
+`html_skill_iteration` profile. This profile is tuned for skill iteration feedback on
+locally available HTML reports: content quality, strategy reasoning, risk/scenario
+coverage, and layout/visual QA carry most of the score; source/fact traceability is kept
+as low-priority feedback instead of a hard gate.
+
 ## Quick start
 
 Windows PowerShell:
@@ -43,6 +49,29 @@ Rules-only candidate-only smoke:
 
 Full/best-effort runs can enable LLM/VLM modules through verifier profiles and `.env` configuration. See [agent runbook](evals/strategy_report/AGENT_RUNBOOK.md).
 
+HTML runtime preflight:
+
+```powershell
+.\.venv\Scripts\python.exe evals/strategy_report/check_html_runtime.py --json
+```
+
+If Chrome/Chromium is installed in a non-standard location, pass `--chrome`.
+
+Single local HTML skill-iteration run:
+
+```powershell
+.\.venv\Scripts\python.exe evals/strategy_report/run_eval_v2.py --candidate-report dataset_build/v2_localized_html/html_gsam_outlook_backdrop_2026/index.html --report-id html_skill_smoke --out-dir migration_smoke_outputs/html_skill_smoke --verifier-profile html_skill_iteration
+```
+
+Batch local HTML run from a manifest:
+
+```powershell
+.\.venv\Scripts\python.exe evals/strategy_report/run_html_batch.py --manifest evals/strategy_report/golden_manifest.csv --out-dir migration_smoke_outputs/html_batch_smoke --verifier-profile html_skill_iteration --sample-id v2_html_gsam_backdrop_2026
+```
+
+When `html_skill_iteration` is used, each completed sample also writes
+`<report_id>.skill_feedback.md` for downstream skill refinement.
+
 ## Golden set entry point
 
 Use [evals/strategy_report/golden_manifest.csv](evals/strategy_report/golden_manifest.csv) as the unified manifest. It lists:
@@ -72,6 +101,7 @@ The legacy `--api-key-file api_key.txt` path is still supported for local runs, 
 
 - [Agent runbook](evals/strategy_report/AGENT_RUNBOOK.md)
 - [Production handoff](evals/strategy_report/PRODUCTION_MIGRATION_HANDOFF_20260625.md)
+- [HTML production refinement handoff](evals/strategy_report/SESSION_HANDOFF_20260626_HTML_PROD_R1.md)
 - [Development goals](DEVELOPMENT_GOALS.md)
 - [Candidate-only core test set README](evals/strategy_report/V2_CORE_TESTSET_README.md)
 - [Candidate-only development notes](evals/strategy_report/V2_DEVELOPMENT_GOALS.md)

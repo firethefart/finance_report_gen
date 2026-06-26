@@ -1,0 +1,65 @@
+{
+  "profile_name": "html_skill_iteration",
+  "description": "Production-oriented local HTML verifier profile for skill iteration. Focuses on content quality, strategy reasoning, layout/visual feedback, and comparable scoring. Source/fact checks remain informational and do not hard-gate.",
+  "verifier_version": "candidate_only_no_reference",
+  "execution": {
+    "cache": true,
+    "input_adapter": "html_runtime_adapter_v2"
+  },
+  "models": {
+    "chart_vl": "qwen/qwen3-vl-235b-a22b-instruct",
+    "claim_extract": "deepseek/deepseek-v4-flash",
+    "claim_judge": "deepseek/deepseek-v4-pro",
+    "strategy_extract": "deepseek/deepseek-v4-flash",
+    "strategy_judge": "deepseek/deepseek-v4-pro",
+    "compliance_judge": "deepseek/deepseek-v4-pro"
+  },
+  "modules": {
+    "enable_chart_vl_judge": false,
+    "enable_claim_numeric_llm": false,
+    "enable_strategy_reasoning_llm": false,
+    "enable_compliance_llm": false
+  },
+  "html_adapter": {
+    "max_visuals": 80,
+    "viewport_width": 1440,
+    "viewport_height": 1100,
+    "context_height": 1200
+  },
+  "chart": {
+    "vl_max_charts": 6,
+    "vl_max_tokens": 4200,
+    "vl_repair_max_tokens": 2600,
+    "vl_selection_strategy": "risk_rank",
+    "vl_gate_all": false
+  },
+  "v2_scoring": {
+    "dimension_weights": {
+      "delivery": 10,
+      "structure": 18,
+      "source_traceability": 4,
+      "claim_numeric_discipline": 8,
+      "strategy_reasoning": 24,
+      "scenario_risk": 12,
+      "visual_qa": 16,
+      "compliance": 8
+    },
+    "gate_thresholds": {
+      "overall_min": 72,
+      "text_length_min": 2000,
+      "compliance_min": 0.82,
+      "visual_min": 0.35,
+      "strategy_reasoning_min": 0.42,
+      "source_traceability_min": null,
+      "claim_numeric_min": null
+    },
+    "disabled_gates": [
+      "source_traceability_min",
+      "claim_numeric_min"
+    ]
+  },
+  "feedback": {
+    "write_skill_feedback": true,
+    "max_top_issues": 8
+  }
+}

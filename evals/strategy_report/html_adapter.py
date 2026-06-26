@@ -41,6 +41,10 @@ def find_chrome(explicit_path: str | None = None) -> Path | None:
     candidates: list[Path] = []
     if explicit_path:
         candidates.append(Path(explicit_path))
+    for name in ["google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "chrome", "msedge"]:
+        found = shutil.which(name)
+        if found:
+            candidates.append(Path(found))
     candidates.extend(
         [
             Path(r"C:\Program Files\Google\Chrome\Application\chrome.exe"),

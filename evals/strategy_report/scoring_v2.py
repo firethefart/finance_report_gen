@@ -27,6 +27,9 @@ def aggregate_v2_scores(
     profile = profile or {}
     scoring = profile.get("v2_scoring") or profile.get("scoring") or {}
     weights = {**DEFAULT_V2_WEIGHTS, **(scoring.get("dimension_weights") or {})}
+    disabled_dimensions = set(scoring.get("disabled_dimensions") or [])
+    for key in disabled_dimensions:
+        weights[key] = 0
     normalized = {}
     for key in weights:
         module = module_results.get(key) or {}
@@ -71,25 +74,45 @@ def build_v2_gate(
     adapter_manifest: dict[str, Any],
 ) -> dict[str, Any]:
     thresholds = scoring.get("gate_thresholds") or {}
+    disabled_gates = set(scoring.get("disabled_gates") or [])
     failures: list[str] = []
-    if overall < float(thresholds.get("overall_min", 75)):
+
+    def threshold_enabled(name: str) -> bool:
+        if name in disabled_gates:
+            return False
+        return thresholds.get(name, "__missing__") is not None
+
+    def optional_threshold_enabled(name: str) -> bool:
+        if name in disabled_gates:
+            return False
+        return thresholds.get(name) is not None
+
+    if threshold_enabled("overall_min") and overall < float(thresholds.get("overall_min", 75)):
         failures.append("overall_score_below_threshold")
-    if (parsed.get("text_length") or 0) < int(thresholds.get("text_length_min", 2500)):
+    if threshold_enabled("text_length_min") and (parsed.get("text_length") or 0) < int(thresholds.get("text_length_min", 2500)):
         failures.append("text_too_short_for_strategy_report")
-    if normalized.get("compliance", 0.0) < float(thresholds.get("compliance_min", 0.9)):
+    if threshold_enabled("compliance_min") and normalized.get("compliance", 0.0) < float(thresholds.get("compliance_min", 0.9)):
         failures.append("compliance_below_threshold")
-    if normalized.get("visual_qa", 0.0) < float(thresholds.get("visual_min", 0.45)):
+    if threshold_enabled("visual_min") and normalized.get("visual_qa", 0.0) < float(thresholds.get("visual_min", 0.45)):
         failures.append("visual_qa_below_threshold")
-    if normalized.get("strategy_reasoning", 0.0) < float(thresholds.get("strategy_reasoning_min", 0.45)):
+    if threshold_enabled("strategy_reasoning_min") and normalized.get("strategy_reasoning", 0.0) < float(thresholds.get("strategy_reasoning_min", 0.45)):
         failures.append("strategy_reasoning_below_threshold")
-    if (module_results.get("compliance") or {}).get("redline_issues"):
+    if "redline_issue_present" not in disabled_gates and (module_results.get("compliance") or {}).get("redline_issues"):
         failures.append("redline_issue_present")
+    if optional_threshold_enabled("source_traceability_min") and normalized.get("source_traceability", 0.0) < float(thresholds.get("source_traceability_min", 0.0)):
+        failures.append("source_traceability_below_threshold")
+    if optional_threshold_enabled("claim_numeric_min") and normalized.get("claim_numeric_discipline", 0.0) < float(thresholds.get("claim_numeric_min", 0.0)):
+        failures.append("claim_numeric_below_threshold")
     adapter_warnings = adapter_manifest.get("warnings") or []
-    if "html_text_too_short_for_strategy_report" in adapter_warnings:
+    if "adapter_text_too_short" not in disabled_gates and "html_text_too_short_for_strategy_report" in adapter_warnings:
         failures.append("adapter_text_too_short")
-    if "html_broken_visual_resources" in adapter_warnings and not adapter_manifest.get("visual_count"):
+    if "html_visual_resources_broken" not in disabled_gates and "html_broken_visual_resources" in adapter_warnings and not adapter_manifest.get("visual_count"):
         failures.append("html_visual_resources_broken")
-    return {"passed": not failures, "failures": failures}
+    return {
+        "passed": not failures,
+        "failures": failures,
+        "disabled_gates": sorted(disabled_gates),
+    }
 
 
 def render_v2_markdown(result: dict[str, Any]) -> str:
