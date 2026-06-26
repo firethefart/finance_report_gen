@@ -56,14 +56,25 @@ The VLM channel is used by chart/visual QA. Keep it separate from the LLM channe
 
 The old `--api-key-file api_key.txt` option remains compatible, but `.env` should be used for migration.
 
-## 3. Golden manifest
+## 3. Manifests
 
-Start from `evals/strategy_report/golden_manifest.csv`.
+Start from the manifest that matches the verifier mode:
 
-- `v1_reference_based`: use `run_eval.py` and the case JSON in `case_or_meta_path`.
-- `candidate_only_no_reference`: use `run_eval_v2.py` for one sample or `run_v2_testset.py` for the curated 26-sample set.
+- Reference-based golden set: `evals/strategy_report/golden_manifest.csv`.
+  This is v1/reference-based only. It contains 21 rows with standalone metadata:
+  query, strategy subtype, expected report contract, institution, report title/date,
+  quality tier, source-document metadata, source path, and recommended runner.
+- Agent-pipeline copy of the same reference-based golden set:
+  `evals/strategy_report/agent_pipeline_golden_manifest.csv`.
+- Candidate-only/no-reference test cases:
+  `evals/strategy_report/candidate_only_test_manifest.csv` and
+  `evals/strategy_report/v2_testset_selection.json`. These are test cases, not
+  golden samples, because they do not carry a reference query/source contract.
+- Local HTML parser/layout functional fixtures:
+  `evals/strategy_report/html_functional_manifest.csv`. These are also not
+  golden samples.
 
-All paths in the manifest are relative to repository root.
+All paths in these manifests are relative to repository root.
 
 ## 4. Reference-based verifier commands
 
@@ -108,7 +119,7 @@ Local HTML skill-iteration profile:
 Batch local HTML from a manifest:
 
 ```powershell
-.\.venv\Scripts\python.exe evals/strategy_report/run_html_batch.py --manifest evals/strategy_report/golden_manifest.csv --out-dir migration_smoke_outputs/html_batch_smoke --verifier-profile html_skill_iteration --sample-id v2_html_gsam_backdrop_2026
+.\.venv\Scripts\python.exe evals/strategy_report/run_html_batch.py --manifest evals/strategy_report/html_functional_manifest.csv --out-dir migration_smoke_outputs/html_batch_smoke --verifier-profile html_skill_iteration --resume
 ```
 
 For production HTML batches, provide a manifest with `sample_id`/`id` and one of
@@ -161,4 +172,5 @@ Summarize a candidate-only run:
 4. Run one rules-only v1 smoke.
 5. Run one rules-only candidate-only smoke.
 6. If secrets are configured, run a small best-effort LLM/VLM sample.
-7. Use `golden_manifest.csv` for all golden-set paths.
+7. Use `golden_manifest.csv` or `agent_pipeline_golden_manifest.csv` only for reference-based golden samples.
+8. Use `candidate_only_test_manifest.csv`/`v2_testset_selection.json` for candidate-only tests, and `html_functional_manifest.csv` for local HTML functional regression.

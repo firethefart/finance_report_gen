@@ -1,6 +1,6 @@
 # Finance Report Verifier
 
-This repository packages the strategy-report verifier for production migration. The current focus is the verifier under `evals/strategy_report/`, plus its golden set samples and metadata under `dataset_build/`, `generation_test/`, and `evals/strategy_report/`.
+This repository packages the strategy-report verifier for production migration. The current focus is the verifier under `evals/strategy_report/`, plus reference-based golden samples, candidate-only test cases, and local HTML functional fixtures under `dataset_build/`, `generation_test/`, and `evals/strategy_report/`.
 
 Two verifier modes are maintained:
 
@@ -66,7 +66,7 @@ Single local HTML skill-iteration run:
 Batch local HTML run from a manifest:
 
 ```powershell
-.\.venv\Scripts\python.exe evals/strategy_report/run_html_batch.py --manifest evals/strategy_report/golden_manifest.csv --out-dir migration_smoke_outputs/html_batch_smoke --verifier-profile html_skill_iteration --sample-id v2_html_gsam_backdrop_2026
+.\.venv\Scripts\python.exe evals/strategy_report/run_html_batch.py --manifest evals/strategy_report/html_functional_manifest.csv --out-dir migration_smoke_outputs/html_batch_smoke --verifier-profile html_skill_iteration --resume
 ```
 
 When `html_skill_iteration` is used, each completed sample also writes
@@ -83,17 +83,27 @@ Small user-reviewed HTML functional set:
 
 ## Golden set entry point
 
-Use [evals/strategy_report/golden_manifest.csv](evals/strategy_report/golden_manifest.csv) as the unified manifest. It lists:
+Use [evals/strategy_report/golden_manifest.csv](evals/strategy_report/golden_manifest.csv) for the reference-based golden set only. It is v1/reference-based by definition and contains 21 samples with enough metadata to be consumed as a standalone CSV:
 
-- suite: `v1_reference_based` or `candidate_only_no_reference`
 - sample ID
-- case/metadata path
-- original candidate report path
-- optional HTML resource manifest
-- language, format, institution, subtype, quality tier
+- case JSON path
+- reference query and query metadata
+- strategy subtype, expected report type/depth/output/time horizon/reader
+- institution, report title/date/period, quality tier
+- original source document path and source-document metadata
 - recommended runner
 
-The committed golden set includes original PDFs/HTML, case metadata, localized HTML resources, generated-control HTML samples, and candidate-only selection metadata.
+For agent-pipeline tests that need a self-contained copy, use
+[evals/strategy_report/agent_pipeline_golden_manifest.csv](evals/strategy_report/agent_pipeline_golden_manifest.csv).
+[evals/strategy_report/v1_golden_manifest.csv](evals/strategy_report/v1_golden_manifest.csv) is an explicit alias with the same rows.
+
+Candidate-only/no-reference verifier samples are not golden samples. They live in
+[evals/strategy_report/candidate_only_test_manifest.csv](evals/strategy_report/candidate_only_test_manifest.csv)
+and in the curated selection JSON used by `run_v2_testset.py`.
+
+The small user-reviewed local HTML parser/layout regression set lives in
+[evals/strategy_report/html_functional_manifest.csv](evals/strategy_report/html_functional_manifest.csv).
+It is also a functional test fixture, not a golden set.
 
 ## Production configuration
 

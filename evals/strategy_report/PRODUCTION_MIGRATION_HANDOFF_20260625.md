@@ -14,9 +14,12 @@ Terminology note: “V2” in older files means the candidate-only/no-reference 
 - Updated LLM/VLM callers to use channel-specific base URL and API key config.
 - Replaced the broken root README with migration-oriented verifier documentation.
 - Added `evals/strategy_report/AGENT_RUNBOOK.md`.
-- Added `evals/strategy_report/golden_manifest.csv` as unified test entry manifest.
+- Added manifest entry points for production migration. Updated 2026-06-26:
+  `evals/strategy_report/golden_manifest.csv` is now reference-based/v1 golden only,
+  and candidate-only/no-reference cases are separated into
+  `evals/strategy_report/candidate_only_test_manifest.csv`.
 - Updated `.gitignore` to exclude real secrets and generated caches while unignoring selected raw PDFs used by the golden set.
-- Verified all manifest paths exist.
+- Verified all manifest paths exist for the then-current migration manifest.
 - Verified key verifier modules compile using a temporary pycache prefix.
 - Ran rules-only smoke tests successfully without API keys.
 
@@ -102,4 +105,7 @@ treating source/fact traceability as a hard gate.
 2. Create `.venv` and install `dataset_tools/strategy_reports/requirements.txt`.
 3. Copy `.env.example` to `.env`; fill secrets locally only.
 4. Run the two smoke tests in `README.md`.
-5. Use `golden_manifest.csv` as the source of truth for golden samples.
+5. Use `golden_manifest.csv` or `agent_pipeline_golden_manifest.csv` as the source
+   of truth for reference-based golden samples only.
+6. Use `candidate_only_test_manifest.csv`/`v2_testset_selection.json` for
+   candidate-only/no-reference tests; do not call them golden samples.
