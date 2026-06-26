@@ -12,6 +12,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from common import USER_AGENT, slugify, utc_now_iso, write_json
+from html_article_quality import assess_html_report_quality
 
 
 HTML_SIGNALS_EN = (
@@ -97,20 +98,26 @@ def main() -> int:
     parser.add_argument("--max-candidates-per-source", type=int, default=20)
     parser.add_argument("--request-timeout", type=int, default=15)
     parser.add_argument("--min-score", type=int, default=4)
+    parser.add_argument("--min-article-quality", type=float, default=45.0)
+    parser.add_argument("--no-validate-candidates", action="store_true", help="Do not fetch candidate links; useful only for diagnostics.")
+    parser.add_argument("--include-rejected", action="store_true", help="Include rejected/non-article pages in the main candidates JSONL.")
     parser.add_argument("--include-cross-domain", action="store_true")
     parser.add_argument("--reset", action="store_true")
     args = parser.parse_args()
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
     candidates_path = args.out_dir / "html_strategy_candidates.jsonl"
+    rejected_path = args.out_dir / "html_strategy_rejected.jsonl"
     summary_path = args.out_dir / "html_strategy_discovery_summary.json"
     if args.reset:
         candidates_path.unlink(missing_ok=True)
+        rejected_path.unlink(missing_ok=True)
 
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
 
     all_candidates: list[dict[str, Any]] = []
+    rejected_candidates: list[dict[str, Any]] = []
     failures: list[dict[str, Any]] = []
     source_counts: dict[str, int] = collections.defaultdict(int)
     seen_urls: set[str] = set()
@@ -137,7 +144,7 @@ def main() -> int:
                     keywords,
                 )
                 if seed_candidate["score"] >= args.min_score:
-                    per_source.append(seed_candidate)
+                    route_candidate(seed_candidate, per_source, rejected_candidates, args)
                 for link in extract_links(page["html"], seed_url, args.max_links_per_seed):
                     if link["url"] in seen_urls or looks_like_pdf(link["url"]) or is_noise_url(link["url"]):
                         continue
@@ -145,7 +152,30 @@ def main() -> int:
                         continue
                     link_candidate = candidate_from_link(link, seed_url, institution, source, keywords)
                     if link_candidate["score"] >= args.min_score:
-                        per_source.append(link_candidate)
+                        if args.no_validate_candidates:
+                            route_candidate(link_candidate, per_source, rejected_candidates, args)
+                        else:
+                            try:
+                                linked_page = fetch_html(session, link["url"], args.request_timeout)
+                                validated = candidate_from_html(
+                                    linked_page,
+                                    link["url"],
+                                    seed_url,
+                                    institution,
+                                    source,
+                                    keywords,
+                                    link_text=link.get("text") or "",
+                                )
+                                route_candidate(validated, per_source, rejected_candidates, args)
+                            except Exception as exc:  # noqa: BLE001
+                                rejected_candidates.append(
+                                    {
+                                        **link_candidate,
+                                        "candidate_status": "fetch_failed",
+                                        "article_like": False,
+                                        "reject_reasons": [f"candidate_fetch_failed:{exc!r}"],
+                                    }
+                                )
                         seen_urls.add(link["url"])
             per_source = sorted(
                 dedupe_by_url(per_source),
@@ -159,17 +189,25 @@ def main() -> int:
     with candidates_path.open("w", encoding="utf-8") as handle:
         for row in all_candidates:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+    with rejected_path.open("w", encoding="utf-8") as handle:
+        for row in sorted(dedupe_by_url(rejected_candidates), key=lambda item: (item.get("url") or "")):
+            handle.write(json.dumps(row, ensure_ascii=False) + "\n")
     summary = {
         "created_at": utc_now_iso(),
         "configs": [str(path) for path in args.config],
         "candidate_count": len(all_candidates),
+        "rejected_count": len(rejected_candidates),
         "failure_count": len(failures),
         "language_counts": dict(collections.Counter(row["language_hint"] for row in all_candidates)),
         "institution_counts": dict(source_counts),
         "candidates_path": str(candidates_path),
+        "rejected_path": str(rejected_path),
+        "common_reject_reasons": dict(
+            collections.Counter(reason for row in rejected_candidates for reason in row.get("reject_reasons", []))
+        ),
         "failures": failures[:100],
         "notes": [
-            "Candidates are not admitted samples. Run localization and audit before adding them to any verifier manifest.",
+            "Candidates passed article-like discovery gates but are not admitted samples until localization and audit pass.",
             "The language hint is heuristic and should be reviewed for borderline mixed-language pages.",
             "Use the admitted manifest builder to enforce a near 1:1 Chinese/English balance.",
         ],
@@ -215,6 +253,7 @@ def candidate_from_html(
     institution: str,
     source: dict[str, Any],
     keywords: list[str],
+    link_text: str = "",
 ) -> dict[str, Any]:
     soup = BeautifulSoup(page["html"], "html.parser")
     title = clean_text(soup.title.get_text(" ", strip=True) if soup.title else "")
@@ -222,6 +261,7 @@ def candidate_from_html(
     text = clean_text(soup.get_text(" ", strip=True))
     haystack = f"{title} {headings} {url} {text[:1800]}"
     score, reasons = score_candidate(haystack, url, keywords)
+    quality = assess_html_report_quality(page["html"], source_url=url)
     return {
         "sample_id": build_sample_id(institution, title or url),
         "url": url,
@@ -230,12 +270,17 @@ def candidate_from_html(
         "business_type": source.get("business_type") or "",
         "country_or_region": source.get("country_or_region") or "",
         "title_hint": title,
-        "link_text": "",
-        "language_hint": detect_language(haystack),
+        "link_text": link_text,
+        "language_hint": quality.language,
         "subtype_hint": infer_subtype(haystack),
         "score": score,
         "score_reasons": reasons,
-        "text_length_hint": len(text),
+        "text_length_hint": quality.text_length or len(text),
+        "article_like": quality.article_like,
+        "candidate_status": "article_like" if quality.article_like else "rejected",
+        "article_quality_score": quality.quality_score,
+        "article_quality": quality.to_dict(),
+        "reject_reasons": quality.reject_reasons,
         "discovered_at": utc_now_iso(),
     }
 
@@ -292,6 +337,27 @@ def score_candidate(haystack: str, url: str, keywords: list[str]) -> tuple[int, 
         score += 2
         reasons.append("report_like_url_path")
     return score, sorted(set(reasons))
+
+
+def route_candidate(
+    candidate: dict[str, Any],
+    accepted: list[dict[str, Any]],
+    rejected: list[dict[str, Any]],
+    args: argparse.Namespace,
+) -> None:
+    quality_score = float(candidate.get("article_quality_score") or 0.0)
+    is_article = bool(candidate.get("article_like")) and quality_score >= args.min_article_quality
+    if is_article:
+        accepted.append(candidate)
+        return
+    candidate = {
+        **candidate,
+        "candidate_status": candidate.get("candidate_status") or "rejected",
+        "article_like": False,
+    }
+    rejected.append(candidate)
+    if args.include_rejected:
+        accepted.append(candidate)
 
 
 def clean_text(value: str) -> str:

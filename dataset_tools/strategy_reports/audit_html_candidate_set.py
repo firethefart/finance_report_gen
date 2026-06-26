@@ -12,6 +12,7 @@ from typing import Any
 from bs4 import BeautifulSoup
 
 from common import sha256_file, write_json
+from html_article_quality import assess_html_report_quality
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -26,6 +27,7 @@ def main() -> int:
     parser.add_argument("--localization-summary", type=Path, default=None)
     parser.add_argument("--out-dir", type=Path, default=Path("dataset_build/html_candidate_audit"))
     parser.add_argument("--min-text-length", type=int, default=2200)
+    parser.add_argument("--min-article-quality", type=float, default=45.0)
     parser.add_argument("--max-critical-failed-resources", type=int, default=0)
     parser.add_argument("--max-remote-refs", type=int, default=0)
     parser.add_argument("--per-language", type=int, default=15, help="Admitted manifest quota for zh and en each. Use 0 to keep all admitted.")
@@ -100,6 +102,7 @@ def audit_one(sample_dir: Path, args: argparse.Namespace) -> dict[str, Any]:
     soup = BeautifulSoup(html, "html.parser")
     text = clean_text(soup.get_text(" ", strip=True))
     language = metadata.get("language") or detect_language(text)
+    article_quality = assess_html_report_quality(html, source_url=metadata.get("url") or "", min_text_length=args.min_text_length)
     remote_refs = collect_remote_refs(soup)
     missing_local_refs = collect_missing_local_refs(soup, sample_dir)
     critical_failed = int(resource_manifest.get("critical_failed_count") or 0)
@@ -107,6 +110,10 @@ def audit_one(sample_dir: Path, args: argparse.Namespace) -> dict[str, Any]:
     visual_count_static = len(soup.find_all(["img", "svg", "canvas", "table", "figure"]))
     if len(text) < args.min_text_length:
         errors.append("text_too_short")
+    if not article_quality.article_like:
+        errors.extend(article_quality.reject_reasons)
+    if article_quality.quality_score < args.min_article_quality:
+        errors.append("article_quality_below_threshold")
     if critical_failed > args.max_critical_failed_resources:
         errors.append("critical_resource_failures")
     elif failed_count:
@@ -136,6 +143,9 @@ def audit_one(sample_dir: Path, args: argparse.Namespace) -> dict[str, Any]:
         "subtype": metadata.get("subtype") or "",
         "source_class": metadata.get("source_class") or "",
         "text_length": len(text),
+        "article_text_length": article_quality.text_length,
+        "article_quality_score": article_quality.quality_score,
+        "article_quality": article_quality.to_dict(),
         "visual_count_static": visual_count_static,
         "resource_count": int(resource_manifest.get("resource_count") or 0),
         "failed_resource_count": failed_count,
@@ -229,6 +239,8 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "language",
         "subtype",
         "text_length",
+        "article_text_length",
+        "article_quality_score",
         "visual_count_static",
         "failed_resource_count",
         "critical_failed_resource_count",

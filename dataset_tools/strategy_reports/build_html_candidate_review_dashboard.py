@@ -145,6 +145,10 @@ function renderDetail() {{
       ${{field('status', selected.status || (selected.admitted ? 'admitted' : 'rejected'))}}
       ${{field('language', selected.language)}}
       ${{field('text length', selected.text_length)}}
+      ${{field('article length', selected.article_text_length ?? selected.article_quality?.text_length ?? '—')}}
+      ${{field('article quality', selected.article_quality_score ?? selected.article_quality?.quality_score ?? '—')}}
+      ${{field('paragraphs', selected.article_quality?.long_paragraph_count ?? '—')}}
+      ${{field('link ratio', selected.article_quality?.link_text_ratio ?? '—')}}
       ${{field('verifier score', selected.overall_score ?? '—')}}
       ${{field('grade', selected.grade ?? '—')}}
       ${{field('gate', selected.gate_passed === undefined ? '—' : selected.gate_passed)}}
@@ -155,6 +159,7 @@ function renderDetail() {{
       ${{field('errors', (selected.errors || []).join('; ') || '—')}}
       ${{field('gate failures', (selected.gate_failures || []).join('; ') || '—')}}
     </div>
+    <div class="field" style="margin-top:10px"><b>article text preview</b>${{esc(selected.article_quality?.text_preview || '—')}}</div>
   `;
   viewer.src = selected.preview_href || 'about:blank';
 }}

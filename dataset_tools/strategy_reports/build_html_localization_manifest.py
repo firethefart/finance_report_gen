@@ -16,6 +16,8 @@ def main() -> int:
     parser.add_argument("--per-language", type=int, default=15, help="Target count for zh and en each. Use 0 to disable quota.")
     parser.add_argument("--language", action="append", choices=["en", "zh"], default=[], help="Restrict to selected language(s).")
     parser.add_argument("--min-score", type=int, default=4)
+    parser.add_argument("--min-article-quality", type=float, default=45.0)
+    parser.add_argument("--include-rejected", action="store_true", help="Allow rejected/non-article candidates into the manifest for diagnostics.")
     parser.add_argument("--max-per-institution", type=int, default=5)
     parser.add_argument("--capture-mode", choices=["archive", "live"], default="archive")
     parser.add_argument("--enabled", action="store_true", help="Mark generated samples enabled. Default is disabled for review.")
@@ -28,6 +30,15 @@ def main() -> int:
         for row in rows
         if row.get("language_hint") in allowed_languages and int(row.get("score") or 0) >= args.min_score
     ]
+    if not args.include_rejected:
+        rows = [
+            row
+            for row in rows
+            if row.get("candidate_status") == "article_like"
+            and row.get("article_like") is True
+            and not row.get("reject_reasons")
+            and float(row.get("article_quality_score") or 0.0) >= args.min_article_quality
+        ]
     rows = sorted(rows, key=lambda item: (int(item.get("score") or 0), item.get("text_length_hint") or 0), reverse=True)
     selected = select_balanced(rows, args.per_language, args.max_per_institution)
     samples = uniquify_sample_ids([to_localizer_sample(row, args.capture_mode, args.enabled) for row in selected])
@@ -42,6 +53,8 @@ def main() -> int:
             "per_language": args.per_language,
             "languages": sorted(allowed_languages),
             "min_score": args.min_score,
+            "min_article_quality": args.min_article_quality,
+            "include_rejected": args.include_rejected,
             "max_per_institution": args.max_per_institution,
             "capture_mode": args.capture_mode,
             "enabled": args.enabled,
@@ -105,6 +118,8 @@ def to_localizer_sample(row: dict[str, Any], capture_mode: str, enabled: bool) -
             "title_hint": row.get("title_hint") or "",
             "link_text": row.get("link_text") or "",
             "text_length_hint": row.get("text_length_hint"),
+            "article_quality_score": row.get("article_quality_score"),
+            "article_quality": row.get("article_quality") or {},
         },
     }
 

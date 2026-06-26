@@ -153,9 +153,21 @@ A localized candidate is admitted when:
 
 - `index.html` exists;
 - text length is at least 2200 characters;
+- article-quality detection passes;
+- the selected article container has enough long paragraphs and strategy-report signals;
+- link density is low enough to rule out navigation/index pages;
 - critical failed resources are 0;
 - remote resource references are 0;
 - local referenced resources exist;
 - runtime audit passes, if `--runtime` is enabled.
 
 These defaults are intentionally strict for production-style offline HTML testing.
+
+Hard rejects include:
+
+- landing/index/navigation-heavy pages;
+- generic insight/research/publication homepages;
+- podcast/video/webcast/profile pages;
+- blank shell pages;
+- pages with weak strategy-report signals;
+- pages with implausibly large aggregate text.

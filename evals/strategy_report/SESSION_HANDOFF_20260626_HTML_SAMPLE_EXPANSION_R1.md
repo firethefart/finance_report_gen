@@ -134,3 +134,73 @@ Important live-batch conclusion:
   - consider controlled Chinese generated HTML samples if public official HTML remains
     sparse;
   - avoid admitting weak landing pages merely to force the 1:1 ratio.
+
+## Strict target-10 repair pass
+
+The first live batch was manually reviewed and judged unacceptable because the accepted
+pages still included home/navigation/index-like pages. A stricter report-like detection
+mechanism was then implemented.
+
+Implemented repair:
+
+- Added `dataset_tools/strategy_reports/html_article_quality.py`.
+  - Extracts the best article/main/body container.
+  - Computes text length, Chinese character count, paragraph counts, link density,
+    report signal count, landing signal count, visual count, and text preview.
+  - Hard-rejects navigation/index pages, generic landing titles, link-heavy pages,
+    podcast/video/webcast/profile pages, implausibly large aggregate pages, weak
+    strategy-signal pages, and short/blank pages.
+- Updated `discover_html_strategy_pages.py`.
+  - Candidate links are fetched and validated as article-like pages before entering the
+    main candidates JSONL.
+  - Rejected candidates are written separately for diagnostics.
+- Updated `build_html_localization_manifest.py`.
+  - Defaults to article-like candidates only.
+  - Keeps `article_quality` metadata in generated localizer samples.
+- Updated `audit_html_candidate_set.py`.
+  - Re-runs the same article quality gate after localization.
+  - Fails localized pages that degrade into shell/navigation pages.
+- Updated `build_html_candidate_review_dashboard.py`.
+  - Shows article length, article quality score, paragraph count, link ratio, and text
+    preview to support human review.
+
+Strict batch outputs:
+
+- Working directory: `migration_smoke_outputs/html_expansion_target10/`
+- Source candidate pool: reused the prior strict discovery output after adding stronger
+  post-localization gates.
+- Localization manifest:
+  - Selected candidates: 23
+  - Language: `en=23`
+- Live localization:
+  - Requested: 23
+  - Localized: 17
+  - Failed: 6
+- Strict static audit:
+  - Candidate count: 17
+  - Admitted count: 17
+  - Selected count: 17
+- Manual de-duplication:
+  - Selected 10 distinct real HTML report/commentary samples across J.P. Morgan, GSAM,
+    State Street, BlackRock, and Vanguard.
+  - Manifest: `migration_smoke_outputs/html_expansion_target10/audit/html_target10_manifest.csv`
+  - Review dashboard:
+    `migration_smoke_outputs/html_expansion_target10/review_dashboard_target10.html`
+- Verifier baseline on target 10:
+  - Requested: 10
+  - Completed: 10
+  - Execution failures: 0
+  - Score min/max/mean: 48.06 / 91.76 / 68.58
+  - Verifier gate pass: 1/10
+
+Interpretation:
+
+- The target-10 set now passes the stricter sample-quality gate and is suitable for
+  human review as real HTML report-like content.
+- The verifier gate results remain conservative. Most failures are caused by
+  `html_visual_resources_broken`, HTML text-boundary warnings, or strategy reasoning
+  rule thresholds. Treat this as a verifier refinement signal, not as evidence that the
+  samples are navigation pages.
+- No Chinese samples were admitted in this repair pass. Per the user's instruction,
+  synthetic Chinese reports were not used. Chinese real-HTML discovery remains a
+  separate source-acquisition problem.
