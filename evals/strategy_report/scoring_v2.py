@@ -38,12 +38,15 @@ def aggregate_v2_scores(
     issues = collect_v2_issues(module_results)
     redline_issues = (module_results.get("compliance") or {}).get("redline_issues") or []
     gate = build_v2_gate(overall, normalized, parsed, module_results, scoring, adapter_manifest or {})
+    evaluation_confidence = estimate_evaluation_confidence(parsed, module_results, adapter_manifest or {})
     return {
         "verifier_version": "v2_candidate_only",
         "report_id": report_id,
         "candidate_report": parsed.get("path"),
         "input_format": parsed.get("format"),
         "overall_score": overall,
+        "quality_score": overall,
+        "evaluation_confidence": evaluation_confidence,
         "grade": grade_for_score(overall, redline_issues),
         "weights": weights,
         "dimension_scores": {key: round(normalized[key] * weights[key], 2) for key in weights},
@@ -97,6 +100,8 @@ def build_v2_gate(
         failures.append("visual_qa_below_threshold")
     if threshold_enabled("strategy_reasoning_min") and normalized.get("strategy_reasoning", 0.0) < float(thresholds.get("strategy_reasoning_min", 0.45)):
         failures.append("strategy_reasoning_below_threshold")
+    if threshold_enabled("report_likeness_min") and float(parsed.get("report_likeness") or 0.0) < float(thresholds.get("report_likeness_min", 0.35)):
+        failures.append("report_likeness_below_threshold")
     if "redline_issue_present" not in disabled_gates and (module_results.get("compliance") or {}).get("redline_issues"):
         failures.append("redline_issue_present")
     if optional_threshold_enabled("source_traceability_min") and normalized.get("source_traceability", 0.0) < float(thresholds.get("source_traceability_min", 0.0)):
@@ -115,6 +120,53 @@ def build_v2_gate(
     }
 
 
+def estimate_evaluation_confidence(
+    parsed: dict[str, Any],
+    module_results: dict[str, Any],
+    adapter_manifest: dict[str, Any],
+) -> dict[str, Any]:
+    score = 1.0
+    reasons: list[str] = []
+    status = parsed.get("html_parse_status") or ""
+    if status == "empty_text":
+        score -= 0.55
+        reasons.append("empty_text")
+    elif status == "static_fallback":
+        score -= 0.18
+        reasons.append("browser_static_fallback")
+    elif status == "low_confidence":
+        score -= 0.25
+        reasons.append("low_confidence_html_parse")
+    if (parsed.get("analysis_text_length") or 0) < 2000:
+        score -= 0.20
+        reasons.append("short_analysis_text")
+    if float(parsed.get("report_likeness") or 0.0) < 0.35:
+        score -= 0.20
+        reasons.append("low_report_likeness")
+    warnings = adapter_manifest.get("warnings") or []
+    if any(str(item).startswith("html_browser_") for item in warnings):
+        score -= 0.10
+        reasons.append("browser_runtime_warning")
+    if "html_no_visual_objects" in warnings:
+        score -= 0.06
+        reasons.append("no_visual_objects")
+    module_errors = [
+        name
+        for name, result in module_results.items()
+        if isinstance(result, dict) and (result.get("module_error") or result.get("error"))
+    ]
+    if module_errors:
+        score -= min(0.25, 0.08 * len(module_errors))
+        reasons.append("module_errors:" + ",".join(module_errors[:4]))
+    return {
+        "score": round(clamp(score), 3),
+        "reasons": reasons,
+        "html_parse_status": status,
+        "report_likeness": parsed.get("report_likeness"),
+        "analysis_text_length": parsed.get("analysis_text_length"),
+    }
+
+
 def render_v2_markdown(result: dict[str, Any]) -> str:
     lines = [
         f"# Strategy Report Candidate-Only Verifier: {result['report_id']}",
@@ -122,6 +174,7 @@ def render_v2_markdown(result: dict[str, Any]) -> str:
         f"- Candidate: `{result['candidate_report']}`",
         f"- Format: `{result['input_format']}`",
         f"- Overall: **{result['overall_score']} / 100**",
+        f"- Evaluation confidence: **{(result.get('evaluation_confidence') or {}).get('score', 'n/a')}**",
         f"- Grade: **{result['grade']}**",
         f"- Gate: **{'PASS' if result['gate']['passed'] else 'FAIL'}**",
         "",

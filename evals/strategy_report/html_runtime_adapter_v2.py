@@ -19,7 +19,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
 from eval_utils import ROOT, extract_dates, extract_numbers, write_json
-from html_adapter import build_resource_audit, find_chrome, normalize_html
+from html_adapter import build_resource_audit, find_chrome, normalize_html, read_html_with_diagnostics
 
 
 VISUAL_SELECTOR = ",".join(
@@ -359,6 +359,37 @@ def create_browser_work_copy(normalized_html: str) -> tuple[Path, Path]:
     return work_dir, browser_path
 
 
+def static_runtime_payload(html: str) -> dict[str, Any]:
+    soup = BeautifulSoup(html or "", "html.parser")
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    body = soup.body or soup
+    clean = lambda value: " ".join(str(value or "").split())
+    headings = [
+        {"level": node.name.lower(), "text": clean(node.get_text(" ", strip=True))}
+        for node in body.find_all(["h1", "h2", "h3", "h4"])
+        if clean(node.get_text(" ", strip=True))
+    ][:120]
+    links = [
+        {"text": clean(a.get_text(" ", strip=True))[:160], "href": str(a.get("href") or "")[:500]}
+        for a in body.find_all("a")
+        if clean(a.get_text(" ", strip=True)) or a.get("href")
+    ][:200]
+    text = clean(body.get_text(" ", strip=True))
+    return {
+        "url": "",
+        "title": clean(soup.title.get_text(" ", strip=True)) if soup.title else "",
+        "viewport": {},
+        "document_size": {},
+        "text": text,
+        "text_length": len(text),
+        "headings": headings,
+        "links": links,
+        "visual_objects": [],
+        "skipped_visuals": [],
+    }
+
+
 def adapt_html_runtime_v2(
     html_path: Path,
     out_dir: Path,
@@ -373,7 +404,7 @@ def adapt_html_runtime_v2(
     out_dir = normalize_path(out_dir)
     report_id = report_id or html_path.stem
     out_dir.mkdir(parents=True, exist_ok=True)
-    raw_html = html_path.read_text(encoding="utf-8", errors="ignore")
+    raw_html, read_diagnostics = read_html_with_diagnostics(html_path)
     raw_soup = BeautifulSoup(raw_html, "html.parser")
     resource_audit = build_resource_audit(raw_soup, html_path)
     normalized_html, cleanup_audit = normalize_html(raw_html, html_path, out_dir)
@@ -382,63 +413,77 @@ def adapt_html_runtime_v2(
     browser_url = browser_path.resolve().as_uri()
 
     chrome = find_chrome(chrome_path)
-    if chrome is None:
-        shutil.rmtree(browser_work_dir, ignore_errors=True)
-        raise FileNotFoundError("Chrome or Edge executable was not found.")
+    browser_status: dict[str, Any] = {
+        "status": "not_started",
+        "chrome_path": str(chrome) if chrome else "",
+        "fallback_used": False,
+        "error": "",
+    }
     proc = None
     user_data_dir = None
     navigation_result: dict[str, Any] = {}
+    runtime = static_runtime_payload(normalized_html)
+    visual_records: list[dict[str, Any]] = []
     try:
-        proc, ws_url, user_data_dir = launch_chrome(chrome, browser_path, viewport_width, viewport_height)
-        with CDPClient(ws_url) as cdp:
-            cdp.call("Page.enable")
-            cdp.call("Runtime.enable")
-            navigation_result = cdp.call("Page.navigate", {"url": browser_url}, timeout=10)
-            if navigation_result.get("errorText"):
-                raise RuntimeError(f"Chrome failed to navigate to browser work copy: {navigation_result['errorText']}")
-            deadline = time.time() + 20
-            while time.time() < deadline:
-                if eval_js(cdp, "document.readyState", timeout=5) == "complete":
-                    break
-                time.sleep(0.2)
-            runtime = eval_js(cdp, runtime_extract_script(VISUAL_SELECTOR, max_visuals), timeout=60)
-            runtime_url = str(runtime.get("url") or "")
-            if runtime_url.startswith("chrome-error://"):
-                raise RuntimeError(f"Chrome opened an error document instead of the HTML report: {runtime_url}")
-            doc = runtime["document_size"]
-            full_clip = {"x": 0, "y": 0, "width": min(float(doc["width"]), 2400.0), "height": min(float(doc["height"]), 12000.0)}
-            full_page = capture_png(cdp, out_dir / "screenshots" / f"{report_id}_full_page.png", full_clip)
-            visual_records = []
-            for index, visual in enumerate(runtime["visual_objects"], start=1):
-                bbox = visual["bbox"]
-                pad = 16
-                target_clip = {
-                    "x": bbox["x"] - pad,
-                    "y": bbox["y"] - pad,
-                    "width": bbox["width"] + pad * 2,
-                    "height": bbox["height"] + pad * 2,
-                }
-                context_y = max(0, float(visual["center_y"]) - context_height / 2)
-                context_clip = {
-                    "x": 0,
-                    "y": context_y,
-                    "width": min(float(doc["width"]), 1800.0),
-                    "height": min(float(context_height), float(doc["height"]) - context_y),
-                }
-                target = capture_png(cdp, out_dir / "visuals" / f"{report_id}_{visual['visual_id']}_target.png", target_clip)
-                context = capture_png(cdp, out_dir / "visuals" / f"{report_id}_{visual['visual_id']}_context.png", context_clip)
-                visual_records.append(
-                    {
-                        **visual,
-                        "object_index": index,
-                        "object_count": len(runtime["visual_objects"]),
-                        "target_image_path": target["path"],
-                        "context_image_path": context["path"],
-                        "full_page_image_path": full_page["path"],
-                        "context_clip": context_clip,
-                        "target_clip": target_clip,
+        if chrome is None:
+            browser_status.update({"status": "chrome_not_found", "fallback_used": True, "error": "Chrome or Edge executable was not found."})
+        else:
+            proc, ws_url, user_data_dir = launch_chrome(chrome, browser_path, viewport_width, viewport_height)
+            with CDPClient(ws_url) as cdp:
+                cdp.call("Page.enable")
+                cdp.call("Runtime.enable")
+                navigation_result = cdp.call("Page.navigate", {"url": browser_url}, timeout=10)
+                if navigation_result.get("errorText"):
+                    raise RuntimeError(f"Chrome failed to navigate to browser work copy: {navigation_result['errorText']}")
+                deadline = time.time() + 20
+                while time.time() < deadline:
+                    if eval_js(cdp, "document.readyState", timeout=5) == "complete":
+                        break
+                    time.sleep(0.2)
+                runtime = eval_js(cdp, runtime_extract_script(VISUAL_SELECTOR, max_visuals), timeout=60)
+                runtime_url = str(runtime.get("url") or "")
+                if runtime_url.startswith("chrome-error://"):
+                    raise RuntimeError(f"Chrome opened an error document instead of the HTML report: {runtime_url}")
+                doc = runtime["document_size"]
+                full_clip = {"x": 0, "y": 0, "width": min(float(doc["width"]), 2400.0), "height": min(float(doc["height"]), 12000.0)}
+                full_page = capture_png(cdp, out_dir / "screenshots" / f"{report_id}_full_page.png", full_clip)
+                for index, visual in enumerate(runtime["visual_objects"], start=1):
+                    bbox = visual["bbox"]
+                    pad = 16
+                    target_clip = {
+                        "x": bbox["x"] - pad,
+                        "y": bbox["y"] - pad,
+                        "width": bbox["width"] + pad * 2,
+                        "height": bbox["height"] + pad * 2,
                     }
-                )
+                    context_y = max(0, float(visual["center_y"]) - context_height / 2)
+                    context_clip = {
+                        "x": 0,
+                        "y": context_y,
+                        "width": min(float(doc["width"]), 1800.0),
+                        "height": min(float(context_height), float(doc["height"]) - context_y),
+                    }
+                    try:
+                        target = capture_png(cdp, out_dir / "visuals" / f"{report_id}_{visual['visual_id']}_target.png", target_clip)
+                        context = capture_png(cdp, out_dir / "visuals" / f"{report_id}_{visual['visual_id']}_context.png", context_clip)
+                    except Exception as exc:  # noqa: BLE001
+                        visual = {**visual, "warnings": (visual.get("warnings") or []) + [f"visual_capture_failed:{exc!r}"[:220]]}
+                        continue
+                    visual_records.append(
+                        {
+                            **visual,
+                            "object_index": index,
+                            "object_count": len(runtime["visual_objects"]),
+                            "target_image_path": target["path"],
+                            "context_image_path": context["path"],
+                            "full_page_image_path": full_page["path"],
+                            "context_clip": context_clip,
+                            "target_clip": target_clip,
+                        }
+                    )
+                browser_status.update({"status": "ok", "fallback_used": False})
+    except Exception as exc:  # noqa: BLE001
+        browser_status.update({"status": "browser_runtime_failed", "fallback_used": True, "error": repr(exc)[:500]})
     finally:
         if proc is not None:
             proc.terminate()
@@ -491,7 +536,9 @@ def adapt_html_runtime_v2(
             "remote_resource_count": resource_audit["remote_resource_count"],
             "failed_static_resource_count": resource_audit["failed_static_resource_count"],
         },
+        "read_diagnostics": read_diagnostics,
         "cleanup_audit": cleanup_audit,
+        "browser_status": browser_status,
         "browser_navigation": {
             "mode": "short_temporary_work_copy",
             "formal_normalized_html": str(normalized_path),
@@ -506,7 +553,7 @@ def adapt_html_runtime_v2(
             "description": "Visuals are captured by DOM bounding boxes, not by fixed-height page slicing.",
             "context": "Each visual has its own target crop and a surrounding viewport context screenshot.",
         },
-        "warnings": runtime_warnings(resource_audit, report_text, visual_records, runtime.get("skipped_visuals") or []),
+        "warnings": runtime_warnings(resource_audit, report_text, visual_records, runtime.get("skipped_visuals") or [], browser_status),
     }
     write_json(out_dir / "report_text.json", report_text)
     write_json(out_dir / "visual_objects.json", visual_objects)
@@ -528,6 +575,7 @@ def runtime_warnings(
     report_text: dict[str, Any],
     visual_records: list[dict[str, Any]],
     skipped_visuals: list[dict[str, Any]] | None = None,
+    browser_status: dict[str, Any] | None = None,
 ) -> list[str]:
     warnings = []
     if resource_audit.get("failed_static_resource_count", 0):
@@ -542,6 +590,9 @@ def runtime_warnings(
         warnings.append("html_has_oversized_visuals")
     if skipped_visuals:
         warnings.append("html_broken_visual_resources")
+    status = (browser_status or {}).get("status")
+    if status and status != "ok":
+        warnings.append(f"html_browser_{status}")
     return warnings
 
 

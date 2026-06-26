@@ -250,6 +250,7 @@ def parsed_from_html_adapter(
     links = text_payload.get("links") or []
     sections = sectionize_from_headings(analysis_text, headings)
     visuals = visual_objects.get("visual_objects") or []
+    parse_diagnostics = build_html_parse_diagnostics(text_payload, adapter_result.get("manifest") or {}, analysis_text, headings, links)
     return {
         "report_id": report_id,
         "path": str(source_path),
@@ -262,6 +263,10 @@ def parsed_from_html_adapter(
         "text_length": text_payload.get("text_length") or len(full_text),
         "analysis_text_length": len(analysis_text),
         "analysis_boundary": boundary,
+        "html_parse_status": parse_diagnostics["html_parse_status"],
+        "html_parse_diagnostics": parse_diagnostics,
+        "report_likeness": parse_diagnostics["report_likeness"],
+        "report_likeness_reasons": parse_diagnostics["report_likeness_reasons"],
         "headings": headings,
         "sections": sections,
         "links": links,
@@ -270,7 +275,7 @@ def parsed_from_html_adapter(
         "table_figure_hint_count": len(visuals),
         "source_hint_count": len(re.findall(r"source|sources|来源|资料来源|数据来源", analysis_text, flags=re.IGNORECASE)),
         "disclaimer_hint_count": len(re.findall(r"disclaimer|disclosures|risk considerations|risk disclosure|important information|免责声明|风险提示", full_text, flags=re.IGNORECASE)),
-        "parse_quality": "good" if len(analysis_text) >= 2500 else "fair",
+        "parse_quality": parse_diagnostics["parse_quality"],
         "html_stats": {
             "h1_h4_count": len(headings),
             "table_count": len([v for v in visuals if v.get("tag") == "table"]),
@@ -408,6 +413,143 @@ def is_article_text_usable(article_text: str, full_text: str) -> bool:
     if len(article_text) > int(len(full_text) * 1.25):
         return False
     return True
+
+
+def build_html_parse_diagnostics(
+    text_payload: dict[str, Any],
+    adapter_manifest: dict[str, Any],
+    analysis_text: str,
+    headings: list[str],
+    links: list[dict[str, Any]],
+) -> dict[str, Any]:
+    text = analysis_text or ""
+    lower = text.lower()
+    text_length = len(text)
+    link_text_chars = sum(len(str(link.get("text") or "")) for link in links if isinstance(link, dict))
+    link_density = link_text_chars / max(1, int(text_payload.get("text_length") or text_length or 1))
+    strategy_terms = [
+        "outlook",
+        "strategy",
+        "allocation",
+        "portfolio",
+        "market",
+        "macro",
+        "risk",
+        "scenario",
+        "forecast",
+        "investment",
+        "equity",
+        "fixed income",
+        "credit",
+        "inflation",
+        "growth",
+        "policy",
+        "earnings",
+        "valuation",
+        "配置",
+        "策略",
+        "市场",
+        "宏观",
+        "风险",
+        "情景",
+        "投资",
+        "权益",
+        "债券",
+        "通胀",
+        "增长",
+        "政策",
+    ]
+    navigation_terms = [
+        "home",
+        "menu",
+        "subscribe",
+        "sign in",
+        "contact us",
+        "privacy",
+        "cookie",
+        "all rights reserved",
+        "首页",
+        "导航",
+        "登录",
+        "注册",
+        "联系我们",
+    ]
+    strategy_hits = sum(1 for term in strategy_terms if term in lower)
+    navigation_hits = sum(1 for term in navigation_terms if term in lower)
+    score = 0.0
+    reasons: list[str] = []
+    if text_length >= 6000:
+        score += 0.28
+        reasons.append("long_enough_report_body")
+    elif text_length >= 2500:
+        score += 0.18
+        reasons.append("moderate_report_body")
+    elif text_length >= 1000:
+        score += 0.08
+        reasons.append("short_but_readable_body")
+    else:
+        reasons.append("body_too_short")
+    heading_count = len(headings)
+    if heading_count >= 6:
+        score += 0.18
+        reasons.append("multiple_report_headings")
+    elif heading_count >= 3:
+        score += 0.10
+        reasons.append("some_report_headings")
+    if strategy_hits >= 8:
+        score += 0.28
+        reasons.append("strong_strategy_term_coverage")
+    elif strategy_hits >= 4:
+        score += 0.18
+        reasons.append("moderate_strategy_term_coverage")
+    elif strategy_hits >= 2:
+        score += 0.08
+        reasons.append("weak_strategy_term_coverage")
+    if re.search(r"\b20\d{2}\b|[%$]|bps|bp|trillion|billion|million|万亿|亿元|基点|%", text, flags=re.IGNORECASE):
+        score += 0.12
+        reasons.append("numeric_or_time_signals")
+    if link_density <= 0.18:
+        score += 0.10
+        reasons.append("low_navigation_link_density")
+    elif link_density >= 0.45:
+        score -= 0.18
+        reasons.append("high_navigation_link_density")
+    if navigation_hits >= 6 and text_length < 5000:
+        score -= 0.20
+        reasons.append("navigation_or_landing_page_signals")
+    warnings = adapter_manifest.get("warnings") or []
+    browser_status = (adapter_manifest.get("browser_status") or {}).get("status") or ""
+    if "html_text_too_short_for_strategy_report" in warnings:
+        score = min(score, 0.42)
+    report_likeness = round(max(0.0, min(1.0, score)), 3)
+    if text_length >= 2500 and report_likeness >= 0.5:
+        parse_quality = "good"
+    elif text_length >= 1000 and report_likeness >= 0.3:
+        parse_quality = "fair"
+    else:
+        parse_quality = "poor"
+    if not text.strip():
+        html_parse_status = "empty_text"
+    elif browser_status and browser_status != "ok":
+        html_parse_status = "static_fallback"
+    elif parse_quality == "poor":
+        html_parse_status = "low_confidence"
+    else:
+        html_parse_status = "ok"
+    return {
+        "html_parse_status": html_parse_status,
+        "parse_quality": parse_quality,
+        "report_likeness": report_likeness,
+        "report_likeness_reasons": reasons,
+        "analysis_text_length": text_length,
+        "heading_count": heading_count,
+        "link_count": len(links),
+        "link_text_density": round(link_density, 3),
+        "strategy_term_hit_count": strategy_hits,
+        "navigation_term_hit_count": navigation_hits,
+        "adapter_warnings": warnings,
+        "browser_status": browser_status,
+    }
 
 
 def extract_numbered_section_headings(text: str) -> list[str]:
@@ -607,6 +749,7 @@ def render_skill_feedback_markdown(result: dict[str, Any]) -> str:
         f"# Skill Iteration Feedback: {result.get('report_id')}",
         "",
         f"- Overall: **{result.get('overall_score')} / 100**",
+        f"- Evaluation confidence: **{(result.get('evaluation_confidence') or {}).get('score', 'n/a')}**",
         f"- Grade: **{result.get('grade')}**",
         f"- Quality gate: **{'PASS' if gate.get('passed') else 'FAIL'}**",
         f"- Candidate: `{result.get('candidate_report')}`",
@@ -617,6 +760,21 @@ def render_skill_feedback_markdown(result: dict[str, Any]) -> str:
     for key, label in priority_modules.items():
         if key in normalized:
             lines.append(f"- {label} (`{key}`): {normalized[key]:.3f}")
+    parse_diag = result.get("evaluation_confidence") or {}
+    adapter = result.get("adapter_manifest") or {}
+    lines.extend(
+        [
+            "",
+            "## Parse and evaluation confidence",
+            "",
+            f"- HTML parse status: `{parse_diag.get('html_parse_status') or 'n/a'}`",
+            f"- Report-likeness: `{parse_diag.get('report_likeness', 'n/a')}`",
+            f"- Analysis text length: `{parse_diag.get('analysis_text_length', 'n/a')}`",
+            f"- Browser status: `{(adapter.get('browser_status') or {}).get('status', 'n/a')}`",
+        ]
+    )
+    if parse_diag.get("reasons"):
+        lines.append(f"- Confidence notes: {', '.join(parse_diag.get('reasons') or [])}")
     lines.extend(["", "## Highest-impact feedback", ""])
     primary = [item for item in issues if item.get("module") not in low_priority_modules]
     if not primary:

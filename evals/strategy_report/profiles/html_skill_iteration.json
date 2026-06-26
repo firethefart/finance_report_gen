@@ -47,6 +47,7 @@
     "gate_thresholds": {
       "overall_min": 72,
       "text_length_min": 2000,
+      "report_likeness_min": 0.35,
       "compliance_min": 0.82,
       "visual_min": 0.35,
       "strategy_reasoning_min": 0.42,

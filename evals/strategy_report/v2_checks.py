@@ -160,10 +160,20 @@ def v2_structure_check(parsed: dict[str, Any]) -> dict[str, Any]:
     section_count = len(parsed.get("sections") or [])
     section_score = clamp(section_count / 8)
     score = 0.46 * coverage_score + 0.34 * heading_score + 0.20 * section_score
+    report_likeness = parsed.get("report_likeness")
+    if isinstance(report_likeness, (int, float)):
+        # Keep the existing structure model, but cap it when the HTML body looks
+        # more like navigation/landing content than a strategy report.
+        score = min(score, 0.72 * clamp(float(report_likeness)) + 0.28 * score)
     issues: list[dict[str, Any]] = []
     for key, ok in group_hits.items():
         if not ok and key in {"executive_summary", "strategy", "scenario_risk"}:
             issues.append(issue("missing_section_signal", "medium", key, f"Candidate-only structure signal is weak for {key}."))
+    if isinstance(report_likeness, (int, float)) and report_likeness < 0.35:
+        issues.append(issue("low_report_likeness", "high", "html_body", "HTML body has weak strategy-report signals and may be navigation, landing, or boilerplate content."))
+    if parsed.get("html_parse_status") in {"empty_text", "static_fallback", "low_confidence"}:
+        severity = "high" if parsed.get("html_parse_status") == "empty_text" else "medium"
+        issues.append(issue("html_parse_low_confidence", severity, "html_adapter", f"HTML parse status is {parsed.get('html_parse_status')}."))
     return {
         "score": round(score, 3),
         "issues": issues,
@@ -172,6 +182,10 @@ def v2_structure_check(parsed: dict[str, Any]) -> dict[str, Any]:
             "section_count": section_count,
             "section_group_hits": group_hits,
             "analysis_boundary": parsed.get("analysis_boundary") or {},
+            "html_parse_status": parsed.get("html_parse_status"),
+            "parse_quality": parsed.get("parse_quality"),
+            "report_likeness": parsed.get("report_likeness"),
+            "report_likeness_reasons": parsed.get("report_likeness_reasons") or [],
         },
     }
 

@@ -127,7 +127,10 @@ For production HTML batches, provide a manifest with `sample_id`/`id` and one of
 executes rows that look like `.html`/`.htm` or have HTML format metadata; add
 `--include-non-html` only for an intentional mixed-format run. Use `--resume` to avoid
 rerunning samples whose `<sample_id>.v2.eval.json` already exists. The runner writes
-`summary.json` and `summary.csv` and continues after per-sample failures.
+`summary.json` and `summary.csv` and continues after per-sample failures. For HTML
+stability triage, inspect `html_parse_status`, `parse_quality`, `report_likeness`,
+`evaluation_confidence`, `browser_status`, `adapter_warnings`, and `top_issue` in the
+summary CSV.
 
 When the `html_skill_iteration` profile is active, each sample writes
 `<report_id>.skill_feedback.md`. This file is intended as the first artifact to feed

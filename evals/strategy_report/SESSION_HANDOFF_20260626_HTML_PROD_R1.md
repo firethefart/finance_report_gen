@@ -79,10 +79,10 @@ Batch HTML manifest:
 
 ```bash
 ./.venv/bin/python evals/strategy_report/run_html_batch.py \
-  --manifest evals/strategy_report/golden_manifest.csv \
+  --manifest evals/strategy_report/html_functional_manifest.csv \
   --out-dir migration_smoke_outputs/html_batch_smoke \
   --verifier-profile html_skill_iteration \
-  --sample-id v2_html_gsam_backdrop_2026
+  --resume
 ```
 
 ## Validation status
@@ -122,6 +122,71 @@ Successful on the Windows development machine:
   - Confirms PDF rows in the unified manifest are skipped by default.
 
 No execution failures were observed in this round.
+
+## 2026-06-26 stability refinement update
+
+This follow-up pass intentionally avoided framework rewrites and focused on making each
+HTML verifier stage more robust while preserving honest scoring.
+
+Implemented:
+
+- Added encoding-aware HTML reads in `html_adapter.py`.
+  - Tries `utf-8-sig`, `utf-8`, `gb18030`, then `latin-1`.
+  - Records read diagnostics instead of silently dropping undecodable text.
+- Hardened `html_runtime_adapter_v2.py`.
+  - Chrome/CDP/screenshot failures now become structured `browser_status` values.
+  - If Chrome is unavailable, the adapter falls back to static DOM text extraction.
+  - The verifier still records visual unavailability through warnings and confidence;
+    it does not pretend visual QA succeeded.
+- Added HTML parse diagnostics in `run_eval_v2.py`.
+  - `html_parse_status`
+  - `parse_quality`
+  - `report_likeness`
+  - `report_likeness_reasons`
+- Added report-likeness pressure to `v2_checks.py`.
+  - Navigation/landing/empty pages get explicit `low_report_likeness` and
+    `html_parse_low_confidence` issues.
+  - Structure score is capped when the extracted body does not look like a strategy
+    report.
+- Added `quality_score` and `evaluation_confidence` in `scoring_v2.py`.
+  - `quality_score` remains the actual report score.
+  - `evaluation_confidence` separately records parse/runtime uncertainty.
+- Added `report_likeness_min` to the `html_skill_iteration` gate.
+- Expanded `run_html_batch.py` summaries.
+  - `summary.csv` now includes parse status, parse quality, report-likeness,
+    confidence, browser status, adapter warnings, and top issue.
+
+Validation metrics from this pass:
+
+- Functional HTML baseline before this pass:
+  - Manifest: `evals/strategy_report/html_functional_manifest.csv`
+  - Requested/completed/failed: 4 / 4 / 0
+  - Average score: 77.70
+  - Gate pass count: 3 / 4
+- Functional HTML after this pass:
+  - Requested/completed/failed: 4 / 4 / 0
+  - Average score: 76.57
+  - Gate pass count: 3 / 4
+  - Parse status: `ok=4`
+  - Browser status: `ok=4`
+  - Average evaluation confidence: 0.950
+  - Minimum evaluation confidence: 0.800
+  - Average report-likeness: 0.800
+  - Minimum report-likeness: 0.420
+- Temporary parser-robustness edge fixtures:
+  - Fixtures: empty HTML, navigation-like HTML, GBK Chinese HTML, malformed HTML.
+  - Requested/completed/failed: 4 / 4 / 0
+  - All 4 failed the quality gate honestly.
+  - Score range: 25.17 to 28.61.
+  - Report-likeness range: 0.00 to 0.22.
+  - Evaluation-confidence range: 0.00 to 0.29.
+- Forced Chrome-missing probe:
+  - Adapter completed with `browser_status.status=chrome_not_found`.
+  - Static fallback extracted 50,592 text characters from a functional HTML sample.
+  - Warnings included `html_no_visual_objects` and `html_browser_chrome_not_found`.
+- Reference-based regression smoke:
+  - Command used `run_eval.py --cases-dir evals/strategy_report/cases_merged33 --max-cases 1 --no-extract-charts`.
+  - Result: `eastmoney_cn_strategy_001: 80.78 Silver gate=True`.
 
 ## Known risks / next candidates
 

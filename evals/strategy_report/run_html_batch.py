@@ -128,16 +128,38 @@ def is_html_row(row: dict[str, str]) -> bool:
 
 
 def summary_row(row: dict[str, str], result: dict[str, Any], resumed: bool) -> dict[str, Any]:
+    adapter = result.get("adapter_manifest") or {}
+    browser_status = adapter.get("browser_status") or {}
+    confidence = result.get("evaluation_confidence") or {}
+    module_results = result.get("module_results") or {}
+    structure_metrics = ((module_results.get("structure") or {}).get("metrics") or {})
     return {
         "sample_id": row["sample_id"],
         "path": row["path"],
         "overall_score": result.get("overall_score"),
+        "quality_score": result.get("quality_score", result.get("overall_score")),
+        "evaluation_confidence": confidence.get("score"),
         "grade": result.get("grade"),
         "gate_passed": (result.get("gate") or {}).get("passed"),
         "gate_failures": (result.get("gate") or {}).get("failures") or [],
         "dimension_score_normalized": result.get("dimension_score_normalized") or {},
+        "html_parse_status": confidence.get("html_parse_status") or structure_metrics.get("html_parse_status"),
+        "parse_quality": structure_metrics.get("parse_quality"),
+        "report_likeness": confidence.get("report_likeness") if confidence.get("report_likeness") is not None else structure_metrics.get("report_likeness"),
+        "analysis_text_length": confidence.get("analysis_text_length"),
+        "browser_status": browser_status.get("status"),
+        "adapter_warnings": adapter.get("warnings") or [],
+        "top_issue": top_issue(result),
         "resumed": resumed,
     }
+
+
+def top_issue(result: dict[str, Any]) -> str:
+    issues = result.get("issues") or []
+    if not issues:
+        return ""
+    first = issues[0]
+    return f"{first.get('module')}:{first.get('issue_type')}:{first.get('location')}"
 
 
 def write_json(path: Path, data: Any) -> None:
@@ -146,12 +168,38 @@ def write_json(path: Path, data: Any) -> None:
 
 
 def write_summary_csv(path: Path, rows: list[dict[str, Any]]) -> None:
-    fields = ["sample_id", "path", "overall_score", "grade", "gate_passed", "gate_failures", "resumed"]
+    fields = [
+        "sample_id",
+        "path",
+        "overall_score",
+        "quality_score",
+        "evaluation_confidence",
+        "grade",
+        "gate_passed",
+        "gate_failures",
+        "html_parse_status",
+        "parse_quality",
+        "report_likeness",
+        "analysis_text_length",
+        "browser_status",
+        "adapter_warnings",
+        "top_issue",
+        "resumed",
+    ]
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fields)
         writer.writeheader()
         for row in rows:
-            writer.writerow({field: (";".join(row.get(field) or []) if field == "gate_failures" else row.get(field)) for field in fields})
+            writer.writerow(
+                {
+                    field: (
+                        ";".join(row.get(field) or [])
+                        if field in {"gate_failures", "adapter_warnings"}
+                        else row.get(field)
+                    )
+                    for field in fields
+                }
+            )
 
 
 if __name__ == "__main__":
