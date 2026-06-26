@@ -73,3 +73,64 @@ force the ratio.
    clean.
 6. Run `run_html_batch.py` with `html_skill_iteration` over the admitted manifest and
    inspect score distribution by language.
+
+## First live crawl/localization batch
+
+Run directory:
+
+- `migration_smoke_outputs/html_expansion_prod/`
+
+Commands/results:
+
+- Discovery:
+  - Configs: `sources.expanded.json`, `sources.china.json`
+  - Candidate count: 136
+  - Failure count: 15
+  - Language counts: `en=133`, `zh=3`
+- Localization manifest:
+  - Target: `--per-language 15`
+  - Selected samples: 18
+  - Language counts: `en=15`, `zh=3`
+- Live localization:
+  - Requested: 18
+  - Localized: 14
+  - Failed: 4
+  - Failures were short/landing-page-like pages, including all 3 GF Securities Chinese
+    official research entry pages.
+- Static audit:
+  - Candidate count: 14
+  - Admitted count: 11
+  - Selected count: 11
+  - Selected language counts: `en=11`
+- Verifier baseline with `html_skill_iteration`:
+  - Requested: 11
+  - Completed: 11
+  - Execution failures: 0
+  - Score min/max/mean: 48.06 / 83.07 / 57.63
+  - Gate pass: 1/11
+- Review dashboard:
+  - `migration_smoke_outputs/html_expansion_prod/review_dashboard.html`
+  - Served locally at:
+    `http://127.0.0.1:8765/migration_smoke_outputs/html_expansion_prod/review_dashboard.html`
+
+Tool fixes made during the live batch:
+
+- `localize_strategy_html.py`
+  - Fixed relative `--out-dir` handling when writing metadata paths.
+  - Added `--min-text-length` so localization and audit thresholds can be staged.
+- `build_html_localization_manifest.py`
+  - Added sample ID uniquification to avoid overwriting repeated landing-page URLs.
+- Added `build_html_candidate_review_dashboard.py`
+  - Merges static audit, localization failures, and verifier baseline scores.
+  - Provides an iframe-based local preview plus admitted/rejected filters.
+
+Important live-batch conclusion:
+
+- The crawler/localizer can now produce usable English local HTML samples, but the
+  current Chinese official seed config does not produce admitted Chinese HTML strategy
+  reports. The next iteration should focus on Chinese HTML source discovery:
+  - repair mojibake Chinese source configs/keywords;
+  - add public Chinese article-style sources, not only broker landing pages;
+  - consider controlled Chinese generated HTML samples if public official HTML remains
+    sparse;
+  - avoid admitting weak landing pages merely to force the 1:1 ratio.

@@ -30,7 +30,7 @@ def main() -> int:
     ]
     rows = sorted(rows, key=lambda item: (int(item.get("score") or 0), item.get("text_length_hint") or 0), reverse=True)
     selected = select_balanced(rows, args.per_language, args.max_per_institution)
-    samples = [to_localizer_sample(row, args.capture_mode, args.enabled) for row in selected]
+    samples = uniquify_sample_ids([to_localizer_sample(row, args.capture_mode, args.enabled) for row in selected])
     manifest = {
         "notes": [
             "Generated from HTML discovery candidates.",
@@ -107,6 +107,18 @@ def to_localizer_sample(row: dict[str, Any], capture_mode: str, enabled: bool) -
             "text_length_hint": row.get("text_length_hint"),
         },
     }
+
+
+def uniquify_sample_ids(samples: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    seen: dict[str, int] = {}
+    for sample in samples:
+        base = sample["sample_id"]
+        count = seen.get(base, 0)
+        seen[base] = count + 1
+        if count:
+            suffix = f"_{count + 1}"
+            sample["sample_id"] = f"{base[: 90 - len(suffix)]}{suffix}"
+    return samples
 
 
 if __name__ == "__main__":

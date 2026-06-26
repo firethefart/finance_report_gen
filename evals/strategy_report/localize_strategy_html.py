@@ -484,7 +484,14 @@ def build_document(snapshot: dict[str, Any], localized_body: str, source_url: st
 </html>"""
 
 
-def localize_one(sample: dict[str, Any], out_root: Path, chrome: Path) -> dict[str, Any]:
+def root_relative(path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(ROOT)).replace("\\", "/")
+    except ValueError:
+        return str(path).replace("\\", "/")
+
+
+def localize_one(sample: dict[str, Any], out_root: Path, chrome: Path, min_text_length: int = 2500) -> dict[str, Any]:
     sample_dir = out_root / sample["sample_id"]
     sample_dir.mkdir(parents=True, exist_ok=True)
     assets_dir = sample_dir / "assets"
@@ -538,7 +545,7 @@ def localize_one(sample: dict[str, Any], out_root: Path, chrome: Path) -> dict[s
         if user_data_dir is not None:
             shutil.rmtree(user_data_dir, ignore_errors=True)
 
-    if snapshot.get("text_length", 0) < 2500:
+    if snapshot.get("text_length", 0) < min_text_length:
         raise ValueError(f"localized_article_text_too_short: {snapshot.get('text_length')}")
     if str(snapshot.get("final_url") or "").startswith("chrome-error:"):
         raise ValueError("chrome_error_page")
@@ -549,15 +556,15 @@ def localize_one(sample: dict[str, Any], out_root: Path, chrome: Path) -> dict[s
     write_json(sample_dir / "resource_manifest.json", resource_manifest)
     metadata = {
         **sample,
-        "localized_path": str(output_html.relative_to(ROOT)),
+        "localized_path": root_relative(output_html),
         "localized_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "elapsed_seconds": round(time.time() - started, 2),
         "snapshot": {key: value for key, value in snapshot.items() if key not in {"html", "assets"}},
         "capture_mode": capture_mode,
-        "archive_source_path": str(archive_path.relative_to(ROOT)) if archive_path else None,
+        "archive_source_path": root_relative(archive_path) if archive_path else None,
         "hydration_audit": hydration_audit,
         "asset_audit": asset_audit,
-        "resource_manifest_path": str((sample_dir / "resource_manifest.json").relative_to(ROOT)),
+        "resource_manifest_path": root_relative(sample_dir / "resource_manifest.json"),
         "resource_summary": {
             key: resource_manifest[key]
             for key in [
@@ -584,6 +591,7 @@ def main() -> int:
     parser.add_argument("--sample-id", action="append", default=[])
     parser.add_argument("--max-samples", type=int, default=None)
     parser.add_argument("--chrome-path", default=None)
+    parser.add_argument("--min-text-length", type=int, default=2500)
     args = parser.parse_args()
 
     manifest = read_json(args.manifest)
@@ -604,7 +612,7 @@ def main() -> int:
     for index, sample in enumerate(samples, start=1):
         print(f"[{index}/{len(samples)}] {sample['sample_id']} {sample['url']}", flush=True)
         try:
-            rows.append(localize_one(sample, args.out_dir, chrome))
+            rows.append(localize_one(sample, args.out_dir, chrome, min_text_length=args.min_text_length))
         except Exception as exc:  # noqa: BLE001
             failure = {**sample, "status": "failed", "error": repr(exc)}
             failures.append(failure)
