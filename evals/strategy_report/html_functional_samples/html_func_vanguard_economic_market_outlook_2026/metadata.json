@@ -1,0 +1,85 @@
+{
+  "sample_id": "html-vanguard-vanguard-s-2026-economic-and-market-outlook",
+  "url": "https://advisors.vanguard.com/insights/article/2026-economic-and-market-outlook",
+  "institution": "Vanguard",
+  "language": "en",
+  "subtype": "macro_strategy",
+  "source_class": "official_candidate",
+  "capture_mode": "live",
+  "enabled": true,
+  "discovery": {
+    "seed_url": "https://advisors.vanguard.com/insights/article/2026-economic-and-market-outlook",
+    "score": 10,
+    "score_reasons": [
+      "en_signal:insights",
+      "en_signal:investment",
+      "en_signal:market",
+      "en_signal:markets",
+      "en_signal:outlook",
+      "en_signal:portfolio",
+      "keyword:economic",
+      "keyword:market",
+      "keyword:outlook",
+      "negative:download",
+      "negative:pdf",
+      "report_like_url_path"
+    ],
+    "title_hint": "Vanguard’s 2026 economic and market outlook",
+    "link_text": "",
+    "text_length_hint": 5642,
+    "article_quality_score": 81.29,
+    "article_quality": {
+      "article_like": true,
+      "quality_score": 81.29,
+      "language": "en",
+      "title": "Vanguard’s 2026 economic and market outlook",
+      "chosen_selector": "article",
+      "text_length": 5642,
+      "zh_char_count": 0,
+      "paragraph_count": 25,
+      "long_paragraph_count": 15,
+      "heading_count": 7,
+      "link_count": 6,
+      "link_text_ratio": 0.015,
+      "list_item_count": 3,
+      "visual_count": 6,
+      "report_signal_count": 13,
+      "landing_signal_count": 1,
+      "reject_reasons": [],
+      "warnings": [],
+      "text_preview": "Our economic and market outlook for 2026 Our economic and market outlook for 2026 Vanguard Perspective | December 10, 2025 Stress-test your 2026 client portfolios Our Portfolio Analytics Tool lets you evaluate portfolio resilience under all market conditions. Use the tool Rapid evolution has increased AI’s potential to become a transformative economic force, with promising implications for productivity across industries. Adoption is accelerating, and while today’s AI leaders dominate headlines, tomorrow’s winners may look very different. These are the themes that frame our economic and market outlook for 2026. PDF Get our experts’ complete outlook for the economy and markets in 2026 Download our whitepaper for detailed forecasts, charts, and portfolio insights for 2026 Download our full outlook In case you missed it, watch our experts weigh in on the economy and markets in 2026 View on demand Higher growth is on the horizon, driven by AI investment Will AI transform or will it ultimately disappoint? Gauging signs of productivity’s impact and watching how competitive pressures play out, 2026 will be a year of assessment. We believe the ongoing wave of AI-driven physical investment w"
+    }
+  },
+  "localized_path": "migration_smoke_outputs/html_expansion_target10/localized/html-vanguard-vanguard-s-2026-economic-and-market-outlook/index.html",
+  "localized_at": "2026-06-26T08:34:49Z",
+  "elapsed_seconds": 17.53,
+  "snapshot": {
+    "title": "Vanguard’s 2026 economic and market outlook",
+    "final_url": "https://advisors.vanguard.com/insights/article/2026-economic-and-market-outlook",
+    "chosen_selector": ".cmp-container",
+    "text_length": 6865,
+    "heading_count": 16,
+    "image_count": 9,
+    "svg_count": 8,
+    "canvas_count": 0,
+    "removed_visual_shell_count": 0
+  },
+  "archive_source_path": null,
+  "hydration_audit": {
+    "downloaded_asset_count": 0,
+    "failed_assets": []
+  },
+  "asset_audit": {
+    "downloaded_asset_count": 2,
+    "failed_assets": []
+  },
+  "resource_manifest_path": "migration_smoke_outputs/html_expansion_target10/localized/html-vanguard-vanguard-s-2026-economic-and-market-outlook/resource_manifest.json",
+  "resource_summary": {
+    "resource_count": 2,
+    "downloaded_count": 2,
+    "failed_count": 0,
+    "critical_failed_count": 0,
+    "total_bytes": 178875
+  },
+  "status": "localized"
+}

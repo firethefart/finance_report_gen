@@ -1,0 +1,99 @@
+{
+  "resource_count": 9,
+  "downloaded_count": 9,
+  "failed_count": 0,
+  "critical_failed_count": 0,
+  "total_bytes": 257850,
+  "resources": [
+    {
+      "original_url": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/2238135761001/665efae8-f56d-4021-888b-3d41af7b4ca7/806e1097-3ae7-4e48-97ba-8a4fc1a2e355/1280x720/match/image.jpg",
+      "local_path": "assets/1995ea37e86cc7c6d2a3.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "1995ea37e86cc7c6d2a33ed0e375ad7bc1924c11867f7cb6ce84cf59378b8228",
+      "bytes": 138324,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://www.ssga.com/library-content/images/people/square/200203131013889KDNCy.jpg",
+      "local_path": "assets/486e7f37cd20e1dc3adc.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "486e7f37cd20e1dc3adc454cc1c49a2cc6be888fba2fe9b0f532f3de41a154f9",
+      "bytes": 8225,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://www.ssga.com/library-content/images/people/square/230801144405216giPBx.jpg",
+      "local_path": "assets/f9302aa3febe8216ec5a.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "f9302aa3febe8216ec5a47b2f4ccd8c682078dc87621966b0b83c7779fa6e029",
+      "bytes": 9691,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://www.ssga.com/library-content/images/people/square/240617125231533aUrLB.jpg",
+      "local_path": "assets/e75208bf49b4e7fc9f9d.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "e75208bf49b4e7fc9f9d992867483191941d467d0b11936b75b28a266c1405fd",
+      "bytes": 26161,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://www.ssga.com/library-content/images/people/square/240723132938108beUQe.jpg",
+      "local_path": "assets/a5e2528f12d8db3aa533.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "a5e2528f12d8db3aa533e599576606ad9673c3f38e360e96c4badaf784717b7d",
+      "bytes": 17532,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://www.ssga.com/library-content/images/people/square/240723133133531YVDzS.jpg",
+      "local_path": "assets/171d5f847c78a4c8077f.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "171d5f847c78a4c8077f8e092225d7c8a495a63905c7f7349acd2ccffb50b81c",
+      "bytes": 12287,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://www.ssga.com/library-content/images/people/square/241205092426797mbSWl.jpg",
+      "local_path": "assets/79616ba706f56583f29a.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "79616ba706f56583f29ae3a87305d032bf835e01f9ff380aef9b5998c380ca86",
+      "bytes": 16732,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://www.ssga.com/library-content/images/people/square/260108030532104URucB.jpg",
+      "local_path": "assets/10c360d03b81ca4b0cf4.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "10c360d03b81ca4b0cf4d8c4c45f770852860d255aab56eff3f71ec2062011cf",
+      "bytes": 19173,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://www.ssga.com/library-content/images/people/square/260601012430504FDlHD.jpg",
+      "local_path": "assets/eac2ae3ff7992ab3ac9d.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "eac2ae3ff7992ab3ac9df61f56e5e4ee0bd31b380671a364246291ef405d6249",
+      "bytes": 9725,
+      "role": "snapshot_image",
+      "error": null
+    }
+  ]
+}

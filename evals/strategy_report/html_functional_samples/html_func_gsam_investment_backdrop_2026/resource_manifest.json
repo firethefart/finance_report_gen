@@ -1,0 +1,159 @@
+{
+  "resource_count": 15,
+  "downloaded_count": 15,
+  "failed_count": 0,
+  "critical_failed_count": 0,
+  "total_bytes": 4752700,
+  "resources": [
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/contact/contact-us.png",
+      "local_path": "assets/caf82c1e77bba387ef6b.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "caf82c1e77bba387ef6bccd43f6cb082c2f6f19c15e9d3dc38208d94047d0a84",
+      "bytes": 1522803,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/30-year-government-bond-yield.png",
+      "local_path": "assets/c951442587a5f12ea9b9.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "c951442587a5f12ea9b9effdb2f6949f18912ae41f881fc887396e0d5aa901ca",
+      "bytes": 186230,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/asset-valuations-since-2005.png",
+      "local_path": "assets/10908f519ca0236d5438.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "10908f519ca0236d543850d0844b213914b02c25c0df52abf326a322737e8d4a",
+      "bytes": 65218,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/capex-to-sales-ratio-european-companies.png",
+      "local_path": "assets/1805788d43f3de1f54f2.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "1805788d43f3de1f54f2f9601862b6fca78eb2c360568f20acc367d8b931a350",
+      "bytes": 23106,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/consensus-capex-growth-estimates-ai-hyperscalers.png",
+      "local_path": "assets/b8d54a0d4a089167b9e1.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "b8d54a0d4a089167b9e14f486ad0a61fb10f4619efb564fdd0a508a4956613fe",
+      "bytes": 16929,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/investment-backdrop_timeline.png",
+      "local_path": "assets/4f3a47e4f9e9425e8f45.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "4f3a47e4f9e9425e8f45a7d9f2f537765b01d04b26cb435b904043342f7b5fa2",
+      "bytes": 49024,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/meeting-dates-central-banks-monetary-policy.png",
+      "local_path": "assets/e169cdcedd37d3034b42.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "e169cdcedd37d3034b424944f7f83d0d01f7c4e63caccf99333553ac735319d4",
+      "bytes": 46717,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/share-us-consumer-spending-income-quintile.png",
+      "local_path": "assets/c96fa364350c8a262572.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "c96fa364350c8a262572d544ad730fffb9eccc7bf6c2723574757228e0d1f0e1",
+      "bytes": 35764,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/learnings-from-earnings_4Q25_1-1_680x680.png",
+      "local_path": "assets/e51de7aecbd4a015d447.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "e51de7aecbd4a015d447f76d4f38a090b83038a972aa60050140f61422554346",
+      "bytes": 578696,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026-investment-backdrop_16-9_1360x765.jpg",
+      "local_path": "assets/caf9a37b487a2dbe6e95.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "caf9a37b487a2dbe6e95b05342f1bd7763c900d0b09f5d21fb591a8e4753a8e0",
+      "bytes": 482348,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026-investment-backdrop_21-9_1840x788.jpg",
+      "local_path": "assets/98735f94a23cbae6d849.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "98735f94a23cbae6d8496efd0a811b9e9231556ee6fea825af3aab085182d463",
+      "bytes": 628976,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026-investment-backdrop_3-1_2480x827.jpg",
+      "local_path": "assets/8e8f0683a44ce83bb3ed.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "8e8f0683a44ce83bb3ede3ffffac00ea12af276e1d4cf74b952d26e00dbebc3e",
+      "bytes": 811558,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026_1-1_680x680.jpg",
+      "local_path": "assets/c0e17a6ce769e35fe400.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "c0e17a6ce769e35fe400c91fc7a89d4d79162be8aacbe29387acb662099c0ba1",
+      "bytes": 92246,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2026/five-minute-brief-david-solomon_1-1_680x680.jpg",
+      "local_path": "assets/9afb96c56e4bd14ee373.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "9afb96c56e4bd14ee3733665df5f7699552a47bb3bc0fe52ba9b589443a464e7",
+      "bytes": 147332,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/evergreen/market-monitor_1-1_680x680.jpg",
+      "local_path": "assets/475771c73031387c4f30.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "475771c73031387c4f301dcccac457aece2fc0a2e2b88278f9401026be5f4d1d",
+      "bytes": 65753,
+      "role": "snapshot_image",
+      "error": null
+    }
+  ]
+}

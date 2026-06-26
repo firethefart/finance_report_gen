@@ -1,0 +1,119 @@
+{
+  "resource_count": 11,
+  "downloaded_count": 11,
+  "failed_count": 0,
+  "critical_failed_count": 0,
+  "total_bytes": 4547056,
+  "resources": [
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/contact/contact-us.png",
+      "local_path": "assets/caf82c1e77bba387ef6b.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "caf82c1e77bba387ef6bccd43f6cb082c2f6f19c15e9d3dc38208d94047d0a84",
+      "bytes": 1522803,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/active-etf-growth-us-markets.png",
+      "local_path": "assets/7f13db6592fc588ea3bb.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "7f13db6592fc588ea3bbfb9bdb204ec1f50e7bb19b9fd6466562ded00481a2a8",
+      "bytes": 18233,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/asset-allocation-generational-breakdown-investments.png",
+      "local_path": "assets/39b686d48ad17dbc4a86.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "39b686d48ad17dbc4a86de9d5820bdbc4fd67fcde2d1f42a713a72b68b66f83a",
+      "bytes": 19469,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/chart-graph/english/2025/probability-expected-return-various-levels-tracking-error.png",
+      "local_path": "assets/54031e4ee67961b152cc.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "54031e4ee67961b152cc8e04b74910a677b3558aa885ab4022713241404f43b5",
+      "bytes": 31476,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/learnings-from-earnings_4Q25_1-1_680x680.png",
+      "local_path": "assets/e51de7aecbd4a015d447.png",
+      "status": "downloaded",
+      "mime": "image/png",
+      "sha256": "e51de7aecbd4a015d447f76d4f38a090b83038a972aa60050140f61422554346",
+      "bytes": 578696,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026-portfolio-construction_16-9_1360x765.jpg",
+      "local_path": "assets/258ef52d89370f775109.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "258ef52d89370f77510915efc60ee01ef7545ca06639e83362495d4bfea01fa4",
+      "bytes": 415133,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026-portfolio-construction_21-9_1840x788.jpg",
+      "local_path": "assets/e8bd1eb53d5ea35bb790.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "e8bd1eb53d5ea35bb7904a41b993885223b2a08692b244e2bbf0fbd68aebde57",
+      "bytes": 599225,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026-portfolio-construction_3-1_2480x827.jpg",
+      "local_path": "assets/4d9474f5eaef6c8a12b8.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "4d9474f5eaef6c8a12b8271dceee15179a7687fd6f1fbeb9dc26e549b7c84c73",
+      "bytes": 1056690,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2025/outlook-2026_1-1_680x680.jpg",
+      "local_path": "assets/c0e17a6ce769e35fe400.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "c0e17a6ce769e35fe400c91fc7a89d4d79162be8aacbe29387acb662099c0ba1",
+      "bytes": 92246,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/2026/five-minute-brief-david-solomon_1-1_680x680.jpg",
+      "local_path": "assets/9afb96c56e4bd14ee373.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "9afb96c56e4bd14ee3733665df5f7699552a47bb3bc0fe52ba9b589443a464e7",
+      "bytes": 147332,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://am.gs.com/cms-assets/gsam-app/images/hero-thumbnail/evergreen/market-monitor_1-1_680x680.jpg",
+      "local_path": "assets/475771c73031387c4f30.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "475771c73031387c4f301dcccac457aece2fc0a2e2b88278f9401026be5f4d1d",
+      "bytes": 65753,
+      "role": "snapshot_image",
+      "error": null
+    }
+  ]
+}

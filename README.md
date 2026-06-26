@@ -75,6 +75,12 @@ When `html_skill_iteration` is used, each completed sample also writes
 To expand the local HTML development set before larger production runs, follow
 [HTML sample expansion runbook](evals/strategy_report/HTML_SAMPLE_EXPANSION_RUNBOOK.md).
 
+Small user-reviewed HTML functional set:
+
+```powershell
+.\.venv\Scripts\python.exe evals/strategy_report/run_html_batch.py --manifest evals/strategy_report/html_functional_manifest.csv --out-dir migration_smoke_outputs/html_functional_baseline --verifier-profile html_skill_iteration --resume
+```
+
 ## Golden set entry point
 
 Use [evals/strategy_report/golden_manifest.csv](evals/strategy_report/golden_manifest.csv) as the unified manifest. It lists:

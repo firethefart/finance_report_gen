@@ -1,0 +1,92 @@
+{
+  "sample_id": "html-goldman-sachs-asset-management-investment-backdrop-heading-into-2026-goldman-sachs-_2",
+  "url": "https://am.gs.com/en-us/institutions/insights/article/investment-outlook/investment-backdrop-2026",
+  "institution": "Goldman Sachs Asset Management",
+  "language": "en",
+  "subtype": "fixed_income_strategy",
+  "source_class": "official_candidate",
+  "capture_mode": "live",
+  "enabled": true,
+  "discovery": {
+    "seed_url": "https://am.gs.com/en-us/institutions/insights",
+    "score": 12,
+    "score_reasons": [
+      "en_signal:credit",
+      "en_signal:equity",
+      "en_signal:fixed income",
+      "en_signal:insights",
+      "en_signal:investment",
+      "en_signal:market",
+      "en_signal:markets",
+      "en_signal:outlook",
+      "en_signal:strategies",
+      "en_signal:strategy",
+      "keyword:fixed income",
+      "keyword:market",
+      "keyword:outlook",
+      "negative:fund",
+      "negative:login",
+      "negative:terms",
+      "report_like_url_path"
+    ],
+    "title_hint": "Investment Backdrop Heading into 2026 - Goldman Sachs Asset Management",
+    "link_text": "Macroeconomics Staying Active Amid Complexity in 2026 arrow_forward",
+    "text_length_hint": 22483,
+    "article_quality_score": 78.08,
+    "article_quality": {
+      "article_like": true,
+      "quality_score": 78.08,
+      "language": "en",
+      "title": "Investment Backdrop Heading into 2026 - Goldman Sachs Asset Management",
+      "chosen_selector": "main",
+      "text_length": 22483,
+      "zh_char_count": 0,
+      "paragraph_count": 60,
+      "long_paragraph_count": 48,
+      "heading_count": 0,
+      "link_count": 8,
+      "link_text_ratio": 0.006,
+      "list_item_count": 12,
+      "visual_count": 1,
+      "report_signal_count": 12,
+      "landing_signal_count": 1,
+      "reject_reasons": [],
+      "warnings": [
+        "few_headings"
+      ],
+      "text_preview": "Find a Solution What We Do Funds Insights Creating Impact About Us search Login © 2026 Goldman Sachs. All rights reserved. Glossary - See Glossary for definition of terms used in reference to Products Risk considerations and disclosures Equity investments are subject to market risk, which means that the value of the securities in which it invests may go up or down in response to the prospects of individual companies, particular sectors and/or general economic conditions. Different investment styles (e.g., “growth” and “value”) tend to shift in and out of favor, and, at times, the strategy may underperform other strategies that invest in similar asset classes. The market capitalization of a company may also involve greater risks (e.g. \"small\" or \"mid\" cap companies) than those associated with larger, more established companies and may be subject to more abrupt or erratic price movements, in addition to lower liquidity. Emerging markets investments may be less liquid and are subject to greater risk than developed market investments as a result of, but not limited to, the following: inadequate regulations, volatile securities markets, adverse exchange rates, and social, political, mil"
+    }
+  },
+  "localized_path": "migration_smoke_outputs/html_expansion_target10/localized/html-goldman-sachs-asset-management-investment-backdrop-heading-into-2026-goldman-sachs-_2/index.html",
+  "localized_at": "2026-06-26T08:31:06Z",
+  "elapsed_seconds": 17.58,
+  "snapshot": {
+    "title": "Investment Backdrop Heading into 2026 - Goldman Sachs Asset Management",
+    "final_url": "https://am.gs.com/en-us/institutions/insights/article/investment-outlook/investment-backdrop-2026#overview",
+    "chosen_selector": "main",
+    "text_length": 51034,
+    "heading_count": 24,
+    "image_count": 15,
+    "svg_count": 3,
+    "canvas_count": 0,
+    "removed_visual_shell_count": 0
+  },
+  "archive_source_path": null,
+  "hydration_audit": {
+    "downloaded_asset_count": 0,
+    "failed_assets": []
+  },
+  "asset_audit": {
+    "downloaded_asset_count": 15,
+    "failed_assets": []
+  },
+  "resource_manifest_path": "migration_smoke_outputs/html_expansion_target10/localized/html-goldman-sachs-asset-management-investment-backdrop-heading-into-2026-goldman-sachs-_2/resource_manifest.json",
+  "resource_summary": {
+    "resource_count": 15,
+    "downloaded_count": 15,
+    "failed_count": 0,
+    "critical_failed_count": 0,
+    "total_bytes": 4752700
+  },
+  "status": "localized"
+}

@@ -204,3 +204,57 @@ Interpretation:
 - No Chinese samples were admitted in this repair pass. Per the user's instruction,
   synthetic Chinese reports were not used. Chinese real-HTML discovery remains a
   separate source-acquisition problem.
+
+## User review update: pause public-HTML crawling
+
+After reviewing the strict target-10 dashboard, the user judged that roughly half of the
+remaining public HTML pages were still not acceptable as financial-report-like samples.
+The underlying product mismatch is now explicit:
+
+- The verifier's near-term production workload is model-generated HTML reports.
+- Real-world HTML pages are usually web-display articles, landing pages, or navigation
+  surfaces.
+- Real financial reports are more commonly PDF than HTML.
+
+Decision:
+
+- Pause further public-HTML crawling for now.
+- Do not add synthetic/generated reports to this crawl-derived sample set.
+- Keep only target-10 items 3, 4, 9, and 10 as a temporary verifier functional test
+  group.
+
+Committed functional test entry:
+
+- `evals/strategy_report/html_functional_manifest.csv`
+- `evals/strategy_report/html_functional_samples/`
+
+The four retained samples are:
+
+1. `html_func_gsam_investment_backdrop_2026`
+2. `html_func_gsam_portfolio_construction_2026`
+3. `html_func_ssga_global_market_outlook_2026`
+4. `html_func_vanguard_economic_market_outlook_2026`
+
+Functional baseline:
+
+- Manifest path check: 4 rows, 0 missing candidate/resource paths.
+- Static functional audit: candidate 4, admitted 4, selected 4.
+- Command:
+  `run_html_batch.py --manifest evals/strategy_report/html_functional_manifest.csv --verifier-profile html_skill_iteration`
+- Result: requested 4, completed 4, failure 0.
+- Scores:
+  - `html_func_gsam_investment_backdrop_2026`: 93.8 Gold, gate pass.
+  - `html_func_gsam_portfolio_construction_2026`: 92.65 Gold, gate pass.
+  - `html_func_ssga_global_market_outlook_2026`: 48.68 Reject, gate fail
+    (`overall_score_below_threshold`, `text_too_short_for_strategy_report`,
+    `strategy_reasoning_below_threshold`, `adapter_text_too_short`).
+  - `html_func_vanguard_economic_market_outlook_2026`: 75.65 Bronze, gate pass.
+
+Next direction:
+
+- Shift effort from public crawling to verifier optimization for large-scale
+  model-generated HTML trial runs.
+- Treat public HTML functional samples as regression fixtures for parser/layout/visual
+  checks, not as representative production distribution.
+- Build or collect model-generated HTML samples separately when optimizing scoring and
+  feedback quality.

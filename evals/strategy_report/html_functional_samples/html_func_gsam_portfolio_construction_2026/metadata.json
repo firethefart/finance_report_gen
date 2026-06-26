@@ -1,0 +1,93 @@
+{
+  "sample_id": "html-goldman-sachs-asset-management-shifting-paradigms-for-portfolio-construction-in-202_2",
+  "url": "https://am.gs.com/en-us/institutions/insights/article/investment-outlook/portfolio-construction-2026",
+  "institution": "Goldman Sachs Asset Management",
+  "language": "en",
+  "subtype": "fixed_income_strategy",
+  "source_class": "official_candidate",
+  "capture_mode": "live",
+  "enabled": true,
+  "discovery": {
+    "seed_url": "https://am.gs.com/en-us/institutions/insights",
+    "score": 14,
+    "score_reasons": [
+      "en_signal:credit",
+      "en_signal:equity",
+      "en_signal:fixed income",
+      "en_signal:insights",
+      "en_signal:investment",
+      "en_signal:market",
+      "en_signal:outlook",
+      "en_signal:portfolio",
+      "en_signal:strategies",
+      "en_signal:strategy",
+      "keyword:fixed income",
+      "keyword:market",
+      "keyword:outlook",
+      "keyword:portfolio",
+      "negative:fund",
+      "negative:login",
+      "negative:terms",
+      "report_like_url_path"
+    ],
+    "title_hint": "Shifting Paradigms for Portfolio Construction in 2026 - Goldman Sachs Asset Management",
+    "link_text": "Portfolio Construction Shifting Paradigms for Portfolio Construction in 2026 10 minute read",
+    "text_length_hint": 23317,
+    "article_quality_score": 78.08,
+    "article_quality": {
+      "article_like": true,
+      "quality_score": 78.08,
+      "language": "en",
+      "title": "Shifting Paradigms for Portfolio Construction in 2026 - Goldman Sachs Asset Management",
+      "chosen_selector": "main",
+      "text_length": 23317,
+      "zh_char_count": 0,
+      "paragraph_count": 56,
+      "long_paragraph_count": 46,
+      "heading_count": 0,
+      "link_count": 8,
+      "link_text_ratio": 0.006,
+      "list_item_count": 12,
+      "visual_count": 1,
+      "report_signal_count": 13,
+      "landing_signal_count": 1,
+      "reject_reasons": [],
+      "warnings": [
+        "few_headings"
+      ],
+      "text_preview": "Find a Solution What We Do Funds Insights Creating Impact About Us search Login © 2026 Goldman Sachs. All rights reserved. Glossary Private assets: Private assets are investments not traded on public stock exchanges, including private equity, credit, real estate and infrastructure. Tracking error: The standard deviation of excess returns from a benchmark, and is used as a measure of risk. A large tracking error implies that there are large swings in the excess return series of a manager from their benchmark. Convex payouts : Convex payouts refer to investment strategies or securities whose payoff profiles are non-linear and asymmetric, generally providing greater upside potential relative to the downside risk. BPS: Refers to basis points or 1/100th of 1%. See Glossary for definition of terms used in reference to Products Risk considerations and disclosures Equity investments are subject to market risk, which means that the value of the securities in which it invests may go up or down in response to the prospects of individual companies, particular sectors and/or general economic conditions. Different investment styles (e.g., “growth” and “value”) tend to shift in and out of favor, "
+    }
+  },
+  "localized_path": "migration_smoke_outputs/html_expansion_target10/localized/html-goldman-sachs-asset-management-shifting-paradigms-for-portfolio-construction-in-202_2/index.html",
+  "localized_at": "2026-06-26T08:29:04Z",
+  "elapsed_seconds": 14.63,
+  "snapshot": {
+    "title": "Shifting Paradigms for Portfolio Construction in 2026 - Goldman Sachs Asset Management",
+    "final_url": "https://am.gs.com/en-us/institutions/insights/article/investment-outlook/portfolio-construction-2026#overview",
+    "chosen_selector": "main",
+    "text_length": 38430,
+    "heading_count": 10,
+    "image_count": 11,
+    "svg_count": 3,
+    "canvas_count": 0,
+    "removed_visual_shell_count": 0
+  },
+  "archive_source_path": null,
+  "hydration_audit": {
+    "downloaded_asset_count": 0,
+    "failed_assets": []
+  },
+  "asset_audit": {
+    "downloaded_asset_count": 11,
+    "failed_assets": []
+  },
+  "resource_manifest_path": "migration_smoke_outputs/html_expansion_target10/localized/html-goldman-sachs-asset-management-shifting-paradigms-for-portfolio-construction-in-202_2/resource_manifest.json",
+  "resource_summary": {
+    "resource_count": 11,
+    "downloaded_count": 11,
+    "failed_count": 0,
+    "critical_failed_count": 0,
+    "total_bytes": 4547056
+  },
+  "status": "localized"
+}

@@ -1,0 +1,29 @@
+{
+  "resource_count": 2,
+  "downloaded_count": 2,
+  "failed_count": 0,
+  "critical_failed_count": 0,
+  "total_bytes": 178875,
+  "resources": [
+    {
+      "original_url": "https://digital-assets.vanguard.com/fas/fas-images/pages/articles/2026-economic-and-market-outlook/VEMO_CTA_sq.jpg?w=512&h=512",
+      "local_path": "assets/104b2725230d9fefb214.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "104b2725230d9fefb2147e333287e981267ed05e8096e2bb43be3a12e14d7451",
+      "bytes": 49048,
+      "role": "snapshot_image",
+      "error": null
+    },
+    {
+      "original_url": "https://digital-assets.vanguard.com/fas/fas-images/vanguard/VEMO2026-uw.jpg?w=1440&h=617",
+      "local_path": "assets/fb4fe0e98f876c894312.jpg",
+      "status": "downloaded",
+      "mime": "image/jpeg",
+      "sha256": "fb4fe0e98f876c894312a15e1a9271750b81e82086d1ded611ebe6353de41cd0",
+      "bytes": 129827,
+      "role": "snapshot_image",
+      "error": null
+    }
+  ]
+}

@@ -123,6 +123,16 @@ When the `html_skill_iteration` profile is active, each sample writes
 back into skill refinement; it suppresses source/fact traceability as a hard gate but
 still records low-priority notes.
 
+Small user-reviewed HTML functional set:
+
+```powershell
+.\.venv\Scripts\python.exe evals/strategy_report/run_html_batch.py --manifest evals/strategy_report/html_functional_manifest.csv --out-dir migration_smoke_outputs/html_functional_baseline --verifier-profile html_skill_iteration --resume
+```
+
+This functional set is not a public-HTML golden set. It contains four retained
+report-like web pages for parser/layout/visual regression while verifier optimization
+shifts toward model-generated HTML reports.
+
 To expand the local HTML development set, use
 `evals/strategy_report/HTML_SAMPLE_EXPANSION_RUNBOOK.md`. The expansion pipeline discovers
 report-like HTML pages from source configs, builds a balanced localization manifest,

@@ -15,6 +15,11 @@ sources are available.
 The expanded set is a development set first. Only stable, reviewed samples should later
 be promoted into the long-lived golden manifest.
 
+Current status: broad public-HTML crawling is paused. User review found that even strict
+public crawl outputs often remain web-display/navigation pages rather than
+financial-report-like documents. Use the retained functional samples for verifier
+regression, and prioritize verifier optimization for model-generated HTML reports.
+
 ## Pipeline
 
 ```mermaid
