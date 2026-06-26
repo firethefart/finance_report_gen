@@ -72,6 +72,9 @@ Batch local HTML run from a manifest:
 When `html_skill_iteration` is used, each completed sample also writes
 `<report_id>.skill_feedback.md` for downstream skill refinement.
 
+To expand the local HTML development set before larger production runs, follow
+[HTML sample expansion runbook](evals/strategy_report/HTML_SAMPLE_EXPANSION_RUNBOOK.md).
+
 ## Golden set entry point
 
 Use [evals/strategy_report/golden_manifest.csv](evals/strategy_report/golden_manifest.csv) as the unified manifest. It lists:
@@ -102,6 +105,8 @@ The legacy `--api-key-file api_key.txt` path is still supported for local runs, 
 - [Agent runbook](evals/strategy_report/AGENT_RUNBOOK.md)
 - [Production handoff](evals/strategy_report/PRODUCTION_MIGRATION_HANDOFF_20260625.md)
 - [HTML production refinement handoff](evals/strategy_report/SESSION_HANDOFF_20260626_HTML_PROD_R1.md)
+- [HTML sample expansion handoff](evals/strategy_report/SESSION_HANDOFF_20260626_HTML_SAMPLE_EXPANSION_R1.md)
+- [HTML sample expansion runbook](evals/strategy_report/HTML_SAMPLE_EXPANSION_RUNBOOK.md)
 - [Development goals](DEVELOPMENT_GOALS.md)
 - [Candidate-only core test set README](evals/strategy_report/V2_CORE_TESTSET_README.md)
 - [Candidate-only development notes](evals/strategy_report/V2_DEVELOPMENT_GOALS.md)

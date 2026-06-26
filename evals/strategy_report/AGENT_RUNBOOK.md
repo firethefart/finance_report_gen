@@ -123,6 +123,13 @@ When the `html_skill_iteration` profile is active, each sample writes
 back into skill refinement; it suppresses source/fact traceability as a hard gate but
 still records low-priority notes.
 
+To expand the local HTML development set, use
+`evals/strategy_report/HTML_SAMPLE_EXPANSION_RUNBOOK.md`. The expansion pipeline discovers
+report-like HTML pages from source configs, builds a balanced localization manifest,
+localizes pages for offline use, audits resource cleanliness, and emits an HTML verifier
+manifest. Aim for a near 1:1 Chinese/English admitted set, but do not admit weak pages
+just to satisfy the ratio.
+
 Summarize a candidate-only run:
 
 ```powershell
