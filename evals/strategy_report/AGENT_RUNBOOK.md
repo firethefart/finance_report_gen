@@ -106,6 +106,17 @@ preserved in the eval result.
 .\.venv\Scripts\python.exe evals/strategy_report/run_eval.py --case evals/strategy_report/cases_merged33/strategy_sample_001.json --candidate-report evals/strategy_report/html_functional_samples/html_func_gsam_investment_backdrop_2026/index.html --out-dir migration_smoke_outputs/v1_html_smoke --verifier-profile html_skill_iteration --no-cache
 ```
 
+Every V1 run writes shared feedback artifacts next to the eval result:
+
+```text
+<case_id>.feedback.md
+<case_id>.feedback.json
+```
+
+The `summary.json` result row also includes `feedback_markdown` and `feedback_json`.
+Use the Markdown file for human/agent review and the JSON file for automated skill
+iteration tooling.
+
 ## 5. Candidate-only/no-reference verifier commands
 
 One candidate:
@@ -157,10 +168,26 @@ The VLM path is budgeted and monitored. Profiles can set
 cache misses, call errors, budget skips, VLM wall time, and API elapsed totals so VLM
 service issues can be separated from parser/content/layout failures.
 
-When the `html_skill_iteration` profile is active, each sample writes
-`<report_id>.skill_feedback.md`. This file is intended as the first artifact to feed
-back into skill refinement; it suppresses source/fact traceability as a hard gate but
-still records low-priority notes.
+Each candidate-only/no-reference run writes shared feedback artifacts next to the eval
+result:
+
+```text
+<report_id>.feedback.md
+<report_id>.feedback.json
+```
+
+For `run_html_batch.py`, each row in `summary.json` and `summary.csv` includes
+`feedback_markdown` and `feedback_json`. The feedback Markdown is the primary readable
+artifact for humans and agents. The JSON keeps the same content in a compact schema:
+score summary, reader summary, runtime notes, module feedback, action items, and an
+evidence index. If `feedback.write_skill_feedback` is enabled in a profile, the legacy
+`<report_id>.skill_feedback.md` file is still written as an alias rendered from the
+shared feedback object.
+
+For new workflows, prefer `<report_id>.feedback.md` over the legacy
+`<report_id>.skill_feedback.md`. The `html_skill_iteration` profile still suppresses
+source/fact traceability as a hard gate but records those findings as lower-priority
+feedback notes.
 
 Small user-reviewed HTML functional set:
 

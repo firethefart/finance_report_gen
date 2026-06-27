@@ -177,6 +177,8 @@ def summary_row(row: dict[str, str], result: dict[str, Any], resumed: bool, wall
         "vlm_wall_seconds": vlm_timing.get("vlm_wall_seconds", 0),
         "wall_seconds": wall_seconds,
         "top_issue": top_issue(result),
+        "feedback_markdown": (result.get("feedback") or {}).get("feedback_markdown"),
+        "feedback_json": (result.get("feedback") or {}).get("feedback_json"),
         "resumed": resumed,
     }
 

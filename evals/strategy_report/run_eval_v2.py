@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from chart_judges import DEFAULT_VL_MODEL, run_chart_vl_judges
 from chart_extractor import extract_chart_candidates
 from eval_utils import ROOT, extract_dates, extract_numbers, repo_path, write_json, write_text
+from feedback import build_feedback_artifact, render_feedback_markdown, write_feedback_artifacts
 from html_runtime_adapter_v2 import adapt_html_runtime_v2
 from report_parser import parse_candidate_report
 from scoring_v2 import aggregate_v2_scores, render_v2_markdown
@@ -199,6 +200,7 @@ def run_one_v2(
         result["vlm_timing"] = summarize_vlm_timing(chart_vl_judges)
     if profile:
         result["verifier_profile"] = profile
+    result["feedback"] = write_feedback_artifacts(result, out_dir, flavor="candidate_only_no_reference", stem=report_id)
     write_json(out_dir / f"{report_id}.v2.eval.json", result)
     write_text(out_dir / f"{report_id}.v2.eval.md", render_v2_markdown(result))
     if bool(profile_get(profile, "feedback.write_skill_feedback", False)):
@@ -961,6 +963,12 @@ def infer_skill_patch_themes(primary_issues: list[dict[str, Any]], normalized: d
     return themes[:8]
 
 
+def render_skill_feedback_markdown(result: dict[str, Any]) -> str:
+    """Legacy alias kept for profiles that still request .skill_feedback.md."""
+    artifact = build_feedback_artifact(result, flavor="candidate_only_no_reference")
+    return render_feedback_markdown(artifact)
+
+
 def infer_source_note(text: str) -> str:
     match = re.search(r"(source|sources|资料来源|数据来源|来源)[:：]?\s*([^\n。.;]{1,120})", text or "", flags=re.IGNORECASE)
     return match.group(0)[:180] if match else ""
@@ -1017,6 +1025,8 @@ def main() -> None:
                     "grade": result["grade"],
                     "gate_passed": result["gate"]["passed"],
                     "gate_failures": result["gate"]["failures"],
+                    "feedback_markdown": (result.get("feedback") or {}).get("feedback_markdown"),
+                    "feedback_json": (result.get("feedback") or {}).get("feedback_json"),
                 }
             ],
         },

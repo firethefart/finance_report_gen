@@ -10,6 +10,7 @@ from chart_qa import chart_qa_v2_check
 from checks import run_rule_checks
 from claim_numeric_verifier import DEFAULT_CLAIM_EXTRACT_MODEL, DEFAULT_CLAIM_JUDGE_MODEL, run_claim_numeric_llm_verifier
 from eval_utils import ROOT, read_json, write_json, write_text
+from feedback import write_feedback_artifacts
 from llm_judges import DEFAULT_MODEL, run_llm_judge
 from report_parser import parse_candidate_report
 from run_eval_v2 import (
@@ -178,6 +179,7 @@ def run_one(
         result["vlm_timing"] = summarize_vlm_timing(chart_vl_judges)
     if verifier_profile:
         result["verifier_profile"] = verifier_profile
+    result["feedback"] = write_feedback_artifacts(result, out_dir, flavor="v1_reference", stem=case["case_id"])
     write_json(out_dir / f"{case['case_id']}.eval.json", result)
     write_text(out_dir / f"{case['case_id']}.eval.md", render_markdown(result))
     return result
@@ -297,6 +299,8 @@ def main() -> None:
                 "vlm_cache_hit_count": (r.get("vlm_timing") or {}).get("cache_hit_count"),
                 "vlm_call_error_count": (r.get("vlm_timing") or {}).get("call_error_count"),
                 "vlm_budget_skipped_count": (r.get("vlm_timing") or {}).get("budget_skipped_count"),
+                "feedback_markdown": (r.get("feedback") or {}).get("feedback_markdown"),
+                "feedback_json": (r.get("feedback") or {}).get("feedback_json"),
             }
             for r in all_results
         ],

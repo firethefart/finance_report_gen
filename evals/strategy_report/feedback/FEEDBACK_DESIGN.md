@@ -550,6 +550,26 @@ evals/strategy_report/feedback/
 
 ## 12. Near-term recommendation
 
+Implementation status, 2026-06-27:
+
+- Shared deterministic feedback generation is implemented under
+  `evals/strategy_report/feedback/`.
+- V1/reference-based and candidate-only/no-reference runs both emit
+  `<id>.feedback.md` and `<id>.feedback.json`.
+- V1 `summary.json`, V2 `summary.json`, and HTML batch summaries include
+  `feedback_markdown` and `feedback_json` paths.
+- The first schema version is `strategy_report_feedback_v0.1`.
+- The implemented artifact includes:
+  - score summary;
+  - human-readable reader summary;
+  - runtime and parse notes, including VLM timing when available;
+  - module feedback;
+  - prioritized action items mapped to skill areas;
+  - evidence index.
+- The old candidate-only `.skill_feedback.md` path remains available as a legacy alias
+  when `feedback.write_skill_feedback` is enabled, but it is rendered from the shared
+  feedback object.
+
 The next implementation step should be small:
 
 1. Add shared feedback schema objects under `evals/strategy_report/feedback/`.
