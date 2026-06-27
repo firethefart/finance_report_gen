@@ -105,6 +105,27 @@ def run_one_v2(
             gate_max_charts=int(profile_get(profile, "chart.vl_gate_max_charts", 16)),
             gate_max_tokens=int(profile_get(profile, "chart.vl_gate_max_tokens", 900)),
         )
+        if (
+            not (chart_inventory.get("charts") or [])
+            and chart_inventory.get("visual_gate_fallback_candidates")
+            and bool(profile_get(profile, "chart.vl_zero_chart_fallback_enabled", True))
+        ):
+            fallback_judges = run_chart_vl_judges(
+                chart_inventory.get("visual_gate_fallback_candidates") or [],
+                parsed,
+                api_key_file=api_key_file,
+                out_dir=out_dir / "visual_gate_fallback",
+                model=profile_get(profile, "models.chart_vl", DEFAULT_VL_MODEL),
+                max_charts=0,
+                max_tokens=int(profile_get(profile, "chart.vl_max_tokens", 4200)),
+                repair_max_tokens=int(profile_get(profile, "chart.vl_repair_max_tokens", 2600)),
+                selection_strategy=profile_get(profile, "chart.vl_selection_strategy", "first_n"),
+                gate_all=True,
+                gate_max_charts=int(profile_get(profile, "chart.vl_zero_chart_fallback_max_visuals", 2)),
+                gate_max_tokens=int(profile_get(profile, "chart.vl_gate_max_tokens", 900)),
+            )
+            chart_vl_judges = merge_chart_vl_judges(chart_vl_judges, fallback_judges, audit_key="zero_chart_fallback")
+            promote_vlm_visual_gate_fallbacks(chart_inventory, fallback_judges)
 
     module_results = run_v2_candidate_checks(
         parsed,
@@ -170,6 +191,8 @@ def run_one_v2(
         profile=profile,
         adapter_manifest=adapter_manifest,
     )
+    if chart_vl_judges:
+        result["vlm_timing"] = summarize_vlm_timing(chart_vl_judges)
     if profile:
         result["verifier_profile"] = profile
     write_json(out_dir / f"{report_id}.v2.eval.json", result)
@@ -582,16 +605,100 @@ def normalize_heading(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip().lower()
 
 
+def merge_chart_vl_judges(base: dict[str, Any] | None, extra: dict[str, Any], audit_key: str) -> dict[str, Any]:
+    merged = dict(base or {})
+    existing_audits = dict(merged.get("_selection_audit") or {})
+    extra_audit = extra.get("_selection_audit") or {}
+    for key, value in extra.items():
+        if key == "_selection_audit":
+            continue
+        merged[key] = value
+    existing_audits[audit_key] = extra_audit
+    merged["_selection_audit"] = existing_audits
+    return merged
+
+
+def summarize_vlm_timing(chart_vl_judges: dict[str, Any]) -> dict[str, Any]:
+    elapsed: list[float] = []
+    full = 0
+    gate = 0
+    failed = 0
+    for chart_id, result in (chart_vl_judges or {}).items():
+        if str(chart_id).startswith("_") or not isinstance(result, dict):
+            continue
+        if result.get("ok") is False:
+            failed += 1
+        if result.get("qa_level") == "gate_only":
+            gate += 1
+        elif result.get("qa_level"):
+            full += 1
+        value = result.get("elapsed_seconds")
+        if isinstance(value, (int, float)):
+            elapsed.append(float(value))
+    return {
+        "vlm_call_count": full + gate + failed,
+        "vlm_success_count": full + gate,
+        "vlm_failed_count": failed,
+        "vlm_full_checklist_count": full,
+        "vlm_gate_only_count": gate,
+        "vlm_elapsed_sum_seconds": round(sum(elapsed), 2),
+        "vlm_elapsed_avg_seconds": round(sum(elapsed) / len(elapsed), 2) if elapsed else 0.0,
+        "vlm_elapsed_max_seconds": round(max(elapsed), 2) if elapsed else 0.0,
+        "vlm_elapsed_recorded_count": len(elapsed),
+    }
+
+
+def promote_vlm_visual_gate_fallbacks(chart_inventory: dict[str, Any], fallback_judges: dict[str, Any]) -> None:
+    candidates = chart_inventory.get("visual_gate_fallback_candidates") or []
+    candidate_by_id = {candidate.get("chart_id"): candidate for candidate in candidates}
+    promoted: list[dict[str, Any]] = []
+    rejected: list[dict[str, Any]] = []
+    for chart_id, judge in (fallback_judges or {}).items():
+        if str(chart_id).startswith("_"):
+            continue
+        candidate = candidate_by_id.get(chart_id)
+        if not candidate:
+            continue
+        gate = judge.get("visual_gate") or {}
+        is_visual = gate.get("is_visualization") is True and gate.get("decision") != "skip_checklist"
+        if is_visual:
+            promoted.append(
+                {
+                    **candidate,
+                    "detection_method": "html_runtime_vlm_gate_fallback",
+                    "warnings": (candidate.get("warnings") or []) + ["promoted_by_vlm_zero_chart_fallback"],
+                }
+            )
+        else:
+            rejected.append(
+                {
+                    "chart_id": chart_id,
+                    "reason": gate.get("reason") or judge.get("error") or "vlm_gate_rejected",
+                    "visualization_kind": gate.get("visualization_kind"),
+                }
+            )
+    if promoted:
+        chart_inventory.setdefault("charts", []).extend(promoted)
+    audit = chart_inventory.setdefault("audit", {})
+    audit["vlm_zero_chart_fallback_checked_count"] = len([key for key in fallback_judges if not str(key).startswith("_")])
+    audit["vlm_zero_chart_fallback_promoted_count"] = len(promoted)
+    audit["vlm_zero_chart_fallback_rejected_count"] = len(rejected)
+    audit["vlm_zero_chart_fallback_rejections"] = rejected[:20]
+
+
 def chart_inventory_from_html_adapter(report_id: str, adapter_result: dict[str, Any]) -> dict[str, Any]:
     visual_payload = adapter_result["visual_objects"]
     text_payload = adapter_result["report_text"]
     report_text = text_payload.get("text") or ""
     charts = []
     skipped_visuals = list(visual_payload.get("skipped_visuals") or [])
+    fallback_candidates: list[dict[str, Any]] = []
+    drop_reasons: dict[str, int] = {}
     for index, visual in enumerate(visual_payload.get("visual_objects") or [], start=1):
         nearby = visual.get("nearby_text") or ""
         visual_role = infer_visual_role(visual, nearby)
         if should_skip_html_visual(visual, nearby, visual_role):
+            drop_reasons["decorative_or_navigation_visual"] = drop_reasons.get("decorative_or_navigation_visual", 0) + 1
             skipped_visuals.append(
                 {
                     "reason": "decorative_or_navigation_visual",
@@ -601,50 +708,68 @@ def chart_inventory_from_html_adapter(report_id: str, adapter_result: dict[str, 
                     "nearby_text": nearby[:300],
                 }
             )
+            fallback = build_html_visual_chart_candidate(report_id, visual, index, visual_payload, report_text, visual_role, method="html_runtime_visual_gate_fallback")
+            if fallback.get("image_path"):
+                fallback_candidates.append(fallback)
             continue
-        chart_id = f"{report_id}_html_visual_{index:03d}"
-        charts.append(
-            {
-                "chart_id": chart_id,
-                "page_chart_id": chart_id,
-                "page": "html",
-                "bbox": visual.get("bbox"),
-                "page_bbox": visual.get("bbox"),
-                "title": visual.get("section_heading") or infer_visual_title(nearby),
-                "caption": infer_visual_title(nearby),
-                "chart_kind_hint": infer_visual_kind(visual),
-                "source_format": "html_runtime",
-                "detection_method": "html_runtime_dom_bbox",
-                "object_index": visual.get("object_index") or index,
-                "object_count_on_page": visual.get("object_count") or len(visual_payload.get("visual_objects") or []),
-                "object_role": visual.get("tag"),
-                "visual_role": visual_role,
-                "image_path": visual.get("target_image_path"),
-                "page_image_path": visual.get("context_image_path") or visual.get("full_page_image_path"),
-                "full_page_image_path": visual.get("full_page_image_path"),
-                "nearby_text": nearby,
-                "page_text": report_text[:8000],
-                "page_text_blocks": build_text_blocks(report_text),
-                "crop_quality": {"source": "html_runtime_dom_bbox", "oversized_visual": bool(visual.get("oversized_visual"))},
-                "warnings": visual.get("warnings") or [],
-                "source_note": infer_source_note(nearby),
-                "unit_hint": infer_unit_hint(nearby),
-                "numbers": visual.get("numbers") or extract_numbers(nearby),
-                "dates": extract_dates(nearby),
-                "expected_match": None,
-            }
-        )
+        charts.append(build_html_visual_chart_candidate(report_id, visual, index, visual_payload, report_text, visual_role, method="html_runtime_dom_bbox"))
     return {
         "report_id": report_id,
         "source_path": visual_payload.get("source_path"),
         "source_format": "html_runtime",
         "charts": charts,
         "skipped_visuals": skipped_visuals,
+        "visual_gate_fallback_candidates": fallback_candidates[:12],
         "audit": {
             "visual_count": len(charts),
             "raw_visual_count": len(visual_payload.get("visual_objects") or []),
             "skipped_visual_count": len(skipped_visuals),
+            "visual_filter_drop_count": max(0, len(visual_payload.get("visual_objects") or []) - len(charts)),
+            "visual_filter_drop_reasons": drop_reasons,
+            "visual_gate_fallback_candidate_count": len(fallback_candidates[:12]),
         },
+    }
+
+
+def build_html_visual_chart_candidate(
+    report_id: str,
+    visual: dict[str, Any],
+    index: int,
+    visual_payload: dict[str, Any],
+    report_text: str,
+    visual_role: str,
+    method: str,
+) -> dict[str, Any]:
+    nearby = visual.get("nearby_text") or ""
+    chart_id = f"{report_id}_html_visual_{index:03d}"
+    return {
+        "chart_id": chart_id,
+        "page_chart_id": chart_id,
+        "page": "html",
+        "bbox": visual.get("bbox"),
+        "page_bbox": visual.get("bbox"),
+        "title": visual.get("section_heading") or infer_visual_title(nearby),
+        "caption": infer_visual_title(nearby),
+        "chart_kind_hint": infer_visual_kind(visual),
+        "source_format": "html_runtime",
+        "detection_method": method,
+        "object_index": visual.get("object_index") or index,
+        "object_count_on_page": visual.get("object_count") or len(visual_payload.get("visual_objects") or []),
+        "object_role": visual.get("tag"),
+        "visual_role": visual_role,
+        "image_path": visual.get("target_image_path"),
+        "page_image_path": visual.get("context_image_path") or visual.get("full_page_image_path"),
+        "full_page_image_path": visual.get("full_page_image_path"),
+        "nearby_text": nearby,
+        "page_text": report_text[:8000],
+        "page_text_blocks": build_text_blocks(report_text),
+        "crop_quality": {"source": "html_runtime_dom_bbox", "oversized_visual": bool(visual.get("oversized_visual"))},
+        "warnings": visual.get("warnings") or [],
+        "source_note": infer_source_note(nearby),
+        "unit_hint": infer_unit_hint(nearby),
+        "numbers": visual.get("numbers") or extract_numbers(nearby),
+        "dates": extract_dates(nearby),
+        "expected_match": None,
     }
 
 

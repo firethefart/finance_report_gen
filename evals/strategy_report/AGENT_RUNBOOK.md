@@ -132,6 +132,14 @@ stability triage, inspect `html_parse_status`, `parse_quality`, `report_likeness
 `evaluation_confidence`, `browser_status`, `adapter_warnings`, and `top_issue` in the
 summary CSV.
 
+For visual QA triage, inspect `visual_coverage_status`, `visual_object_count`,
+`chart_count`, `scorable_chart_count`, `visual_filter_drop_count`, and the VLM timing
+columns. When VLM is enabled and the HTML adapter finds visual objects but chart QA has
+`chart_count=0`, `html_skill_iteration` runs a small gate-only fallback over up to two
+filtered visual objects. If VLM accepts one, the sample reports
+`scorable_visuals_found_by_vlm_fallback`; if VLM rejects all, it reports
+`no_scorable_visuals_after_vlm_gate`.
+
 When the `html_skill_iteration` profile is active, each sample writes
 `<report_id>.skill_feedback.md`. This file is intended as the first artifact to feed
 back into skill refinement; it suppresses source/fact traceability as a hard gate but

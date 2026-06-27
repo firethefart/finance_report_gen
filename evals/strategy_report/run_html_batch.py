@@ -4,6 +4,7 @@ import argparse
 import csv
 import json
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -44,6 +45,7 @@ def main() -> int:
     args.out_dir.mkdir(parents=True, exist_ok=True)
     completed: list[dict[str, Any]] = []
     failures: list[dict[str, Any]] = []
+    batch_started = time.time()
     for index, row in enumerate(rows, start=1):
         sample_id = row["sample_id"]
         sample_dir = args.out_dir / sample_id
@@ -54,6 +56,7 @@ def main() -> int:
             completed.append(summary_row(row, result, resumed=True))
             continue
         try:
+            sample_started = time.time()
             result = run_one_v2(
                 candidate_report=ROOT / row["path"],
                 out_dir=sample_dir,
@@ -69,17 +72,20 @@ def main() -> int:
                 extract_charts=not args.no_extract_charts,
                 cache=not args.no_cache,
             )
-            completed.append(summary_row(row, result, resumed=False))
+            completed.append(summary_row(row, result, resumed=False, wall_seconds=round(time.time() - sample_started, 2)))
         except Exception as exc:  # noqa: BLE001
             failure = {"sample_id": sample_id, "path": row["path"], "error": repr(exc)}
             failures.append(failure)
             print(f"FAILED {sample_id}: {exc!r}", flush=True)
+    vlm_totals = summarize_batch_vlm(completed)
     summary = {
         "manifest": str(args.manifest),
         "profile_name": profile.get("profile_name"),
         "requested_count": len(rows),
         "completed_count": len(completed),
         "failure_count": len(failures),
+        "wall_seconds": round(time.time() - batch_started, 2),
+        "vlm_timing": vlm_totals,
         "results": completed,
         "failures": failures,
     }
@@ -127,12 +133,14 @@ def is_html_row(row: dict[str, str]) -> bool:
     return suffix in {".html", ".htm"}
 
 
-def summary_row(row: dict[str, str], result: dict[str, Any], resumed: bool) -> dict[str, Any]:
+def summary_row(row: dict[str, str], result: dict[str, Any], resumed: bool, wall_seconds: float | None = None) -> dict[str, Any]:
     adapter = result.get("adapter_manifest") or {}
     browser_status = adapter.get("browser_status") or {}
     confidence = result.get("evaluation_confidence") or {}
     module_results = result.get("module_results") or {}
     structure_metrics = ((module_results.get("structure") or {}).get("metrics") or {})
+    visual_metrics = ((module_results.get("visual_qa") or {}).get("metrics") or {})
+    vlm_timing = result.get("vlm_timing") or {}
     return {
         "sample_id": row["sample_id"],
         "path": row["path"],
@@ -149,8 +157,31 @@ def summary_row(row: dict[str, str], result: dict[str, Any], resumed: bool) -> d
         "analysis_text_length": confidence.get("analysis_text_length"),
         "browser_status": browser_status.get("status"),
         "adapter_warnings": adapter.get("warnings") or [],
+        "visual_score": (module_results.get("visual_qa") or {}).get("score"),
+        "visual_coverage_status": visual_metrics.get("visual_coverage_status"),
+        "visual_object_count": visual_metrics.get("visual_object_count"),
+        "chart_count": visual_metrics.get("chart_count"),
+        "scorable_chart_count": visual_metrics.get("scorable_chart_count"),
+        "visual_filter_drop_count": visual_metrics.get("visual_filter_drop_count"),
+        "vlm_call_count": vlm_timing.get("vlm_call_count", 0),
+        "vlm_elapsed_sum_seconds": vlm_timing.get("vlm_elapsed_sum_seconds", 0),
+        "vlm_elapsed_avg_seconds": vlm_timing.get("vlm_elapsed_avg_seconds", 0),
+        "vlm_elapsed_max_seconds": vlm_timing.get("vlm_elapsed_max_seconds", 0),
+        "vlm_full_checklist_count": vlm_timing.get("vlm_full_checklist_count", 0),
+        "vlm_gate_only_count": vlm_timing.get("vlm_gate_only_count", 0),
+        "wall_seconds": wall_seconds,
         "top_issue": top_issue(result),
         "resumed": resumed,
+    }
+
+
+def summarize_batch_vlm(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    return {
+        "vlm_call_count": sum(int(row.get("vlm_call_count") or 0) for row in rows),
+        "vlm_elapsed_sum_seconds": round(sum(float(row.get("vlm_elapsed_sum_seconds") or 0) for row in rows), 2),
+        "vlm_elapsed_max_seconds": max([float(row.get("vlm_elapsed_max_seconds") or 0) for row in rows] or [0]),
+        "vlm_full_checklist_count": sum(int(row.get("vlm_full_checklist_count") or 0) for row in rows),
+        "vlm_gate_only_count": sum(int(row.get("vlm_gate_only_count") or 0) for row in rows),
     }
 
 
@@ -183,6 +214,19 @@ def write_summary_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "analysis_text_length",
         "browser_status",
         "adapter_warnings",
+        "visual_score",
+        "visual_coverage_status",
+        "visual_object_count",
+        "chart_count",
+        "scorable_chart_count",
+        "visual_filter_drop_count",
+        "vlm_call_count",
+        "vlm_elapsed_sum_seconds",
+        "vlm_elapsed_avg_seconds",
+        "vlm_elapsed_max_seconds",
+        "vlm_full_checklist_count",
+        "vlm_gate_only_count",
+        "wall_seconds",
         "top_issue",
         "resumed",
     ]

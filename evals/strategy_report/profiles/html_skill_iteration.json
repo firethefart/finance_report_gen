@@ -31,7 +31,9 @@
     "vl_max_tokens": 4200,
     "vl_repair_max_tokens": 2600,
     "vl_selection_strategy": "risk_rank",
-    "vl_gate_all": false
+    "vl_gate_all": false,
+    "vl_zero_chart_fallback_enabled": true,
+    "vl_zero_chart_fallback_max_visuals": 2
   },
   "v2_scoring": {
     "dimension_weights": {

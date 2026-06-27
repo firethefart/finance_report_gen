@@ -101,6 +101,11 @@ def chart_qa_v2_check(
         issues.append(issue("chart_qa_coverage_low", "medium", "charts", "Too few scorable charts received the full VLM checklist."))
     if blocker_chart_ids:
         issues.append(issue("chart_blocker_present", "high", "charts", "At least one chart has a severe visual or chart-text QA flag.", evidence=", ".join(str(item) for item in blocker_chart_ids)))
+    visual_coverage = visual_coverage_status(inventory, chart_results, checked_count, full_judged_count)
+    if visual_coverage.get("status") == "visuals_found_none_scorable":
+        issues.append(issue("visuals_found_none_scorable", "medium", "visual_inventory", "HTML adapter found visual objects, but none were accepted as scorable analytical charts."))
+    if visual_coverage.get("status") == "no_scorable_visuals_after_vlm_gate":
+        issues.append(issue("no_scorable_visuals_after_vlm_gate", "medium", "visual_inventory", "VLM fallback checked filtered visual objects, but did not promote any analytical chart/table candidates."))
     return {
         "score": round(score, 3),
         "subscores": subscores,
@@ -124,8 +129,52 @@ def chart_qa_v2_check(
             "uncertainty_penalty": round(uncertainty_penalty, 3),
             "blocker_chart_count": len(blocker_chart_ids),
             "blocker_chart_ids": blocker_chart_ids,
+            "visual_coverage_status": visual_coverage.get("status"),
+            "visual_object_count": visual_coverage.get("visual_object_count"),
+            "visual_filter_drop_count": visual_coverage.get("visual_filter_drop_count"),
+            "visual_filter_drop_reasons": visual_coverage.get("visual_filter_drop_reasons"),
+            "visual_gate_fallback_candidate_count": visual_coverage.get("visual_gate_fallback_candidate_count"),
+            "vlm_zero_chart_fallback_checked_count": visual_coverage.get("vlm_zero_chart_fallback_checked_count"),
+            "vlm_zero_chart_fallback_promoted_count": visual_coverage.get("vlm_zero_chart_fallback_promoted_count"),
         },
         "charts": chart_results,
+    }
+
+
+def visual_coverage_status(
+    inventory: dict[str, Any],
+    chart_results: list[dict[str, Any]],
+    checked_count: int,
+    full_judged_count: int,
+) -> dict[str, Any]:
+    audit = inventory.get("audit") or {}
+    raw_visual_count = int(audit.get("raw_visual_count") or audit.get("visual_count") or 0)
+    chart_count = len(chart_results)
+    scorable_count = len([result for result in chart_results if not result.get("excluded_from_chart_score")])
+    fallback_checked = int(audit.get("vlm_zero_chart_fallback_checked_count") or 0)
+    fallback_promoted = int(audit.get("vlm_zero_chart_fallback_promoted_count") or 0)
+    if raw_visual_count <= 0:
+        status = "no_visuals_found"
+    elif chart_count <= 0 and fallback_checked > 0:
+        status = "no_scorable_visuals_after_vlm_gate"
+    elif chart_count <= 0:
+        status = "visuals_found_none_scorable"
+    elif fallback_promoted > 0:
+        status = "scorable_visuals_found_by_vlm_fallback"
+    elif checked_count <= 0:
+        status = "scorable_visuals_found"
+    elif full_judged_count >= max(1, scorable_count):
+        status = "vlm_fully_judged"
+    else:
+        status = "vlm_partially_judged"
+    return {
+        "status": status,
+        "visual_object_count": raw_visual_count,
+        "visual_filter_drop_count": int(audit.get("visual_filter_drop_count") or max(0, raw_visual_count - chart_count)),
+        "visual_filter_drop_reasons": audit.get("visual_filter_drop_reasons") or {},
+        "visual_gate_fallback_candidate_count": int(audit.get("visual_gate_fallback_candidate_count") or 0),
+        "vlm_zero_chart_fallback_checked_count": fallback_checked,
+        "vlm_zero_chart_fallback_promoted_count": fallback_promoted,
     }
 
 
