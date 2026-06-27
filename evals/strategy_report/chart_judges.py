@@ -3,6 +3,7 @@ from __future__ import annotations
 import base64
 import json
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -56,8 +57,30 @@ def run_chart_vl_judges(
     gate_all: bool = False,
     gate_max_charts: int = 16,
     gate_max_tokens: int = 900,
+    max_total_calls: int | None = None,
+    max_elapsed_seconds: float | None = None,
 ) -> dict[str, Any]:
-    client = make_verifier_client("vlm", api_key_file, out_dir / "chart_vl_logs")
+    started = time.time()
+    runtime_summary: dict[str, Any] = {
+        "vlm_enabled": True,
+        "model": model,
+        "api_call_attempt_count": 0,
+        "cache_hit_count": 0,
+        "cache_miss_count": 0,
+        "call_error_count": 0,
+        "budget_skipped_count": 0,
+        "budget_skipped_chart_ids": [],
+        "client_error": "",
+        "wall_seconds": 0.0,
+        "max_total_calls": max_total_calls,
+        "max_elapsed_seconds": max_elapsed_seconds,
+    }
+    try:
+        client = make_verifier_client("vlm", api_key_file, out_dir / "chart_vl_logs")
+    except Exception as exc:  # noqa: BLE001
+        runtime_summary["client_error"] = repr(exc)
+        runtime_summary["wall_seconds"] = round(time.time() - started, 2)
+        return {"_runtime_summary": runtime_summary, "_selection_audit": {"input_chart_count": len(charts), "client_error": repr(exc)}}
     cache_dir = out_dir / "chart_vl_cache"
     cache_dir.mkdir(parents=True, exist_ok=True)
     results: dict[str, Any] = {}
@@ -73,9 +96,20 @@ def run_chart_vl_judges(
             continue
         cache_path = cache_dir / f"{safe_name(chart_id)}.{GATE_CACHE_VERSION}.json"
         if cache_path.exists():
+            runtime_summary["cache_hit_count"] += 1
             result = json.loads(cache_path.read_text(encoding="utf-8"))
         else:
-            result = judge_visual_gate_only(client, model, chart, max_tokens=gate_max_tokens)
+            if vlm_budget_exhausted(runtime_summary, started, max_total_calls, max_elapsed_seconds):
+                runtime_summary["budget_skipped_count"] += 1
+                runtime_summary["budget_skipped_chart_ids"].append(chart_id)
+                continue
+            runtime_summary["cache_miss_count"] += 1
+            runtime_summary["api_call_attempt_count"] += 1
+            try:
+                result = judge_visual_gate_only(client, model, chart, max_tokens=gate_max_tokens)
+            except Exception as exc:  # noqa: BLE001
+                runtime_summary["call_error_count"] += 1
+                result = {"ok": False, "qa_level": "gate_only", "error": repr(exc), "model": model}
             cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
         results[chart_id] = result
     for chart in selected:
@@ -84,11 +118,23 @@ def run_chart_vl_judges(
             continue
         cache_path = cache_dir / f"{safe_name(chart['chart_id'])}.{JUDGE_CACHE_VERSION}.json"
         if cache_path.exists():
+            runtime_summary["cache_hit_count"] += 1
             result = json.loads(cache_path.read_text(encoding="utf-8"))
         else:
-            result = judge_one_chart(client, model, chart, parsed, max_tokens=max_tokens, repair_max_tokens=repair_max_tokens)
+            if vlm_budget_exhausted(runtime_summary, started, max_total_calls, max_elapsed_seconds):
+                runtime_summary["budget_skipped_count"] += 1
+                runtime_summary["budget_skipped_chart_ids"].append(chart["chart_id"])
+                continue
+            runtime_summary["cache_miss_count"] += 1
+            runtime_summary["api_call_attempt_count"] += 1
+            try:
+                result = judge_one_chart(client, model, chart, parsed, max_tokens=max_tokens, repair_max_tokens=repair_max_tokens)
+            except Exception as exc:  # noqa: BLE001
+                runtime_summary["call_error_count"] += 1
+                result = {"ok": False, "qa_level": "full_checklist", "error": repr(exc), "model": model}
             cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
         results[chart["chart_id"]] = result
+    runtime_summary["wall_seconds"] = round(time.time() - started, 2)
     results["_selection_audit"] = {
         "strategy": selection_strategy,
         "max_charts": max_charts,
@@ -100,7 +146,21 @@ def run_chart_vl_judges(
         "selected_pages": [chart.get("page") for chart in selected],
         "selected_reasons": {chart.get("chart_id"): chart.get("_vl_selection_reason") for chart in selected},
     }
+    results["_runtime_summary"] = runtime_summary
     return results
+
+
+def vlm_budget_exhausted(
+    runtime_summary: dict[str, Any],
+    started: float,
+    max_total_calls: int | None,
+    max_elapsed_seconds: float | None,
+) -> bool:
+    if max_total_calls is not None and max_total_calls >= 0 and int(runtime_summary.get("api_call_attempt_count") or 0) >= max_total_calls:
+        return True
+    if max_elapsed_seconds is not None and max_elapsed_seconds >= 0 and (time.time() - started) >= max_elapsed_seconds:
+        return True
+    return False
 
 
 def select_gate_candidates(charts: list[dict[str, Any]], max_charts: int) -> list[dict[str, Any]]:

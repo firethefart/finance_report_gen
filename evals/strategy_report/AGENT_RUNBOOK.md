@@ -96,6 +96,16 @@ Best-effort with LLM/VLM modules:
 .\.venv\Scripts\python.exe evals/strategy_report/run_eval.py --cases-dir evals/strategy_report/cases_merged33 --max-cases 3 --out-dir evals/strategy_report/results/local_v1_best_effort --verifier-profile full_best_effort
 ```
 
+V1 can also evaluate a generated/local HTML candidate against a reference-based case.
+For HTML candidates, `run_eval.py` uses the same `html_runtime_adapter_v2` contract as
+the candidate-only verifier: adapter manifest, runtime screenshots, DOM visual
+inventory, visual coverage status, zero-chart VLM fallback, and VLM timing fields are
+preserved in the eval result.
+
+```powershell
+.\.venv\Scripts\python.exe evals/strategy_report/run_eval.py --case evals/strategy_report/cases_merged33/strategy_sample_001.json --candidate-report evals/strategy_report/html_functional_samples/html_func_gsam_investment_backdrop_2026/index.html --out-dir migration_smoke_outputs/v1_html_smoke --verifier-profile html_skill_iteration --no-cache
+```
+
 ## 5. Candidate-only/no-reference verifier commands
 
 One candidate:
@@ -139,6 +149,13 @@ columns. When VLM is enabled and the HTML adapter finds visual objects but chart
 filtered visual objects. If VLM accepts one, the sample reports
 `scorable_visuals_found_by_vlm_fallback`; if VLM rejects all, it reports
 `no_scorable_visuals_after_vlm_gate`.
+
+The VLM path is budgeted and monitored. Profiles can set
+`chart.vlm_budget.max_total_calls`, `chart.vlm_budget.max_elapsed_seconds`,
+`chart.vlm_budget.max_fallback_calls`, and
+`chart.vlm_budget.max_fallback_elapsed_seconds`. Batch summaries expose cache hits,
+cache misses, call errors, budget skips, VLM wall time, and API elapsed totals so VLM
+service issues can be separated from parser/content/layout failures.
 
 When the `html_skill_iteration` profile is active, each sample writes
 `<report_id>.skill_feedback.md`. This file is intended as the first artifact to feed

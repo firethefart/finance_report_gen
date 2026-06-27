@@ -104,6 +104,8 @@ def run_one_v2(
             gate_all=bool(profile_get(profile, "chart.vl_gate_all", False)),
             gate_max_charts=int(profile_get(profile, "chart.vl_gate_max_charts", 16)),
             gate_max_tokens=int(profile_get(profile, "chart.vl_gate_max_tokens", 900)),
+            max_total_calls=profile_get(profile, "chart.vlm_budget.max_total_calls", None),
+            max_elapsed_seconds=profile_get(profile, "chart.vlm_budget.max_elapsed_seconds", None),
         )
         if (
             not (chart_inventory.get("charts") or [])
@@ -123,6 +125,8 @@ def run_one_v2(
                 gate_all=True,
                 gate_max_charts=int(profile_get(profile, "chart.vl_zero_chart_fallback_max_visuals", 2)),
                 gate_max_tokens=int(profile_get(profile, "chart.vl_gate_max_tokens", 900)),
+                max_total_calls=profile_get(profile, "chart.vlm_budget.max_fallback_calls", None),
+                max_elapsed_seconds=profile_get(profile, "chart.vlm_budget.max_fallback_elapsed_seconds", None),
             )
             chart_vl_judges = merge_chart_vl_judges(chart_vl_judges, fallback_judges, audit_key="zero_chart_fallback")
             promote_vlm_visual_gate_fallbacks(chart_inventory, fallback_judges)
@@ -635,6 +639,7 @@ def summarize_vlm_timing(chart_vl_judges: dict[str, Any]) -> dict[str, Any]:
         value = result.get("elapsed_seconds")
         if isinstance(value, (int, float)):
             elapsed.append(float(value))
+    runtime = chart_vl_judges.get("_runtime_summary") if isinstance(chart_vl_judges.get("_runtime_summary"), dict) else {}
     return {
         "vlm_call_count": full + gate + failed,
         "vlm_success_count": full + gate,
@@ -645,6 +650,13 @@ def summarize_vlm_timing(chart_vl_judges: dict[str, Any]) -> dict[str, Any]:
         "vlm_elapsed_avg_seconds": round(sum(elapsed) / len(elapsed), 2) if elapsed else 0.0,
         "vlm_elapsed_max_seconds": round(max(elapsed), 2) if elapsed else 0.0,
         "vlm_elapsed_recorded_count": len(elapsed),
+        "api_call_attempt_count": runtime.get("api_call_attempt_count", full + gate + failed),
+        "cache_hit_count": runtime.get("cache_hit_count", 0),
+        "cache_miss_count": runtime.get("cache_miss_count", 0),
+        "call_error_count": runtime.get("call_error_count", failed),
+        "budget_skipped_count": runtime.get("budget_skipped_count", 0),
+        "client_error": runtime.get("client_error", ""),
+        "vlm_wall_seconds": runtime.get("wall_seconds", 0.0),
     }
 
 

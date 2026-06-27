@@ -33,7 +33,13 @@
     "vl_selection_strategy": "risk_rank",
     "vl_gate_all": false,
     "vl_zero_chart_fallback_enabled": true,
-    "vl_zero_chart_fallback_max_visuals": 2
+    "vl_zero_chart_fallback_max_visuals": 2,
+    "vlm_budget": {
+      "max_total_calls": 18,
+      "max_elapsed_seconds": 900,
+      "max_fallback_calls": 2,
+      "max_fallback_elapsed_seconds": 180
+    }
   },
   "v2_scoring": {
     "dimension_weights": {
