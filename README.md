@@ -57,6 +57,14 @@ HTML runtime preflight:
 
 If Chrome/Chromium is installed in a non-standard location, pass `--chrome`.
 
+On Linux production hosts, the HTML runtime only needs a Chrome/Chromium-compatible
+browser executable. The verifier launches it headlessly through the Chrome DevTools
+Protocol; it does not require Playwright, Puppeteer, Selenium, or a browser driver.
+For restricted networks, prepare an offline OS package for the target architecture
+such as `google-chrome-stable` or the distribution `chromium` package plus its RPM
+dependencies, install it on the server, then run the preflight command above. If the
+binary is outside `PATH`, pass `--chrome /absolute/path/to/google-chrome`.
+
 Single local HTML skill-iteration run:
 
 ```powershell
@@ -70,7 +78,11 @@ Batch local HTML run from a manifest:
 ```
 
 When `html_skill_iteration` is used, each completed sample also writes
-`<report_id>.skill_feedback.md` for downstream skill refinement.
+`<report_id>.feedback.md` and `<report_id>.feedback.json` for downstream skill
+refinement. The Markdown file is intended for human/agent review; the JSON file is
+the structured automation artifact. Some legacy profiles may still emit
+`<report_id>.skill_feedback.md` as an alias, but new workflows should prefer the
+shared feedback files.
 
 To expand the local HTML development set before larger production runs, follow
 [HTML sample expansion runbook](evals/strategy_report/HTML_SAMPLE_EXPANSION_RUNBOOK.md).
@@ -119,6 +131,7 @@ The legacy `--api-key-file api_key.txt` path is still supported for local runs, 
 ## Important docs
 
 - [Agent runbook](evals/strategy_report/AGENT_RUNBOOK.md)
+- [Feedback design and schema notes](evals/strategy_report/feedback/FEEDBACK_DESIGN.md)
 - [Production handoff](evals/strategy_report/PRODUCTION_MIGRATION_HANDOFF_20260625.md)
 - [HTML production refinement handoff](evals/strategy_report/SESSION_HANDOFF_20260626_HTML_PROD_R1.md)
 - [HTML sample expansion handoff](evals/strategy_report/SESSION_HANDOFF_20260626_HTML_SAMPLE_EXPANSION_R1.md)

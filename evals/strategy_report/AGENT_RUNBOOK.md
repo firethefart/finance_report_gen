@@ -38,6 +38,23 @@ Linux equivalent:
 
 If Chrome is installed in a non-standard location, add `--chrome /path/to/chrome`.
 
+Linux offline deployment note:
+
+- The verifier needs a Chrome/Chromium-compatible executable, not Playwright,
+  Puppeteer, Selenium, or chromedriver.
+- On yum/RHEL-family hosts, prepare an offline RPM set for the target architecture.
+  Good candidates are `google-chrome-stable` from Google's RPM repository or the
+  distribution `chromium` package if available in the host's configured repos.
+- Copy the RPMs and all required shared-library dependencies to the server, install
+  them with the site's normal offline yum/dnf workflow, then run the preflight command.
+- If the binary is installed outside `PATH`, call
+  `check_html_runtime.py --chrome /absolute/path/to/google-chrome --json` and use the
+  same path for any direct HTML adapter runs that expose `--chrome`/`--chrome-path`.
+- Current launch flags include `--headless=new`, `--no-sandbox`,
+  `--disable-dev-shm-usage`, `--allow-file-access-from-files`, and a temporary
+  `--user-data-dir`. In locked-down containers/servers, make sure the process can
+  create temp directories and bind a local ephemeral DevTools port on `127.0.0.1`.
+
 ## 2. Secrets and model config
 
 Never read, print, or commit real secrets. Preferred production config is `.env` or process environment:
